@@ -1,12 +1,12 @@
 const CONFIG = {
   HEO_HOME_BANNER_ENABLE: true,
 
-  HEO_SITE_CREATE_TIME: '2021-09-21', // 建站日期，用于计算网站运行的第几天
+  HEO_SITE_CREATE_TIME: '2024-04-15', // 建站日期，用于计算网站运行的第几天
 
   // 首页顶部通知条滚动内容，如不需要可以留空 []
   HEO_NOTICE_BAR: [
-    { title: '欢迎来到我的博客', url: 'https://blog.aibici.org' },
-    { title: '访问文档中心获取更多帮助', url: 'https://blog.aibici.org' }
+    { title: '欢迎来到我的博客', url: 'https://blog.aibici.org/' },
+    { title: '访问文档中心获取更多帮助', url: 'https://blog.aibici.org/' }
   ],
 
   // 英雄区左右侧组件颠倒位置
@@ -15,9 +15,9 @@ const CONFIG = {
   HEO_HERO_BODY_REVERSE: false,
 
   // 英雄区(首页顶部大卡)
-  HEO_HERO_TITLE_1: '分享编程',
-  HEO_HERO_TITLE_2: '与思维认知',
-  HEO_HERO_TITLE_3: 'TANGLY1024.COM',
+  HEO_HERO_TITLE_1: '分享数码科技',
+  HEO_HERO_TITLE_2: '学AI，用AI',
+  HEO_HERO_TITLE_3: 'blog.aibici.org',
   HEO_HERO_TITLE_4: '新版上线',
   HEO_HERO_TITLE_5: 'NotionNext4.0 轻松定制主题',
   HEO_HERO_TITLE_LINK: 'https://tangly1024.com',
@@ -36,13 +36,11 @@ const CONFIG = {
   HEO_INFOCARD_GREETINGS: [
     '你好！我是',
     '🔍 分享与热心帮助',
-    '🤝 专修交互与设计',
     '🏃 脚踏实地行动派',
-    '🏠 智能家居小能手',
-    '🤖️ 数码科技爱好者',
-    '🧱 团队小组发动机'
+    '🏠 智能AI小能手',
+    '🤖️ 数码科技爱好者'
   ],
-  HEO_INFO_CARD_URL: 'https://github.com/tangly1024/NotionNext', // 个人资料底部按钮链接
+  HEO_INFO_CARD_URL: 'https://blog.aibici.org', // 个人资料底部按钮链接
 
   // 用户技能图标
   HEO_GROUP_ICONS: [
