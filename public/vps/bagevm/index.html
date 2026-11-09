@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>BageVM VPS 全产品线推荐与选购指南 2026年10月版</title>
+<meta name="description" content="BageVM（BAGE CLOUD LLC）VPS 选购指南：12 条产品线、8 个国家/地区节点的线路与价格梳理。BageVM 全线无中国大陆优化，定位大带宽落地机；含香港/日本 Standard 三网延迟对比、洛杉矶/盐湖城/法兰克福/英国原生 IP 解析、Looking Glass 清单与 NodeSeek 社区实测引用。">
+<meta name="keywords" content="BageVM,bagevm.com,BAGE CLOUD LLC,VPS 选购,香港VPS,日本VPS,新加坡VPS,洛杉矶VPS,盐湖城VPS,德国VPS,英国VPS,原生IP,落地机,Looking Glass,No China Optimization">
+<meta name="author" content="VPS 选购指南">
+<meta name="robots" content="index,follow">
+<meta property="og:type" content="article">
+<meta property="og:title" content="BageVM VPS 全产品线推荐与选购指南 2026年10月版">
+<meta property="og:description" content="12 条产品线、8 个国家/地区 · 全线无大陆优化的大带宽落地机，按需求一次说清怎么选。">
+<meta property="og:locale" content="zh_CN">
+<style>
+:root{
+  --bg:#f7f7f5; --card:#fff; --line:#e6e5e1; --line2:#d5d3cd;
+  --tx:#1f1f1d; --tx2:#5f5e5a; --tx3:#8a8880;
+  --teal:#0f6e56; --teal-bg:#e1f5ee; --teal-bd:#5dcaa5;
+  --blue:#185fa5; --blue-bg:#e6f1fb; --blue-bd:#85b7eb;
+  --amber:#854f0b; --amber-bg:#faeeda; --amber-bd:#ef9f27;
+  --red:#a32d2d; --red-bg:#fcebeb; --red-bd:#f09595;
+  --green:#3b6d11; --green-bg:#eaf3de; --green-bd:#97c459;
+  --purple:#534ab7; --purple-bg:#eeedfe; --purple-bd:#afa9ec;
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--tx);
+  font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;
+  font-size:14px;line-height:1.78}
+.wrap{max-width:1080px;margin:0 auto;padding:40px 28px 80px}
+header{border-bottom:2px solid var(--tx);padding-bottom:20px;margin-bottom:32px}
+h1{font-size:27px;font-weight:600;margin:0 0 10px;letter-spacing:-.3px}
+.sub{color:var(--tx2);font-size:13.5px}
+.meta{color:var(--tx3);font-size:12px;margin-top:8px}
+h2{font-size:19px;font-weight:600;margin:46px 0 16px;padding-left:12px;border-left:4px solid var(--tx)}
+h3{font-size:16.5px;font-weight:600;margin:32px 0 10px;display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+h4{font-size:14px;font-weight:600;margin:18px 0 8px;color:var(--tx2)}
+p{margin:10px 0}
+a{color:var(--blue);text-decoration:none;border-bottom:1px solid rgba(24,95,165,.28)}
+a:hover{border-bottom-color:var(--blue)}
+code{background:#f0efec;padding:1px 5px;border-radius:4px;font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:12.5px}
+code.sm{font-size:11.5px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:20px 22px;margin:16px 0}
+.grid{display:grid;gap:12px}
+.g3{grid-template-columns:repeat(auto-fit,minmax(150px,1fr))}
+.kpi{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:12px 14px}
+.kpi .n{font-size:21px;font-weight:600;line-height:1.2}
+.kpi .l{font-size:12px;color:var(--tx3);margin-top:2px}
+table{width:100%;border-collapse:collapse;margin:14px 0;font-size:13px;background:var(--card);
+  border:1px solid var(--line);border-radius:10px;overflow:hidden}
+th{background:#f1efec;text-align:left;padding:10px 12px;font-weight:600;font-size:12.5px;
+  border-bottom:1px solid var(--line2);white-space:nowrap}
+td{padding:10px 12px;border-bottom:1px solid var(--line);vertical-align:top}
+tr:last-child td{border-bottom:none}
+tbody tr:hover{background:#fbfbfa}
+td.num{text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums}
+td.num .cyc{color:var(--tx3);font-size:11px;font-weight:400;margin-top:1px}
+td.mono,.mono{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:12px}
+.small,.small td{font-size:12.5px}
+.tblwrap{overflow-x:auto}
+table.wide{min-width:900px}
+table.tiers{min-width:720px}
+.tag{display:inline-block;padding:1px 8px;border-radius:20px;font-size:11.5px;font-weight:500;
+  border:1px solid;white-space:nowrap;line-height:1.7}
+.t-teal{background:var(--teal-bg);color:var(--teal);border-color:var(--teal-bd)}
+.t-blue{background:var(--blue-bg);color:var(--blue);border-color:var(--blue-bd)}
+.t-amber{background:var(--amber-bg);color:var(--amber);border-color:var(--amber-bd)}
+.t-red{background:var(--red-bg);color:var(--red);border-color:var(--red-bd)}
+.t-green{background:var(--green-bg);color:var(--green);border-color:var(--green-bd)}
+.t-purple{background:var(--purple-bg);color:var(--purple);border-color:var(--purple-bd)}
+.t-gray{background:#f1efec;color:var(--tx2);border-color:var(--line2)}
+.stars{font-family:ui-monospace,monospace;letter-spacing:1px;font-size:13px;white-space:nowrap}
+.s3{color:var(--green)} .s2{color:var(--amber)} .s1{color:var(--red)} .s0{color:var(--tx3)}
+.note{margin:12px 0;padding:10px 16px;background:#f4f3f0;border-left:3px solid var(--line2);
+  border-radius:0 8px 8px 0;color:var(--tx2);font-size:13px}
+.warn{margin:12px 0;padding:12px 16px;background:var(--amber-bg);border-left:3px solid var(--amber-bd);
+  border-radius:0 8px 8px 0;font-size:13px}
+.warn strong{color:var(--amber)}
+.line{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:18px 22px 6px;margin:20px 0}
+.line .idx{display:inline-flex;align-items:center;justify-content:center;min-width:24px;height:24px;
+  padding:0 7px;border-radius:7px;background:var(--tx);color:#fff;font-size:12.5px;font-weight:600}
+.tags{display:inline-flex;gap:6px;flex-wrap:wrap;font-weight:400}
+.lead{color:var(--tx2);font-size:13px;margin:2px 0 10px}
+.isprow{display:flex;gap:8px;flex-wrap:wrap;margin:10px 0 4px}
+.ispchip{display:inline-flex;align-items:center;gap:5px;padding:2px 9px;border:1px solid var(--line2);
+  border-radius:20px;font-size:12.5px;background:#fbfbfa}
+.srcs{font-size:12.5px;color:var(--tx3);margin:8px 0 4px}
+.srcs .lbl{display:inline-block;padding:1px 7px;border:1px solid var(--line2);border-radius:20px;
+  background:#f4f3f0;margin-right:6px}
+.buyrow{margin:14px 0 12px;display:flex;gap:14px;align-items:center;flex-wrap:wrap}
+a.buy{display:inline-block;padding:6px 14px;background:var(--teal);color:#fff;border:1px solid var(--teal);
+  border-radius:8px;font-size:12.5px;font-weight:500}
+a.buy:hover{background:#0b5946;border-color:#0b5946}
+a.buy.big{padding:9px 18px;font-size:13.5px}
+a.plain{font-size:12.5px;color:var(--tx3);border-bottom-color:transparent}
+a.plain:hover{color:var(--blue);border-bottom-color:rgba(24,95,165,.3)}
+.muted{color:var(--tx3)}
+.faq{background:var(--card);border:1px solid var(--line);border-radius:10px;margin:10px 0;padding:0 18px}
+.faq summary{cursor:pointer;font-weight:600;font-size:14px;padding:13px 0;list-style:none}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::before{content:"＋ ";color:var(--tx3)}
+.faq[open] summary::before{content:"－ "}
+.faq .ans{padding:0 0 14px;color:var(--tx2);font-size:13.5px;border-top:1px solid var(--line);padding-top:12px}
+.srclist{font-size:12.5px;line-height:1.9;padding-left:22px}
+.foot{color:var(--tx3);font-size:12px}
+nav.toc{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:14px 20px;margin:20px 0}
+nav.toc a{margin-right:16px;font-size:13px;white-space:nowrap;line-height:2}
+@media(max-width:640px){.wrap{padding:24px 16px 60px} h1{font-size:21px} h2{font-size:17px}}
+</style>
+<link rel="canonical" href="https://blog.aibici.org/vps/bagevm">
+</head>
+<body>
+<div class="wrap">
+
+<header>
+<h1>BageVM VPS 全产品线推荐与选购指南 2026年10月版</h1>
+<p class="sub">12 条产品线 · 8 个国家/地区 · <strong>全线无中国大陆优化</strong> —— 按「大带宽落地 + 解锁 + 原生 IP」的思路一次说清怎么选。</p>
+<p class="meta">数据抓取：2026-10-14（官网实时扫描）＋ NodeSeek 社区 37 篇实测帖子　|　价格与库存以官网实时信息为准　|　本文含推广链接</p>
+</header>
+
+<nav class="toc">
+<strong>目录：</strong>
+<a href="#quick">一分钟结论</a>
+<a href="#matrix">产品线速览</a>
+<a href="#isp">按运营商选</a>
+<a href="#testip">Looking Glass</a>
+<a href="#apac">亚太节点</a>
+<a href="#na">北美节点</a>
+<a href="#eu">欧洲与台湾</a>
+<a href="#faq">常见问题</a>
+<a href="#caveats">注意事项</a>
+<a href="#sources">来源</a>
+</nav>
+
+<section class="card" id="quick">
+<h2>一分钟选型结论</h2>
+<div class="warn"><strong>先说最重要的一句：</strong>BageVM 全线<strong>没有任何中国大陆优化</strong>，官网每一条产品线都写着「No China Mainland Optimization Guaranteed」。它卖的是「国际大带宽 + DNS 解锁 + 原生 IP」，正确用法是当 <strong>落地机 / 中转机 / 解锁机</strong>，不是当回国优化机。社区（NS938368）的定位总结是：「国际优化的大带宽服务商，普遍提供 DNS 解锁……适合要大流量做国际中转、海外落地、流媒体/AI 解锁的人；<strong>不适合晚高峰要跑大陆家宽满速的人</strong>」。</div>
+<p>在这条前提下，按需求选：</p>
+<table class="small">
+<thead><tr><th>你的情况</th><th>推荐产品（带 aff）</th><th>参考价</th><th>核心理由</th></tr></thead>
+<tbody>
+<tr><td>要<strong>香港原生 IP</strong> + 移动低延迟落地</td><td><a href="#l-hk-std">香港 Standard</a></td><td class="num">$3.99/月起<div class="cyc">年付 $32.99</div></td><td>移动 TCPing <strong>61ms</strong>，全线对国内延迟最低的亚太节点；原生 HK IP；流量从 2TB 起</td></tr>
+<tr><td>要<strong>三网延迟最均衡</strong>的日本落地</td><td><a href="#l-jp-std">日本 Standard</a></td><td class="num">$3.99/月起<div class="cyc">年付 $32.99</div></td><td>电 168 / 联 92 / 移 81 ms；晚高峰是<strong>唯一三网都还站着</strong>的节点；社区明确「新购推荐 standard」</td></tr>
+<tr><td>预算低，便宜大碗跑流量 / AI</td><td><a href="#l-hk-lite">香港 Lite</a></td><td class="num">$2.99/月起<div class="cyc">TINY 年付 $24.74</div></td><td>4TB 流量 @1000M；社区实测「跑 AI 一个月差不多 4TB，延迟也低，还能重置流量」</td></tr>
+<tr><td>要<strong>美国原生 IP</strong> 解锁 + 美西落地</td><td><a href="#l-la2">洛杉矶2</a> / <a href="#l-la">洛杉矶</a></td><td class="num">$2.99/月起<div class="cyc">年付 $32.99 起，不参加折扣</div></td><td>LA2 走 FiberState 原生 US IP、解锁全原生；洛杉矶（BAGE 段）GB6 单核 <strong>2273</strong> 全线最高</td></tr>
+<tr><td>要日本落地 + 最强单核</td><td><a href="#l-jp">日本 Japan</a></td><td class="num">$3.99/月起<div class="cyc">年付 $32.99</div></td><td>7950X，GB6 单核 1658–1761；NTT 国际互联极强；<strong>联通延迟差（577ms）</strong></td></tr>
+<tr><td>要<strong>欧洲落地</strong> / 大文件中转</td><td><a href="#l-de">德国法兰克福</a></td><td class="num">$2.99/月起<div class="cyc">年付 $24.74</div></td><td>非高峰三网单线程 854/812/740 全线最均衡，欧洲对端 3860Mbps；晚高峰落差最大</td></tr>
+<tr><td>要<strong>英国原生 IP</strong></td><td><a href="#l-uk">英国考文垂</a></td><td class="num">$2.99/月起<div class="cyc">年付 $32.99，不参加折扣</div></td><td>原生 GB IP；1Gbps 口、盘偏慢，适合要英国 IP 的落地</td></tr>
+<tr><td>要中国台湾 HiNet 动态 IP</td><td><a href="#l-tw">台湾 Hinet VDS</a></td><td class="num">$45.55/月<div class="cyc">6C6G / 200TB@600M</div></td><td>中华电信 HiNet 动态 IP 分配；<strong>当前缺货</strong></td></tr>
+</tbody>
+</table>
+<div class="note">
+<strong>说明：</strong>「参考价」= 该产品线<strong>可下单的最便宜档位</strong>；官网首页按月付展示，年付通常更便宜（社区实测：香港 Lite TINY 年付 $24.74、英国 TINY 年付低至 $20.01）。洛杉矶 / 洛杉矶2 / 英国三条线<strong>不参加折扣码</strong>；其余线路可叠加年付折扣。价格与库存为 2026-10-14 抓取时点快照，随时会变。表内链接含推广参数（aff=1195），通过链接下单不影响你的价格。
+</div>
+<div class="grid g3" style="margin-top:16px">
+  <div class="kpi"><div class="n">12</div><div class="l">条产品线</div></div>
+  <div class="kpi"><div class="n">8</div><div class="l">个国家/地区</div></div>
+  <div class="kpi"><div class="n">53</div><div class="l">在售档位</div></div>
+  <div class="kpi"><div class="n">$2.99</div><div class="l">月付最低价起</div></div>
+  <div class="kpi"><div class="n">0</div><div class="l">条回国优化线路</div></div>
+</div>
+<div class="buyrow" style="margin-top:16px"><a class="buy big" href="https://www.bagevm.com/aff.php?aff=1195" target="_blank" rel="nofollow sponsored">前往 BageVM 官网（含 aff）</a><span class="muted">全线无大陆优化 · 大带宽落地</span></div>
+</section>
+
+<section id="matrix">
+<h2>全部产品线速览表</h2>
+<p>价格统一给出<strong>官网月付价</strong>；年付列为社区实测/促销折算价（2026-09 促销 75 折，详见「注意事项」）。星级依据 NS938368 总参篇的三网 TCPing 与家宽测速，<strong>以「落地 + 国际互联」为口径</strong>，不代表回国优化质量。</p>
+<div class="tblwrap"><table class="wide small">
+<thead><tr><th>产品线</th><th>地区</th><th>CPU</th><th>主要上游</th><th>电信</th><th>联通</th><th>移动</th><th>月付起</th><th>年付参考</th><th>档位</th></tr></thead>
+<tbody>
+<tr><td><a href="#l-hk-lite"><strong>香港 Lite</strong></a></td><td>中国香港</td><td class="mono">AMD EPYC 7663</td><td class="mono sm">PCCWG+TELSTRA+NTT+Cogent+HE+HKIX+EIE</td><td><span class="stars s1">★☆☆</span></td><td><span class="stars s1">★☆☆</span></td><td><span class="stars s2">★★☆</span></td><td class="num">$2.99</td><td class="num">$24.74</td><td class="num">5</td></tr>
+<tr><td><a href="#l-hk-std"><strong>香港 Standard</strong></a></td><td>中国香港</td><td class="mono">AMD EPYC 7663</td><td class="mono sm">PCCWG+TELSTRA+NTT+Lumen+Retn+Cogent+HE+HKIX+EIE</td><td><span class="stars s1">★☆☆</span></td><td><span class="stars s1">★☆☆</span></td><td><span class="stars s3">★★★</span></td><td class="num">$3.99</td><td class="num">$32.99</td><td class="num">5</td></tr>
+<tr><td><a href="#l-jp"><strong>日本 Japan</strong></a></td><td>日本东京</td><td class="mono">AMD Ryzen 9 7950X</td><td class="mono sm">NTT+Cogent+Lumen+HE</td><td><span class="stars s1">★☆☆</span></td><td><span class="stars s1">★☆☆</span></td><td><span class="stars s2">★★☆</span></td><td class="num">$3.99</td><td class="num">$32.99</td><td class="num">5</td></tr>
+<tr><td><a href="#l-jp-std"><strong>日本 Standard</strong></a></td><td>日本东京</td><td class="mono">AMD EPYC 7663</td><td class="mono sm">PCCWG+TELSTRA+NTT+Lumen+Cogent+EIE</td><td><span class="stars s2">★★☆</span></td><td><span class="stars s2">★★☆</span></td><td><span class="stars s3">★★★</span></td><td class="num">$3.99</td><td class="num">$32.99</td><td class="num">6</td></tr>
+<tr><td><a href="#l-sg"><strong>新加坡 Singapore</strong></a></td><td>新加坡</td><td class="mono">AMD Ryzen 9 7950X</td><td class="mono sm">NTT+Cogent+Lumen+HE</td><td><span class="stars s1">★☆☆</span></td><td><span class="stars s1">★☆☆</span></td><td><span class="stars s2">★★☆</span></td><td class="num">$3.99</td><td class="num">$32.99</td><td class="num">5</td></tr>
+<tr><td><a href="#l-sg"><strong>新加坡 Standard</strong></a></td><td>新加坡</td><td class="mono">AMD EPYC 7663</td><td class="mono sm">PCCWG+TELSTRA+NTT+Lumen+Cogent+EIE</td><td><span class="stars s1">★☆☆</span></td><td><span class="stars s2">★★☆</span></td><td><span class="stars s2">★★☆</span></td><td class="num">$3.99</td><td class="num">$32.99</td><td class="num">6</td></tr>
+<tr><td><a href="#l-la"><strong>洛杉矶 Los Angeles</strong></a></td><td>美国洛杉矶</td><td class="mono">AMD Ryzen 9 7900(标称)/9950X3D(实测)</td><td class="mono sm">TATA+GTT+Comcast</td><td><span class="stars s1">★☆☆</span></td><td><span class="stars s1">★☆☆</span></td><td><span class="stars s1">★☆☆</span></td><td class="num">$2.99</td><td class="num">$32.99</td><td class="num">4</td></tr>
+<tr><td><a href="#l-la2"><strong>洛杉矶2 Los Angeles2</strong></a></td><td>美国洛杉矶</td><td class="mono">AMD Ryzen 9 9950X</td><td class="mono sm">TATA+GTT+PCCW</td><td><span class="stars s1">★☆☆</span></td><td><span class="stars s1">★☆☆</span></td><td><span class="stars s1">★☆☆</span></td><td class="num">$2.99</td><td class="num">$32.99</td><td class="num">4</td></tr>
+<tr><td><a href="#l-slc"><strong>盐湖城 Salt Lake City</strong></a></td><td>美国盐湖城</td><td class="mono">AMD Ryzen 9 9950X</td><td class="mono sm">Cogent+GTT+He+Lumen+PCCW</td><td><span class="stars s1">★☆☆</span></td><td><span class="stars s1">★☆☆</span></td><td><span class="stars s1">★☆☆</span></td><td class="num">$2.99</td><td class="num">$24.74</td><td class="num">4</td></tr>
+<tr><td><a href="#l-de"><strong>德国法兰克福 Germany</strong></a></td><td>德国法兰克福</td><td class="mono">AMD Ryzen 9 7950X(标称)/9950X(实测)</td><td class="mono sm">Cogent+NTT+GTT+Lumen</td><td><span class="stars s1">★☆☆</span></td><td><span class="stars s2">★★☆</span></td><td><span class="stars s1">★☆☆</span></td><td class="num">$2.99</td><td class="num">$24.74</td><td class="num">4</td></tr>
+<tr><td><a href="#l-uk"><strong>英国考文垂 United Kingdom</strong></a></td><td>英国考文垂(商店页)/伦敦(社区)</td><td class="mono">AMD Ryzen 9 7900(标称)/9950X(实测)</td><td class="mono sm">NTT+GTT+PCCW</td><td><span class="stars s1">★☆☆</span></td><td><span class="stars s1">★☆☆</span></td><td><span class="stars s1">★☆☆</span></td><td class="num">$2.99</td><td class="num">$32.99</td><td class="num">4</td></tr>
+<tr><td><a href="#l-tw"><strong>台湾 Hinet VDS</strong></a></td><td>中国台湾</td><td class="mono">—</td><td class="mono sm">中华电信 HiNet（动态 IP）</td><td>—</td><td>—</td><td>—</td><td class="num">$45.55</td><td class="num">—</td><td class="num">1</td></tr>
+</tbody></table></div>
+<p class="muted" style="font-size:12.5px">★ 判定说明：★★★ 落地体验最好 · ★★☆ 可用 · ★☆☆ 一般/较差 · — 无数据。<strong>所有线路都没有回国优化</strong>，星级只反映「国内连过去的相对体验」与「国际互联能力」。</p>
+</section>
+
+<section id="isp">
+<h2>按运营商选（电信 / 联通 / 移动）</h2>
+<p>来自 NS938368 总参篇 2026-09-16 的三网 TCPing 滚动样本（延迟 / 丢包）。<strong>再次强调：这些是「恰好没绕路」时的成绩，商家不保证。</strong></p>
+<div class="tblwrap"><table class="small">
+<thead><tr><th>产品线</th><th>移动 延迟 / 丢包</th><th>联通 延迟 / 丢包</th><th>电信 延迟 / 丢包</th></tr></thead>
+<tbody>
+<tr><td><strong>香港 Standard</strong></td><td class="num">61 / 0.01%</td><td class="num">363 / 1.82%</td><td class="num">377 / 0.01%</td></tr>
+<tr><td><strong>日本 Standard</strong></td><td class="num">81 / 0.01%</td><td class="num">92 / 1.67%</td><td class="num">168 / 0.09%</td></tr>
+<tr><td><strong>新加坡 Singapore</strong></td><td class="num">99 / 0.01%</td><td class="num">531 / 2.83%</td><td class="num">404 / 3.23%</td></tr>
+<tr><td><strong>新加坡 Standard</strong></td><td class="num">106 / 0.02%</td><td class="num">284 / 1.76%</td><td class="num">321 / 0%</td></tr>
+<tr><td><strong>日本 Japan</strong></td><td class="num">119 / 0.41%</td><td class="num">577 / 3.3%</td><td class="num">387 / 0.41%</td></tr>
+<tr><td><strong>洛杉矶2 Los Angeles2</strong></td><td class="num">228 / 0.1%</td><td class="num">224 / 1.86%</td><td class="num">260 / 0.06%</td></tr>
+<tr><td><strong>洛杉矶 Los Angeles</strong></td><td class="num">242 / 0.7%</td><td class="num">239 / 1.78%</td><td class="num">233 / 1.12%</td></tr>
+<tr><td><strong>盐湖城 Salt Lake City</strong></td><td class="num">259 / 0.01%</td><td class="num">223 / 1.73%</td><td class="num">247 / 0.01%</td></tr>
+<tr><td><strong>香港 Lite</strong></td><td class="num">310 / 0.06%</td><td class="num">384 / 1.78%</td><td class="num">375 / 0.0%</td></tr>
+<tr><td><strong>德国法兰克福 Germany</strong></td><td class="num">255 / 0.01%</td><td class="num">183 / 1.75%</td><td class="num">243 / 0.07%</td></tr>
+<tr><td><strong>英国考文垂 United Kingdom</strong></td><td class="num">396 / 0.6%</td><td class="num">261 / 2.36%</td><td class="num">311 / 0.67%</td></tr>
+</tbody></table></div>
+<table class="small">
+<thead><tr><th>运营商</th><th>相对最友好</th><th>相对较差</th></tr></thead>
+<tbody>
+<tr><td><strong>中国移动</strong></td><td>香港 Standard（61ms）、日本 Standard（81ms）、新加坡（99ms）</td><td>英国考文垂（396ms）</td></tr>
+<tr><td><strong>中国联通</strong></td><td>日本 Standard（92ms）、德国法兰克福（183ms）、盐湖城（223ms）</td><td>日本 Japan（577ms）、新加坡（531ms）</td></tr>
+<tr><td><strong>中国电信</strong></td><td>日本 Standard（168ms）、洛杉矶（233ms）、法兰克福（243ms）</td><td>新加坡（404ms）</td></tr>
+</tbody></table>
+<div class="note"><strong>一句话记法：</strong><em>要国内低延迟选「Standard」系列，要国际互联和单核选 7950X 的非 Standard 系列。</em><br>
+<strong>Standard 系列（EPYC 7663 + PCCWG/Telstra/Lumen/Retn/EIE 多上游）三网延迟全面优于同地区的非 Standard 系列（Ryzen 7950X + NTT/Cogent/Lumen/HE）</strong>，这也是社区帖子里明确给新购用户的建议（NS938368 评论 #27：「新购的话，推荐 standard」）。</div>
+</section>
+
+<section id="testip">
+<h2>先测再买：Looking Glass 清单</h2>
+<p>BageVM 没有单独公布测试 IP，而是给每个节点提供了 <strong>Looking Glass 网页</strong>（可 ping / traceroute / 测速）。下单前先从这里测一遍自己的网络环境。</p>
+<div class="tblwrap"><table class="small">
+<thead><tr><th>节点</th><th>地区</th><th>Looking Glass</th><th>官网产品页</th></tr></thead>
+<tbody>
+<tr><td><strong>香港 Lite</strong></td><td>中国香港</td><td class="mono"><a href="http://lg-hkb.bagevm.net" target="_blank" rel="nofollow">http://lg-hkb.bagevm.net</a></td><td class="mono sm"><a href="https://www.bagevm.com/index.php/store/hong-kong-lite-servers" target="_blank">/store/hong-kong-lite-servers</a></td></tr>
+<tr><td><strong>香港 Standard</strong></td><td>中国香港</td><td class="mono"><a href="http://lg-hka.bagevm.net" target="_blank" rel="nofollow">http://lg-hka.bagevm.net</a></td><td class="mono sm"><a href="https://www.bagevm.com/index.php/store/hong-kong-servers" target="_blank">/store/hong-kong-servers</a></td></tr>
+<tr><td><strong>日本 Japan</strong></td><td>日本东京</td><td class="mono"><a href="http://lg-jpa.bagevm.net" target="_blank" rel="nofollow">http://lg-jpa.bagevm.net</a></td><td class="mono sm"><a href="https://www.bagevm.com/index.php/store/japan-servers" target="_blank">/store/japan-servers</a></td></tr>
+<tr><td><strong>日本 Standard</strong></td><td>日本东京</td><td class="mono"><a href="http://lg-jpb.bagevm.net" target="_blank" rel="nofollow">http://lg-jpb.bagevm.net</a></td><td class="mono sm"><a href="https://www.bagevm.com/index.php/store/japan-standard-servers" target="_blank">/store/japan-standard-servers</a></td></tr>
+<tr><td><strong>新加坡 Singapore</strong></td><td>新加坡</td><td class="mono"><a href="http://lg-sga.bagevm.net" target="_blank" rel="nofollow">http://lg-sga.bagevm.net</a></td><td class="mono sm"><a href="https://www.bagevm.com/index.php/store/singapore-servers" target="_blank">/store/singapore-servers</a></td></tr>
+<tr><td><strong>新加坡 Standard</strong></td><td>新加坡</td><td class="mono"><a href="http://lg-sgb.bagevm.net" target="_blank" rel="nofollow">http://lg-sgb.bagevm.net</a></td><td class="mono sm"><a href="https://www.bagevm.com/index.php/store/singapore-standard-servers" target="_blank">/store/singapore-standard-servers</a></td></tr>
+<tr><td><strong>洛杉矶 Los Angeles</strong></td><td>美国洛杉矶</td><td class="mono"><a href="http://lg-usa.bagevm.net" target="_blank" rel="nofollow">http://lg-usa.bagevm.net</a></td><td class="mono sm"><a href="https://www.bagevm.com/index.php/store/los-angeles-servers" target="_blank">/store/los-angeles-servers</a></td></tr>
+<tr><td><strong>洛杉矶2 Los Angeles2</strong></td><td>美国洛杉矶</td><td class="mono"><a href="http://lg-usc.bagevm.net" target="_blank" rel="nofollow">http://lg-usc.bagevm.net</a></td><td class="mono sm"><a href="https://www.bagevm.com/index.php/store/los-angeles2-servers" target="_blank">/store/los-angeles2-servers</a></td></tr>
+<tr><td><strong>盐湖城 Salt Lake City</strong></td><td>美国盐湖城</td><td class="mono"><a href="http://lg-usb.bagevm.net" target="_blank" rel="nofollow">http://lg-usb.bagevm.net</a></td><td class="mono sm"><a href="https://www.bagevm.com/index.php/store/salt-lake-city-servers" target="_blank">/store/salt-lake-city-servers</a></td></tr>
+<tr><td><strong>德国法兰克福 Germany</strong></td><td>德国法兰克福</td><td class="mono"><a href="http://lg-dea.bagevm.net" target="_blank" rel="nofollow">http://lg-dea.bagevm.net</a></td><td class="mono sm"><a href="https://www.bagevm.com/index.php/store/germany-servers" target="_blank">/store/germany-servers</a></td></tr>
+<tr><td><strong>英国考文垂 United Kingdom</strong></td><td>英国考文垂(商店页)/伦敦(社区)</td><td class="mono"><a href="http://lg-gba.bagevm.net" target="_blank" rel="nofollow">http://lg-gba.bagevm.net</a></td><td class="mono sm"><a href="https://www.bagevm.com/index.php/store/united-kingdom-servers" target="_blank">/store/united-kingdom-servers</a></td></tr>
+<tr><td><strong>台湾 Hinet VDS</strong></td><td>中国台湾</td><td class="mono"><a href="http://lg-twa.bagevm.net" target="_blank" rel="nofollow">http://lg-twa.bagevm.net</a></td><td class="mono sm"><a href="https://www.bagevm.com/index.php/store/tw-hinet-vds" target="_blank">/store/tw-hinet-vds</a></td></tr>
+</tbody></table></div>
+<div class="note">聚合入口：<a href="http://lg.bagevm.net/" target="_blank" rel="nofollow">http://lg.bagevm.net/</a>（顶部可切换全部节点）。测速建议在<strong>晚高峰（北京时间 20:00–23:30）</strong>再做一次 —— BageVM 各节点的晚高峰落差普遍较大，那才是真实环境。</div>
+</section>
+
+<section id="apac">
+<h2>亚太节点详解（香港 / 日本 / 新加坡）</h2>
+
+<div class="line" id="l-hk-std">
+<h3><span class="idx">1</span>香港 Standard <span class="tags"><span class="tag t-teal">移动低延迟</span><span class="tag t-blue">原生 HK IP</span></span></h3>
+<p class="lead">中国香港 · <strong>PCCWG+Telstra+NTT+Lumen+Retn+Cogent+HE+HKIX+EIE</strong> · 原生 HK IP · 起价 <strong>$3.99/月</strong></p>
+<p>全线对国内延迟最低的亚太节点：移动 TCPing 仅 <strong>61ms</strong>，非晚高峰家宽单线程移动能跑到 <strong>855Mbps</strong>，晚高峰四线程移动仍有 574Mbps。原生 HK IP、解锁良好。代价是<strong>流量比 Lite 少</strong>（TINY 只有 2TB）。</p>
+<div class="isprow"><span class="ispchip">中国电信 <span class="stars s1">★☆☆</span></span><span class="ispchip">中国联通 <span class="stars s1">★☆☆</span></span><span class="ispchip">中国移动 <span class="stars s3">★★★</span></span></div>
+<div class="note">NS958987 评论「去年还没这么红，现在连移动都不行了，不过国际还行」「国际互联还是不错的。不然就对不起这个价格」。（证据强度：实测）</div>
+<div class="tblwrap"><table class="tiers small">
+<thead><tr><th>档位</th><th>规格</th><th>流量 / 带宽</th><th>月付</th><th>年付（75折后）</th><th>购买</th></tr></thead>
+<tbody>
+<tr><td><strong>TINY</strong></td><td class="mono">1C / 1G / 20G</td><td class="mono">2TB @1000Mbps</td><td class="num">$3.99<div class="cyc">月付</div></td><td class="num">$32.99</td><td><a href="https://www.bagevm.com/aff.php?aff=1195&pid=5" target="_blank" rel="nofollow sponsored">购买</a></td></tr>
+<tr><td><strong>STARTER</strong></td><td class="mono">1C / 2G / 30G</td><td class="mono">4TB @2000Mbps</td><td class="num">$6.99<div class="cyc">月付</div></td><td class="num">$56.99</td><td><a href="https://www.bagevm.com/aff.php?aff=1195&pid=6" target="_blank" rel="nofollow sponsored">购买</a></td></tr>
+<tr><td><strong>MEDIUM</strong></td><td class="mono">2C / 4G / 40G</td><td class="mono">6TB @3000Mbps</td><td class="num">$10.99<div class="cyc">月付</div></td><td class="num">$83.24</td><td><a href="https://www.bagevm.com/aff.php?aff=1195&pid=7" target="_blank" rel="nofollow sponsored">购买</a></td></tr>
+<tr><td><strong>LARGE</strong></td><td class="mono">4C / 4G / 50G</td><td class="mono">10TB @5000Mbps</td><td class="num">$20.99<div class="cyc">月付</div></td><td class="num">$173.24</td><td><a href="https://www.bagevm.com/aff.php?aff=1195&pid=8" target="_blank" rel="nofollow sponsored">购买</a></td></tr>
+</tbody></table></div>
+<div class="buyrow"><a class="buy" href="https://www.bagevm.com/aff.php?aff=1195&pid=5" target="_blank" rel="nofollow sponsored">购买入口</a><a class="plain" href="https://www.bagevm.com/index.php/store/hong-kong-servers" target="_blank">官网分类页</a></div>
+</div>
+
+<div class="line" id="l-hk-lite">
+<h3><span class="idx">2</span>香港 Lite <span class="tags"><span class="tag t-teal">便宜大碗</span><span class="tag t-blue">原生 HK IP</span></span></h3>
+<p class="lead">中国香港 · <strong>PCCWG+Telstra+NTT+Cogent+HE+HKIX+EIE</strong> · 原生 HK IP · 起价 <strong>$2.99/月</strong>（TINY 年付 $24.74）</p>
+<p>比 Standard 便宜、流量更多（TINY 就给 4TB），代价是国内延迟略高、带宽上限略低。社区实测用途很清晰：「快乐的地区跑 AI 用，流量也多，延迟也低，一个月跑 AI 差不多 4TB，<strong>主要还可以重置流量</strong>」（NS968629）。</p>
+<div class="isprow"><span class="ispchip">中国电信 <span class="stars s1">★☆☆</span></span><span class="ispchip">中国联通 <span class="stars s1">★☆☆</span></span><span class="ispchip">中国移动 <span class="stars s2">★★☆</span></span></div>
+<div class="note">NS968629：「现在部分地区移动直连还不错」「24.79 刀一年……主要还可以重置流量」；NS960808 提示「因为 NTT 炸了，导致这个机器到 raw.githubusercontent.com / debian 官方镜像等使用 fastly cdn 的路由全部绕新加坡，并且晚高峰单线程会跌到 200kb/s 以下」。（证据强度：实测）</div>
+<div class="tblwrap"><table class="tiers small">
+<thead><tr><th>档位</th><th>规格</th><th>流量 / 带宽</th><th>月付</th><th>年付（75折后）</th><th>购买</th></tr></thead>
+<tbody>
+<tr><td><strong>TINY</strong></td><td class="mono">1C / 1G / 20G</td><td class="mono">4TB @1000Mbps</td><td class="num">$2.99<div class="cyc">月付</div></td><td class="num">$24.74</td><td><a href="https://www.bagevm.com/aff.php?aff=1195&pid=49" target="_blank" rel="nofollow sponsored">购买</a></td></tr>
+<tr><td><strong>STARTER</strong></td><td class="mono">2C / 2G / 30G</td><td class="mono">8TB @2000Mbps</td><td class="num">$4.99<div class="cyc">月付</div></td><td class="num">$41.24</td><td><a href="https://www.bagevm.com/aff.php?aff=1195&pid=50" target="_blank" rel="nofollow sponsored">购买</a></td></tr>
+<tr><td><strong>MEDIUM</strong></td><td class="mono">4C / 4G / 40G</td><td class="mono">12TB @3000Mbps</td><td class="num">$8.99<div class="cyc">月付</div></td><td class="num">$74.24</td><td><a href="https://www.bagevm.com/aff.php?aff=1195&pid=51" target="_blank" rel="nofollow sponsored">购买</a></td></tr>
+<tr><td><strong>LARGE</strong></td><td class="mono">4C / 8G / 50G</td><td class="mono">20TB @5000Mbps</td><td class="num">$17.55<div class="cyc">月付</div></td><td class="num">$154.16</td><td><a href="https://www.bagevm.com/aff.php?aff=1195&pid=52" target="_blank" rel="nofollow sponsored">购买</a></td></tr>
+</tbody></table></div>
+<div class="buyrow"><a class="buy" href="https://www.bagevm.com/aff.php?aff=1195&pid=49" target="_blank" rel="nofollow sponsored">购买入口</a><a class="plain" href="https://www.bagevm.com/index.php/store/hong-kong-lite-servers" target="_blank">官网分类页</a></div>
+</div>
+
+<div class="line" id="l-jp-std">
+<h3><span class="idx">3</span>日本 Standard <span class="tags"><span class="tag t-teal">三网延迟最低</span><span class="tag t-amber">慢盘</span></span></h3>
+<p class="lead">日本东京 · <strong>PCCWG+Telstra+NTT+Lumen+Cogent+EIE</strong> · 起价 <strong>$3.99/月</strong></p>
+<p>TCPing 三网 81/92/168ms 是全线最低；晚高峰家宽测试是<strong>唯一三网单线程都没归零</strong>的节点（电 267 / 联 515 / 移 250）。短板是 EPYC 7663 的磁盘偏慢（4K 随机 45MB/s）。</p>
+<div class="isprow"><span class="ispchip">中国电信 <span class="stars s2">★★☆</span></span><span class="ispchip">中国联通 <span class="stars s2">★★☆</span></span><span class="ispchip">中国移动 <span class="stars s3">★★★</span></span></div>
+<div class="note">NS938368 总参篇：「日本 Standard 是唯一晚高峰三网都还站着的」；评论区对「买日本还是日本 standard」的回复是「新购的话，推荐 standard」。（证据强度：实测）</div>
+<div class="tblwrap"><table class="tiers small">
+<thead><tr><th>档位</th><th>规格</th><th>流量 / 带宽</th><th>月付</th><th>年付（75折后）</th><th>购买</th></tr></thead>
+<tbody>
+<tr><td><strong>SMALL</strong></td><td class="mono">1C / 1G / 10G</td><td class="mono">2TB @1000Mbps</td><td class="num">$3.99<div class="cyc">月付</div></td><td class="num">$32.99</td><td><a href="https://www.bagevm.com/aff.php?aff=1195&pid=72" target="_blank" rel="nofollow sponsored">购买</a></td></tr>
+<tr><td><strong>TINY</strong></td><td class="mono">1C / 1G / 20G</td><td class="mono">5TB @1000Mbps</td><td class="num">$5.99<div class="cyc">月付</div></td><td class="num">$53.24</td><td><a href="https://www.bagevm.com/aff.php?aff=1195&pid=73" target="_blank" rel="nofollow sponsored">购买</a></td></tr>
+<tr><td><strong>STARTER</strong></td><td class="mono">1C / 2G / 30G</td><td class="mono">8TB @2000Mbps</td><td class="num">$10.99<div class="cyc">月付</div></td><td class="num">$83.24</td><td><a href="https://www.bagevm.com/aff.php?aff=1195&pid=74" target="_blank" rel="nofollow sponsored">购买</a></td></tr>
+<tr><td><strong>MEDIUM</strong></td><td class="mono">2C / 4G / 40G</td><td class="mono">12TB @3000Mbps</td><td class="num">$20.99<div class="cyc">月付</div></td><td class="num">$183.74</td><td><a href="https://www.bagevm.com/aff.php?aff=1195&pid=75" target="_blank" rel="nofollow sponsored">购买</a></td></tr>
+<tr><td><strong>LARGE</strong></td><td class="mono">4C / 4G / 50G</td><td class="mono">15TB @5000Mbps</td><td class="num">$25.99<div class="cyc">月付</div></td><td class="num">$214.49</td><td><a href="https://www.bagevm.com/aff.php?aff=1195&pid=76" target="_blank" rel="nofollow sponsored">购买</a></td></tr>
+</tbody></table></div>
+<div class="buyrow"><a class="buy" href="https://www.bagevm.com/aff.php?aff=1195&pid=72" target="_blank" rel="nofollow sponsored">购买入口</a><a class="plain" href="https://www.bagevm.com/index.php/store/japan-standard-servers" target="_blank">官网分类页</a></div>
+</div>
+
+<div class="line" id="l-jp">
+<h3><span class="idx">4</span>日本 Japan <span class="tags"><span class="tag t-purple">单核强</span><span class="tag t-blue">国际互联强</span><span class="tag t-red">联通差</span></span></h3>
+<p class="lead">日本东京 · <strong>NTT+Cogent+Lumen+HE</strong> · 起价 <strong>$3.99/月</strong></p>
+<p>Ryzen 7950X，GB6 单核 1658–1761，国际互联极强（到日本对端中位 <strong>4057Mbps</strong>）。但国内方向联通 TCPing <strong>577ms</strong> 很差，晚高峰联通单线程归零。适合日本落地、国际中转、需要强单核的场景。</p>
+<div class="isprow"><span class="ispchip">中国电信 <span class="stars s1">★☆☆</span></span><span class="ispchip">中国联通 <span class="stars s1">★☆☆</span></span><span class="ispchip">中国移动 <span class="stars s2">★★☆</span></span></div>
+<div class="note">NS938368 总参篇：日本节点「晚高峰联通 0」；社区另有「JPS 5000M」等 5Gbps 口留档帖（NS946908）。（证据强度：实测）</div>
+<div class="tblwrap"><table class="tiers small">
+<thead><tr><th>档位</th><th>规格</th><th>流量 / 带宽</th><th>月付</th><th>年付（75折后）</th><th>购买</th></tr></thead>
+<tbody>
+<tr><td><strong>SMALL</strong> <span class="tag t-red">缺货</span></td><td class="mono">1C / 1G / 10G</td><td class="mono">2TB @5000Mbps</td><td class="num">$3.99<div class="cyc">月付</div></td><td class="num">$32.99</td><td><a href="https://www.bagevm.com/aff.php?aff=1195&pid=33" target="_blank" rel="nofollow sponsored">购买</a></td></tr>
+<tr><td><strong>TINY</strong> <span class="tag t-red">缺货</span></td><td class="mono">1C / 1G / 10G</td><td class="mono">5TB @5000Mbps</td><td class="num">$5.99<div class="cyc">月付</div></td><td class="num">$53.24</td><td><a href="https://www.bagevm.com/aff.php?aff=1195&pid=31" target="_blank" rel="nofollow sponsored">购买</a></td></tr>
+<tr><td><strong>STARTER</strong> <span class="tag t-red">缺货</span></td><td class="mono">1C / 2G / 20G</td><td class="mono">8TB @5000Mbps</td><td class="num">$8.99<div class="cyc">月付</div></td><td class="num">$74.24</td><td><a href="https://www.bagevm.com/aff.php?aff=1195&pid=28" target="_blank" rel="nofollow sponsored">购买</a></td></tr>
+<tr><td><strong>MEDIUM</strong> <span class="tag t-red">缺货</span></td><td class="mono">2C / 4G / 30G</td><td class="mono">12TB @10000Mbps</td><td class="num">$15.99<div class="cyc">月付</div></td><td class="num">$141.74</td><td><a href="https://www.bagevm.com/aff.php?aff=1195&pid=29" target="_blank" rel="nofollow sponsored">购买</a></td></tr>
+<tr><td><strong>LARGE</strong> <span class="tag t-green">2 台</span></td><td class="mono">4C / 4G / 40G</td><td class="mono">20TB @10000Mbps</td><td class="num">$25.99<div class="cyc">月付</div></td><td class="num">$214.49</td><td><a href="https://www.bagevm.com/aff.php?aff=1195&pid=30" target="_blank" rel="nofollow sponsored">购买</a></td></tr>
+</tbody></table></div>
+<div class="buyrow"><a class="buy" href="https://www.bagevm.com/aff.php?aff=1195&pid=33" target="_blank" rel="nofollow sponsored">购买入口</a><a class="plain" href="https://www.bagevm.com/index.php/store/japan-servers" target="_blank">官网分类页</a></div>
+</div>
+
+<div class="line" id="l-sg">
+<h3><span class="idx">5</span>新加坡 Singapore / Standard <span class="tags"><span class="tag t-amber">IP 偏脏</span><span class="tag t-red">基本缺货</span></span></h3>
+<p class="lead">新加坡 · 起价 <strong>$3.99/月</strong> · <strong>当前基本缺货</strong>（2026-10-14 扫描：Standard 全档在售，非 Standard 仅 MEDIUM 有 1 台）</p>
+<p>新加坡节点的共同问题是 <strong>IP 质量偏脏</strong>，社区吐槽集中。但<strong>解锁依旧优秀</strong>（Netflix / Disney+ / ChatGPT 等），且移动方向延迟不错（99–106ms）。Singapore Standard 的联通/电信延迟（284/321ms）明显优于非 Standard（531/404ms）。</p>
+<div class="isprow"><span class="ispchip">中国电信 <span class="stars s1">★☆☆</span></span><span class="ispchip">中国联通 <span class="stars s2">★★☆</span></span><span class="ispchip">中国移动 <span class="stars s2">★★☆</span></span></div>
+<div class="note">NS929010：「脏的我都有点怀疑人生了，我都想换个 IP 了」「这 IP 质量认真的吗」；NS933606：「bage 的 IP 一直挺脏的，不过好在解锁优秀，相比灵车而言足够稳定，凑合用」。（证据强度：实测）</div>
+<div class="tblwrap"><table class="tiers small">
+<thead><tr><th>档位</th><th>规格</th><th>流量 / 带宽</th><th>月付</th><th>年付（75折后）</th><th>购买</th></tr></thead>
+<tbody>
+<tr><td><strong>SMALL</strong></td><td class="mono">1C / 1G / 10G</td><td class="mono">2TB @1000Mbps</td><td class="num">$3.99<div class="cyc">月付</div></td><td class="num">$32.99</td><td><a href="https://www.bagevm.com/aff.php?aff=1195&pid=77" target="_blank" rel="nofollow sponsored">购买</a></td></tr>
+<tr><td><strong>TINY</strong></td><td class="mono">1C / 1G / 20G</td><td class="mono">5TB @1000Mbps</td><td class="num">$5.99<div class="cyc">月付</div></td><td class="num">$53.24</td><td><a href="https://www.bagevm.com/aff.php?aff=1195&pid=78" target="_blank" rel="nofollow sponsored">购买</a></td></tr>
+<tr><td><strong>STARTER</strong></td><td class="mono">1C / 2G / 30G</td><td class="mono">8TB @2000Mbps</td><td class="num">$10.99<div class="cyc">月付</div></td><td class="num">$83.24</td><td><a href="https://www.bagevm.com/aff.php?aff=1195&pid=79" target="_blank" rel="nofollow sponsored">购买</a></td></tr>
+<tr><td><strong>MEDIUM</strong></td><td class="mono">2C / 4G / 40G</td><td class="mono">12TB @3000Mbps</td><td class="num">$20.99<div class="cyc">月付</div></td><td class="num">$183.74</td><td><a href="https://www.bagevm.com/aff.php?aff=1195&pid=80" target="_blank" rel="nofollow sponsored">购买</a></td></tr>
+<tr><td><strong>LARGE</strong></td><td class="mono">4C / 4G / 50G</td><td class="mono">15TB @5000Mbps</td><td class="num">$25.99<div class="cyc">月付</div></td><td class="num">$214.49</td><td><a href="https://www.bagevm.com/aff.php?aff=1195&pid=81" target="_blank" rel="nofollow sponsored">购买</a></td></tr>
+</tbody></table></div>
+<h4 style="margin-top:18px">Singapore（非 Standard 线，7950X / 5000M–10000M 口）</h4>
+<div class="tblwrap"><table class="tiers small">
+<thead><tr><th>档位</th><th>规格</th><th>流量 / 带宽</th><th>月付</th><th>年付（75折后）</th><th>购买</th></tr></thead>
+<tbody>
+<tr><td><strong>SMALL</strong> <span class="tag t-red">缺货</span></td><td class="mono">1C / 1G / 10G</td><td class="mono">2TB @5000Mbps</td><td class="num">$3.99<div class="cyc">月付</div></td><td class="num">$32.99</td><td><a href="https://www.bagevm.com/aff.php?aff=1195&pid=32" target="_blank" rel="nofollow sponsored">购买</a></td></tr>
+<tr><td><strong>TINY</strong> <span class="tag t-red">缺货</span></td><td class="mono">1C / 1G / 10G</td><td class="mono">5TB @5000Mbps</td><td class="num">$5.99<div class="cyc">月付</div></td><td class="num">$53.24</td><td><a href="https://www.bagevm.com/aff.php?aff=1195&pid=18" target="_blank" rel="nofollow sponsored">购买</a></td></tr>
+<tr><td><strong>STARTER</strong> <span class="tag t-red">缺货</span></td><td class="mono">1C / 2G / 20G</td><td class="mono">8TB @5000Mbps</td><td class="num">$8.99<div class="cyc">月付</div></td><td class="num">$74.24</td><td><a href="https://www.bagevm.com/aff.php?aff=1195&pid=19" target="_blank" rel="nofollow sponsored">购买</a></td></tr>
+<tr><td><strong>MEDIUM</strong> <span class="tag t-green">1 台</span></td><td class="mono">2C / 4G / 30G</td><td class="mono">12TB @10000Mbps</td><td class="num">$15.99<div class="cyc">月付</div></td><td class="num">$141.74</td><td><a href="https://www.bagevm.com/aff.php?aff=1195&pid=20" target="_blank" rel="nofollow sponsored">购买</a></td></tr>
+<tr><td><strong>LARGE</strong> <span class="tag t-red">缺货</span></td><td class="mono">4C / 4G / 40G</td><td class="mono">20TB @10000Mbps</td><td class="num">$25.99<div class="cyc">月付</div></td><td class="num">$214.49</td><td><a href="https://www.bagevm.com/aff.php?aff=1195&pid=21" target="_blank" rel="nofollow sponsored">购买</a></td></tr>
+</tbody></table></div>
+<div class="buyrow"><a class="buy" href="https://www.bagevm.com/aff.php?aff=1195&pid=77" target="_blank" rel="nofollow sponsored">购买入口</a><a class="plain" href="https://www.bagevm.com/index.php/store/singapore-standard-servers" target="_blank">官网分类页（Standard）</a><a class="plain" href="https://www.bagevm.com/index.php/store/singapore-servers" target="_blank">非 Standard</a></div>
+</div>
+</section>
+
+<section id="na">
+<h2>北美节点详解（洛杉矶 / 洛杉矶2 / 盐湖城）</h2>
+<p>三台都是「美西（+盐湖城）原生 IP 落地机」定位，三网 TCPing 都在 210–260ms，<strong>没有任何一台有回国优化迹象</strong>。优点：单核强、流量大、解锁稳定（原生 US IP）。</p>
+
+<div class="line" id="l-la">
+<h3><span class="idx">6</span>洛杉矶 Los Angeles <span class="tags"><span class="tag t-purple">GB6 单核 2273</span><span class="tag t-blue">原生 US IP</span><span class="tag t-gray">不参加折扣</span></span></h3>
+<p class="lead">美国洛杉矶 · <strong>TATA+GTT+Comcast</strong> · 原生 US IP（AS63150）· 起价 <strong>$2.99/月</strong></p>
+<p>GB6 单核 <strong>2273</strong> 是全线最高，磁盘 SEQ1M 3216MB/s 也很快。商店页标称 AMD 7900，实测是 Ryzen 9 9950X3D（以商店页为准）。适合要美西原生 IP + 强单核的落地。</p>
+<div class="isprow"><span class="ispchip">中国电信 <span class="stars s1">★☆☆</span></span><span class="ispchip">中国联通 <span class="stars s1">★☆☆</span></span><span class="ispchip">中国移动 <span class="stars s1">★☆☆</span></span></div>
+<div class="note">NS955372（$8.95/季）评论「还不错」；NS938368 总参篇：「要做解锁和美西落地，选洛杉矶 2；要 webnx 而且有耐心能等到货，选洛杉矶」。（证据强度：实测）</div>
+<div class="tblwrap"><table class="tiers small">
+<thead><tr><th>档位</th><th>规格</th><th>流量 / 带宽</th><th>月付</th><th>年付（原价，不参加折扣）</th><th>购买</th></tr></thead>
+<tbody>
+<tr><td><strong>TINY</strong></td><td class="mono">1C / 1G / 20G</td><td class="mono">4TB @1000Mbps</td><td class="num">$2.99<div class="cyc">月付</div></td><td class="num">$32.99</td><td><a href="https://www.bagevm.com/aff.php?aff=1195&pid=1" target="_blank" rel="nofollow sponsored">购买</a></td></tr>
+<tr><td><strong>STARTER</strong></td><td class="mono">1C / 2G / 30G</td><td class="mono">8TB @2000Mbps</td><td class="num">$4.99<div class="cyc">月付</div></td><td class="num">$54.99</td><td><a href="https://www.bagevm.com/aff.php?aff=1195&pid=9" target="_blank" rel="nofollow sponsored">购买</a></td></tr>
+<tr><td><strong>MEDIUM</strong></td><td class="mono">2C / 2G / 40G</td><td class="mono">12TB @2000Mbps</td><td class="num">$8.99<div class="cyc">月付</div></td><td class="num">$98.99</td><td><a href="https://www.bagevm.com/aff.php?aff=1195&pid=10" target="_blank" rel="nofollow sponsored">购买</a></td></tr>
+<tr><td><strong>LARGE</strong></td><td class="mono">3C / 4G / 50G</td><td class="mono">20TB @3000Mbps</td><td class="num">$14.99<div class="cyc">月付</div></td><td class="num">$164.99</td><td><a href="https://www.bagevm.com/aff.php?aff=1195&pid=11" target="_blank" rel="nofollow sponsored">购买</a></td></tr>
+</tbody></table></div>
+<div class="buyrow"><a class="buy" href="https://www.bagevm.com/aff.php?aff=1195&pid=1" target="_blank" rel="nofollow sponsored">购买入口</a><a class="plain" href="https://www.bagevm.com/index.php/store/los-angeles-servers" target="_blank">官网分类页</a></div>
+</div>
+
+<div class="line" id="l-la2">
+<h3><span class="idx">7</span>洛杉矶2 Los Angeles2 <span class="tags"><span class="tag t-teal">解锁全原生</span><span class="tag t-blue">FiberState 段</span><span class="tag t-gray">不参加折扣</span></span></h3>
+<p class="lead">美国洛杉矶 · <strong>TATA+GTT+PCCW</strong> · 原生 US IP（AS26042 FiberState）· 起价 <strong>$2.99/月</strong></p>
+<p>上游是 FiberState，IP 质量报告显示<strong>流媒体/AI 全部原生解锁</strong>（不是 DNS 解锁）。社区推荐作为「美西落地 + 解锁」的首选。注意也不参加折扣码。</p>
+<div class="isprow"><span class="ispchip">中国电信 <span class="stars s1">★☆☆</span></span><span class="ispchip">中国联通 <span class="stars s1">★☆☆</span></span><span class="ispchip">中国移动 <span class="stars s1">★☆☆</span></span></div>
+<div class="note">NS911593（LA2 LARGE 年付 $115.49，七折）正面留档；NS926112 评论「国际互联还可以」；NS938368 总参篇：「要做解锁和美西落地，选洛杉矶 2」。（证据强度：实测）</div>
+<div class="tblwrap"><table class="tiers small">
+<thead><tr><th>档位</th><th>规格</th><th>流量 / 带宽</th><th>月付</th><th>年付（原价，不参加折扣）</th><th>购买</th></tr></thead>
+<tbody>
+<tr><td><strong>TINY</strong></td><td class="mono">1C / 1G / 20G</td><td class="mono">4TB @1000Mbps</td><td class="num">$2.99<div class="cyc">月付</div></td><td class="num">$32.99</td><td><a href="https://www.bagevm.com/aff.php?aff=1195&pid=90" target="_blank" rel="nofollow sponsored">购买</a></td></tr>
+<tr><td><strong>STARTER</strong></td><td class="mono">1C / 2G / 30G</td><td class="mono">8TB @2000Mbps</td><td class="num">$4.99<div class="cyc">月付</div></td><td class="num">$54.99</td><td><a href="https://www.bagevm.com/aff.php?aff=1195&pid=91" target="_blank" rel="nofollow sponsored">购买</a></td></tr>
+<tr><td><strong>MEDIUM</strong></td><td class="mono">2C / 2G / 40G</td><td class="mono">12TB @2000Mbps</td><td class="num">$8.99<div class="cyc">月付</div></td><td class="num">$98.99</td><td><a href="https://www.bagevm.com/aff.php?aff=1195&pid=92" target="_blank" rel="nofollow sponsored">购买</a></td></tr>
+<tr><td><strong>LARGE</strong></td><td class="mono">3C / 4G / 50G</td><td class="mono">20TB @3000Mbps</td><td class="num">$14.99<div class="cyc">月付</div></td><td class="num">$164.99</td><td><a href="https://www.bagevm.com/aff.php?aff=1195&pid=93" target="_blank" rel="nofollow sponsored">购买</a></td></tr>
+</tbody></table></div>
+<div class="buyrow"><a class="buy" href="https://www.bagevm.com/aff.php?aff=1195&pid=90" target="_blank" rel="nofollow sponsored">购买入口</a><a class="plain" href="https://www.bagevm.com/index.php/store/los-angeles2-servers" target="_blank">官网分类页</a></div>
+</div>
+
+<div class="line" id="l-slc">
+<h3><span class="idx">8</span>盐湖城 Salt Lake City <span class="tags"><span class="tag t-blue">FiberState 段</span><span class="tag t-amber">位置偏</span></span></h3>
+<p class="lead">美国盐湖城 · <strong>Cogent+GTT+HE+Lumen+PCCW</strong> · 原生 US IP（AS26042）· 起价 <strong>$2.99/月</strong></p>
+<p>与 LA2 同上游、同配置，可叠加折扣（年付 TINY $24.74）。缺点是位置偏：晚高峰移动单线程只有 25Mbps，社区评价「前不着村后不着店，地理位置有点卡脸」。</p>
+<div class="isprow"><span class="ispchip">中国电信 <span class="stars s1">★☆☆</span></span><span class="ispchip">中国联通 <span class="stars s1">★☆☆</span></span><span class="ispchip">中国移动 <span class="stars s1">★☆☆</span></span></div>
+<div class="note">NS942520（Salt Lake City TINY）留档；NS938368 总参篇：「盐湖城看需求吧」「盐湖城移动晚高峰单线程只有 25 Mbps」。（证据强度：实测）</div>
+<div class="tblwrap"><table class="tiers small">
+<thead><tr><th>档位</th><th>规格</th><th>流量 / 带宽</th><th>月付</th><th>年付（75折后）</th><th>购买</th></tr></thead>
+<tbody>
+<tr><td><strong>TINY</strong></td><td class="mono">1C / 1G / 20G</td><td class="mono">4TB @1000Mbps</td><td class="num">$2.99<div class="cyc">月付</div></td><td class="num">$24.74</td><td><a href="https://www.bagevm.com/aff.php?aff=1195&pid=66" target="_blank" rel="nofollow sponsored">购买</a></td></tr>
+<tr><td><strong>STARTER</strong></td><td class="mono">1C / 2G / 30G</td><td class="mono">8TB @2000Mbps</td><td class="num">$4.99<div class="cyc">月付</div></td><td class="num">$41.24</td><td><a href="https://www.bagevm.com/aff.php?aff=1195&pid=67" target="_blank" rel="nofollow sponsored">购买</a></td></tr>
+<tr><td><strong>MEDIUM</strong></td><td class="mono">2C / 2G / 40G</td><td class="mono">12TB @2000Mbps</td><td class="num">$8.99<div class="cyc">月付</div></td><td class="num">$74.24</td><td><a href="https://www.bagevm.com/aff.php?aff=1195&pid=68" target="_blank" rel="nofollow sponsored">购买</a></td></tr>
+<tr><td><strong>LARGE</strong></td><td class="mono">3C / 4G / 50G</td><td class="mono">20TB @3000Mbps</td><td class="num">$14.99<div class="cyc">月付</div></td><td class="num">$123.74</td><td><a href="https://www.bagevm.com/aff.php?aff=1195&pid=69" target="_blank" rel="nofollow sponsored">购买</a></td></tr>
+</tbody></table></div>
+<div class="buyrow"><a class="buy" href="https://www.bagevm.com/aff.php?aff=1195&pid=66" target="_blank" rel="nofollow sponsored">购买入口</a><a class="plain" href="https://www.bagevm.com/index.php/store/salt-lake-city-servers" target="_blank">官网分类页</a></div>
+</div>
+</section>
+
+<section id="eu">
+<h2>欧洲与台湾</h2>
+
+<div class="line" id="l-de">
+<h3><span class="idx">9</span>德国法兰克福 Germany <span class="tags"><span class="tag t-teal">欧洲落地最强</span><span class="tag t-amber">晚高峰落差大</span></span></h3>
+<p class="lead">德国法兰克福 · <strong>Cogent+NTT+GTT+Lumen</strong> · 原生 DE IP · 起价 <strong>$2.99/月</strong></p>
+<p>非晚高峰三网单线程 854/812/740 是全线最均衡的；欧洲对端中位 <strong>3860Mbps</strong>、对美 1245Mbps，适合欧洲大文件中转。代价是<strong>晚高峰落差最大</strong>（电信 1 / 移动 49 Mbps，只剩联通 641 能用）。GB6 单核 2770 为全线第二。</p>
+<div class="isprow"><span class="ispchip">中国电信 <span class="stars s1">★☆☆</span></span><span class="ispchip">中国联通 <span class="stars s2">★★☆</span></span><span class="ispchip">中国移动 <span class="stars s1">★☆☆</span></span></div>
+<div class="note">NS933135（DE Tiny）：「75 折买了个机，刚装完系统，发现全红。不过还好是只做落地用，也无所谓了」；同帖评论「刚买完 IP 就被墙的话可以联系换吧」→ 帖主成功换了新 IP。NS938368 总参篇：「如果你在做欧洲落地或大文件中转，选法兰克福 STARTER」。（证据强度：实测）</div>
+<div class="tblwrap"><table class="tiers small">
+<thead><tr><th>档位</th><th>规格</th><th>流量 / 带宽</th><th>月付</th><th>年付（75折后）</th><th>购买</th></tr></thead>
+<tbody>
+<tr><td><strong>TINY</strong></td><td class="mono">1C / 1G / 20G</td><td class="mono">4TB @1000Mbps</td><td class="num">$2.99<div class="cyc">月付</div></td><td class="num">$24.74</td><td><a href="https://www.bagevm.com/aff.php?aff=1195&pid=40" target="_blank" rel="nofollow sponsored">购买</a></td></tr>
+<tr><td><strong>STARTER</strong></td><td class="mono">1C / 2G / 30G</td><td class="mono">8TB @2000Mbps</td><td class="num">$4.99<div class="cyc">月付</div></td><td class="num">$41.24</td><td><a href="https://www.bagevm.com/aff.php?aff=1195&pid=41" target="_blank" rel="nofollow sponsored">购买</a></td></tr>
+<tr><td><strong>MEDIUM</strong></td><td class="mono">2C / 2G / 40G</td><td class="mono">12TB @2000Mbps</td><td class="num">$8.99<div class="cyc">月付</div></td><td class="num">$74.24</td><td><a href="https://www.bagevm.com/aff.php?aff=1195&pid=42" target="_blank" rel="nofollow sponsored">购买</a></td></tr>
+<tr><td><strong>LARGE</strong></td><td class="mono">3C / 4G / 50G</td><td class="mono">20TB @3000Mbps</td><td class="num">$14.99<div class="cyc">月付</div></td><td class="num">$123.74</td><td><a href="https://www.bagevm.com/aff.php?aff=1195&pid=43" target="_blank" rel="nofollow sponsored">购买</a></td></tr>
+</tbody></table></div>
+<div class="buyrow"><a class="buy" href="https://www.bagevm.com/aff.php?aff=1195&pid=40" target="_blank" rel="nofollow sponsored">购买入口</a><a class="plain" href="https://www.bagevm.com/index.php/store/germany-servers" target="_blank">官网分类页</a></div>
+</div>
+
+<div class="line" id="l-uk">
+<h3><span class="idx">10</span>英国考文垂 United Kingdom <span class="tags"><span class="tag t-blue">原生 GB IP</span><span class="tag t-gray">不参加折扣</span><span class="tag t-amber">慢盘/1G 口</span></span></h3>
+<p class="lead">英国考文垂（商店页）/ 社区多称伦敦 · <strong>NTT+GTT+PCCW</strong> · 原生 GB IP · 起价 <strong>$2.99/月</strong></p>
+<p>要英国 IP 就选它。缺点是 1Gbps 口封顶、盘偏慢（4K 随机 69MB/s）、三网延迟都不好（移动 396ms）。不参加折扣码。</p>
+<div class="isprow"><span class="ispchip">中国电信 <span class="stars s1">★☆☆</span></span><span class="ispchip">中国联通 <span class="stars s1">★☆☆</span></span><span class="ispchip">中国移动 <span class="stars s1">★☆☆</span></span></div>
+<div class="note">NS952610 帖主：「年付 $20.01 USD」，与 EUGameHost UK 微机对比「貌似 IP 质量要好一些」；NS938368 总参篇：「如果你必须要英国 IP，选伦敦 STARTER」。（证据强度：实测）</div>
+<div class="tblwrap"><table class="tiers small">
+<thead><tr><th>档位</th><th>规格</th><th>流量 / 带宽</th><th>月付</th><th>年付（原价，不参加折扣）</th><th>购买</th></tr></thead>
+<tbody>
+<tr><td><strong>TINY</strong> <span class="tag t-red">缺货</span></td><td class="mono">1C / 1G / 10G</td><td class="mono">4TB @1000Mbps</td><td class="num">$2.99<div class="cyc">月付</div></td><td class="num">$32.99</td><td><a href="https://www.bagevm.com/aff.php?aff=1195&pid=35" target="_blank" rel="nofollow sponsored">购买</a></td></tr>
+<tr><td><strong>STARTER</strong> <span class="tag t-green">4 台</span></td><td class="mono">1C / 2G / 15G</td><td class="mono">8TB @1000Mbps</td><td class="num">$4.99<div class="cyc">月付</div></td><td class="num">$54.99</td><td><a href="https://www.bagevm.com/aff.php?aff=1195&pid=36" target="_blank" rel="nofollow sponsored">购买</a></td></tr>
+<tr><td><strong>MEDIUM</strong> <span class="tag t-green">1 台</span></td><td class="mono">2C / 2G / 20G</td><td class="mono">12TB @1000Mbps</td><td class="num">$8.99<div class="cyc">月付</div></td><td class="num">$98.99</td><td><a href="https://www.bagevm.com/aff.php?aff=1195&pid=37" target="_blank" rel="nofollow sponsored">购买</a></td></tr>
+<tr><td><strong>LARGE</strong> <span class="tag t-green">3 台</span></td><td class="mono">3C / 4G / 25G</td><td class="mono">20TB @1000Mbps</td><td class="num">$14.99<div class="cyc">月付</div></td><td class="num">$164.99</td><td><a href="https://www.bagevm.com/aff.php?aff=1195&pid=38" target="_blank" rel="nofollow sponsored">购买</a></td></tr>
+</tbody></table></div>
+<div class="buyrow"><a class="buy" href="https://www.bagevm.com/aff.php?aff=1195&pid=35" target="_blank" rel="nofollow sponsored">购买入口</a><a class="plain" href="https://www.bagevm.com/index.php/store/united-kingdom-servers" target="_blank">官网分类页</a></div>
+</div>
+
+<div class="line" id="l-tw">
+<h3><span class="idx">11</span>台湾 Hinet VDS <span class="tags"><span class="tag t-purple">HiNet 动态 IP</span><span class="tag t-red">缺货</span></span></h3>
+<p class="lead">中国台湾 · <strong>中华电信 HiNet（动态 IP，由 HiNet 分配）</strong> · 6C / 6G / 60G / 200TB @600Mbps · <strong>$45.55/月</strong></p>
+<p>唯一一条台湾线，卖点是 HiNet 动态 IP。当前<strong>缺货</strong>，下单页带有专属促销码 <code>7DEHA13B0O</code>（以结账页为准）。</p>
+<div class="tblwrap"><table class="tiers small">
+<thead><tr><th>档位</th><th>规格</th><th>流量 / 带宽</th><th>月付</th><th>年付</th><th>购买</th></tr></thead>
+<tbody>
+<tr><td><strong>Hinet Dynamic 600M</strong> <span class="tag t-red">缺货</span></td><td class="mono">6C / 6G / 60G</td><td class="mono">200TB @600Mbps</td><td class="num">$45.55<div class="cyc">月付</div></td><td class="num">—</td><td><a href="https://www.bagevm.com/aff.php?aff=1195&pid=45" target="_blank" rel="nofollow sponsored">购买</a></td></tr>
+</tbody></table></div>
+<div class="buyrow"><a class="buy" href="https://www.bagevm.com/aff.php?aff=1195&pid=45" target="_blank" rel="nofollow sponsored">购买入口</a><a class="plain" href="https://www.bagevm.com/index.php/store/tw-hinet-vds" target="_blank">官网分类页</a></div>
+</div>
+</section>
+
+<section id="faq">
+<h2>常见问题</h2>
+<details class="faq"><summary>BageVM 有回国优化线路吗？</summary><div class="ans"><strong>没有。</strong>官网每一条产品线都标注「No China Mainland Optimization Guaranteed」，社区（NS920743 评论区）也明确「有没有优化线路 都是落地」。本文里的三网延迟数据只是「恰好没绕路」时的成绩，商家不保证，晚高峰普遍会掉。</div></details>
+<details class="faq"><summary>那我该拿它做什么？</summary><div class="ans">三个典型用途：① <strong>海外落地机</strong>（配合一台回国优化机做中转，BageVM 做落地）；② <strong>大流量国际中转 / 大文件中转</strong>（香港 Lite、法兰克福带宽和流量都大）；③ <strong>流媒体 / AI 解锁</strong>（全线带 DNS 解锁，部分线路是原生解锁）。</div></details>
+<details class="faq"><summary>「Standard」和普通版到底差在哪？</summary><div class="ans">Standard 系列用 <strong>EPYC 7663 + 多上游（PCCWG/Telstra/Lumen/Retn/EIE）</strong>，普通版用 <strong>Ryzen 7950X + NTT/Cogent/Lumen/HE</strong>。实测结果是 <strong>Standard 的国内三网延迟明显更低</strong>（尤其移动、联通），普通版的优势是<strong>单核更强、国际互联更猛、口子更大（5000M/10000M）</strong>。要国内低延迟选 Standard，要国际性能选普通版。</div></details>
+<details class="faq"><summary>IP 质量怎么样？</summary><div class="ans"><strong>普遍偏脏</strong>，新加坡节点尤甚（社区原话「脏的我都有点怀疑人生了」）。但解锁能力优秀，且属于「稳定的脏」而不是「随时封号的脏」。买之前建议先用 Looking Glass 或工单确认 IP 段。另外有帖子反馈刚买完 IP 被墙可以联系换 IP，帖主成功更换过（NS933135）。</div></details>
+<details class="faq"><summary>流量用完了会怎样？能重置吗？</summary><div class="ans">社区反馈<strong>可以联系商家重置流量</strong>（NS968629：「主要还可以重置流量」）。下单页另有「Block 22 out port / Block 25 port」的默认端口限制（防滥用）。</div></details>
+<details class="faq"><summary>支持哪些支付方式？</summary><div class="ans">社区资料显示支持 <strong>支付宝、PayPal、USDT</strong> 等（来源：liuzhanwu.cn 商家介绍页，2024）。当前官网未公开列出，结账页为准。</div></details>
+<details class="faq"><summary>有哪些促销码？</summary><div class="ans">2026 中秋国庆活动期间有 <strong>月付 8 折码 <code>2026OCTM</code>、年付 7 折码 <code>2026OCTY</code></strong>（有效期 2026-09-14 至 10-01，仅限新购，可与年付叠加）。<strong>注意该活动已于 10-01 结束</strong>，下单前请到官网公告 / 商家 TG 看最新活动。台湾 Hinet VDS 下单页当前挂着促销码 <code>7DEHA13B0O</code>。</div></details>
+<details class="faq"><summary>开机会等多久？有退款吗？</summary><div class="ans">付款后通常自动开通。<strong>部分产品（如洛杉矶 / 盐湖城 / 德国 / 英国 TINY 等）标注「No refunds」不支持退款</strong>，下单前留意产品页说明。</div></details>
+<details class="faq"><summary>价格是不是涨过？</summary><div class="ans">是。官网 2025-12-28 公告《Price Adjustment Notice》：因上游内存 / 硬盘 / 硬件成本上涨及长期亏损，<strong>自 2026-01-01 起对部分套餐调价</strong>，已存订单不受影响。本文价格为 2026-10-14 抓取时点。</div></details>
+</section>
+
+<section id="caveats">
+<h2>选购注意事项</h2>
+<div class="warn"><strong>1. 价格与库存是抓取时点快照</strong>，随时会变（BageVM 补货、调价都比较频繁）。下单前以官网实时信息为准。官网只在部分档位显示 <code>N Available</code>；多数档位不显示数量，以能否下单为准。</div>
+<div class="warn"><strong>2. 绝对不要按「回国优化机」买。</strong>全线无大陆优化、无保证。晚高峰 11 台里没有一台四线程三网都过 500Mbps（NS938368）。</div>
+<div class="warn"><strong>3. 洛杉矶 / 洛杉矶2 / 英国三条线不参加折扣码</strong>，按官网原价销售；其余线路可叠加年付折扣。</div>
+<div class="warn"><strong>4. IP 质量是通病。</strong>需要干净 IP 跑 AI / 解锁的，优先洛杉矶2（原生解锁）或先用 Looking Glass / 工单确认 IP 段；新加坡线慎选。</div>
+<div class="warn"><strong>5. 部分产品不支持退款</strong>（产品页标注「No refunds」），且默认封禁 22 出站端口与 25 端口。</div>
+<div class="warn"><strong>6. 盘速差异大。</strong>香港 Standard、日本 Standard、英国线的 4K 随机偏慢（45–69MB/s），洛杉矶 / 洛杉矶2 / 德国线快（124–166MB/s）。对磁盘敏感的用途注意挑选。</div>
+</section>
+
+<section id="sources">
+<h2>数据来源与引用</h2>
+<h4>官方来源</h4>
+<ul class="srclist">
+<li>官网产品与价格：<a href="https://www.bagevm.com/" target="_blank">bagevm.com 商店</a>（2026-10-14 全量扫描）</li>
+<li>官网公告：<a href="https://www.bagevm.com/index.php/announcements/3/Price-Adjustment-Notice-or-价格调整通知.html" target="_blank">价格调整通知（2025-12-28）</a>、香港节点迁移至 Equinix HK3（2024-11-26）</li>
+<li>Looking Glass 聚合：<a href="http://lg.bagevm.net/" target="_blank" rel="nofollow">lg.bagevm.net</a>（各节点子域见上文清单）</li>
+</ul>
+<h4>第三方测评与讨论（NodeSeek，共 37 篇）</h4>
+<ol class="srclist">
+<li><a href="https://www.nodeseek.com/post-938368-1" target="_blank">总参篇｜腱鞘炎燃尽式测评 11 台一次看完：暨中秋国庆双节 BAGEVM 促销活动</a> · 测评 · 评论 33（三网 TCPing / 家宽测速 / 硬件全表，本文数据主要来源）</li>
+<li><a href="https://www.nodeseek.com/post-930864-1" target="_blank">BageVM Japan Standard - TINY $53.24 USD/y</a> · 测评 · 评论 13</li>
+<li><a href="https://www.nodeseek.com/post-933606-1" target="_blank">BageVM 新加坡 IP 质量</a> · 测评 · 评论 10</li>
+<li><a href="https://www.nodeseek.com/post-958987-1" target="_blank">Bagevm Hong Kong Standard - TINY</a> · 测评 · 评论 10</li>
+<li><a href="https://www.nodeseek.com/post-920743-1" target="_blank">八哥 BAGEVM 2026 国庆中秋佳节特别优惠</a> · 情报 · 评论 10</li>
+<li><a href="https://www.nodeseek.com/post-946908-1" target="_blank">BageVM JPS 5000M</a> · 测评 · 评论 9</li>
+<li><a href="https://www.nodeseek.com/post-929010-1" target="_blank">BageVM SG $32.99/年 留存</a> · 测评 · 评论 7</li>
+<li><a href="https://www.nodeseek.com/post-911593-1" target="_blank">BageVM Los Angeles2 - LARGE $115.49 USD 每年 七折款</a> · 测评 · 评论 6</li>
+<li><a href="https://www.nodeseek.com/post-968629-1" target="_blank">BageVM Hong Kong Lite - TINY</a> · 测评 · 评论 5</li>
+<li><a href="https://www.nodeseek.com/post-937065-1" target="_blank">BageVM Japan Servers - STARTER 5.5 折后 $52.79/y</a> · 测评 · 评论 5</li>
+<li><a href="https://www.nodeseek.com/post-929025-1" target="_blank">BageVM SG Standard Small</a> · 测评 · 评论 5</li>
+<li><a href="https://www.nodeseek.com/post-933135-1" target="_blank">BageVM-DE Tiny</a> · 测评 · 评论 4</li>
+<li><a href="https://www.nodeseek.com/post-952610-1" target="_blank">BageVM（UK）United Kingdom - TINY 测试留档</a> · 测评 · 评论 4</li>
+<li><a href="https://www.nodeseek.com/post-960808-1" target="_blank">Bagevm hk lite</a> · 测评 · 评论 4</li>
+<li><a href="https://www.nodeseek.com/post-942520-1" target="_blank">BageVM Salt Lake City - TINY</a> · 测评 · 评论 1</li>
+<li><a href="https://www.nodeseek.com/post-955372-1" target="_blank">Bagevm Los Angeles - TINY $8.95/季</a> · 测评 · 评论 3</li>
+<li><a href="https://www.nodeseek.com/post-926112-1" target="_blank">BageVM-LAX2-MEDIUM / LAX2-STARTER</a> · 测评 · 评论 2</li>
+</ol>
+<p class="foot">其余 20 篇为同产品线的留档测评（含 TcpQuality / NodeQuality 报告链接），不逐一列出。本文对线路、运营商、IP 质量的判断均可回溯到上述帖子的正文或评论。</p>
+<p class="foot">本文为第三方整理，与 BageVM（BAGE CLOUD LLC）无隶属关系。所有产品信息来自 BageVM 官网公开页面，线路与运营商判断来自 NodeSeek 社区帖子，均已标注来源。购买前请以官网实时信息为准。</p>
+<p class="foot">BageVM 官网：<a href="https://www.bagevm.com/aff.php?aff=1195" target="_blank" rel="nofollow sponsored">bagevm.com</a>（本文链接含推广参数 aff=1195，通过链接下单不影响你的价格）</p>
+</section>
+
+</div>
+</body>
+</html>

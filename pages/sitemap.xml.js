@@ -35,6 +35,9 @@ export const getServerSideProps = async ctx => {
 
   fields = getUniqueFields(fields)
 
+  // VPS 推荐静态页：固定路径，不区分语言
+  fields = fields.concat(generateVpsSitemap())
+
   // 缓存
   ctx.res.setHeader(
     'Cache-Control',
@@ -130,6 +133,28 @@ function generateLocalesSitemap(link, allPages, locale) {
       ?.filter(Boolean) ?? []
 
   return defaultFields.concat(postFields)
+}
+
+// VPS 推荐静态页（public/vps/<slug>/index.html），新增页面时在此补一行
+const VPS_STATIC_PATHS = [
+  '/vps',
+  '/vps/racknerd',
+  '/vps/dmit',
+  '/vps/bytevirt',
+  '/vps/rarecloud',
+  '/vps/yunyoo',
+  '/vps/bagevm'
+]
+
+function generateVpsSitemap() {
+  const baseUrl = normalizeSitemapBaseUrl(siteConfig('LINK', BLOG.LINK))
+  const dateNow = toSitemapDateString(new Date())
+  return VPS_STATIC_PATHS.map(slug => ({
+    loc: buildSitemapLoc({ baseUrl, slug }),
+    lastmod: dateNow,
+    changefreq: 'weekly',
+    priority: '0.6'
+  })).filter(field => field.loc)
 }
 
 function getUniqueFields(fields) {

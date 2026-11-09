@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>DMIT VPS 全产品线推荐与选购指南：Premium / Eyeball / Tier 1 线路、配置、价格与运营商适配（2026）</title>
+<meta name="description" content="DMIT 全系 VPS 选购指南：覆盖洛杉矶、中国香港、东京三大机房的 15 条产品线，逐款拆解 Premium（CN2 GIA）、Eyeball（CMIN2）、Tier 1 三种网络的线路、配置、价格，并给出电信/联通/移动的运营商适配与 NodeSeek 真实测评引用。">
+<meta name="keywords" content="DMIT,dmit.io,DMIT VPS,DMIT 评测,LAX Pro,LAX EB,LAX T1,CN2 GIA,CMIN2,9929,洛杉矶VPS,中国香港VPS,东京VPS,大妈,EPYC 9005,AN5,AS3,VPS推荐">
+<meta name="author" content="DMIT 产品整理">
+<meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large">
+<link rel="canonical" href="https://blog.aibici.org/vps/dmit">
+<meta name="theme-color" content="#ffffff">
+
+<meta property="og:type" content="article">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:title" content="DMIT VPS 全产品线推荐与选购指南（2026）">
+<meta property="og:description" content="15 条产品线逐款拆解：Premium / Eyeball / Tier 1 三种网络、三个机房、三代 EPYC 硬件，附真实测评引用与购买入口。">
+<meta property="og:url" content="https://blog.aibici.org/vps/dmit">
+<meta property="og:site_name" content="DMIT VPS 选购指南">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="DMIT VPS 全产品线推荐与选购指南（2026）">
+<meta name="twitter:description" content="15 条产品线逐款拆解：线路、配置、价格、运营商适配，附真实测评引用。">
+
+<style>
+  :root{--line:#dcdcdc;--muted:#666;--bg:#fff;--ink:#1a1a1a;--accent:#0b5c3f;--warn:#8a4b00}
+  *{box-sizing:border-box}
+  html{-webkit-text-size-adjust:100%}
+  body{margin:0;background:var(--bg);color:var(--ink);
+       font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;
+       font-size:16px;line-height:1.75}
+  .wrap{max-width:880px;margin:0 auto;padding:28px 20px 72px}
+  h1{font-size:27px;line-height:1.35;font-weight:700;margin:0 0 10px}
+  h2{font-size:21px;font-weight:700;margin:44px 0 14px;padding-bottom:8px;border-bottom:2px solid var(--ink)}
+  h3{font-size:18px;font-weight:700;margin:30px 0 10px}
+  h4{font-size:16px;font-weight:700;margin:18px 0 6px}
+  p{margin:10px 0}
+  a{color:#0a4d8c;text-decoration:underline;text-underline-offset:2px}
+  a:hover{color:#06325c}
+  code{background:#f4f4f4;padding:1px 5px;font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;font-size:14px}
+  .lead{font-size:17px;color:#333}
+  .meta{color:var(--muted);font-size:14px;margin:6px 0 0}
+  .note{background:#fafafa;border:1px solid var(--line);padding:14px 16px;margin:16px 0;font-size:15px}
+  .warn{background:#fffaf2;border:1px solid #e8cfa8;padding:14px 16px;margin:16px 0;font-size:15px}
+  .warn strong{color:var(--warn)}
+  table{width:100%;border-collapse:collapse;margin:14px 0;font-size:14.5px}
+  th,td{border:1px solid var(--line);padding:8px 10px;text-align:left;vertical-align:top}
+  th{background:#f6f6f6;font-weight:700;white-space:nowrap}
+  tbody tr:nth-child(even){background:#fcfcfc}
+  .tbl-scroll{overflow-x:auto;-webkit-overflow-scrolling:touch}
+  ul,ol{padding-left:22px;margin:10px 0}
+  li{margin:4px 0}
+  blockquote{margin:12px 0;padding:8px 16px;border-left:3px solid var(--line);color:#333;background:#fafafa;font-size:15px}
+  blockquote cite{display:block;font-style:normal;color:var(--muted);font-size:13.5px;margin-top:6px}
+  .buy{display:inline-block;margin:12px 0 4px;padding:9px 18px;border:1px solid #0b5c3f;background:#0b5c3f;color:#fff;
+       text-decoration:none;font-weight:700;font-size:15px}
+  .buy:hover{background:#084530;color:#fff}
+  .price-buy{white-space:nowrap;font-weight:600;text-decoration:none}
+  .price-buy-cta{display:inline-block;margin-left:6px;padding:0 6px;border:1px solid #0b5c3f;color:#0b5c3f;
+       text-decoration:none;font-size:12.5px;line-height:1.6;white-space:nowrap}
+  .price-buy-cta:hover{background:#0b5c3f;color:#fff}
+  .tag{display:inline-block;border:1px solid var(--line);background:#f6f6f6;padding:1px 7px;font-size:13px;margin-right:5px;white-space:nowrap}
+  .tag.hot{border-color:#c9a227;background:#fdf8e6}
+  .tag.new{border-color:#2f7d5c;background:#eef7f2}
+  nav.toc{border:1px solid var(--line);padding:14px 18px;margin:22px 0}
+  nav.toc p{margin:0 0 6px;font-weight:700}
+  nav.toc ol{margin:0;padding-left:20px}
+  nav.toc li{margin:2px 0;font-size:15px}
+  .kv{font-size:15px;margin:8px 0}
+  .kv div{display:flex;gap:8px;border-bottom:1px dotted #e5e5e5;padding:3px 0}
+  .kv b{flex:0 0 76px;font-weight:700;color:#444}
+  .card{border:1px solid var(--line);padding:18px 20px;margin:20px 0}
+  .src{font-size:14.5px}
+  .src li{margin:6px 0}
+  footer{margin-top:56px;padding-top:18px;border-top:1px solid var(--line);color:var(--muted);font-size:14px}
+  @media (max-width:600px){
+    h1{font-size:22px} h2{font-size:19px} h3{font-size:17px}
+    .wrap{padding:20px 14px 56px}
+    table{font-size:13.5px}
+    .kv div{display:block}
+    .kv b{display:block}
+  }
+</style>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": "https://peterxulove.github.io/dmit-vps/dmit-vps-guide.html#website",
+      "url": "https://peterxulove.github.io/dmit-vps/dmit-vps-guide.html",
+      "name": "DMIT VPS 选购指南",
+      "inLanguage": "zh-CN"
+    },
+    {
+      "@type": "Article",
+      "@id": "https://peterxulove.github.io/dmit-vps/dmit-vps-guide.html#article",
+      "isPartOf": { "@id": "https://peterxulove.github.io/dmit-vps/dmit-vps-guide.html#website" },
+      "headline": "DMIT VPS 全产品线推荐与选购指南：Premium / Eyeball / Tier 1 线路、配置、价格与运营商适配",
+      "description": "覆盖 DMIT 洛杉矶、中国香港、东京三大机房的 15 条云服务器产品线，逐款给出网络系列、硬件平台、配置、价格、适合的运营商用户，并附第三方真实测评引用。",
+      "inLanguage": "zh-CN",
+      "datePublished": "2026-10-08",
+      "dateModified": "2026-10-08",
+      "about": [
+        { "@type": "Thing", "name": "VPS 虚拟专用服务器" },
+        { "@type": "Thing", "name": "中国电信 CN2 GIA" },
+        { "@type": "Thing", "name": "中国联通 9929 线路" },
+        { "@type": "Thing", "name": "中国移动 CMIN2" }
+      ],
+      "publisher": { "@type": "Organization", "name": "DMIT, Inc." }
+    },
+    {
+      "@type": "ItemList",
+      "@id": "https://peterxulove.github.io/dmit-vps/dmit-vps-guide.html#products",
+      "name": "DMIT 云服务器产品线",
+      "numberOfItems": 15,
+      "itemListElement": [
+        {"@type":"ListItem","position":1,"name":"洛杉矶 AS3 Premium","url":"https://peterxulove.github.io/dmit-vps/dmit-vps-guide.html#p-lax-as3-pro"}, {"@type":"ListItem","position":2,"name":"洛杉矶 AN4 Premium","url":"https://peterxulove.github.io/dmit-vps/dmit-vps-guide.html#p-lax-an4-pro"}, {"@type":"ListItem","position":3,"name":"洛杉矶 AN5 Premium","url":"https://peterxulove.github.io/dmit-vps/dmit-vps-guide.html#p-lax-an5-pro"}, {"@type":"ListItem","position":4,"name":"中国香港 AS3 Premium","url":"https://peterxulove.github.io/dmit-vps/dmit-vps-guide.html#p-hkg-as3-pro"}, {"@type":"ListItem","position":5,"name":"中国香港 AN5 Premium","url":"https://peterxulove.github.io/dmit-vps/dmit-vps-guide.html#p-hkg-an5-pro"}, {"@type":"ListItem","position":6,"name":"东京 AS3 Premium","url":"https://peterxulove.github.io/dmit-vps/dmit-vps-guide.html#p-tyo-as3-pro"}, {"@type":"ListItem","position":7,"name":"洛杉矶 AS3 Eyeball","url":"https://peterxulove.github.io/dmit-vps/dmit-vps-guide.html#p-lax-as3-eb"}, {"@type":"ListItem","position":8,"name":"洛杉矶 AN4 Eyeball","url":"https://peterxulove.github.io/dmit-vps/dmit-vps-guide.html#p-lax-an4-eb"}, {"@type":"ListItem","position":9,"name":"洛杉矶 AN5 Eyeball","url":"https://peterxulove.github.io/dmit-vps/dmit-vps-guide.html#p-lax-an5-eb"}, {"@type":"ListItem","position":10,"name":"中国香港 AS3 Eyeball","url":"https://peterxulove.github.io/dmit-vps/dmit-vps-guide.html#p-hkg-as3-eb"}, {"@type":"ListItem","position":11,"name":"中国香港 AN5 Eyeball","url":"https://peterxulove.github.io/dmit-vps/dmit-vps-guide.html#p-hkg-an5-eb"}, {"@type":"ListItem","position":12,"name":"洛杉矶 AS3 Tier 1","url":"https://peterxulove.github.io/dmit-vps/dmit-vps-guide.html#p-lax-as3-t1"}, {"@type":"ListItem","position":13,"name":"洛杉矶 AN5 Tier 1","url":"https://peterxulove.github.io/dmit-vps/dmit-vps-guide.html#p-lax-an5-t1"}, {"@type":"ListItem","position":14,"name":"中国香港 AS3 Tier 1","url":"https://peterxulove.github.io/dmit-vps/dmit-vps-guide.html#p-hkg-as3-t1"}, {"@type":"ListItem","position":15,"name":"东京 AS3 Tier 1","url":"https://peterxulove.github.io/dmit-vps/dmit-vps-guide.html#p-tyo-as3-t1"}
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://peterxulove.github.io/dmit-vps/dmit-vps-guide.html#faq",
+      "mainEntity": [
+        {"@type":"Question","name":"DMIT 的 Premium（Pro）、Eyeball（EB）、Tier 1（T1）三个网络系列有什么区别？","acceptedAnswer":{"@type":"Answer","text":"按 DMIT 官方客服的说法：Premium 走中国电信 CN2 GIA 等高级线路，Eyeball 走 AS58807 / AS9929 / AS58453 等「合理努力」中国路由，Tier 1 不含中国内地优化。路由是向后兼容的——Premium 包含 Eyeball 与 Tier 1 的线路，Eyeball 包含 Tier 1 的线路。官方明确的选型建议是：电信选 Pro，联通和移动选 EB。"}},
+{"@type":"Question","name":"我该选 Premium 还是 Eyeball？","acceptedAnswer":{"@type":"Answer","text":"看你的运营商。实测（天津联通）：Eyeball 回程 CUG 10099 → 9929 → 4837 全程联通，晚高峰 654Mbps、0 丢包；而同环境 Premium 晚高峰被限到 90Mbps。反过来，EB 到上海电信单连接只有 136M，Premium 有 634M。所以电信选 Premium，联通 / 移动选 Eyeball。"}},
+{"@type":"Question","name":"DMIT 三个机房（洛杉矶 / 中国香港 / 东京）怎么选？","acceptedAnswer":{"@type":"Answer","text":"追求最低延迟选中国香港（至内地约 15ms）；要亚太低延迟同时保留 CN2 GIA 回国线路选东京（约 28ms）；要流量性价比、大带宽、机型选择最多选洛杉矶。中国香港与东京单价明显更高。"}},
+{"@type":"Question","name":"DMIT 支持支付宝吗？","acceptedAnswer":{"@type":"Answer","text":"截至 2026 年 10 月，DMIT 面板（WHMCS）不支持支付宝，需要用信用卡或 PayPal 等方式付款。社区里对此有明确讨论（「dmit 居然不支持支付宝啊」）。"}},
+{"@type":"Question","name":"为什么 DMIT 的正价机经常缺货？","acceptedAnswer":{"@type":"Answer","text":"2026 年 9–10 月 DMIT 出现过一轮抢购潮，洛杉矶 AS3 Pro 一度全部售罄，二手市场溢价明显（限定款 Malibu / PalmSpring / Corona 加价数百到上千元）。社区分析认为一部分是「鸡荒」+ 炒作资金入场。买之前先确认库存。"}},
+{"@type":"Question","name":"DMIT 的 IP 干净吗？能跑 ChatGPT / Netflix 吗？","acceptedAnswer":{"@type":"Answer","text":"实测反馈：洛杉矶 Premium / Eyeball 的 179 段与 154 段均为美国原生 IP、低风险，Netflix / Disney+ / TikTok / Prime Video / ChatGPT 原生解锁。DMIT 还支持自助更换 IP（含升级到 154 段，按 $1/月 计费）。但注意：新分配的 IP 段（如 131 段）信誉积累不足，可能被部分站点的 Cloudflare WAF 拦截。"}},
+{"@type":"Question","name":"听说 DMIT 的 IPv6 最近改了线路？","acceptedAnswer":{"@type":"Answer","text":"是的。2026 年 10 月，洛杉矶 Pro 的 IPv6 电信回程由 9929 切换为 163plus（去程仍走 CN2），官方思路是让 v4 与 v6 各自实现三网优化。社区对此评价不一，有人认为是「最优解」，也有人提醒「163 晚高峰会丢包」。买之前建议自己测一遍。"}},
+{"@type":"Question","name":"DMIT 的单线程速度很慢怎么办？","acceptedAnswer":{"@type":"Answer","text":"两个常见原因：一是没做 TCP 调优，需要开 BBR 并调整 TCP 参数；二是客户端走了 QUIC——社区有实测案例，禁用 YouTube 的 443 QUIC 流量后速度立刻恢复。另外 DMIT 不同机房的默认配置不同，先测再调，别一上来就改一堆参数。"}},
+{"@type":"Question","name":"黑五 / 圣诞节 DMIT 会有特价机吗？","acceptedAnswer":{"@type":"Answer","text":"社区每年都会押注，2026 年的讨论热度尤其高。历史经验是会有活动款，但价格未必低于往年。如果只是想体验，最省事的做法是买 $6.90/月 起的 Tier 1 入门款。"}}
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "DMIT VPS 选购指南", "item": "https://peterxulove.github.io/dmit-vps/dmit-vps-guide.html" }
+      ]
+    }
+  ]
+}
+</script>
+</head>
+
+<body>
+<div class="wrap">
+
+<header>
+  <h1>DMIT VPS 全产品线推荐与选购指南</h1>
+  <p class="lead">把 DMIT 官网在售的 <strong>15 条云服务器产品线</strong>逐款拆开：
+  机房在哪、走哪种网络（Premium / Eyeball / Tier 1）、什么硬件平台、月付多少、
+  适合哪一类运营商用户，以及 NodeSeek 社区的真实测评怎么说。</p>
+  <p class="meta">产品与价格数据整理自 DMIT 官网（dmit.io）· 测评引用来自 NodeSeek 社区 · 更新于 2026-10-08</p>
+</header>
+
+<div class="warn">
+  <strong>请先阅读：</strong>本文是产品整理与选购参考，<b>不是 DMIT 官方文档</b>。价格、库存、线路随时可能调整，下单前请以官网页面为准。文中的购买链接包含推广参数（aff），通过该链接下单不会增加你的费用。文末列出全部引用来源，可自行复核。
+</div>
+
+<nav class="toc" aria-label="目录">
+  <p>目录</p>
+  <ol>
+    <li><a href="#quick">一分钟选型结论</a></li>
+    <li><a href="#matrix">全部产品线速览表</a></li>
+    <li><a href="#isp">按运营商 / 使用场景选</a></li>
+    <li><a href="#premium">大陆优化 · Premium 网络（6 条）</a></li>
+    <li><a href="#eyeball">大陆优化 · Eyeball 网络（5 条）</a></li>
+    <li><a href="#tier1">国际线路 · Tier 1 网络（4 条）</a></li>
+    <li><a href="#faq">常见问题</a></li>
+    <li><a href="#caveats">选购注意事项</a></li>
+    <li><a href="#sources">数据来源与引用</a></li>
+  </ol>
+</nav>
+
+<h2 id="quick">一分钟选型结论</h2>
+
+<p>DMIT 的产品骨架可以用一句话概括：<strong>三个机房 × 三种网络 × 三代 EPYC 硬件</strong>。
+其中最关键的选择不是机房也不是硬件，而是<strong>网络系列</strong>——它决定了你的回程走哪条中国线路。
+先看结论：</p>
+
+<div class="tbl-scroll">
+<table>
+  <thead>
+    <tr><th>你的情况</th><th>推荐产品线</th><th>参考月付</th><th>核心理由</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>中国电信，要回国最优</td><td><a href="#p-lax-as3-pro">洛杉矶 AS3 Premium</a></td><td><a class="price-buy" href="https://www.dmit.io/aff.php?aff=27885&amp;pid=253" rel="nofollow sponsored noopener" target="_blank">$10.90/月 起</a> <a class="price-buy-cta" href="https://www.dmit.io/aff.php?aff=27885&amp;pid=253" rel="nofollow sponsored noopener" target="_blank">购买</a></td><td>CN2 GIA 三网回程；DMIT 客服原话「电信推荐 LAX Pro」</td></tr><tr><td>中国联通，要晚高峰稳</td><td><a href="#p-lax-as3-eb">洛杉矶 AS3 Eyeball</a></td><td><a class="price-buy" href="https://www.dmit.io/aff.php?aff=27885&amp;pid=259" rel="nofollow sponsored noopener" target="_blank">$10.90/月 起</a> <a class="price-buy-cta" href="https://www.dmit.io/aff.php?aff=27885&amp;pid=259" rel="nofollow sponsored noopener" target="_blank">购买</a></td><td>回程全程联通不跨网，晚高峰实测 654Mbps、0 丢包</td></tr><tr><td>中国移动，要美西落地</td><td><a href="#p-lax-as3-eb">洛杉矶 AS3 Eyeball</a></td><td><a class="price-buy" href="https://www.dmit.io/aff.php?aff=27885&amp;pid=259" rel="nofollow sponsored noopener" target="_blank">$10.90/月 起</a> <a class="price-buy-cta" href="https://www.dmit.io/aff.php?aff=27885&amp;pid=259" rel="nofollow sponsored noopener" target="_blank">购买</a></td><td>官方「移动推荐 LAX EB」；同档流量也比 Pro 多</td></tr><tr><td>要最低延迟（华南 / 实时交互）</td><td><a href="#p-hkg-as3-pro">中国香港 AS3 Premium</a></td><td><a class="price-buy" href="https://www.dmit.io/aff.php?aff=27885&amp;pid=265" rel="nofollow sponsored noopener" target="_blank">$39.90/月 起</a> <a class="price-buy-cta" href="https://www.dmit.io/aff.php?aff=27885&amp;pid=265" rel="nofollow sponsored noopener" target="_blank">购买</a></td><td>至内地约 15ms、丢包 &lt;0.1%，物理距离最近</td></tr><tr><td>要亚太低延迟 + 回国线路</td><td><a href="#p-tyo-as3-pro">东京 AS3 Premium</a></td><td><a class="price-buy" href="https://www.dmit.io/aff.php?aff=27885&amp;pid=138" rel="nofollow sponsored noopener" target="_blank">$21.90/月 起</a> <a class="price-buy-cta" href="https://www.dmit.io/aff.php?aff=27885&amp;pid=138" rel="nofollow sponsored noopener" target="_blank">购买</a></td><td>CN2 GIA（AS23764），至内地约 28ms</td></tr><tr><td>预算优先，只要落地 / 中转</td><td><a href="#p-lax-as3-t1">洛杉矶 AS3 Tier 1</a></td><td><a class="price-buy" href="https://www.dmit.io/aff.php?aff=27885&amp;pid=271" rel="nofollow sponsored noopener" target="_blank">$6.90/月 起</a> <a class="price-buy-cta" href="https://www.dmit.io/aff.php?aff=27885&amp;pid=271" rel="nofollow sponsored noopener" target="_blank">购买</a></td><td>另有年付 WEE 档（见产品价格表）</td></tr><tr><td>要大流量国际带宽</td><td><a href="#p-lax-an5-t1">洛杉矶 AN5 Tier 1</a></td><td><a class="price-buy" href="https://www.dmit.io/aff.php?aff=27885&amp;pid=169" rel="nofollow sponsored noopener" target="_blank">$14.90/月 起</a> <a class="price-buy-cta" href="https://www.dmit.io/aff.php?aff=27885&amp;pid=169" rel="nofollow sponsored noopener" target="_blank">购买</a></td><td>VOLUME 系列 5TB 起，最大 320TB，每 GB 成本最低</td></tr><tr><td>要最强单核性能</td><td><a href="#p-lax-an5-pro">洛杉矶 AN5 Premium</a></td><td><a class="price-buy" href="https://www.dmit.io/aff.php?aff=27885&amp;pid=58" rel="nofollow sponsored noopener" target="_blank">$79.90/月 起</a> <a class="price-buy-cta" href="https://www.dmit.io/aff.php?aff=27885&amp;pid=58" rel="nofollow sponsored noopener" target="_blank">购买</a></td><td>EPYC 9005（Zen 5）+ DDR5，GB5 单核 1870</td></tr>
+  </tbody>
+</table>
+</div>
+
+<div class="note">
+<strong>一句话记住三条线：</strong>
+<ul>
+  <li><strong>Premium（Pro）= 电信向</strong>：三网回程全走 CN2 GIA。DMIT 客服原话「电信网络推荐 LAX Pro 系列」。</li>
+  <li><strong>Eyeball（EB）= 联通 / 移动向</strong>：回程全程联通不跨网，晚高峰实测 654Mbps、0 丢包。客服原话「联通与移动网络推荐 LAX EB 系列」。</li>
+  <li><strong>Tier 1（T1）= 国际线路</strong>：不含中国内地优化，最便宜，适合落地机 / 中转机 / 大流量国际业务。</li>
+</ul>
+</div>
+
+<h2 id="matrix">全部产品线速览表</h2>
+
+<p>下表按产品线列出<strong>最低档</strong>的规格与价格，便于横向比较。完整档位见后文各产品小节。</p>
+
+<div class="tbl-scroll">
+<table>
+  <thead>
+    <tr><th>产品线</th><th>机房</th><th>网络</th><th>硬件</th><th>定位</th><th>最低档配置</th><th>流量 / 带宽</th><th>月付</th></tr>
+  </thead>
+  <tbody>
+    <tr><td><a href="#p-lax-as3-pro">洛杉矶 AS3 Premium</a></td><td>美国 洛杉矶</td><td>Premium</td><td>AS3</td><td>大陆优化</td><td>1 核 / 2GB / 20GB SSD</td><td>1000GB / 1Gbps</td><td><a class="price-buy" href="https://www.dmit.io/aff.php?aff=27885&amp;pid=253" rel="nofollow sponsored noopener" target="_blank">$10.90/月</a> <a class="price-buy-cta" href="https://www.dmit.io/aff.php?aff=27885&amp;pid=253" rel="nofollow sponsored noopener" target="_blank">购买</a></td></tr><tr><td><a href="#p-lax-an4-pro">洛杉矶 AN4 Premium</a></td><td>美国 洛杉矶</td><td>Premium</td><td>AN4</td><td>大陆优化</td><td>4 核 / 4GB / 80GB SSD</td><td>5000GB / 10Gbps</td><td><a class="price-buy" href="https://www.dmit.io/aff.php?aff=27885" rel="nofollow sponsored noopener" target="_blank">$72.90/月</a> <a class="price-buy-cta" href="https://www.dmit.io/aff.php?aff=27885" rel="nofollow sponsored noopener" target="_blank">购买</a></td></tr><tr><td><a href="#p-lax-an5-pro">洛杉矶 AN5 Premium</a></td><td>美国 洛杉矶</td><td>Premium</td><td>AN5</td><td>大陆优化</td><td>4 核 / 4GB / 80GB SSD</td><td>5000GB / 10Gbps</td><td><a class="price-buy" href="https://www.dmit.io/aff.php?aff=27885&amp;pid=58" rel="nofollow sponsored noopener" target="_blank">$79.90/月</a> <a class="price-buy-cta" href="https://www.dmit.io/aff.php?aff=27885&amp;pid=58" rel="nofollow sponsored noopener" target="_blank">购买</a></td></tr><tr><td><a href="#p-hkg-as3-pro">中国香港 AS3 Premium</a></td><td>中国香港</td><td>Premium</td><td>AS3</td><td>大陆优化</td><td>1 核 / 1GB / 20GB SSD</td><td>500GB / 1Gbps</td><td><a class="price-buy" href="https://www.dmit.io/aff.php?aff=27885&amp;pid=265" rel="nofollow sponsored noopener" target="_blank">$39.90/月</a> <a class="price-buy-cta" href="https://www.dmit.io/aff.php?aff=27885&amp;pid=265" rel="nofollow sponsored noopener" target="_blank">购买</a></td></tr><tr><td><a href="#p-hkg-an5-pro">中国香港 AN5 Premium</a></td><td>中国香港</td><td>Premium</td><td>AN5</td><td>大陆优化</td><td>4 核 / 4GB / 80GB SSD</td><td>1500GB / 1Gbps</td><td><a class="price-buy" href="https://www.dmit.io/aff.php?aff=27885&amp;pid=125" rel="nofollow sponsored noopener" target="_blank">$149.90/月</a> <a class="price-buy-cta" href="https://www.dmit.io/aff.php?aff=27885&amp;pid=125" rel="nofollow sponsored noopener" target="_blank">购买</a></td></tr><tr><td><a href="#p-tyo-as3-pro">东京 AS3 Premium</a></td><td>日本 东京</td><td>Premium</td><td>AS3</td><td>大陆优化</td><td>1 核 / 1GB / 20GB SSD</td><td>500GB / 1Gbps</td><td><a class="price-buy" href="https://www.dmit.io/aff.php?aff=27885&amp;pid=138" rel="nofollow sponsored noopener" target="_blank">$21.90/月</a> <a class="price-buy-cta" href="https://www.dmit.io/aff.php?aff=27885&amp;pid=138" rel="nofollow sponsored noopener" target="_blank">购买</a></td></tr><tr><td><a href="#p-lax-as3-eb">洛杉矶 AS3 Eyeball</a></td><td>美国 洛杉矶</td><td>Eyeball</td><td>AS3</td><td>大陆优化</td><td>1 核 / 2GB / 20GB SSD</td><td>1500GB / 2Gbps</td><td><a class="price-buy" href="https://www.dmit.io/aff.php?aff=27885&amp;pid=259" rel="nofollow sponsored noopener" target="_blank">$10.90/月</a> <a class="price-buy-cta" href="https://www.dmit.io/aff.php?aff=27885&amp;pid=259" rel="nofollow sponsored noopener" target="_blank">购买</a></td></tr><tr><td><a href="#p-lax-an4-eb">洛杉矶 AN4 Eyeball</a></td><td>美国 洛杉矶</td><td>Eyeball</td><td>AN4</td><td>大陆优化</td><td>4 核 / 4GB / 80GB SSD</td><td>10000GB / 10Gbps</td><td><a class="price-buy" href="https://www.dmit.io/aff.php?aff=27885" rel="nofollow sponsored noopener" target="_blank">$72.90/月</a> <a class="price-buy-cta" href="https://www.dmit.io/aff.php?aff=27885" rel="nofollow sponsored noopener" target="_blank">购买</a></td></tr><tr><td><a href="#p-lax-an5-eb">洛杉矶 AN5 Eyeball</a></td><td>美国 洛杉矶</td><td>Eyeball</td><td>AN5</td><td>大陆优化</td><td>4 核 / 4GB / 80GB SSD</td><td>10000GB / 10Gbps</td><td><a class="price-buy" href="https://www.dmit.io/aff.php?aff=27885&amp;pid=192" rel="nofollow sponsored noopener" target="_blank">$79.90/月</a> <a class="price-buy-cta" href="https://www.dmit.io/aff.php?aff=27885&amp;pid=192" rel="nofollow sponsored noopener" target="_blank">购买</a></td></tr><tr><td><a href="#p-hkg-as3-eb">中国香港 AS3 Eyeball</a></td><td>中国香港</td><td>Eyeball</td><td>AS3</td><td>大陆优化</td><td>1 核 / 1GB / 20GB SSD</td><td>800GB / 1Gbps</td><td><a class="price-buy" href="https://www.dmit.io/aff.php?aff=27885&amp;pid=210" rel="nofollow sponsored noopener" target="_blank">$39.90/月</a> <a class="price-buy-cta" href="https://www.dmit.io/aff.php?aff=27885&amp;pid=210" rel="nofollow sponsored noopener" target="_blank">购买</a></td></tr><tr><td><a href="#p-hkg-an5-eb">中国香港 AN5 Eyeball</a></td><td>中国香港</td><td>Eyeball</td><td>AN5</td><td>大陆优化</td><td>4 核 / 4GB / 80GB SSD</td><td>2200GB / 1Gbps</td><td><a class="price-buy" href="https://www.dmit.io/aff.php?aff=27885&amp;pid=156" rel="nofollow sponsored noopener" target="_blank">$149.90/月</a> <a class="price-buy-cta" href="https://www.dmit.io/aff.php?aff=27885&amp;pid=156" rel="nofollow sponsored noopener" target="_blank">购买</a></td></tr><tr><td><a href="#p-lax-as3-t1">洛杉矶 AS3 Tier 1</a></td><td>美国 洛杉矶</td><td>Tier 1</td><td>AS3</td><td>国际线路</td><td>1 核 / 1GB / 20GB SSD</td><td>2000GB Max (IN, OUT) / —</td><td><a class="price-buy" href="https://www.dmit.io/aff.php?aff=27885&amp;pid=271" rel="nofollow sponsored noopener" target="_blank">$6.90/月</a> <a class="price-buy-cta" href="https://www.dmit.io/aff.php?aff=27885&amp;pid=271" rel="nofollow sponsored noopener" target="_blank">购买</a></td></tr><tr><td><a href="#p-lax-an5-t1">洛杉矶 AN5 Tier 1</a></td><td>美国 洛杉矶</td><td>Tier 1</td><td>AN5</td><td>国际线路</td><td>2 核 / 2GB / 40GB SSD</td><td>5000GB Max (IN, OUT) / 10Gbps</td><td><a class="price-buy" href="https://www.dmit.io/aff.php?aff=27885&amp;pid=169" rel="nofollow sponsored noopener" target="_blank">$14.90/月</a> <a class="price-buy-cta" href="https://www.dmit.io/aff.php?aff=27885&amp;pid=169" rel="nofollow sponsored noopener" target="_blank">购买</a></td></tr><tr><td><a href="#p-hkg-as3-t1">中国香港 AS3 Tier 1</a></td><td>中国香港</td><td>Tier 1</td><td>AS3</td><td>国际线路</td><td>1 核 / 1GB / 20GB SSD</td><td>2000GB Max (IN, OUT) / —</td><td><a class="price-buy" href="https://www.dmit.io/aff.php?aff=27885&amp;pid=198" rel="nofollow sponsored noopener" target="_blank">$6.90/月</a> <a class="price-buy-cta" href="https://www.dmit.io/aff.php?aff=27885&amp;pid=198" rel="nofollow sponsored noopener" target="_blank">购买</a></td></tr><tr><td><a href="#p-tyo-as3-t1">东京 AS3 Tier 1</a></td><td>日本 东京</td><td>Tier 1</td><td>AS3</td><td>国际线路</td><td>1 核 / 1GB / 20GB SSD</td><td>2000GB Max (IN, OUT) / —</td><td><a class="price-buy" href="https://www.dmit.io/aff.php?aff=27885&amp;pid=131" rel="nofollow sponsored noopener" target="_blank">$6.90/月</a> <a class="price-buy-cta" href="https://www.dmit.io/aff.php?aff=27885&amp;pid=131" rel="nofollow sponsored noopener" target="_blank">购买</a></td></tr>
+  </tbody>
+</table>
+</div>
+
+<p class="meta">价格均为官网标价（美元），未含任何优惠码与支付手续费。年付款的档位（如 $36.90/年）单独标注。</p>
+
+<h2 id="isp">按运营商 / 使用场景选</h2>
+
+<p>这是本文最实用的一张表。结论综合了 DMIT 官方客服说明、线路实测与社区反馈。星级含义：
+<strong>★★★</strong> 有正面实测或官方推荐 · <strong>★★☆</strong> 可用但有短板 · <strong>★☆☆</strong> 有明确负面反馈 · <strong>—</strong> 数据不足。</p>
+
+<div class="tbl-scroll">
+<table>
+  <thead>
+    <tr><th>用户类型</th><th>洛杉矶<br>AS3 Premium</th><th>洛杉矶<br>AS3 Eyeball</th><th>中国香港<br>Premium</th><th>东京<br>Premium</th><th>洛杉矶<br>Tier 1</th></tr>
+  </thead>
+  <tbody>
+    <tr><td><strong>中国联通</strong></td><td>★★☆</td><td>★★★</td><td>★★☆</td><td>★★☆</td><td>★★☆</td></tr><tr><td><strong>中国电信</strong></td><td>★★★</td><td>★★☆</td><td>★★★</td><td>★★★</td><td>★★☆</td></tr><tr><td><strong>中国移动</strong></td><td>★★☆</td><td>★★★</td><td>★★★</td><td>★★☆</td><td>★★☆</td></tr><tr><td><strong>教育网 CERNET</strong></td><td>★★☆</td><td>★★☆</td><td>★★☆</td><td>—</td><td>—</td></tr><tr><td><strong>AI 服务 / 干净 IP</strong></td><td>★★☆</td><td>★★☆</td><td>★★★</td><td>★★★</td><td>★★☆</td></tr><tr><td><strong>流媒体解锁</strong></td><td>★★★</td><td>★★★</td><td>★★★</td><td>★★★</td><td>★★☆</td></tr><tr><td><strong>大带宽跑量</strong></td><td>★☆☆</td><td>★☆☆</td><td>★☆☆</td><td>★☆☆</td><td>★★★</td></tr>
+  </tbody>
+</table>
+</div>
+
+<div class="note">
+<strong>几个具体结论，直接抄作业：</strong>
+<ul>
+  <li><strong>电信用户</strong>：选 Premium（CN2 GIA）。实测 Pro 到上海电信单连接 634M、重传 0%。</li>
+  <li><strong>联通用户</strong>：选 Eyeball。回程 CUG 10099 → 9929 → 4837 <strong>全程联通不跨网</strong>，
+      天津联通实测晚高峰 654Mbps、0 丢包；而 Premium 晚高峰跨网回程被限到 90Mbps。</li>
+  <li><strong>移动用户</strong>：选 Eyeball（官方推荐），流量也比同档 Pro 更多。若走 Premium，
+      实测移动方向有少量丢包（河北 8%、山西 4%）。</li>
+  <li><strong>要最低延迟</strong>：中国香港节点，至内地约 15ms、丢包率低于 0.1%。</li>
+  <li><strong>预算优先</strong>：洛杉矶 / 中国香港 / 东京的 Tier 1 都是 $6.90/月起，
+      另有 $36.90/年 的 WEE 档。</li>
+  <li><strong>别买错</strong>：<strong>电信不要抢 Eyeball</strong>（浙江三网延迟 150+ms，电信侧吞吐弱）；
+      <strong>联通不要抢 Premium</strong>（晚高峰跨网回程限速）。</li>
+</ul>
+</div>
+
+
+<h2 id="premium">一、大陆优化 · Premium 网络（CN2 GIA，电信首选）</h2>
+<p>Premium 是 DMIT 网络系列的<strong>最高档</strong>：官方描述为「结合 Tier 1 转接与优质转接伙伴，包括 DMIT 自有骨干网络以及中国电信 CN2 GIA」，面向中国内地与亚太提供最优路由。这一组的共同特点是<strong>三网回程全走 CN2 GIA</strong>，因此 DMIT 客服明确建议<strong>电信用户</strong>选它。</p>
+
+<div class="card" id="p-lax-as3-pro">
+<h3>洛杉矶 AS3 Premium —— CN2 GIA 大陆优化，电信用户的首选 <span class="tag hot">热销</span></h3>
+<div class="kv"><div><b>机房</b><span>美国 洛杉矶（LAX）· CoreSite / Digital Realty 双机房</span></div><div><b>网络</b><span>Premium（CN2 GIA + 中国三大运营商直连对等）</span></div><div><b>硬件</b><span>AS3 · AMD EPYC 7003 系列（Zen 3）</span></div><div><b>起价</b><span>$10.90 / 月（TINY：1 核 / 2GB / 20GB / 1TB） <a class="price-buy-cta" href="https://www.dmit.io/aff.php?aff=27885&amp;pid=253" rel="nofollow sponsored noopener" target="_blank">购买</a></span></div></div>
+<h4>档位与价格</h4>
+<div class="tbl-scroll"><table><thead><tr><th>档位</th><th>CPU</th><th>内存</th><th>硬盘</th><th>流量</th><th>带宽</th><th>价格 / 购买</th></tr></thead><tbody><tr><td>TINY</td><td>1 核</td><td>2GB</td><td>20GB SSD</td><td>1000GB</td><td>1Gbps</td><td><a class="price-buy" href="https://www.dmit.io/aff.php?aff=27885&amp;pid=253" rel="nofollow sponsored noopener" target="_blank">$ 10.90/月</a> <a class="price-buy-cta" href="https://www.dmit.io/aff.php?aff=27885&amp;pid=253" rel="nofollow sponsored noopener" target="_blank">购买</a></td></tr><tr><td>Pocket</td><td>2 核</td><td>2GB</td><td>40GB SSD</td><td>1500GB</td><td>4Gbps</td><td><a class="price-buy" href="https://www.dmit.io/aff.php?aff=27885&amp;pid=254" rel="nofollow sponsored noopener" target="_blank">$ 16.90/月</a> <a class="price-buy-cta" href="https://www.dmit.io/aff.php?aff=27885&amp;pid=254" rel="nofollow sponsored noopener" target="_blank">购买</a></td></tr><tr><td>STARTER</td><td>2 核</td><td>2GB</td><td>80GB SSD</td><td>3000GB</td><td>10Gbps</td><td><a class="price-buy" href="https://www.dmit.io/aff.php?aff=27885&amp;pid=255" rel="nofollow sponsored noopener" target="_blank">$ 34.90/月</a> <a class="price-buy-cta" href="https://www.dmit.io/aff.php?aff=27885&amp;pid=255" rel="nofollow sponsored noopener" target="_blank">购买</a></td></tr><tr><td>MINI</td><td>4 核</td><td>4GB</td><td>80GB SSD</td><td>5000GB</td><td>10Gbps</td><td><a class="price-buy" href="https://www.dmit.io/aff.php?aff=27885&amp;pid=256" rel="nofollow sponsored noopener" target="_blank">$ 62.90/月</a> <a class="price-buy-cta" href="https://www.dmit.io/aff.php?aff=27885&amp;pid=256" rel="nofollow sponsored noopener" target="_blank">购买</a></td></tr><tr><td>MICRO</td><td>4 核</td><td>4GB</td><td>160GB SSD</td><td>7000GB</td><td>10Gbps</td><td><a class="price-buy" href="https://www.dmit.io/aff.php?aff=27885&amp;pid=257" rel="nofollow sponsored noopener" target="_blank">$ 87.90/月</a> <a class="price-buy-cta" href="https://www.dmit.io/aff.php?aff=27885&amp;pid=257" rel="nofollow sponsored noopener" target="_blank">购买</a></td></tr><tr><td>MEDIUM</td><td>6 核</td><td>8GB</td><td>160GB SSD</td><td>15000GB</td><td>10Gbps</td><td><a class="price-buy" href="https://www.dmit.io/aff.php?aff=27885&amp;pid=258" rel="nofollow sponsored noopener" target="_blank">$ 199.90/月</a> <a class="price-buy-cta" href="https://www.dmit.io/aff.php?aff=27885&amp;pid=258" rel="nofollow sponsored noopener" target="_blank">购买</a></td></tr></tbody></table></div>
+<h4>产品特点与社区反馈</h4>
+<p>DMIT 的招牌产品线。三网回程<strong>全部走中国电信 CN2 GIA</strong>，是大陆优化里最稳的一档。DMIT 官方客服的原话是：「电信网络推荐 LAX Pro 系列」（原文 <em>The telecom network recommends LAX Pro network</em>）。</p><p>实测硬件为 AMD EPYC-Milan（EPYC 7003），Geekbench 5 单核约 1095–1187，硬件加权总分约 31575，属于这个价位的正常水平。</p>
+<h4>适用运营商</h4>
+<div class="kv"><div><b>中国联通</b><span>★★☆</span></div><div><b>中国电信</b><span>★★★</span></div><div><b>中国移动</b><span>★★☆</span></div></div>
+<p class="meta">依据强度：实测　|　**DMIT 客服原话**：电信网络推荐 LAX Pro 系列。三网回程全走中国电信 CN2 GIA。天津联通晚高峰实测暴露短板：中午单连接 672Mbps，晚高峰骤降到 90Mbps 且曲线极平（疑似 CN2 回国后在北京换到联通那一段被限速）；移动方向有少量丢包（河北 8%、山西 4%）。2026-10 起 IPv6 电信回程由 9929 改为 163plus（去程 CN2），官方思路是让 v…</p>
+<blockquote>「「服务器端单连接测速到北京联通有 573M，但我天津联通家宽晚高峰实测只有 90M，而且非常平，像是被限速了。」」<cite>—— 楼主 lyhpaul，《【实测】DMIT LAX EB vs LAX PRO，天津联通晚高峰对比》，2026-09-26</cite></blockquote><blockquote>「「评价：延迟和单线程都不错，就是移动有一定程度的丢包，移动联通还是建议买 eb 吧。」」<cite>—— 楼主，《DMIT.LAX.AS3.Pro.TINY 10.9刀 晚高峰TQ》，2026-09-26</cite></blockquote>
+<p><strong>适合谁：</strong>电信用户、需要三网通吃且预算能接受正价的人。是「不折腾、买正价、图省心」的第一选择。</p>
+<p><strong>不适合：</strong>联通用户（晚高峰跨网回程实测被限到 90Mbps，应改选同机房的 Eyeball）、完全不想碰溢价的人（这条线经常售罄）。</p>
+
+<a class="buy" href="https://www.dmit.io/aff.php?aff=27885&amp;pid=253" rel="nofollow sponsored noopener" target="_blank">查看洛杉矶 AS3 Premium 配置与价格 →</a>
+</div>
+
+<div class="card" id="p-lax-an4-pro">
+<h3>洛杉矶 AN4 Premium —— 同一张 CN2 GIA 网络，硬件升到 Zen 4 </h3>
+<div class="kv"><div><b>机房</b><span>美国 洛杉矶（LAX）</span></div><div><b>网络</b><span>Premium（CN2 GIA）</span></div><div><b>硬件</b><span>AN4 · AMD EPYC 9004 系列（Zen 4）</span></div><div><b>起价</b><span>$72.90 / 月（MINI：4 核 / 4GB / 80GB / 5TB） <a class="price-buy-cta" href="https://www.dmit.io/aff.php?aff=27885" rel="nofollow sponsored noopener" target="_blank">购买</a></span></div></div>
+<h4>档位与价格</h4>
+<div class="tbl-scroll"><table><thead><tr><th>档位</th><th>CPU</th><th>内存</th><th>硬盘</th><th>流量</th><th>带宽</th><th>价格 / 购买</th></tr></thead><tbody><tr><td>MINI</td><td>4 核</td><td>4GB</td><td>80GB SSD</td><td>5000GB</td><td>10Gbps</td><td><a class="price-buy" href="https://www.dmit.io/aff.php?aff=27885" rel="nofollow sponsored noopener" target="_blank">$ 72.90/月</a> <a class="price-buy-cta" href="https://www.dmit.io/aff.php?aff=27885" rel="nofollow sponsored noopener" target="_blank">购买</a></td></tr><tr><td>MICRO</td><td>4 核</td><td>4GB</td><td>160GB SSD</td><td>7000GB</td><td>10Gbps</td><td><a class="price-buy" href="https://www.dmit.io/aff.php?aff=27885" rel="nofollow sponsored noopener" target="_blank">$ 102.90/月</a> <a class="price-buy-cta" href="https://www.dmit.io/aff.php?aff=27885" rel="nofollow sponsored noopener" target="_blank">购买</a></td></tr><tr><td>MEDIUM</td><td>6 核</td><td>8GB</td><td>160GB SSD</td><td>15000GB</td><td>10Gbps</td><td><a class="price-buy" href="https://www.dmit.io/aff.php?aff=27885" rel="nofollow sponsored noopener" target="_blank">$ 239.90/月</a> <a class="price-buy-cta" href="https://www.dmit.io/aff.php?aff=27885" rel="nofollow sponsored noopener" target="_blank">购买</a></td></tr><tr><td>LARGE</td><td>8 核</td><td>16GB</td><td>320GB SSD</td><td>25000GB</td><td>10Gbps</td><td><a class="price-buy" href="https://www.dmit.io/aff.php?aff=27885" rel="nofollow sponsored noopener" target="_blank">$ 459.90/月</a> <a class="price-buy-cta" href="https://www.dmit.io/aff.php?aff=27885" rel="nofollow sponsored noopener" target="_blank">购买</a></td></tr><tr><td>GIANT</td><td>12 核</td><td>24GB</td><td>640GB SSD</td><td>50000GB</td><td>10Gbps</td><td><a class="price-buy" href="https://www.dmit.io/aff.php?aff=27885" rel="nofollow sponsored noopener" target="_blank">$ 929.90/月</a> <a class="price-buy-cta" href="https://www.dmit.io/aff.php?aff=27885" rel="nofollow sponsored noopener" target="_blank">购买</a></td></tr></tbody></table></div>
+<h4>产品特点与社区反馈</h4>
+<p>网络与 AS3 Premium 完全一致，差别只在硬件平台换成 <strong>AMD EPYC 9004（Zen 4）</strong>，单核性能比 AS3 高一档。实测：EPYC 9654，GB5 单核约 1271–1329，多核 2399，硬件加权总分 50036。</p><p>需要特别说明：AN4 Premium 的限定款在社区里是<strong>溢价重灾区</strong>——<em>Malibu（马里布）</em>、<em>PalmSpring（棕榈泉）</em>、<em>Corona</em> 这些名字都是这条线下的限定机型，二手加价几百到上千元仍有人收。</p>
+<h4>适用运营商</h4>
+<div class="kv"><div><b>中国联通</b><span>★★☆</span></div><div><b>中国电信</b><span>★★★</span></div><div><b>中国移动</b><span>★★☆</span></div></div>
+<p class="meta">依据强度：推断　|　与 AS3 Premium 同一网络（CN2 GIA），差别只在硬件平台（EPYC 9004 / Zen 4）。社区里 LAX.AN4.Pro 的限定款（Malibu / PalmSpring 棕榈泉）溢价严重，二手需求旺盛。实测硬件：EPYC 9654，GB5 单核约 1271–1329，HQ 加权分约 50036（PalmSpring 2C2G）。</p>
+<blockquote>「「2000 出 MALIBU」／「5000 收一个」／「传家宝必须入一个」」<cite>—— 用户讨论，《DMIT Malibu要升值了？》，2026-10-07（反映二手溢价行情）</cite></blockquote><blockquote>「「果然惊喜，V6 三网优化了。」」<cite>—— 楼主，《【DMIT LAX AN4 PRO PalmSpring 棕榈泉 NQ 测试存档】》，2026-10-07</cite></blockquote>
+<p><strong>适合谁：</strong>需要更高单核性能、且能接受更高单价或愿意在二手市场蹲限定款的用户。</p>
+<p><strong>不适合：</strong>预算敏感的用户——同网络下 AS3 Premium 便宜得多，AN4 的溢价主要体现在硬件与限定款稀缺性上。</p>
+<p class="meta">该产品线目前官网未开放下单入口（可能缺货或未开售）。</p>
+<a class="buy" href="https://www.dmit.io/aff.php?aff=27885" rel="nofollow sponsored noopener" target="_blank">进入 DMIT 官网查看洛杉矶 AN4 Premium →</a>
+</div>
+
+<div class="card" id="p-lax-an5-pro">
+<h3>洛杉矶 AN5 Premium —— CN2 GIA + 最新 EPYC 9005，单核性能全线最强 </h3>
+<div class="kv"><div><b>机房</b><span>美国 洛杉矶（LAX）</span></div><div><b>网络</b><span>Premium（CN2 GIA）</span></div><div><b>硬件</b><span>AN5 · AMD EPYC 9005 系列（Zen 5）+ DDR5 + PCIe 5.0 NVMe</span></div><div><b>起价</b><span>$79.90 / 月（MINI：4 核 / 4GB / 80GB / 5TB） <a class="price-buy-cta" href="https://www.dmit.io/aff.php?aff=27885&amp;pid=58" rel="nofollow sponsored noopener" target="_blank">购买</a></span></div></div>
+<h4>档位与价格</h4>
+<div class="tbl-scroll"><table><thead><tr><th>档位</th><th>CPU</th><th>内存</th><th>硬盘</th><th>流量</th><th>带宽</th><th>价格 / 购买</th></tr></thead><tbody><tr><td>MINI</td><td>4 核</td><td>4GB</td><td>80GB SSD</td><td>5000GB</td><td>10Gbps</td><td><a class="price-buy" href="https://www.dmit.io/aff.php?aff=27885&amp;pid=58" rel="nofollow sponsored noopener" target="_blank">$ 79.90/月</a> <a class="price-buy-cta" href="https://www.dmit.io/aff.php?aff=27885&amp;pid=58" rel="nofollow sponsored noopener" target="_blank">购买</a></td></tr><tr><td>MICRO</td><td>4 核</td><td>4GB</td><td>160GB SSD</td><td>7000GB</td><td>10Gbps</td><td><a class="price-buy" href="https://www.dmit.io/aff.php?aff=27885&amp;pid=81" rel="nofollow sponsored noopener" target="_blank">$ 110.90/月</a> <a class="price-buy-cta" href="https://www.dmit.io/aff.php?aff=27885&amp;pid=81" rel="nofollow sponsored noopener" target="_blank">购买</a></td></tr><tr><td>MEDIUM</td><td>6 核</td><td>8GB</td><td>160GB SSD</td><td>15000GB</td><td>10Gbps</td><td><a class="price-buy" href="https://www.dmit.io/aff.php?aff=27885&amp;pid=82" rel="nofollow sponsored noopener" target="_blank">$ 289.90/月</a> <a class="price-buy-cta" href="https://www.dmit.io/aff.php?aff=27885&amp;pid=82" rel="nofollow sponsored noopener" target="_blank">购买</a></td></tr><tr><td>LARGE</td><td>8 核</td><td>16GB</td><td>320GB SSD</td><td>25000GB</td><td>10Gbps</td><td><a class="price-buy" href="https://www.dmit.io/aff.php?aff=27885&amp;pid=61" rel="nofollow sponsored noopener" target="_blank">$ 499.90/月</a> <a class="price-buy-cta" href="https://www.dmit.io/aff.php?aff=27885&amp;pid=61" rel="nofollow sponsored noopener" target="_blank">购买</a></td></tr><tr><td>GIANT</td><td>12 核</td><td>24GB</td><td>640GB SSD</td><td>50000GB</td><td>10Gbps</td><td><a class="price-buy" href="https://www.dmit.io/aff.php?aff=27885&amp;pid=98" rel="nofollow sponsored noopener" target="_blank">$ 1009.90/月</a> <a class="price-buy-cta" href="https://www.dmit.io/aff.php?aff=27885&amp;pid=98" rel="nofollow sponsored noopener" target="_blank">购买</a></td></tr></tbody></table></div>
+<h4>产品特点与社区反馈</h4>
+<p>DMIT 的<strong>旗舰硬件平台</strong>：AMD EPYC 9005（Zen 5）+ DDR5 内存 + PCIe 5.0 NVMe。官方定位「性能标杆」，是全线单核与多核性能最高的一档。</p><p>同平台在 Eyeball 网络下的实测数据可以作为硬件参考：EPYC 9655P 96-Core，2.6GHz，GB5 单核 1870 / 多核 2024，Sysbench 单线程 5391，硬件加权总分 41309 —— 明显高于 AS3/AN4 的同档位。</p>
+<h4>适用运营商</h4>
+<div class="kv"><div><b>中国联通</b><span>★★☆</span></div><div><b>中国电信</b><span>★★★</span></div><div><b>中国移动</b><span>★★☆</span></div></div>
+<p class="meta">依据强度：推断　|　与 AS3/AN4 Premium 同一网络（CN2 GIA），硬件为最新的 EPYC 9005（Zen 5）+ DDR5 + PCIe 5.0 NVMe，是全线单核性能最强的一档。同平台在 Eyeball 网络下的实测 GB5 单核 1870、HQ 加权分 41309，可作为硬件参考。</p>
+<blockquote>「「AMD EPYC 9655P 96-Core Processor … GB5 单核 |1870，多核 |2024 … 硬件加权评分 41309」」<cite>—— 楼主，《[NQ] DMIT香港EB AN5 Tiny（AS3 WEE同线路，可作参考）》，2026-09-29</cite></blockquote>
+<p><strong>适合谁：</strong>对计算性能敏感的业务：数据库、高流量站点、编译与 CI、需要强单核的应用。</p>
+<p><strong>不适合：</strong>只做轻量代理、看重每美元流量比的用户——同价位的 Tier 1 / Eyeball 流量更多。</p>
+
+<a class="buy" href="https://www.dmit.io/aff.php?aff=27885&amp;pid=58" rel="nofollow sponsored noopener" target="_blank">查看洛杉矶 AN5 Premium 配置与价格 →</a>
+</div>
+
+<div class="card" id="p-hkg-as3-pro">
+<h3>中国香港 AS3 Premium —— CN2 GIA + CMI，至内地约 15ms <span class="tag hot">低延迟</span></h3>
+<div class="kv"><div><b>机房</b><span>中国香港 · Equinix HK2（葵涌）</span></div><div><b>网络</b><span>Premium（CN2 GIA AS23764 + CMI AS58453）</span></div><div><b>硬件</b><span>AS3 · AMD EPYC 7003 系列（Zen 3）</span></div><div><b>起价</b><span>$39.90 / 月（TINY：1 核 / 1GB / 20GB / 500GB） <a class="price-buy-cta" href="https://www.dmit.io/aff.php?aff=27885&amp;pid=265" rel="nofollow sponsored noopener" target="_blank">购买</a></span></div></div>
+<h4>档位与价格</h4>
+<div class="tbl-scroll"><table><thead><tr><th>档位</th><th>CPU</th><th>内存</th><th>硬盘</th><th>流量</th><th>带宽</th><th>价格 / 购买</th></tr></thead><tbody><tr><td>TINY</td><td>1 核</td><td>1GB</td><td>20GB SSD</td><td>500GB</td><td>1Gbps</td><td><a class="price-buy" href="https://www.dmit.io/aff.php?aff=27885&amp;pid=265" rel="nofollow sponsored noopener" target="_blank">$ 39.90/月</a> <a class="price-buy-cta" href="https://www.dmit.io/aff.php?aff=27885&amp;pid=265" rel="nofollow sponsored noopener" target="_blank">购买</a></td></tr><tr><td>STARTER</td><td>1 核</td><td>2GB</td><td>40GB SSD</td><td>1000GB</td><td>1Gbps</td><td><a class="price-buy" href="https://www.dmit.io/aff.php?aff=27885&amp;pid=266" rel="nofollow sponsored noopener" target="_blank">$ 79.90/月</a> <a class="price-buy-cta" href="https://www.dmit.io/aff.php?aff=27885&amp;pid=266" rel="nofollow sponsored noopener" target="_blank">购买</a></td></tr><tr><td>MINI</td><td>2 核</td><td>4GB</td><td>60GB SSD</td><td>1500GB</td><td>1Gbps</td><td><a class="price-buy" href="https://www.dmit.io/aff.php?aff=27885&amp;pid=267" rel="nofollow sponsored noopener" target="_blank">$ 126.90/月</a> <a class="price-buy-cta" href="https://www.dmit.io/aff.php?aff=27885&amp;pid=267" rel="nofollow sponsored noopener" target="_blank">购买</a></td></tr><tr><td>MICRO</td><td>4 核</td><td>4GB</td><td>80GB SSD</td><td>2000GB</td><td>1Gbps</td><td><a class="price-buy" href="https://www.dmit.io/aff.php?aff=27885&amp;pid=268" rel="nofollow sponsored noopener" target="_blank">$ 179.90/月</a> <a class="price-buy-cta" href="https://www.dmit.io/aff.php?aff=27885&amp;pid=268" rel="nofollow sponsored noopener" target="_blank">购买</a></td></tr><tr><td>MEDIUM</td><td>4 核</td><td>8GB</td><td>160GB SSD</td><td>2500GB</td><td>1Gbps</td><td><a class="price-buy" href="https://www.dmit.io/aff.php?aff=27885&amp;pid=269" rel="nofollow sponsored noopener" target="_blank">$ 239.90/月</a> <a class="price-buy-cta" href="https://www.dmit.io/aff.php?aff=27885&amp;pid=269" rel="nofollow sponsored noopener" target="_blank">购买</a></td></tr></tbody></table></div>
+<h4>产品特点与社区反馈</h4>
+<p>DMIT 距离中国内地<strong>最近的节点</strong>。官方数据：至中国内地平均延迟约 15ms、丢包率低于 0.1%。同时接入中国电信 CN2 GIA（AS23764）与中国移动国际 CMI（AS58453），电信与移动双覆盖；另外还有 2.4Tbps 的 Tier 1 国际带宽。</p><p>延迟是这条线最大的卖点：物理距离摆在那里，任何美西机房都比不了。</p>
+<h4>适用运营商</h4>
+<div class="kv"><div><b>中国联通</b><span>★★☆</span></div><div><b>中国电信</b><span>★★★</span></div><div><b>中国移动</b><span>★★★</span></div></div>
+<p class="meta">依据强度：实测　|　中国香港 Premium 网络，CN2 GIA + CMI，至中国内地约 15ms。硬件为 EPYC 7003。实测 HKG.AS3.Pro.TINY（$39.90/月）留档帖中，有联通用户反馈「上海联通相当一般」—— 中国香港线对联通不是最优，电信/移动更合适。</p>
+<blockquote>「「至中国内地平均延迟约 15ms，丢包率低于 0.1%，远优于一般 Tier 1 线路。」」<cite>—— DMIT 官网香港机房页，2026-10-08</cite></blockquote><blockquote>「「上海联通相当一般，让了。」」<cite>—— 用户 Wa1ter，《[NQ] DMIT香港EB AN5 Tiny》，2026-09-29（联通侧反馈一般）</cite></blockquote>
+<p><strong>适合谁：</strong>对延迟最敏感的业务：远程桌面、实时交互、API 网关、面向华南用户的服务。电信与移动用户体验最好。</p>
+<p><strong>不适合：</strong>预算优先的用户（这是 DMIT 全线最贵的产品线之一），以及联通用户（中国香港线对联通不是最优）。</p>
+
+<a class="buy" href="https://www.dmit.io/aff.php?aff=27885&amp;pid=265" rel="nofollow sponsored noopener" target="_blank">查看中国香港 AS3 Premium 配置与价格 →</a>
+</div>
+
+<div class="card" id="p-hkg-an5-pro">
+<h3>中国香港 AN5 Premium —— 最低延迟 + 最新 EPYC 9005 </h3>
+<div class="kv"><div><b>机房</b><span>中国香港 · Equinix HK2</span></div><div><b>网络</b><span>Premium（CN2 GIA + CMI）</span></div><div><b>硬件</b><span>AN5 · AMD EPYC 9005 系列（Zen 5）</span></div><div><b>起价</b><span>$149.90 / 月（MINI：4 核 / 4GB / 80GB / 1.5TB） <a class="price-buy-cta" href="https://www.dmit.io/aff.php?aff=27885&amp;pid=125" rel="nofollow sponsored noopener" target="_blank">购买</a></span></div></div>
+<h4>档位与价格</h4>
+<div class="tbl-scroll"><table><thead><tr><th>档位</th><th>CPU</th><th>内存</th><th>硬盘</th><th>流量</th><th>带宽</th><th>价格 / 购买</th></tr></thead><tbody><tr><td>MINI</td><td>4 核</td><td>4GB</td><td>80GB SSD</td><td>1500GB</td><td>1Gbps</td><td><a class="price-buy" href="https://www.dmit.io/aff.php?aff=27885&amp;pid=125" rel="nofollow sponsored noopener" target="_blank">$ 149.90/月</a> <a class="price-buy-cta" href="https://www.dmit.io/aff.php?aff=27885&amp;pid=125" rel="nofollow sponsored noopener" target="_blank">购买</a></td></tr><tr><td>MICRO</td><td>4 核</td><td>4GB</td><td>160GB SSD</td><td>2000GB</td><td>1Gbps</td><td><a class="price-buy" href="https://www.dmit.io/aff.php?aff=27885&amp;pid=126" rel="nofollow sponsored noopener" target="_blank">$ 199.90/月</a> <a class="price-buy-cta" href="https://www.dmit.io/aff.php?aff=27885&amp;pid=126" rel="nofollow sponsored noopener" target="_blank">购买</a></td></tr><tr><td>MEDIUM</td><td>6 核</td><td>8GB</td><td>160GB SSD</td><td>2500GB</td><td>1Gbps</td><td><a class="price-buy" href="https://www.dmit.io/aff.php?aff=27885&amp;pid=127" rel="nofollow sponsored noopener" target="_blank">$ 279.90/月</a> <a class="price-buy-cta" href="https://www.dmit.io/aff.php?aff=27885&amp;pid=127" rel="nofollow sponsored noopener" target="_blank">购买</a></td></tr><tr><td>LARGE</td><td>8 核</td><td>16GB</td><td>320GB SSD</td><td>3000GB</td><td>1Gbps</td><td><a class="price-buy" href="https://www.dmit.io/aff.php?aff=27885&amp;pid=128" rel="nofollow sponsored noopener" target="_blank">$ 359.90/月</a> <a class="price-buy-cta" href="https://www.dmit.io/aff.php?aff=27885&amp;pid=128" rel="nofollow sponsored noopener" target="_blank">购买</a></td></tr><tr><td>GIANT</td><td>12 核</td><td>24GB</td><td>640GB SSD</td><td>6000GB</td><td>1Gbps</td><td><a class="price-buy" href="https://www.dmit.io/aff.php?aff=27885&amp;pid=129" rel="nofollow sponsored noopener" target="_blank">$ 759.90/月</a> <a class="price-buy-cta" href="https://www.dmit.io/aff.php?aff=27885&amp;pid=129" rel="nofollow sponsored noopener" target="_blank">购买</a></td></tr></tbody></table></div>
+<h4>产品特点与社区反馈</h4>
+<p>中国香港 Premium 网络的顶配硬件版本。把 EPYC 9005（Zen 5）放到 15ms 延迟的机房里，是 DMIT 全线单价最高的产品线之一。</p><p>带宽给到 1Gbps，但流量偏少（1.5TB 起）—— 这条线的卖点从来不是流量，而是延迟与线路质量。</p>
+<h4>适用运营商</h4>
+<div class="kv"><div><b>中国联通</b><span>★★☆</span></div><div><b>中国电信</b><span>★★★</span></div><div><b>中国移动</b><span>★★★</span></div></div>
+<p class="meta">依据强度：推断　|　中国香港 Premium 网络，接入 CN2 GIA（AS23764）与 CMI（AS58453）。官方称至中国内地平均延迟约 15ms、丢包率低于 0.1%。硬件为 EPYC 9005。是 DMIT 全线单价最高的产品线之一（$149.9/月起）。</p>
+
+<p><strong>适合谁：</strong>预算充足、对延迟与单核性能同时有要求的企业级场景。</p>
+<p><strong>不适合：</strong>追求流量性价比的个人用户——同样预算在美西能买到几十倍流量。</p>
+
+<a class="buy" href="https://www.dmit.io/aff.php?aff=27885&amp;pid=125" rel="nofollow sponsored noopener" target="_blank">查看中国香港 AN5 Premium 配置与价格 →</a>
+</div>
+
+<div class="card" id="p-tyo-as3-pro">
+<h3>东京 AS3 Premium —— CN2 GIA 亚太节点，至内地约 28ms <span class="tag hot">限定款溢价</span></h3>
+<div class="kv"><div><b>机房</b><span>日本 东京 · Equinix TY8（品川）</span></div><div><b>网络</b><span>Premium（CN2 GIA AS23764）</span></div><div><b>硬件</b><span>AS3 · AMD EPYC 7003 系列（Zen 3）</span></div><div><b>起价</b><span>$21.90 / 月（TINY：1 核 / 1GB / 20GB / 500GB） <a class="price-buy-cta" href="https://www.dmit.io/aff.php?aff=27885&amp;pid=138" rel="nofollow sponsored noopener" target="_blank">购买</a></span></div></div>
+<h4>档位与价格</h4>
+<div class="tbl-scroll"><table><thead><tr><th>档位</th><th>CPU</th><th>内存</th><th>硬盘</th><th>流量</th><th>带宽</th><th>价格 / 购买</th></tr></thead><tbody><tr><td>TINY</td><td>1 核</td><td>1GB</td><td>20GB SSD</td><td>500GB</td><td>1Gbps</td><td><a class="price-buy" href="https://www.dmit.io/aff.php?aff=27885&amp;pid=138" rel="nofollow sponsored noopener" target="_blank">$ 21.90/月</a> <a class="price-buy-cta" href="https://www.dmit.io/aff.php?aff=27885&amp;pid=138" rel="nofollow sponsored noopener" target="_blank">购买</a></td></tr><tr><td>STARTER</td><td>1 核</td><td>2GB</td><td>40GB SSD</td><td>1000GB</td><td>1Gbps</td><td><a class="price-buy" href="https://www.dmit.io/aff.php?aff=27885&amp;pid=139" rel="nofollow sponsored noopener" target="_blank">$ 45.90/月</a> <a class="price-buy-cta" href="https://www.dmit.io/aff.php?aff=27885&amp;pid=139" rel="nofollow sponsored noopener" target="_blank">购买</a></td></tr><tr><td>MINI</td><td>2 核</td><td>4GB</td><td>60GB SSD</td><td>2000GB</td><td>1Gbps</td><td><a class="price-buy" href="https://www.dmit.io/aff.php?aff=27885&amp;pid=140" rel="nofollow sponsored noopener" target="_blank">$ 89.90/月</a> <a class="price-buy-cta" href="https://www.dmit.io/aff.php?aff=27885&amp;pid=140" rel="nofollow sponsored noopener" target="_blank">购买</a></td></tr><tr><td>MICRO</td><td>4 核</td><td>4GB</td><td>80GB SSD</td><td>4000GB</td><td>1Gbps</td><td><a class="price-buy" href="https://www.dmit.io/aff.php?aff=27885&amp;pid=141" rel="nofollow sponsored noopener" target="_blank">$ 189.90/月</a> <a class="price-buy-cta" href="https://www.dmit.io/aff.php?aff=27885&amp;pid=141" rel="nofollow sponsored noopener" target="_blank">购买</a></td></tr><tr><td>MEDIUM</td><td>4 核</td><td>8GB</td><td>160GB SSD</td><td>6000GB</td><td>1Gbps</td><td><a class="price-buy" href="https://www.dmit.io/aff.php?aff=27885&amp;pid=142" rel="nofollow sponsored noopener" target="_blank">$ 320.90/月</a> <a class="price-buy-cta" href="https://www.dmit.io/aff.php?aff=27885&amp;pid=142" rel="nofollow sponsored noopener" target="_blank">购买</a></td></tr><tr><td>LARGE</td><td>8 核</td><td>16GB</td><td>320GB SSD</td><td>8000GB</td><td>1Gbps</td><td><a class="price-buy" href="https://www.dmit.io/aff.php?aff=27885&amp;pid=143" rel="nofollow sponsored noopener" target="_blank">$ 429.90/月</a> <a class="price-buy-cta" href="https://www.dmit.io/aff.php?aff=27885&amp;pid=143" rel="nofollow sponsored noopener" target="_blank">购买</a></td></tr><tr><td>GIANT</td><td>8 核</td><td>24GB</td><td>640GB SSD</td><td>15000GB</td><td>1Gbps</td><td><a class="price-buy" href="https://www.dmit.io/aff.php?aff=27885&amp;pid=144" rel="nofollow sponsored noopener" target="_blank">$ 829.90/月</a> <a class="price-buy-cta" href="https://www.dmit.io/aff.php?aff=27885&amp;pid=144" rel="nofollow sponsored noopener" target="_blank">购买</a></td></tr></tbody></table></div>
+<h4>产品特点与社区反馈</h4>
+<p>DMIT 的亚太节点，机房在东京品川的 Equinix TY8，接入中国电信 CN2 GIA（AS23764）。官方数据：至中国内地平均延迟约 28ms，是 DMIT 亚太节点中延迟最低的。</p><p>社区里的 <strong>TYO.AS3.Pro.Shinagawa（品川）</strong> 是限定款，$239/月，一机难求——有用户原话是「之前海缆断了的时候有人出但是我没钱买直接拍断大腿」。</p>
+<h4>适用运营商</h4>
+<div class="kv"><div><b>中国联通</b><span>★★☆</span></div><div><b>中国电信</b><span>★★★</span></div><div><b>中国移动</b><span>★★☆</span></div></div>
+<p class="meta">依据强度：实测　|　东京 Premium 网络，接入 CN2 GIA（AS23764），官方称至中国内地平均延迟约 28ms，是 DMIT 亚太节点里延迟最低的。机房位于品川 Equinix TY8。社区的 TYO.AS3.Pro.Shinagawa（品川）为限定款，$239/月，溢价严重、一机难求。</p>
+<blockquote>「「没人要的 239 刀」／「这鸡挺屌的啊」／「之前海缆断了的时候有人出但是我没钱买直接拍断大腿」」<cite>—— 楼主 jackbobo 与用户讨论，《【NQ】DMIT-TYO.AS3.Pro.Shinagawa》，2026-09-25</cite></blockquote>
+<p><strong>适合谁：</strong>面向日本、韩国及亚太其他地区用户的业务；需要亚太低延迟 + CN2 GIA 回国线路的用户。</p>
+<p><strong>不适合：</strong>只服务中国内地用户的场景——中国香港节点延迟更低。</p>
+
+<a class="buy" href="https://www.dmit.io/aff.php?aff=27885&amp;pid=138" rel="nofollow sponsored noopener" target="_blank">查看东京 AS3 Premium 配置与价格 →</a>
+</div>
+
+<h2 id="eyeball">二、大陆优化 · Eyeball 网络（CMIN2，联通 / 移动首选）</h2>
+<p>Eyeball 是<strong>成本与覆盖的平衡档</strong>：官方描述为「将 Tier 1 转接与经由 CMIN2 等中国 Eyeball 运营商的『合理努力』中国路由相结合」，路由品质保证不及 Premium，但优于纯 Tier 1。实测它的回程<strong>全程走联通，不跨网</strong>，所以 DMIT 客服建议<strong>联通与移动用户</strong>选它。</p>
+
+<div class="card" id="p-lax-as3-eb">
+<h3>洛杉矶 AS3 Eyeball —— 联通与移动的首选，晚高峰能跑满 <span class="tag new">联通 / 移动首选</span></h3>
+<div class="kv"><div><b>机房</b><span>美国 洛杉矶（LAX）</span></div><div><b>网络</b><span>Eyeball（CMIN2 等「合理努力」中国路由）</span></div><div><b>硬件</b><span>AS3 · AMD EPYC 7003 系列（Zen 3）</span></div><div><b>起价</b><span>$10.90 / 月（TINY：1 核 / 2GB / 20GB / 1.5TB） <a class="price-buy-cta" href="https://www.dmit.io/aff.php?aff=27885&amp;pid=259" rel="nofollow sponsored noopener" target="_blank">购买</a></span></div></div>
+<h4>档位与价格</h4>
+<div class="tbl-scroll"><table><thead><tr><th>档位</th><th>CPU</th><th>内存</th><th>硬盘</th><th>流量</th><th>带宽</th><th>价格 / 购买</th></tr></thead><tbody><tr><td>TINY</td><td>1 核</td><td>2GB</td><td>20GB SSD</td><td>1500GB</td><td>2Gbps</td><td><a class="price-buy" href="https://www.dmit.io/aff.php?aff=27885&amp;pid=259" rel="nofollow sponsored noopener" target="_blank">$ 10.90/月</a> <a class="price-buy-cta" href="https://www.dmit.io/aff.php?aff=27885&amp;pid=259" rel="nofollow sponsored noopener" target="_blank">购买</a></td></tr><tr><td>Pocket</td><td>2 核</td><td>2GB</td><td>40GB SSD</td><td>3000GB</td><td>4Gbps</td><td><a class="price-buy" href="https://www.dmit.io/aff.php?aff=27885&amp;pid=260" rel="nofollow sponsored noopener" target="_blank">$ 16.90/月</a> <a class="price-buy-cta" href="https://www.dmit.io/aff.php?aff=27885&amp;pid=260" rel="nofollow sponsored noopener" target="_blank">购买</a></td></tr><tr><td>STARTER</td><td>2 核</td><td>2GB</td><td>80GB SSD</td><td>5000GB</td><td>10Gbps</td><td><a class="price-buy" href="https://www.dmit.io/aff.php?aff=27885&amp;pid=261" rel="nofollow sponsored noopener" target="_blank">$ 34.90/月</a> <a class="price-buy-cta" href="https://www.dmit.io/aff.php?aff=27885&amp;pid=261" rel="nofollow sponsored noopener" target="_blank">购买</a></td></tr><tr><td>MINI</td><td>4 核</td><td>4GB</td><td>80GB SSD</td><td>10000GB</td><td>10Gbps</td><td><a class="price-buy" href="https://www.dmit.io/aff.php?aff=27885&amp;pid=262" rel="nofollow sponsored noopener" target="_blank">$ 62.90/月</a> <a class="price-buy-cta" href="https://www.dmit.io/aff.php?aff=27885&amp;pid=262" rel="nofollow sponsored noopener" target="_blank">购买</a></td></tr><tr><td>MICRO</td><td>4 核</td><td>4GB</td><td>160GB SSD</td><td>14000GB</td><td>10Gbps</td><td><a class="price-buy" href="https://www.dmit.io/aff.php?aff=27885&amp;pid=263" rel="nofollow sponsored noopener" target="_blank">$ 87.90/月</a> <a class="price-buy-cta" href="https://www.dmit.io/aff.php?aff=27885&amp;pid=263" rel="nofollow sponsored noopener" target="_blank">购买</a></td></tr><tr><td>MEDIUM</td><td>6 核</td><td>8GB</td><td>160GB SSD</td><td>30000GB</td><td>10Gbps</td><td><a class="price-buy" href="https://www.dmit.io/aff.php?aff=27885&amp;pid=264" rel="nofollow sponsored noopener" target="_blank">$ 199.90/月</a> <a class="price-buy-cta" href="https://www.dmit.io/aff.php?aff=27885&amp;pid=264" rel="nofollow sponsored noopener" target="_blank">购买</a></td></tr></tbody></table></div>
+<h4>产品特点与社区反馈</h4>
+<p>DMIT 官方客服对这条线的定性是：「联通与移动网络推荐 LAX EB 系列」（原文 <em>the Unicom and Mobile networks recommend LAX EB network</em>）。</p><p>为什么？因为 EB 的回程是 <strong>全程联通不跨网</strong>：CUG 10099 → 联通 9929 → 联通 4837。天津联通的实测数据很说明问题：中午 645Mbps、<strong>晚高峰 654Mbps</strong>，丢包 0%、抖动不到 1ms —— 晚高峰与中午几乎一样。</p><p>代价是电信侧明显弱：同一环境下 EB 到上海电信的单连接只有 136M（同环境 Pro 是 634M，重传 0%）。浙江三网延迟 150+ms，也高于部分同类竞品。</p>
+<h4>适用运营商</h4>
+<div class="kv"><div><b>中国联通</b><span>★★★</span></div><div><b>中国电信</b><span>★★☆</span></div><div><b>中国移动</b><span>★★★</span></div></div>
+<p class="meta">依据强度：实测　|　**DMIT 客服原话**：联通与移动网络推荐 LAX EB 系列。天津联通实测：EB 回程为 CUG 10099 → 9929 → 4837，**全程联通不跨网**，中午 645Mbps、晚高峰 654Mbps，丢包 0%、抖动 <1ms，晚高峰与中午基本一致。但电信侧明显弱于 Pro：同环境 EB 到上海电信单连接只有 136M（Pro 为 634M，重传 0%）。浙江三网延迟 150+ms，…</p>
+<blockquote>「「联通用户选 EB。三网回程基本是 9929 + CMIN2，晚高峰延迟、抖动、吞吐和中午一样。TcpQuality IPv4 回程 93 个测试点全部 0 丢包。」」<cite>—— 楼主 lyhpaul，《【实测】DMIT LAX EB vs LAX PRO，天津联通晚高峰对比》，2026-09-26</cite></blockquote><blockquote>「「电信用户可以反过来看：EB 到上海电信单连接只有 136M、重传 0.92%，PRO 有 634M、重传 0%。」」<cite>—— 同上帖，2026-09-26</cite></blockquote><blockquote>「「大妈 eb 系列浙江三网延迟都比 vmiss tri 高，eb 系列三网基本在 150 多点，tri 130 多点，电信还是不要抢 eb 了。」」<cite>—— 用户 kget，《从 vmiss 换成 DMIT，感觉没啥区别》，2026-09-29</cite></blockquote>
+<p><strong>适合谁：</strong>联通用户（首选）、移动用户。流量也比同档 Pro 更多，性价比更好。</p>
+<p><strong>不适合：</strong>电信用户——同价位请直接看 Premium（CN2 GIA）。</p>
+
+<a class="buy" href="https://www.dmit.io/aff.php?aff=27885&amp;pid=259" rel="nofollow sponsored noopener" target="_blank">查看洛杉矶 AS3 Eyeball 配置与价格 →</a>
+</div>
+
+<div class="card" id="p-lax-an4-eb">
+<h3>洛杉矶 AN4 Eyeball —— 同一条 EB 线路，硬件升到 Zen 4 </h3>
+<div class="kv"><div><b>机房</b><span>美国 洛杉矶（LAX）</span></div><div><b>网络</b><span>Eyeball（CMIN2 等）</span></div><div><b>硬件</b><span>AN4 · AMD EPYC 9004 系列（Zen 4）</span></div><div><b>起价</b><span>$72.90 / 月（MINI：4 核 / 4GB / 80GB / 10TB） <a class="price-buy-cta" href="https://www.dmit.io/aff.php?aff=27885" rel="nofollow sponsored noopener" target="_blank">购买</a></span></div></div>
+<h4>档位与价格</h4>
+<div class="tbl-scroll"><table><thead><tr><th>档位</th><th>CPU</th><th>内存</th><th>硬盘</th><th>流量</th><th>带宽</th><th>价格 / 购买</th></tr></thead><tbody><tr><td>MINI</td><td>4 核</td><td>4GB</td><td>80GB SSD</td><td>10000GB</td><td>10Gbps</td><td><a class="price-buy" href="https://www.dmit.io/aff.php?aff=27885" rel="nofollow sponsored noopener" target="_blank">$ 72.90/月</a> <a class="price-buy-cta" href="https://www.dmit.io/aff.php?aff=27885" rel="nofollow sponsored noopener" target="_blank">购买</a></td></tr><tr><td>MICRO</td><td>4 核</td><td>4GB</td><td>160GB SSD</td><td>14000GB</td><td>10Gbps</td><td><a class="price-buy" href="https://www.dmit.io/aff.php?aff=27885" rel="nofollow sponsored noopener" target="_blank">$ 102.90/月</a> <a class="price-buy-cta" href="https://www.dmit.io/aff.php?aff=27885" rel="nofollow sponsored noopener" target="_blank">购买</a></td></tr><tr><td>MEDIUM</td><td>6 核</td><td>8GB</td><td>160GB SSD</td><td>30000GB</td><td>10Gbps</td><td><a class="price-buy" href="https://www.dmit.io/aff.php?aff=27885" rel="nofollow sponsored noopener" target="_blank">$ 239.90/月</a> <a class="price-buy-cta" href="https://www.dmit.io/aff.php?aff=27885" rel="nofollow sponsored noopener" target="_blank">购买</a></td></tr><tr><td>LARGE</td><td>8 核</td><td>16GB</td><td>320GB SSD</td><td>50000GB</td><td>10Gbps</td><td><a class="price-buy" href="https://www.dmit.io/aff.php?aff=27885" rel="nofollow sponsored noopener" target="_blank">$ 459.90/月</a> <a class="price-buy-cta" href="https://www.dmit.io/aff.php?aff=27885" rel="nofollow sponsored noopener" target="_blank">购买</a></td></tr><tr><td>GIANT</td><td>12 核</td><td>24GB</td><td>640GB SSD</td><td>100000GB</td><td>10Gbps</td><td><a class="price-buy" href="https://www.dmit.io/aff.php?aff=27885" rel="nofollow sponsored noopener" target="_blank">$ 929.90/月</a> <a class="price-buy-cta" href="https://www.dmit.io/aff.php?aff=27885" rel="nofollow sponsored noopener" target="_blank">购买</a></td></tr></tbody></table></div>
+<h4>产品特点与社区反馈</h4>
+<p>网络与 AS3 Eyeball 相同，硬件换成 EPYC 9004。</p><p>这条线下有一个社区很熟的入门款 <strong>LAX.AN4.EB.WEE</strong>（154 IP 段，年付约 $39.9），是很多人「上车 DMIT」的第一台机器，也是二手市场的常客。</p>
+<h4>适用运营商</h4>
+<div class="kv"><div><b>中国联通</b><span>★★★</span></div><div><b>中国电信</b><span>★★☆</span></div><div><b>中国移动</b><span>★★★</span></div></div>
+<p class="meta">依据强度：推断　|　与 AS3 Eyeball 同一网络（CMIN2 等 Eyeball 线路），硬件换成 EPYC 9004。LAX.AN4.EB.WEE（154 段）是社区常见的年付入门款，$39.9/年 起。</p>
+<blockquote>「「大妈还是名不虚传」」<cite>—— 楼主，《【NQ+TQ留档】大妈还是名不虚传：DMIT.LAX.AN4.EB.WEE》，2026-10-01</cite></blockquote>
+<p><strong>适合谁：</strong>联通 / 移动用户，且希望硬件更新一代、或想蹲年付入门款的人。</p>
+<p><strong>不适合：</strong>电信用户。</p>
+<p class="meta">该产品线目前官网未开放下单入口（可能缺货或未开售）。</p>
+<a class="buy" href="https://www.dmit.io/aff.php?aff=27885" rel="nofollow sponsored noopener" target="_blank">进入 DMIT 官网查看洛杉矶 AN4 Eyeball →</a>
+</div>
+
+<div class="card" id="p-lax-an5-eb">
+<h3>洛杉矶 AN5 Eyeball —— EB 线路 + EPYC 9005，实测硬件分最高 </h3>
+<div class="kv"><div><b>机房</b><span>美国 洛杉矶（LAX）</span></div><div><b>网络</b><span>Eyeball（CMIN2 等）</span></div><div><b>硬件</b><span>AN5 · AMD EPYC 9005 系列（Zen 5）</span></div><div><b>起价</b><span>$79.90 / 月（MINI：4 核 / 4GB / 80GB / 10TB） <a class="price-buy-cta" href="https://www.dmit.io/aff.php?aff=27885&amp;pid=192" rel="nofollow sponsored noopener" target="_blank">购买</a></span></div></div>
+<h4>档位与价格</h4>
+<div class="tbl-scroll"><table><thead><tr><th>档位</th><th>CPU</th><th>内存</th><th>硬盘</th><th>流量</th><th>带宽</th><th>价格 / 购买</th></tr></thead><tbody><tr><td>MINI</td><td>4 核</td><td>4GB</td><td>80GB SSD</td><td>10000GB</td><td>10Gbps</td><td><a class="price-buy" href="https://www.dmit.io/aff.php?aff=27885&amp;pid=192" rel="nofollow sponsored noopener" target="_blank">$ 79.90/月</a> <a class="price-buy-cta" href="https://www.dmit.io/aff.php?aff=27885&amp;pid=192" rel="nofollow sponsored noopener" target="_blank">购买</a></td></tr><tr><td>MICRO</td><td>4 核</td><td>4GB</td><td>160GB SSD</td><td>14000GB</td><td>10Gbps</td><td><a class="price-buy" href="https://www.dmit.io/aff.php?aff=27885&amp;pid=193" rel="nofollow sponsored noopener" target="_blank">$ 110.90/月</a> <a class="price-buy-cta" href="https://www.dmit.io/aff.php?aff=27885&amp;pid=193" rel="nofollow sponsored noopener" target="_blank">购买</a></td></tr><tr><td>MEDIUM</td><td>6 核</td><td>8GB</td><td>160GB SSD</td><td>30000GB</td><td>10Gbps</td><td><a class="price-buy" href="https://www.dmit.io/aff.php?aff=27885&amp;pid=194" rel="nofollow sponsored noopener" target="_blank">$ 289.90/月</a> <a class="price-buy-cta" href="https://www.dmit.io/aff.php?aff=27885&amp;pid=194" rel="nofollow sponsored noopener" target="_blank">购买</a></td></tr><tr><td>LARGE</td><td>8 核</td><td>16GB</td><td>320GB SSD</td><td>50000GB</td><td>10Gbps</td><td><a class="price-buy" href="https://www.dmit.io/aff.php?aff=27885&amp;pid=195" rel="nofollow sponsored noopener" target="_blank">$ 499.90/月</a> <a class="price-buy-cta" href="https://www.dmit.io/aff.php?aff=27885&amp;pid=195" rel="nofollow sponsored noopener" target="_blank">购买</a></td></tr><tr><td>GIANT</td><td>12 核</td><td>24GB</td><td>640GB SSD</td><td>100000GB</td><td>10Gbps</td><td><a class="price-buy" href="https://www.dmit.io/aff.php?aff=27885&amp;pid=196" rel="nofollow sponsored noopener" target="_blank">$ 1009.90/月</a> <a class="price-buy-cta" href="https://www.dmit.io/aff.php?aff=27885&amp;pid=196" rel="nofollow sponsored noopener" target="_blank">购买</a></td></tr></tbody></table></div>
+<h4>产品特点与社区反馈</h4>
+<p>把最新的 Zen 5 硬件放在联通 / 移动友好的 EB 网络上，是「既要性能又要线路」的组合。</p><p>实测硬件：EPYC 9655P，2.6GHz，GB5 单核 1870，Sysbench 单线程 5391，硬件加权总分 41309。</p>
+<h4>适用运营商</h4>
+<div class="kv"><div><b>中国联通</b><span>★★★</span></div><div><b>中国电信</b><span>★★☆</span></div><div><b>中国移动</b><span>★★★</span></div></div>
+<p class="meta">依据强度：实测　|　与 AS3 Eyeball 同一网络，硬件为 EPYC 9005（Zen 5）。实测硬件：EPYC 9655P 96-Core，2.6GHz，GB5 单核 1870 / 多核 2024，Sysbench 单线程 5391，HQ 加权分 41309 —— 明显高于 AS3/AN4 同档位。</p>
+<blockquote>「「【TQ晚高峰】DMIT AN5 EB TINY 大妈还是大妈哈」」<cite>—— 楼主 九哥，2026-10-03（晚高峰 TQ 实测，12.98 美元/月档位）</cite></blockquote>
+<p><strong>适合谁：</strong>联通 / 移动用户中，对 CPU 性能也有要求的（建站、跑服务、编译）。</p>
+<p><strong>不适合：</strong>预算有限——AS3 Eyeball 便宜得多，线路完全一样。</p>
+
+<a class="buy" href="https://www.dmit.io/aff.php?aff=27885&amp;pid=192" rel="nofollow sponsored noopener" target="_blank">查看洛杉矶 AN5 Eyeball 配置与价格 →</a>
+</div>
+
+<div class="card" id="p-hkg-as3-eb">
+<h3>中国香港 AS3 Eyeball —— 社区口中的「特惠款」 <span class="tag new">特惠款</span></h3>
+<div class="kv"><div><b>机房</b><span>中国香港 · Equinix HK2</span></div><div><b>网络</b><span>Eyeball（CMIN2 等）</span></div><div><b>硬件</b><span>AS3 · AMD EPYC 7003 系列（Zen 3）</span></div><div><b>起价</b><span>$39.90 / 月（另有年付款） <a class="price-buy-cta" href="https://www.dmit.io/aff.php?aff=27885&amp;pid=210" rel="nofollow sponsored noopener" target="_blank">购买</a></span></div></div>
+<h4>档位与价格</h4>
+<div class="tbl-scroll"><table><thead><tr><th>档位</th><th>CPU</th><th>内存</th><th>硬盘</th><th>流量</th><th>带宽</th><th>价格 / 购买</th></tr></thead><tbody><tr><td>TINY</td><td>1 核</td><td>1GB</td><td>20GB SSD</td><td>800GB</td><td>1Gbps</td><td><a class="price-buy" href="https://www.dmit.io/aff.php?aff=27885&amp;pid=210" rel="nofollow sponsored noopener" target="_blank">$ 39.90/月</a> <a class="price-buy-cta" href="https://www.dmit.io/aff.php?aff=27885&amp;pid=210" rel="nofollow sponsored noopener" target="_blank">购买</a></td></tr><tr><td>STARTER</td><td>1 核</td><td>2GB</td><td>40GB SSD</td><td>1500GB</td><td>1Gbps</td><td><a class="price-buy" href="https://www.dmit.io/aff.php?aff=27885&amp;pid=211" rel="nofollow sponsored noopener" target="_blank">$ 79.90/月</a> <a class="price-buy-cta" href="https://www.dmit.io/aff.php?aff=27885&amp;pid=211" rel="nofollow sponsored noopener" target="_blank">购买</a></td></tr><tr><td>MINI</td><td>2 核</td><td>4GB</td><td>60GB SSD</td><td>2200GB</td><td>1Gbps</td><td><a class="price-buy" href="https://www.dmit.io/aff.php?aff=27885&amp;pid=212" rel="nofollow sponsored noopener" target="_blank">$ 126.90/月</a> <a class="price-buy-cta" href="https://www.dmit.io/aff.php?aff=27885&amp;pid=212" rel="nofollow sponsored noopener" target="_blank">购买</a></td></tr><tr><td>MICRO</td><td>4 核</td><td>4GB</td><td>80GB SSD</td><td>3000GB</td><td>1Gbps</td><td><a class="price-buy" href="https://www.dmit.io/aff.php?aff=27885&amp;pid=213" rel="nofollow sponsored noopener" target="_blank">$ 179.90/月</a> <a class="price-buy-cta" href="https://www.dmit.io/aff.php?aff=27885&amp;pid=213" rel="nofollow sponsored noopener" target="_blank">购买</a></td></tr><tr><td>MEDIUM</td><td>4 核</td><td>8GB</td><td>160GB SSD</td><td>4000GB</td><td>1Gbps</td><td><a class="price-buy" href="https://www.dmit.io/aff.php?aff=27885&amp;pid=214" rel="nofollow sponsored noopener" target="_blank">$ 239.90/月</a> <a class="price-buy-cta" href="https://www.dmit.io/aff.php?aff=27885&amp;pid=214" rel="nofollow sponsored noopener" target="_blank">购买</a></td></tr></tbody></table></div>
+<h4>产品特点与社区反馈</h4>
+<p>HKG.AS3.EB.WEE 被社区戏称为「特惠款」——年付 $298.88（与 VICTORIA 同价）或 $25/月起。在中国香港机房里属于相对便宜的一档。</p><p>中国香港机房对移动用户普遍友好，延迟低；联通侧反馈一般。</p>
+<h4>适用运营商</h4>
+<div class="kv"><div><b>中国联通</b><span>★★☆</span></div><div><b>中国电信</b><span>★★☆</span></div><div><b>中国移动</b><span>★★★</span></div></div>
+<p class="meta">依据强度：实测　|　中国香港 Eyeball 网络，硬件 EPYC 7003。HKG.AS3.EB.WEE 是社区口中的「特惠款」，年付 $298.88（与 VICTORIA 同价）或 $25/月起。有用户评价「上海联通相当一般」。</p>
+<blockquote>「「HKG.AS3.EB.WEE 特惠款」／「年付和 VICTORIA 一个价，都是 $298.88 呢」」<cite>—— 楼主与用户 akanotanin，《DMIT上新！HKG.AS3.EB.WEE 香港特惠款》，2026-09-30</cite></blockquote><blockquote>「「这款后面肯定清退，炒鸡的可以提前布局了。」」<cite>—— 用户 SamKu，同上帖，2026-09-30</cite></blockquote>
+<p><strong>适合谁：</strong>想要中国香港低延迟、又不想付 Premium 价钱的移动用户。</p>
+<p><strong>不适合：</strong>电信用户（中国香港 Premium 的 CN2 GIA 才是为电信准备的）。</p>
+
+<a class="buy" href="https://www.dmit.io/aff.php?aff=27885&amp;pid=210" rel="nofollow sponsored noopener" target="_blank">查看中国香港 AS3 Eyeball 配置与价格 →</a>
+</div>
+
+<div class="card" id="p-hkg-an5-eb">
+<h3>中国香港 AN5 Eyeball —— 低延迟 + Zen 5 硬件 </h3>
+<div class="kv"><div><b>机房</b><span>中国香港 · Equinix HK2</span></div><div><b>网络</b><span>Eyeball（CMIN2 等）</span></div><div><b>硬件</b><span>AN5 · AMD EPYC 9005 系列（Zen 5）</span></div><div><b>起价</b><span>$149.90 / 月（MINI：4 核 / 4GB / 80GB / 2.2TB） <a class="price-buy-cta" href="https://www.dmit.io/aff.php?aff=27885&amp;pid=156" rel="nofollow sponsored noopener" target="_blank">购买</a></span></div></div>
+<h4>档位与价格</h4>
+<div class="tbl-scroll"><table><thead><tr><th>档位</th><th>CPU</th><th>内存</th><th>硬盘</th><th>流量</th><th>带宽</th><th>价格 / 购买</th></tr></thead><tbody><tr><td>MINI</td><td>4 核</td><td>4GB</td><td>80GB SSD</td><td>2200GB</td><td>1Gbps</td><td><a class="price-buy" href="https://www.dmit.io/aff.php?aff=27885&amp;pid=156" rel="nofollow sponsored noopener" target="_blank">$ 149.90/月</a> <a class="price-buy-cta" href="https://www.dmit.io/aff.php?aff=27885&amp;pid=156" rel="nofollow sponsored noopener" target="_blank">购买</a></td></tr><tr><td>MICRO</td><td>4 核</td><td>4GB</td><td>160GB SSD</td><td>3000GB</td><td>1Gbps</td><td><a class="price-buy" href="https://www.dmit.io/aff.php?aff=27885&amp;pid=157" rel="nofollow sponsored noopener" target="_blank">$ 199.90/月</a> <a class="price-buy-cta" href="https://www.dmit.io/aff.php?aff=27885&amp;pid=157" rel="nofollow sponsored noopener" target="_blank">购买</a></td></tr><tr><td>MEDIUM</td><td>6 核</td><td>8GB</td><td>160GB SSD</td><td>4000GB</td><td>1Gbps</td><td><a class="price-buy" href="https://www.dmit.io/aff.php?aff=27885&amp;pid=158" rel="nofollow sponsored noopener" target="_blank">$ 279.90/月</a> <a class="price-buy-cta" href="https://www.dmit.io/aff.php?aff=27885&amp;pid=158" rel="nofollow sponsored noopener" target="_blank">购买</a></td></tr><tr><td>LARGE</td><td>8 核</td><td>16GB</td><td>320GB SSD</td><td>4500GB</td><td>1Gbps</td><td><a class="price-buy" href="https://www.dmit.io/aff.php?aff=27885&amp;pid=159" rel="nofollow sponsored noopener" target="_blank">$ 359.90/月</a> <a class="price-buy-cta" href="https://www.dmit.io/aff.php?aff=27885&amp;pid=159" rel="nofollow sponsored noopener" target="_blank">购买</a></td></tr><tr><td>GIANT</td><td>12 核</td><td>24GB</td><td>640GB SSD</td><td>9000GB</td><td>1Gbps</td><td><a class="price-buy" href="https://www.dmit.io/aff.php?aff=27885&amp;pid=160" rel="nofollow sponsored noopener" target="_blank">$ 759.90/月</a> <a class="price-buy-cta" href="https://www.dmit.io/aff.php?aff=27885&amp;pid=160" rel="nofollow sponsored noopener" target="_blank">购买</a></td></tr></tbody></table></div>
+<h4>产品特点与社区反馈</h4>
+<p>中国香港 Eyeball 网络的 Zen 5 版本。实测同平台硬件（AN5）GB5 单核 1870、硬件加权分 41309。</p><p>中国香港 + Eyeball 的组合对移动用户最友好。</p>
+<h4>适用运营商</h4>
+<div class="kv"><div><b>中国联通</b><span>★★☆</span></div><div><b>中国电信</b><span>★★☆</span></div><div><b>中国移动</b><span>★★★</span></div></div>
+<p class="meta">依据强度：推断　|　中国香港 Eyeball 网络（CMIN2 等 Eyeball 线路），硬件 EPYC 9005。中国香港机房对移动用户普遍友好，延迟低。</p>
+
+<p><strong>适合谁：</strong>移动用户，且需要中国香港低延迟 + 高单核性能。</p>
+<p><strong>不适合：</strong>预算敏感的用户。</p>
+
+<a class="buy" href="https://www.dmit.io/aff.php?aff=27885&amp;pid=156" rel="nofollow sponsored noopener" target="_blank">查看中国香港 AN5 Eyeball 配置与价格 →</a>
+</div>
+
+<h2 id="tier1">三、国际线路 · Tier 1 网络（亚太 ↔ 美洲，无中国优化）</h2>
+<p>Tier 1 是<strong>性价比最高的一组</strong>：官方描述为「专注亚太与美洲之间清晰、优化的路由，不包含针对中国内地的特别优化」。适合重视原始带宽、亚太内部性能，但不需要中国专项路由优化的业务。做落地机、中转机、下载站最合适。</p>
+
+<div class="card" id="p-lax-as3-t1">
+<h3>洛杉矶 AS3 Tier 1 —— $6.90/月起，DMIT 的入门门槛 <span class="tag new">最便宜</span></h3>
+<div class="kv"><div><b>机房</b><span>美国 洛杉矶（LAX）</span></div><div><b>网络</b><span>Tier 1（国际线路，无中国内地优化）</span></div><div><b>硬件</b><span>AS3 · AMD EPYC 7003 系列（Zen 3）</span></div><div><b>起价</b><span>$6.90 / 月（TINY：1 核 / 1GB / 20GB / 2TB） <a class="price-buy-cta" href="https://www.dmit.io/aff.php?aff=27885&amp;pid=271" rel="nofollow sponsored noopener" target="_blank">购买</a></span></div></div>
+<h4>档位与价格</h4>
+<div class="tbl-scroll"><table><thead><tr><th>档位</th><th>CPU</th><th>内存</th><th>硬盘</th><th>流量</th><th>带宽</th><th>价格 / 购买</th></tr></thead><tbody><tr><td>WEE</td><td>1 核</td><td>1GB</td><td>20GB SSD</td><td>1000GB Max (IN, OUT)</td><td>—</td><td><a class="price-buy" href="https://www.dmit.io/aff.php?aff=27885&amp;pid=270" rel="nofollow sponsored noopener" target="_blank">$ 36.90/年</a> <a class="price-buy-cta" href="https://www.dmit.io/aff.php?aff=27885&amp;pid=270" rel="nofollow sponsored noopener" target="_blank">购买</a></td></tr><tr><td>TINY</td><td>1 核</td><td>1GB</td><td>20GB SSD</td><td>2000GB Max (IN, OUT)</td><td>—</td><td><a class="price-buy" href="https://www.dmit.io/aff.php?aff=27885&amp;pid=271" rel="nofollow sponsored noopener" target="_blank">$ 6.90/月</a> <a class="price-buy-cta" href="https://www.dmit.io/aff.php?aff=27885&amp;pid=271" rel="nofollow sponsored noopener" target="_blank">购买</a></td></tr><tr><td>STARTER</td><td>2 核</td><td>2GB</td><td>40GB SSD</td><td>4000GB Max (IN, OUT)</td><td>—</td><td><a class="price-buy" href="https://www.dmit.io/aff.php?aff=27885&amp;pid=272" rel="nofollow sponsored noopener" target="_blank">$ 12.90/月</a> <a class="price-buy-cta" href="https://www.dmit.io/aff.php?aff=27885&amp;pid=272" rel="nofollow sponsored noopener" target="_blank">购买</a></td></tr><tr><td>MINI</td><td>2 核</td><td>4GB</td><td>80GB SSD</td><td>8000GB Max (IN, OUT)</td><td>—</td><td><a class="price-buy" href="https://www.dmit.io/aff.php?aff=27885&amp;pid=273" rel="nofollow sponsored noopener" target="_blank">$ 21.90/月</a> <a class="price-buy-cta" href="https://www.dmit.io/aff.php?aff=27885&amp;pid=273" rel="nofollow sponsored noopener" target="_blank">购买</a></td></tr><tr><td>MICRO</td><td>4 核</td><td>4GB</td><td>120GB SSD</td><td>16000GB Max (IN, OUT)</td><td>—</td><td><a class="price-buy" href="https://www.dmit.io/aff.php?aff=27885&amp;pid=274" rel="nofollow sponsored noopener" target="_blank">$ 32.90/月</a> <a class="price-buy-cta" href="https://www.dmit.io/aff.php?aff=27885&amp;pid=274" rel="nofollow sponsored noopener" target="_blank">购买</a></td></tr></tbody></table></div>
+<h4>产品特点与社区反馈</h4>
+<p>DMIT 全线<strong>最便宜的入口</strong>：$6.90/月，另有 $36.90/年的 WEE 档。</p><p>注意 Tier 1 网络<strong>不含中国内地专项优化</strong>，官方定位是「亚太与美洲之间的优化路由」。社区常见用法是当落地机、监控探针、轻量常驻任务，或与国内优质线路机组合成「中转 + 落地」架构。</p><p>实测 IP 段为 216.234.x.x，与 Premium / Eyeball 的 179 / 154 段不同。</p>
+<h4>适用运营商</h4>
+<div class="kv"><div><b>中国联通</b><span>★★☆</span></div><div><b>中国电信</b><span>★★☆</span></div><div><b>中国移动</b><span>★★☆</span></div></div>
+<p class="meta">依据强度：推断　|　洛杉矶 Tier 1 入门款，$6.90/月起（年付 $36.90 的 WEE 档最低）。无中国内地优化，实测 IP 段为 216.234.x.x。适合做落地机、监控、轻量常驻任务。</p>
+<blockquote>「「【NQ+TQ】DMIT-LAX.AS3.T1.WEE 存档」」<cite>—— 楼主，《【NQ+TQ】DMIT-LAX.AS3.T1.WEE 存档 1》，2026-09-24</cite></blockquote>
+<p><strong>适合谁：</strong>预算优先、只需要落地机 / 中转机 / 轻量服务的用户；也适合先花 7 美元体验 DMIT 的面板与硬件。</p>
+<p><strong>不适合：</strong>指望它做回国优化的人——请直接看 Premium / Eyeball。</p>
+
+<a class="buy" href="https://www.dmit.io/aff.php?aff=27885&amp;pid=271" rel="nofollow sponsored noopener" target="_blank">查看洛杉矶 AS3 Tier 1 配置与价格 →</a>
+</div>
+
+<div class="card" id="p-lax-an5-t1">
+<h3>洛杉矶 AN5 Tier 1 —— VOLUME / GENERAL 双系列，大流量国际线路 </h3>
+<div class="kv"><div><b>机房</b><span>美国 洛杉矶（LAX）</span></div><div><b>网络</b><span>Tier 1（国际线路）</span></div><div><b>硬件</b><span>AN5 · AMD EPYC 9005 系列（Zen 5）</span></div><div><b>起价</b><span>$14.90 / 月（V2C2G：2 核 / 2GB / 40GB / 5TB） <a class="price-buy-cta" href="https://www.dmit.io/aff.php?aff=27885&amp;pid=169" rel="nofollow sponsored noopener" target="_blank">购买</a></span></div></div>
+<h4>档位与价格</h4>
+<div class="tbl-scroll"><table><thead><tr><th>档位</th><th>CPU</th><th>内存</th><th>硬盘</th><th>流量</th><th>带宽</th><th>价格 / 购买</th></tr></thead><tbody><tr><td>V2C2G</td><td>2 核</td><td>2GB</td><td>40GB SSD</td><td>5000GB Max (IN, OUT)</td><td>10Gbps</td><td><a class="price-buy" href="https://www.dmit.io/aff.php?aff=27885&amp;pid=169" rel="nofollow sponsored noopener" target="_blank">$ 14.90/月</a> <a class="price-buy-cta" href="https://www.dmit.io/aff.php?aff=27885&amp;pid=169" rel="nofollow sponsored noopener" target="_blank">购买</a></td></tr><tr><td>V2C4G</td><td>2 核</td><td>4GB</td><td>80GB SSD</td><td>10000GB Max (IN, OUT)</td><td>10Gbps</td><td><a class="price-buy" href="https://www.dmit.io/aff.php?aff=27885&amp;pid=170" rel="nofollow sponsored noopener" target="_blank">$ 23.90/月</a> <a class="price-buy-cta" href="https://www.dmit.io/aff.php?aff=27885&amp;pid=170" rel="nofollow sponsored noopener" target="_blank">购买</a></td></tr><tr><td>V4C4G</td><td>4 核</td><td>4GB</td><td>120GB SSD</td><td>20000GB Max (IN, OUT)</td><td>10Gbps</td><td><a class="price-buy" href="https://www.dmit.io/aff.php?aff=27885&amp;pid=171" rel="nofollow sponsored noopener" target="_blank">$ 36.90/月</a> <a class="price-buy-cta" href="https://www.dmit.io/aff.php?aff=27885&amp;pid=171" rel="nofollow sponsored noopener" target="_blank">购买</a></td></tr><tr><td>V4C8G</td><td>4 核</td><td>8GB</td><td>160GB SSD</td><td>40000GB Max (IN, OUT)</td><td>10Gbps</td><td><a class="price-buy" href="https://www.dmit.io/aff.php?aff=27885&amp;pid=180" rel="nofollow sponsored noopener" target="_blank">$ 52.90/月</a> <a class="price-buy-cta" href="https://www.dmit.io/aff.php?aff=27885&amp;pid=180" rel="nofollow sponsored noopener" target="_blank">购买</a></td></tr><tr><td>V8C16G</td><td>8 核</td><td>16GB</td><td>240GB SSD</td><td>80000GB Max (IN, OUT)</td><td>10Gbps</td><td><a class="price-buy" href="https://www.dmit.io/aff.php?aff=27885&amp;pid=172" rel="nofollow sponsored noopener" target="_blank">$ 119.90/月</a> <a class="price-buy-cta" href="https://www.dmit.io/aff.php?aff=27885&amp;pid=172" rel="nofollow sponsored noopener" target="_blank">购买</a></td></tr><tr><td>V12C24G</td><td>12 核</td><td>24GB</td><td>320GB SSD</td><td>160000GB Max (IN, OUT)</td><td>10Gbps</td><td><a class="price-buy" href="https://www.dmit.io/aff.php?aff=27885&amp;pid=173" rel="nofollow sponsored noopener" target="_blank">$ 199.90/月</a> <a class="price-buy-cta" href="https://www.dmit.io/aff.php?aff=27885&amp;pid=173" rel="nofollow sponsored noopener" target="_blank">购买</a></td></tr><tr><td>G2C4G</td><td>2 核</td><td>4GB</td><td>80GB SSD</td><td>4000GB Max (IN, OUT)</td><td>10Gbps</td><td><a class="price-buy" href="https://www.dmit.io/aff.php?aff=27885&amp;pid=234" rel="nofollow sponsored noopener" target="_blank">$ 16.90/月</a> <a class="price-buy-cta" href="https://www.dmit.io/aff.php?aff=27885&amp;pid=234" rel="nofollow sponsored noopener" target="_blank">购买</a></td></tr><tr><td>G4C8G</td><td>4 核</td><td>8GB</td><td>160GB SSD</td><td>8000GB Max (IN, OUT)</td><td>10Gbps</td><td><a class="price-buy" href="https://www.dmit.io/aff.php?aff=27885&amp;pid=235" rel="nofollow sponsored noopener" target="_blank">$ 36.90/月</a> <a class="price-buy-cta" href="https://www.dmit.io/aff.php?aff=27885&amp;pid=235" rel="nofollow sponsored noopener" target="_blank">购买</a></td></tr><tr><td>G8C16G</td><td>8 核</td><td>16GB</td><td>320GB SSD</td><td>12000GB Max (IN, OUT)</td><td>10Gbps</td><td><a class="price-buy" href="https://www.dmit.io/aff.php?aff=27885&amp;pid=236" rel="nofollow sponsored noopener" target="_blank">$ 79.90/月</a> <a class="price-buy-cta" href="https://www.dmit.io/aff.php?aff=27885&amp;pid=236" rel="nofollow sponsored noopener" target="_blank">购买</a></td></tr><tr><td>G12C24G</td><td>12 核</td><td>24GB</td><td>480GB SSD</td><td>240000GB Max (IN, OUT)</td><td>10Gbps</td><td><a class="price-buy" href="https://www.dmit.io/aff.php?aff=27885&amp;pid=174" rel="nofollow sponsored noopener" target="_blank">$ 119.90/月</a> <a class="price-buy-cta" href="https://www.dmit.io/aff.php?aff=27885&amp;pid=174" rel="nofollow sponsored noopener" target="_blank">购买</a></td></tr><tr><td>G16C32G</td><td>16 核</td><td>32GB</td><td>640GB SSD</td><td>320000GB Max (IN, OUT)</td><td>10Gbps</td><td><a class="price-buy" href="https://www.dmit.io/aff.php?aff=27885&amp;pid=175" rel="nofollow sponsored noopener" target="_blank">$ 199.90/月</a> <a class="price-buy-cta" href="https://www.dmit.io/aff.php?aff=27885&amp;pid=175" rel="nofollow sponsored noopener" target="_blank">购买</a></td></tr></tbody></table></div>
+<h4>产品特点与社区反馈</h4>
+<p>这条线是 DMIT 的<strong>大流量国际线路</strong>，分两个子系列：<strong>VOLUME（V 系列）</strong>流量更多、单价更低；<strong>GENERAL（G 系列）</strong>配置更均衡。</p><p>流量档位从 5TB 一直给到 320TB，最大档位单价仅 $199.90/月——是整份价目表里每 GB 流量成本最低的一组。</p>
+<h4>适用运营商</h4>
+<div class="kv"><div><b>中国联通</b><span>★★☆</span></div><div><b>中国电信</b><span>★★☆</span></div><div><b>中国移动</b><span>★★☆</span></div></div>
+<p class="meta">依据强度：推断　|　Tier 1 网络不含中国内地专项优化，官方定位是亚太↔美洲的国际线路。社区常见用法是当落地机 / 中转机，或与国内优质线路机组合使用。该组同时提供 VOLUME（V 系列，流量向）与 GENERAL（G 系列，通用向）两个子系列。</p>
+
+<p><strong>适合谁：</strong>需要大流量国际带宽的业务：下载站、镜像源、CDN 回源、跨境数据同步。</p>
+<p><strong>不适合：</strong>需要中国内地优化的用户。</p>
+
+<a class="buy" href="https://www.dmit.io/aff.php?aff=27885&amp;pid=169" rel="nofollow sponsored noopener" target="_blank">查看洛杉矶 AN5 Tier 1 配置与价格 →</a>
+</div>
+
+<div class="card" id="p-hkg-as3-t1">
+<h3>中国香港 AS3 Tier 1 —— 亚太枢纽的 $6.90 入门款 </h3>
+<div class="kv"><div><b>机房</b><span>中国香港 · Equinix HK2</span></div><div><b>网络</b><span>Tier 1（2.4Tbps 国际带宽，无中国内地优化）</span></div><div><b>硬件</b><span>AS3 · AMD EPYC 7003 系列（Zen 3）</span></div><div><b>起价</b><span>$6.90 / 月（TINY：1 核 / 1GB / 20GB / 2TB） <a class="price-buy-cta" href="https://www.dmit.io/aff.php?aff=27885&amp;pid=198" rel="nofollow sponsored noopener" target="_blank">购买</a></span></div></div>
+<h4>档位与价格</h4>
+<div class="tbl-scroll"><table><thead><tr><th>档位</th><th>CPU</th><th>内存</th><th>硬盘</th><th>流量</th><th>带宽</th><th>价格 / 购买</th></tr></thead><tbody><tr><td>WEE</td><td>1 核</td><td>1GB</td><td>20GB SSD</td><td>1000GB Max (IN, OUT)</td><td>—</td><td><a class="price-buy" href="https://www.dmit.io/aff.php?aff=27885&amp;pid=197" rel="nofollow sponsored noopener" target="_blank">$ 36.90/年</a> <a class="price-buy-cta" href="https://www.dmit.io/aff.php?aff=27885&amp;pid=197" rel="nofollow sponsored noopener" target="_blank">购买</a></td></tr><tr><td>TINY</td><td>1 核</td><td>1GB</td><td>20GB SSD</td><td>2000GB Max (IN, OUT)</td><td>—</td><td><a class="price-buy" href="https://www.dmit.io/aff.php?aff=27885&amp;pid=198" rel="nofollow sponsored noopener" target="_blank">$ 6.90/月</a> <a class="price-buy-cta" href="https://www.dmit.io/aff.php?aff=27885&amp;pid=198" rel="nofollow sponsored noopener" target="_blank">购买</a></td></tr><tr><td>STARTER</td><td>1 核</td><td>2GB</td><td>40GB SSD</td><td>4000GB Max (IN, OUT)</td><td>—</td><td><a class="price-buy" href="https://www.dmit.io/aff.php?aff=27885&amp;pid=199" rel="nofollow sponsored noopener" target="_blank">$ 12.90/月</a> <a class="price-buy-cta" href="https://www.dmit.io/aff.php?aff=27885&amp;pid=199" rel="nofollow sponsored noopener" target="_blank">购买</a></td></tr><tr><td>MINI</td><td>2 核</td><td>2GB</td><td>60GB SSD</td><td>8000GB Max (IN, OUT)</td><td>—</td><td><a class="price-buy" href="https://www.dmit.io/aff.php?aff=27885&amp;pid=200" rel="nofollow sponsored noopener" target="_blank">$ 21.90/月</a> <a class="price-buy-cta" href="https://www.dmit.io/aff.php?aff=27885&amp;pid=200" rel="nofollow sponsored noopener" target="_blank">购买</a></td></tr><tr><td>MICRO</td><td>4 核</td><td>4GB</td><td>80GB SSD</td><td>16000GB Max (IN, OUT)</td><td>—</td><td><a class="price-buy" href="https://www.dmit.io/aff.php?aff=27885&amp;pid=201" rel="nofollow sponsored noopener" target="_blank">$ 32.90/月</a> <a class="price-buy-cta" href="https://www.dmit.io/aff.php?aff=27885&amp;pid=201" rel="nofollow sponsored noopener" target="_blank">购买</a></td></tr><tr><td>MEDIUM</td><td>4 核</td><td>8GB</td><td>160GB SSD</td><td>32000GB Max (IN, OUT)</td><td>—</td><td><a class="price-buy" href="https://www.dmit.io/aff.php?aff=27885&amp;pid=202" rel="nofollow sponsored noopener" target="_blank">$ 49.90/月</a> <a class="price-buy-cta" href="https://www.dmit.io/aff.php?aff=27885&amp;pid=202" rel="nofollow sponsored noopener" target="_blank">购买</a></td></tr><tr><td>LARGE</td><td>8 核</td><td>16GB</td><td>320GB SSD</td><td>64000GB Max (IN, OUT)</td><td>—</td><td><a class="price-buy" href="https://www.dmit.io/aff.php?aff=27885&amp;pid=203" rel="nofollow sponsored noopener" target="_blank">$ 99.90/月</a> <a class="price-buy-cta" href="https://www.dmit.io/aff.php?aff=27885&amp;pid=203" rel="nofollow sponsored noopener" target="_blank">购买</a></td></tr><tr><td>GIANT</td><td>8 核</td><td>24GB</td><td>640GB SSD</td><td>128000GB Max (IN, OUT)</td><td>—</td><td><a class="price-buy" href="https://www.dmit.io/aff.php?aff=27885&amp;pid=204" rel="nofollow sponsored noopener" target="_blank">$ 199.90/月</a> <a class="price-buy-cta" href="https://www.dmit.io/aff.php?aff=27885&amp;pid=204" rel="nofollow sponsored noopener" target="_blank">购买</a></td></tr></tbody></table></div>
+<h4>产品特点与社区反馈</h4>
+<p>中国香港机房最便宜的入口。$6.90/月起，最高档位 GIANT（8 核 / 24GB / 640GB / 128TB）只要 $199.90/月。</p><p>中国香港地处亚太互联枢纽，即便不走中国优化，面向东南亚与亚太其他地区的延迟也很低。</p>
+<h4>适用运营商</h4>
+<div class="kv"><div><b>中国联通</b><span>★★☆</span></div><div><b>中国电信</b><span>★★☆</span></div><div><b>中国移动</b><span>★★☆</span></div></div>
+<p class="meta">依据强度：推断　|　中国香港 Tier 1 网络，2.4Tbps 国际带宽，无中国内地专项优化。$6.90/月起，是中国香港最便宜的入口。适合做落地机与亚太中转。</p>
+
+<p><strong>适合谁：</strong>需要中国香港位置 + 大带宽国际线路的用户，做落地机与亚太中转很合适。</p>
+<p><strong>不适合：</strong>需要中国内地优化的用户。</p>
+
+<a class="buy" href="https://www.dmit.io/aff.php?aff=27885&amp;pid=198" rel="nofollow sponsored noopener" target="_blank">查看中国香港 AS3 Tier 1 配置与价格 →</a>
+</div>
+
+<div class="card" id="p-tyo-as3-t1">
+<h3>东京 AS3 Tier 1 —— 亚太枢纽 + 1.4Tbps 国际带宽 </h3>
+<div class="kv"><div><b>机房</b><span>日本 东京 · Equinix TY8（品川）</span></div><div><b>网络</b><span>Tier 1（1.4Tbps 国际带宽，无中国内地优化）</span></div><div><b>硬件</b><span>AS3 · AMD EPYC 7003 系列（Zen 3）</span></div><div><b>起价</b><span>$6.90 / 月（TINY：1 核 / 1GB / 20GB / 2TB） <a class="price-buy-cta" href="https://www.dmit.io/aff.php?aff=27885&amp;pid=131" rel="nofollow sponsored noopener" target="_blank">购买</a></span></div></div>
+<h4>档位与价格</h4>
+<div class="tbl-scroll"><table><thead><tr><th>档位</th><th>CPU</th><th>内存</th><th>硬盘</th><th>流量</th><th>带宽</th><th>价格 / 购买</th></tr></thead><tbody><tr><td>WEE</td><td>1 核</td><td>1GB</td><td>20GB SSD</td><td>1000GB Max (IN, OUT)</td><td>—</td><td><a class="price-buy" href="https://www.dmit.io/aff.php?aff=27885&amp;pid=228" rel="nofollow sponsored noopener" target="_blank">$ 36.90/年</a> <a class="price-buy-cta" href="https://www.dmit.io/aff.php?aff=27885&amp;pid=228" rel="nofollow sponsored noopener" target="_blank">购买</a></td></tr><tr><td>TINY</td><td>1 核</td><td>1GB</td><td>20GB SSD</td><td>2000GB Max (IN, OUT)</td><td>—</td><td><a class="price-buy" href="https://www.dmit.io/aff.php?aff=27885&amp;pid=131" rel="nofollow sponsored noopener" target="_blank">$ 6.90/月</a> <a class="price-buy-cta" href="https://www.dmit.io/aff.php?aff=27885&amp;pid=131" rel="nofollow sponsored noopener" target="_blank">购买</a></td></tr><tr><td>STARTER</td><td>1 核</td><td>2GB</td><td>40GB SSD</td><td>4000GB Max (IN, OUT)</td><td>—</td><td><a class="price-buy" href="https://www.dmit.io/aff.php?aff=27885&amp;pid=132" rel="nofollow sponsored noopener" target="_blank">$ 12.90/月</a> <a class="price-buy-cta" href="https://www.dmit.io/aff.php?aff=27885&amp;pid=132" rel="nofollow sponsored noopener" target="_blank">购买</a></td></tr><tr><td>MINI</td><td>2 核</td><td>2GB</td><td>60GB SSD</td><td>8000GB Max (IN, OUT)</td><td>—</td><td><a class="price-buy" href="https://www.dmit.io/aff.php?aff=27885&amp;pid=133" rel="nofollow sponsored noopener" target="_blank">$ 21.90/月</a> <a class="price-buy-cta" href="https://www.dmit.io/aff.php?aff=27885&amp;pid=133" rel="nofollow sponsored noopener" target="_blank">购买</a></td></tr><tr><td>MICRO</td><td>4 核</td><td>4GB</td><td>80GB SSD</td><td>16000GB Max (IN, OUT)</td><td>—</td><td><a class="price-buy" href="https://www.dmit.io/aff.php?aff=27885&amp;pid=134" rel="nofollow sponsored noopener" target="_blank">$ 32.90/月</a> <a class="price-buy-cta" href="https://www.dmit.io/aff.php?aff=27885&amp;pid=134" rel="nofollow sponsored noopener" target="_blank">购买</a></td></tr><tr><td>MEDIUM</td><td>4 核</td><td>8GB</td><td>160GB SSD</td><td>32000GB Max (IN, OUT)</td><td>—</td><td><a class="price-buy" href="https://www.dmit.io/aff.php?aff=27885&amp;pid=135" rel="nofollow sponsored noopener" target="_blank">$ 49.90/月</a> <a class="price-buy-cta" href="https://www.dmit.io/aff.php?aff=27885&amp;pid=135" rel="nofollow sponsored noopener" target="_blank">购买</a></td></tr><tr><td>LARGE</td><td>8 核</td><td>16GB</td><td>320GB SSD</td><td>64000GB Max (IN, OUT)</td><td>—</td><td><a class="price-buy" href="https://www.dmit.io/aff.php?aff=27885&amp;pid=136" rel="nofollow sponsored noopener" target="_blank">$ 99.90/月</a> <a class="price-buy-cta" href="https://www.dmit.io/aff.php?aff=27885&amp;pid=136" rel="nofollow sponsored noopener" target="_blank">购买</a></td></tr><tr><td>GIANT</td><td>8 核</td><td>24GB</td><td>640GB SSD</td><td>128000GB Max (IN, OUT)</td><td>—</td><td><a class="price-buy" href="https://www.dmit.io/aff.php?aff=27885&amp;pid=229" rel="nofollow sponsored noopener" target="_blank">$ 199.90/月</a> <a class="price-buy-cta" href="https://www.dmit.io/aff.php?aff=27885&amp;pid=229" rel="nofollow sponsored noopener" target="_blank">购买</a></td></tr></tbody></table></div>
+<h4>产品特点与社区反馈</h4>
+<p>东京的 Tier 1 线路，$6.90/月起。机房直连多条海底光缆，是面向日韩与亚太的优选位置。</p><p>和另外两个机房的 Tier 1 一样，<strong>不含中国内地优化</strong>，买之前先确认自己不需要回国线路。</p>
+<h4>适用运营商</h4>
+<div class="kv"><div><b>中国联通</b><span>★★☆</span></div><div><b>中国电信</b><span>★★☆</span></div><div><b>中国移动</b><span>★★☆</span></div></div>
+<p class="meta">依据强度：推断　|　东京 Tier 1 网络，1.4Tbps 国际带宽，无中国内地专项优化。$6.90/月起。东京是亚太互联网枢纽，直连多条海底光缆，适合面向日韩与亚太的业务。</p>
+
+<p><strong>适合谁：</strong>面向日韩及亚太市场的业务；需要亚洲落地机的用户。</p>
+<p><strong>不适合：</strong>需要中国内地优化的用户。</p>
+
+<a class="buy" href="https://www.dmit.io/aff.php?aff=27885&amp;pid=131" rel="nofollow sponsored noopener" target="_blank">查看东京 AS3 Tier 1 配置与价格 →</a>
+</div>
+
+
+<h2 id="faq">常见问题</h2>
+<div class="card" id="faq1"><h3>DMIT 的 Premium（Pro）、Eyeball（EB）、Tier 1（T1）三个网络系列有什么区别？</h3><p>按 DMIT 官方客服的说法：Premium 走中国电信 CN2 GIA 等高级线路，Eyeball 走 AS58807 / AS9929 / AS58453 等「合理努力」中国路由，Tier 1 不含中国内地优化。路由是向后兼容的——Premium 包含 Eyeball 与 Tier 1 的线路，Eyeball 包含 Tier 1 的线路。官方明确的选型建议是：<strong>电信选 Pro，联通和移动选 EB</strong>。</p></div>
+<div class="card" id="faq2"><h3>我该选 Premium 还是 Eyeball？</h3><p>看你的运营商。实测（天津联通）：Eyeball 回程 CUG 10099 → 9929 → 4837 全程联通，晚高峰 654Mbps、0 丢包；而同环境 Premium 晚高峰被限到 90Mbps。反过来，EB 到上海电信单连接只有 136M，Premium 有 634M。所以<strong>电信选 Premium，联通 / 移动选 Eyeball</strong>。</p></div>
+<div class="card" id="faq3"><h3>DMIT 三个机房（洛杉矶 / 中国香港 / 东京）怎么选？</h3><p>追求最低延迟选中国香港（至内地约 15ms）；要亚太低延迟同时保留 CN2 GIA 回国线路选东京（约 28ms）；要流量性价比、大带宽、机型选择最多选洛杉矶。中国香港与东京单价明显更高。</p></div>
+<div class="card" id="faq4"><h3>DMIT 支持支付宝吗？</h3><p>截至 2026 年 10 月，DMIT 面板（WHMCS）不支持支付宝，需要用信用卡或 PayPal 等方式付款。社区里对此有明确讨论（「dmit 居然不支持支付宝啊」）。</p></div>
+<div class="card" id="faq5"><h3>为什么 DMIT 的正价机经常缺货？</h3><p>2026 年 9–10 月 DMIT 出现过一轮抢购潮，洛杉矶 AS3 Pro 一度<strong>全部售罄</strong>，二手市场溢价明显（限定款 Malibu / PalmSpring / Corona 加价数百到上千元）。社区分析认为一部分是「鸡荒」+ 炒作资金入场。买之前先确认库存。</p></div>
+<div class="card" id="faq6"><h3>DMIT 的 IP 干净吗？能跑 ChatGPT / Netflix 吗？</h3><p>实测反馈：洛杉矶 Premium / Eyeball 的 179 段与 154 段均为美国原生 IP、低风险，Netflix / Disney+ / TikTok / Prime Video / ChatGPT 原生解锁。DMIT 还支持<strong>自助更换 IP</strong>（含升级到 154 段，按 $1/月 计费）。但注意：新分配的 IP 段（如 131 段）信誉积累不足，可能被部分站点的 Cloudflare WAF 拦截。</p></div>
+<div class="card" id="faq7"><h3>听说 DMIT 的 IPv6 最近改了线路？</h3><p>是的。2026 年 10 月，洛杉矶 Pro 的 IPv6 电信回程由 9929 切换为 163plus（去程仍走 CN2），官方思路是让 v4 与 v6 各自实现三网优化。社区对此评价不一，有人认为是「最优解」，也有人提醒「163 晚高峰会丢包」。买之前建议自己测一遍。</p></div>
+<div class="card" id="faq8"><h3>DMIT 的单线程速度很慢怎么办？</h3><p>两个常见原因：一是没做 TCP 调优，需要开 BBR 并调整 TCP 参数；二是客户端走了 QUIC——社区有实测案例，禁用 YouTube 的 443 QUIC 流量后速度立刻恢复。另外 DMIT 不同机房的默认配置不同，先测再调，别一上来就改一堆参数。</p></div>
+<div class="card" id="faq9"><h3>黑五 / 圣诞节 DMIT 会有特价机吗？</h3><p>社区每年都会押注，2026 年的讨论热度尤其高。历史经验是会有活动款，但价格未必低于往年。如果只是想体验，最省事的做法是买 $6.90/月 起的 Tier 1 入门款。</p></div>
+
+
+<h2 id="caveats">选购注意事项</h2>
+
+<div class="warn">
+<strong>下单前务必确认这几点：</strong>
+<ul>
+  <li><strong>不支持支付宝</strong>。DMIT 面板为 WHMCS，截至 2026-10 需要用信用卡或 PayPal 等方式付款。</li>
+  <li><strong>正价机经常缺货</strong>。2026 年 9–10 月出现过抢购潮，洛杉矶 AS3 Pro 一度全部售罄。
+      下单前先看库存，别为一个「即将售罄」的倒计时冲动消费。</li>
+  <li><strong>二手溢价风险</strong>。限定款（Malibu / PalmSpring / Corona / Shinagawa / Mongkok）
+      在二手市场加价数百到上千元。溢价买「传家宝」的前提是你能承担它随时不再溢价。</li>
+  <li><strong>IP 段要留意</strong>。老款 154 段将于 2027 年 1 月起按 $1/月 收费；
+      新分配的 179 / 131 段信誉积累不同，131 段有被 Cloudflare WAF 拦截的反馈。
+      可以先跑一遍 IP 质量检测再决定是否换 IP。</li>
+  <li><strong>单线程慢先排查客户端</strong>。常见原因是走了 QUIC —— 禁用 YouTube 的 443 QUIC 流量往往立刻见效；
+      其次才是 BBR / TCP 调优。别一上来就改一堆参数。</li>
+  <li><strong>线路会变</strong>。2026 年 10 月洛杉矶 Pro 的 IPv6 电信回程就由 9929 切成了 163plus。
+      本文结论基于抓取时点的实测，随时可能变化。</li>
+</ul>
+</div>
+
+<h2 id="sources">数据来源与引用</h2>
+
+<p>产品、价格与库存来自 DMIT 官网（2026-10-08 抓取）；线路与口碑结论来自 NodeSeek 社区，
+按主题整理了以下帖子作为依据，可逐条复核：</p>
+
+<ol class="src">
+<li>[测评] <a href="https://www.nodeseek.com/post-950858-1" rel="noopener" target="_blank">【实测】DMIT LAX EB vs LAX PRO，天津联通晚高峰对比：EB 稳如老狗，PRO 晚高峰跨网回程被限到 90M</a>　—　lyhpaul</li><li>[测评] <a href="https://www.nodeseek.com/post-952047-1" rel="noopener" target="_blank">DMIT.LAX.AS3.Pro.TINY 10.9刀 晚高峰TQ</a></li><li>[测评] <a href="https://www.nodeseek.com/post-970921-1" rel="noopener" target="_blank">NQ-DMIT PRO WEE，IPV6电信真的变成了163</a>　—　spiritnet</li><li>[测评] <a href="https://www.nodeseek.com/post-964652-1" rel="noopener" target="_blank">【TQ晚高峰】DMIT AN5 EB TINY 大妈还是大妈哈</a>　—　九哥</li><li>[日常] <a href="https://www.nodeseek.com/post-952461-1" rel="noopener" target="_blank">从 vmiss 换成 DMIT，感觉没啥区别</a>　—　四季予你</li><li>[测评] <a href="https://www.nodeseek.com/post-954957-1" rel="noopener" target="_blank">[NQ] DMIT香港EB AN5 Tiny（AS3 WEE同线路，可作参考）</a></li><li>[测评] <a href="https://www.nodeseek.com/post-954986-1" rel="noopener" target="_blank">[TQ/NQ]DMIT HKG.AS3.EB.WEE 测下看看</a></li><li>[情报] <a href="https://www.nodeseek.com/post-954857-1" rel="noopener" target="_blank">DMIT上新！HKG.AS3.EB.WEE 香港特惠款（没错，特惠款 XD）</a></li><li>[测评] <a href="https://www.nodeseek.com/post-950804-1" rel="noopener" target="_blank">【TQ】DMIT HKG.AS3.Pro.TINY $39.90/Mo</a></li><li>[测评] <a href="https://www.nodeseek.com/post-947482-1" rel="noopener" target="_blank">【NQ】DMIT-TYO.AS3.Pro.Shinagawa</a>　—　jackbobo</li><li>[测评] <a href="https://www.nodeseek.com/post-968612-1" rel="noopener" target="_blank">【DMIT LAX AN4 PRO PalmSpring 棕榈泉 NQ 测试存档】果然惊喜，V6 三网优化了</a></li><li>[测评] <a href="https://www.nodeseek.com/post-946853-1" rel="noopener" target="_blank">[NQ]DMIT.LAX.AN4.Pro.MALIBU刚换的新IP</a>　—　seven2</li><li>[日常] <a href="https://www.nodeseek.com/post-968551-1" rel="noopener" target="_blank">DMIT Malibu要升值了？</a></li><li>[测评] <a href="https://www.nodeseek.com/post-953837-1" rel="noopener" target="_blank">【NQ】DMIT LAX.AN4.EB.WEE（154段）</a></li><li>[测评] <a href="https://www.nodeseek.com/post-963021-1" rel="noopener" target="_blank">【NQ+TQ留档】大妈还是名不虚传： DMIT.LAX.AN4.EB.WEE</a></li><li>[测评] <a href="https://www.nodeseek.com/post-946279-1" rel="noopener" target="_blank">【NQ+TQ】DMIT-LAX.AS3.T1.WEE 存档 1</a></li><li>[测评] <a href="https://www.nodeseek.com/post-949074-1" rel="noopener" target="_blank">【NQ+TQ】晚高峰-已调优-DMIT LAX.AS3.Pro.TINY存档</a></li><li>[测评] <a href="https://www.nodeseek.com/post-947489-1" rel="noopener" target="_blank">【NQ+TQ】DMIT LAX.AS3.Pro.TINY晚高峰</a></li><li>[测评] <a href="https://www.nodeseek.com/post-946351-1" rel="noopener" target="_blank">Dmit La as3 pro 好像质量好点？</a></li><li>[测评] <a href="https://www.nodeseek.com/post-954132-1" rel="noopener" target="_blank">【NQ】DMIT大妈LAX.AS3.Pro.Pocket自测留档（IP挺香）</a></li><li>[日常] <a href="https://www.nodeseek.com/post-949753-1" rel="noopener" target="_blank">太崩溃了DMIT看Youtube卡爆了...已经bbrV3调优了</a>　—　max0229</li><li>[日常] <a href="https://www.nodeseek.com/post-949774-1" rel="noopener" target="_blank">（已解决）有无河北移动的mjj，免费使用DMIT.PRO.WEE一个月，帮我测试下机器</a>　—　kisska213dsaf</li><li>[日常] <a href="https://www.nodeseek.com/post-948855-1" rel="noopener" target="_blank">【请教】dmit的pro的v6的正确使用姿势</a>　—　arimrs</li><li>[日常] <a href="https://www.nodeseek.com/post-970624-1" rel="noopener" target="_blank">不都说DMIT LAX PRO给电信IPV6优化了吗？为啥我这不行</a>　—　seeksetup</li><li>[测评] <a href="https://www.nodeseek.com/post-967421-1" rel="noopener" target="_blank">[IPQuality] Dmit Malibu 新换 IP 到 131*</a>　—　Matsui</li><li>[测评] <a href="https://www.nodeseek.com/post-967179-1" rel="noopener" target="_blank">NQ-DMIT PRO WEE 这个IPQS真的没有好过</a>　—　spiritnet</li><li>[情报] <a href="https://www.nodeseek.com/post-952889-1" rel="noopener" target="_blank">【快讯】DMIT已支持自助升级为154IP</a>　—　funcin</li><li>[情报] <a href="https://www.nodeseek.com/post-961009-1" rel="noopener" target="_blank">缺货了！DMIT 洛杉矶 AS3 Pro 全部售罄</a></li><li>[日常] <a href="https://www.nodeseek.com/post-946352-1" rel="noopener" target="_blank">个人分析一下为啥这次dmit被抢疯了（纯个人瞎猜）</a>　—　zhanggege</li><li>[技术] <a href="https://www.nodeseek.com/post-963536-1" rel="noopener" target="_blank">【已解决】DMIT手动配置V6网关信息</a>　—　lovexiaoyi</li>
+</ol>
+
+<p class="meta">采集方式：本机 Chrome 登录态 + CDP。NodeSeek 搜索「dmit」共抓取 12 页 599 条结果，
+其中 57 篇抓取了正文与评论（共 717 条评论）。产品与价格为抓取时点快照，以官网实时信息为准。</p>
+
+<footer>
+  <p>本文为第三方产品整理，与 DMIT 官方无隶属关系。文中购买链接含推广参数（aff=27885），
+  不影响你的购买价格。价格与库存随时可能变动，请以 <a href="https://www.dmit.io/pages/pricing" rel="nofollow noopener" target="_blank">DMIT 官网</a> 为准。</p>
+  <p>更新于 2026-10-08</p>
+</footer>
+
+</div>
+</body>
+</html>

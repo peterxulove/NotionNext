@@ -1,0 +1,657 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>RackNerd VPS 全产品线推荐与选购指南 2026年11月版</title>
+<meta name="description" content="RackNerd（AS36352 / ColoCrossing）VPS 选购指南：20 个机房、12 条产品线、73 个在售档位，基于 1406 条 NodeSeek 帖子（148 篇正文 / 2120 条评论）重写——含 2026 年涨价与 DC02 下架、机房 × 三网评分、隐藏福利（流量翻倍/IPv6/3 天换 IP）、价格史与 12 节点测试 IP。">
+<meta name="keywords" content="RackNerd,racknerd.com,RackNerd VPS,年付VPS,美国VPS,洛杉矶VPS,DC02,DC03,圣何塞VPS,ColoCrossing,KVM VPS,Windows VPS,NodeSeek,流量翻倍,IPv6,测试IP,Looking Glass">
+<meta name="author" content="VPS 选购指南">
+<meta name="robots" content="index,follow">
+<link rel="canonical" href="https://blog.aibici.org/vps/racknerd">
+<meta property="og:type" content="article">
+<meta property="og:title" content="RackNerd VPS 全产品线推荐与选购指南 2026年11月版">
+<meta property="og:description" content="20 个机房、12 条产品线、73 个档位，含特价年付与标准 KVM 两套价目表对比与三网适配建议。">
+<meta property="og:url" content="https://blog.aibici.org/vps/racknerd">
+<meta property="og:locale" content="zh_CN">
+<meta name="twitter:card" content="summary_large_image">
+<style>
+:root{
+  --bg:#f7f7f5; --card:#fff; --line:#e6e5e1; --line2:#d5d3cd;
+  --tx:#1f1f1d; --tx2:#5f5e5a; --tx3:#8a8880;
+  --teal:#0f6e56; --teal-bg:#e1f5ee; --teal-bd:#5dcaa5;
+  --blue:#185fa5; --blue-bg:#e6f1fb; --blue-bd:#85b7eb;
+  --amber:#854f0b; --amber-bg:#faeeda; --amber-bd:#ef9f27;
+  --red:#a32d2d; --red-bg:#fcebeb; --red-bd:#f09595;
+  --green:#3b6d11; --green-bg:#eaf3de; --green-bd:#97c459;
+  --purple:#534ab7; --purple-bg:#eeedfe; --purple-bd:#afa9ec;
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--tx);
+  font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;
+  font-size:14px;line-height:1.78}
+.wrap{max-width:1080px;margin:0 auto;padding:40px 28px 80px}
+header{border-bottom:2px solid var(--tx);padding-bottom:20px;margin-bottom:32px}
+h1{font-size:27px;font-weight:600;margin:0 0 10px;letter-spacing:-.3px}
+.sub{color:var(--tx2);font-size:13.5px}
+.meta{color:var(--tx3);font-size:12px;margin-top:8px}
+h2{font-size:19px;font-weight:600;margin:46px 0 16px;padding-left:12px;border-left:4px solid var(--tx)}
+h3{font-size:16.5px;font-weight:600;margin:32px 0 10px;display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+h4{font-size:14px;font-weight:600;margin:18px 0 8px;color:var(--tx2)}
+p{margin:10px 0}
+a{color:var(--blue);text-decoration:none;border-bottom:1px solid rgba(24,95,165,.28)}
+a:hover{border-bottom-color:var(--blue)}
+code{background:#f0efec;padding:1px 5px;border-radius:4px;font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:12.5px}
+code.sm{font-size:11.5px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:20px 22px;margin:16px 0}
+.grid{display:grid;gap:12px}
+.g5{grid-template-columns:repeat(auto-fit,minmax(130px,1fr))}
+.kpi{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:12px 14px}
+.kpi .n{font-size:20px;font-weight:600;line-height:1.2}
+.kpi .l{font-size:12px;color:var(--tx3);margin-top:2px}
+table{width:100%;border-collapse:collapse;margin:14px 0;font-size:13px;background:var(--card);
+  border:1px solid var(--line);border-radius:10px;overflow:hidden}
+th{background:#f1efec;text-align:left;padding:10px 12px;font-weight:600;font-size:12.5px;
+  border-bottom:1px solid var(--line2);white-space:nowrap}
+td{padding:10px 12px;border-bottom:1px solid var(--line);vertical-align:top}
+tr:last-child td{border-bottom:none}
+tbody tr:hover{background:#fbfbfa}
+td.num{text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums}
+td.num .cyc{color:var(--tx3);font-size:11px;font-weight:400;margin-top:1px}
+td.mono,.mono{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:12px}
+.small,.small td{font-size:12.5px}
+.tblwrap{overflow-x:auto}
+table.wide{min-width:860px}
+table.tiers{min-width:780px}
+.tag{display:inline-block;padding:1px 8px;border-radius:20px;font-size:11.5px;font-weight:500;
+  border:1px solid;white-space:nowrap;line-height:1.7}
+.t-teal{background:var(--teal-bg);color:var(--teal);border-color:var(--teal-bd)}
+.t-blue{background:var(--blue-bg);color:var(--blue);border-color:var(--blue-bd)}
+.t-amber{background:var(--amber-bg);color:var(--amber);border-color:var(--amber-bd)}
+.t-red{background:var(--red-bg);color:var(--red);border-color:var(--red-bd)}
+.t-green{background:var(--green-bg);color:var(--green);border-color:var(--green-bd)}
+.t-purple{background:var(--purple-bg);color:var(--purple);border-color:var(--purple-bd)}
+.t-gray{background:#f1efec;color:var(--tx2);border-color:var(--line2)}
+.stars{font-family:ui-monospace,monospace;letter-spacing:1px;font-size:13px;white-space:nowrap}
+.s3{color:var(--green)} .s2{color:var(--amber)} .s1{color:var(--red)} .s0{color:var(--tx3)}
+.note{margin:12px 0;padding:10px 16px;background:#f4f3f0;border-left:3px solid var(--line2);
+  border-radius:0 8px 8px 0;color:var(--tx2);font-size:13px}
+.warn{margin:12px 0;padding:12px 16px;background:var(--amber-bg);border-left:3px solid var(--amber-bd);
+  border-radius:0 8px 8px 0;font-size:13px}
+.warn strong{color:var(--amber)}
+.line{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:18px 22px 6px;margin:20px 0}
+.line .idx{display:inline-flex;align-items:center;justify-content:center;min-width:24px;height:24px;
+  padding:0 7px;border-radius:7px;background:var(--tx);color:#fff;font-size:12.5px;font-weight:600}
+.tags{display:inline-flex;gap:6px;flex-wrap:wrap;font-weight:400}
+.lead{color:var(--tx2);font-size:13px;margin:2px 0 10px}
+.isprow{display:flex;gap:8px;flex-wrap:wrap;margin:10px 0 4px}
+.ispchip{display:inline-flex;align-items:center;gap:5px;padding:2px 9px;border:1px solid var(--line2);
+  border-radius:20px;font-size:12.5px;background:#fbfbfa}
+.basis{color:var(--tx3);margin-left:6px}
+.srcs{font-size:12.5px;color:var(--tx3);margin:8px 0 4px}
+.srcs .lbl{display:inline-block;padding:1px 7px;border:1px solid var(--line2);border-radius:20px;
+  background:#f4f3f0;margin-right:6px}
+.buyrow{margin:14px 0 12px;display:flex;gap:14px;align-items:center;flex-wrap:wrap}
+a.buy{display:inline-block;padding:6px 14px;background:var(--teal);color:#fff;border:1px solid var(--teal);
+  border-radius:8px;font-size:12.5px;font-weight:500}
+a.buy:hover{background:#0b5946;border-color:#0b5946}
+a.buy.big{padding:9px 18px;font-size:13.5px}
+a.plain{font-size:12.5px;color:var(--tx3);border-bottom-color:transparent}
+a.plain:hover{color:var(--blue);border-bottom-color:rgba(24,95,165,.3)}
+.muted{color:var(--tx3)}
+.faq{background:var(--card);border:1px solid var(--line);border-radius:10px;margin:10px 0;padding:0 18px}
+.faq summary{cursor:pointer;font-weight:600;font-size:14px;padding:13px 0;list-style:none}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::before{content:"+ ";color:var(--tx3)}
+.faq[open] summary::before{content:"- "}
+.faq .ans{padding:0 0 14px;color:var(--tx2);font-size:13.5px;border-top:1px solid var(--line);padding-top:12px}
+.srclist{font-size:12.5px;line-height:1.9;padding-left:22px}
+.foot{color:var(--tx3);font-size:12px}
+nav.toc{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:14px 20px;margin:20px 0}
+nav.toc a{margin-right:16px;font-size:13px;white-space:nowrap;line-height:2}
+@media(max-width:640px){.wrap{padding:24px 16px 60px} h1{font-size:21px} h2{font-size:17px}}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header>
+<h1>RackNerd VPS 全产品线推荐与选购指南 2026年11月版</h1>
+<div class="sub">20 个机房 · 12 条产品线 · 73 个在售档位 · 1,406 条 NodeSeek 帖子 —— 一句话说清：<b>全线没有中国大陆优化，价值全在「年付低价」这一件事上，而 2026 年连这个也涨了一倍</b>。</div>
+<div class="meta">官网数据抓取：2026-11-02　|　价格与库存以官网实时信息为准　|　本文购买链接含推广参数（aff=16792），不影响你的价格</div>
+</header>
+
+<div class="grid g5">
+  <div class="kpi"><div class="n">20</div><div class="l">全球机房</div></div>
+  <div class="kpi"><div class="n">12</div><div class="l">产品线</div></div>
+  <div class="kpi"><div class="n">73</div><div class="l">在售档位</div></div>
+  <div class="kpi"><div class="n">$1.83<span style="font-size:12px;font-weight:400">/月</span></div><div class="l">年付折合起价</div></div>
+  <div class="kpi"><div class="n">148</div><div class="l">NodeSeek 正文</div></div>
+</div>
+
+<nav class="toc">
+<a href="#quick">一分钟结论</a><a href="#community">社区共识</a><a href="#isp">按运营商选</a>
+<a href="#test">测试 IP</a><a href="#price">价格史</a><a href="#perks">隐藏福利</a><a href="#specials">特价年付</a><a href="#kvm">标准 KVM</a>
+<a href="#ryzen">Ryzen NVMe</a><a href="#windows">Windows</a><a href="#hosting">主机与独服</a>
+<a href="#faq">常见问题</a><a href="#risk">注意事项</a><a href="#src">来源</a>
+</nav>
+
+<h2 id="quick">一分钟选型结论</h2>
+
+<p>RackNerd 产品线看着多，但对国内买家的决策其实只有三步：<b>① 买特价年付还是标准月付　② 选哪个机房　③ 要不要 NVMe / Windows</b>。三步定完，剩下的都只是配置堆叠。</p>
+
+<div class="warn">
+<strong>2026 年最重要的两个变化（先看这两条再选）：</strong><br>
+① <b>老促销全线下架，价格翻了近一倍</b>。2025 黑五 1C1G 是 $10.60/年，2026 年 RackNerd 把年付 $20 以下的套餐全部下架，改卖 $21.99–$119.99 的 5 档。<b>现在是最不适合入手的时点之一</b>——不急就等黑五闪购（<code class="sm">post-698123</code>、<code class="sm">post-744024</code>）。<br>
+② <b>在售档位已经没有 DC02 了</b>。社区公认最好的机房（联通 318 Mbps、74 段解锁）只存在于历史促销/闪购机型，官网 Location 选项里现在是 DC03 / 圣何塞 / 西雅图 / 达拉斯 / 纽约 / 芝加哥。
+</div>
+
+<div class="tblwrap">
+<table class="wide">
+<thead><tr><th>你的情况</th><th>选这个档位</th><th>价格</th><th>为什么</th></tr></thead>
+<tbody>
+<tr><td><b>只想要一台最便宜、能长期挂住的美国 KVM</b></td>
+<td><a href="https://my.racknerd.com/aff.php?aff=16792&pid=952" target="_blank" rel="nofollow noopener">1 GB KVM Special</a><div class="mono muted" style="font-size:11px">pid 952 · DC03 / DAL / NY / SEA</div></td>
+<td class="num">$21.99<div class="cyc">年付 · 折合 $1.83/月</div></td>
+<td><b>先接受一个事实</b>：2025 黑五同规格是 <b>$10.60/年</b>，2026 年 RackNerd 把年付 $20 以下的老促销<b>全部下架</b>，改卖这 5 档（<code class="sm">post-698123</code>）。现在买等于按涨价后的价买，急用再买，不急等黑五闪购</td></tr>
+
+<tr><td><b>跑 Docker / 小站 / 两三个服务</b></td>
+<td><a href="https://my.racknerd.com/aff.php?aff=16792&pid=953" target="_blank" rel="nofollow noopener">2 GB KVM Special</a><div class="mono muted" style="font-size:11px">pid 953 · 2C / 2G / 35G / 5T</div></td>
+<td class="num">$35.99<div class="cyc">年付 · 折合 $3.00/月</div></td>
+<td>年付线里最实用的起点。DC03 电信回程实测 <b>170–190 ms</b> 且晚高峰不抖（<code class="sm">post-902453</code>），跑反代 / 面板 / 轻数据库够用</td></tr>
+
+<tr><td><b>要建站、套 Cloudflare、跑多个容器</b></td>
+<td><a href="https://my.racknerd.com/aff.php?aff=16792&pid=954" target="_blank" rel="nofollow noopener">4 GB KVM Special</a><div class="mono muted" style="font-size:11px">pid 954 · 3C / 4G / 60G / 7T</div></td>
+<td class="num">$59.99<div class="cyc">年付 · 折合 $5.00/月</div></td>
+<td>社区主流用法就是「<b>套 CF 建站 / 反代源站 / 拉线落地</b>」——线路不优化，但便宜、IO 够、续费同价，套上 CF 就绕开了直连质量</td></tr>
+
+<tr><td><b>要圣何塞机房</b><div class="mono muted" style="font-size:11px">2026 年货源最稳的美西机房</div></td>
+<td><a href="https://my.racknerd.com/aff.php?aff=16792&pid=501" target="_blank" rel="nofollow noopener">Ryzen-1GB（Linux）</a><div class="mono muted" style="font-size:11px">pid 501 · 6 机房含 SJC</div></td>
+<td class="num">$17.99<div class="cyc">月付 · 年付约 9 折</div></td>
+<td>年付特价档<b>没有圣何塞选项</b>（抓到的 4 个机房是 DC03 / 达拉斯 / 纽约 / 西雅图）。要 SJC 只能走 Ryzen / Windows 线；社区有一句「现在美西<b>圣何塞才是货源稳定充足</b>的机房」（<code class="sm">post-698312</code>）</td></tr>
+
+<tr><td><b>冲着「DC02 联通快乐机」来的</b></td>
+<td>官网<b>已经买不到</b></td>
+<td class="num">—</td><td>DC02 是社区公认最好的机房（联通晚高峰单线程 <b>318 Mbps</b>，<code class="sm">post-582179</code>；74 段解锁好，<code class="sm">post-234019</code>），但 2026-11 在售档位的 Location 里已无 DC02，只剩历史促销 / 闪购机型。<b>不建议溢价收二手</b></td></tr>
+
+<tr><td><b>要 Windows 远程桌面</b></td>
+<td><a href="https://my.racknerd.com/aff.php?aff=16792&pid=293" target="_blank" rel="nofollow noopener">Windows VPS 2GB</a><div class="mono muted" style="font-size:11px">pid 293 · 7 机房</div></td>
+<td class="num">$27.59<div class="cyc">月付</div></td>
+<td>含正版 Windows 授权 + NVMe，机房比年付线多（含 SJC / 芝加哥 / 亚特兰大 / 阿什本）</td></tr>
+
+<tr><td><b>要月付、随时能撤</b></td>
+<td><a href="https://my.racknerd.com/aff.php?aff=16792&pid=21" target="_blank" rel="nofollow noopener">KVM-2GB</a><div class="mono muted" style="font-size:11px">pid 21</div></td>
+<td class="num">$20.59<div class="cyc">月付 · 季付/半年/年付同价</div></td>
+<td>标准 KVM 有完整周期；但注意<b>长周期不给折扣</b>，年付 = 月付 × 12</td></tr>
+
+<tr><td><b>中国移动宽带</b></td>
+<td>不建议买 RackNerd</td>
+<td class="num">—</td>
+<td>社区原话「<b>联通>电信>移动</b>，移动存在部分地区阻断」（<code class="sm">post-655334</code>）；DC02 也是「部分地区移动延迟偏高」（<code class="sm">post-499338</code>）。移动要玩就套 CF / WARP</td></tr>
+
+<tr><td><b>要几十上百个独立 IP（站群 / SEO）</b></td>
+<td><a href="https://my.racknerd.com/aff.php?aff=16792&pid=275" target="_blank" rel="nofollow noopener">SEO 独服 E3-1240 v3</a><div class="mono muted" style="font-size:11px">pid 275</div></td>
+<td class="num">$229<div class="cyc">月付 · 237 个可用 IP</div></td>
+<td>/29 + 8×/27 多 C 段，LA / DAL / CHI / NY 可选</td></tr>
+
+<tr><td><b>要 10G 口免流 / CDN 回源</b></td>
+<td><a href="https://my.racknerd.com/aff.php?aff=16792&pid=746" target="_blank" rel="nofollow noopener">E3-1230 V3（10Gbps 免流）</a><div class="mono muted" style="font-size:11px">pid 746</div></td>
+<td class="num">$599<div class="cyc">月付</div></td>
+<td>10 / 20 / 40 Gbps 三档同平台，洛杉矶 / 新泽西 / 伦敦 / 蒙特利尔</td></tr>
+
+<tr><td><b>只想放个 WordPress</b></td>
+<td><a href="https://my.racknerd.com/aff.php?aff=16792&pid=81" target="_blank" rel="nofollow noopener">虚拟主机 30GB</a><div class="mono muted" style="font-size:11px">pid 81</div></td>
+<td class="num">$5.59<div class="cyc">月付 · cPanel</div></td>
+<td>cPanel + LiteSpeed + 免费 SSL，比 VPS 省心</td></tr>
+</tbody>
+</table>
+</div>
+
+<div class="note">
+<b>先说清三个前提：</b><br>
+① <b>没有中国大陆优化</b>。RackNerd 走 AS36352（HostPapa / ColoCrossing），去程 Cogent、回程 Arelion / Cogent / Level3 混合，全程没有 CN2 GIA、9929、CMIN2。它便宜是因为「普通国际线路 + 低价硬件」，不是线路好（<code class="sm">post-655249</code> 原话：「没有优化 没有优化 没有优化」）。<br>
+② <b>官网有两套价目表</b>：<a href="#specials">特价年付</a>（5 档，$21.99/年起）和 <a href="#kvm">标准 KVM</a>（7 档，月付 $17.99 起）。同样内存，标准档年付价是特价档的 <b>3–10 倍</b>，先看清再下单。<br>
+③ <b>本页结论优先用 NodeSeek 一手实测</b>：148 篇帖子 / 2,120 条评论里能贴出原始数字的句子，逐条挂了 post id；本机 ping 只用于机房之间横向比较，不代表国内体验（见 <a href="#test">测试 IP</a>）。
+</div>
+
+<h2 id="overview">全部产品线速览表</h2>
+
+<p>价格统一折算成<b>月付等值</b>（年付档除以 12），方便横向比较。表格按「从最便宜到最贵」的用途排序，点产品线名字可以跳到对应章节。</p>
+
+<div class="tblwrap">
+<table class="wide">
+<thead><tr><th>产品线</th><th>定位</th><th>机房</th><th>月付起</th><th>档位</th><th>一句话结论</th></tr></thead>
+<tbody><tr><td><a href="#specials"><b>特价年付 KVM</b></a></td><td><span class="tag t-teal">极致性价比</span></td><td>美国 4 机房</td><td class="num">$1.83<div class="cyc">/月</div></td><td class="num">5</td><td class="small">预算优先的首选：同样配置比标准 KVM 便宜 3–10 倍</td></tr><tr><td><a href="#kvm"><b>标准 KVM VPS</b></a></td><td><span class="tag t-blue">标准月付</span></td><td>美国 4 机房</td><td class="num">$2.25<div class="cyc">/月</div></td><td class="num">7</td><td class="small">要月付 / 季付、要随时退场的选这条</td></tr><tr><td><a href="#ryzen"><b>AMD Ryzen NVMe VPS</b></a></td><td><span class="tag t-purple">NVMe 高性能</span></td><td>美国 6 机房</td><td class="num">$2.25<div class="cyc">/月</div></td><td class="num">7</td><td class="small">吃 IO 与单核性能、要指定中部/东部机房的选这条</td></tr><tr><td><a href="#windows"><b>Windows VPS（NVMe）</b></a></td><td><span class="tag t-blue">Windows / RDP</span></td><td>美国 7 机房</td><td class="num">$27.59<div class="cyc">/月</div></td><td class="num">6</td><td class="small">要 RDP 远程桌面的唯一入口，中文生态里少见</td></tr><tr><td><a href="#shared"><b>虚拟主机（cPanel）</b></a></td><td><span class="tag t-gray">建站托管</span></td><td>美国</td><td class="num">$5.59<div class="cyc">/月</div></td><td class="num">3</td><td class="small">只想放 WordPress，不想管系统的省事选择</td></tr><tr><td><a href="#reseller"><b>分销主机（cPanel）</b></a></td><td><span class="tag t-gray">转售 / 多站点</span></td><td>美国</td><td class="num">$14.59<div class="cyc">/月</div></td><td class="num">3</td><td class="small">给客户开空间、做小型 IDC 转售</td></tr><tr><td><a href="#hybrid"><b>混合独服（Hybrid）</b></a></td><td><span class="tag t-gray">独服 + VPS 管理</span></td><td>美国 4 机房</td><td class="num">$39.00<div class="cyc">/月</div></td><td class="num">4</td><td class="small">$39/月起的「半独服」，独服资源 + VPS 面板</td></tr><tr><td><a href="#dedicated"><b>独立服务器</b></a></td><td><span class="tag t-amber">裸金属</span></td><td>美国多机房</td><td class="num">$139.00<div class="cyc">/月</div></td><td class="num">6</td><td class="small">E3/E5 老平台，$139/月起，跑重负载比堆 VPS 划算</td></tr><tr><td><a href="#amd-dedi"><b>AMD Ryzen/EPYC 独服</b></a></td><td><span class="tag t-amber">新平台裸金属</span></td><td>美国</td><td class="num">$219.00<div class="cyc">/月</div></td><td class="num">6</td><td class="small">Ryzen 7000/7950X3D 新平台，单核最强的一档</td></tr><tr><td><a href="#unmetered"><b>大带宽免流独服</b></a></td><td><span class="tag t-amber">10/20/40Gbps 免流</span></td><td>美国</td><td class="num">$599.00<div class="cyc">/月</div></td><td class="num">18</td><td class="small">10Gbps 起免流，$599/月起，做 CDN / 下载 / 直播回源</td></tr><tr><td><a href="#seo"><b>SEO 多 IP 独服</b></a></td><td><span class="tag t-amber">多 C 段 IP</span></td><td>美国 4 机房</td><td class="num">$229.00<div class="cyc">/月</div></td><td class="num">5</td><td class="small">几十到几百个独立 IP，站群 / 多站点专用</td></tr><tr><td><a href="#colocation"><b>机柜托管</b></a></td><td><span class="tag t-gray">自备硬件</span></td><td>美国 布法罗</td><td class="num">$179.00<div class="cyc">/月</div></td><td class="num">3</td><td class="small">1U–半柜托管，$179/月起，自带机器才有意义</td></tr></tbody>
+</table>
+</div>
+
+<div class="note">
+本表 12 条产品线、73 个档位全部来自官网 store 的 12 个分类页逐个抓取（2026-11-02），价格取该产品线里<b>折合月付最低</b>的档位。
+「月付起」对年付档是折算值，实际付款是年付。
+</div>
+
+<h2 id="community">社区共识：NodeSeek 上 1400+ 条帖子怎么说</h2>
+
+<p>官网只告诉你「有什么」，社区才告诉你「用起来怎么样」。这一节把 NodeSeek 上 1,406 条搜索命中里的 148 篇正文（含 2,120 条评论）读完后的结论压缩成几张表——<b>每条都能点回原帖</b>。</p>
+
+
+<div class="grid g4">
+  <div class="kpi"><div class="n">1,406</div><div class="l">NodeSeek 搜索命中</div></div>
+  <div class="kpi"><div class="n">148</div><div class="l">抓取正文</div></div>
+  <div class="kpi"><div class="n">2,120</div><div class="l">评论</div></div>
+  <div class="kpi"><div class="n">11</div><div class="l">搜索关键词</div></div>
+</div>
+<p class="small muted">覆盖关键词：racknerd、RN、racknerd 黑五 / 圣何塞 / 洛杉矶 / 测评 / 补货 / 年付 / 闪购 / 涨价 等 11 组，跨 2019–2026 的帖子。全部留档在 Obsidian 库 <code class="sm">racknerd/来源帖/</code>（148 篇）与 <code class="sm">数据库/NodeSeek搜索索引.csv</code>（1406 条）。</p>
+
+<h3>社区反复提到的 8 件事（按提及帖子数排序）</h3>
+<div class="tblwrap">
+<table>
+<thead><tr><th>议题</th><th class="num">提及帖数</th><th>社区在说什么</th></tr></thead>
+<tbody>
+<tr><td><b>黑五 / 闪购</b></td><td class="num">73</td><td>真正便宜的是<b>黑五闪购</b>（限量、拼手速），$7.99–$18.66/年；日常促销档贵一档</td></tr>
+<tr><td><b>流量翻倍</b></td><td class="num">64</td><td>在 LET 帖回帖留订单号，月流量<b>永久翻倍</b>，等于白拿一倍流量（<code class="sm">post-513584</code>）</td></tr>
+<tr><td><b>IPv6</b></td><td class="num">62</td><td>默认只给 IPv4，<b>开工单免费申请</b> IPv6（DC02/DC03/圣何塞等），可用来解决「送中」</td></tr>
+<tr><td><b>送中 / 解锁</b></td><td class="num">56</td><td>74 段 IP 解锁漂亮（ChatGPT / Netflix / TikTok），没抽到可以 3 天内免费换 IP；被送中就用 WARP 或一键脚本</td></tr>
+<tr><td><b>CPU 跑分</b></td><td class="num">54</td><td>主力是 E5-2697 v2 / Xeon Gold 5118 这类老平台，GB5 单核 <b>750–780</b>、多核 <b>1400–1560</b>，超售重的机器单核会掉到 400</td></tr>
+<tr><td><b>工单 / 客服</b></td><td class="num">39</td><td>「工单回得是真快，几十分钟」；支持<b>中文工单</b>，还能帮你调 IPv6</td></tr>
+<tr><td><b>晚高峰</b></td><td class="num">29</td><td>DC02 联通单线程晚高峰 318 Mbps 不抖；DC03 联通偶有抖动/丢包记录；下载方向比延迟更容易掉</td></tr>
+<tr><td><b>涨价</b></td><td class="num">11</td><td>2026 年「<b>升级配置涨价了</b>」，年付 $20 以下套餐全下架，老黑五机型只能二手</td></tr>
+</tbody>
+</table>
+</div>
+
+
+<div class="note">
+<b>一句话总结社区态度：</b>「一分钱一分货，RN 是非优化线路，不能和搬瓦工和 DMIT 比，但绝对对得起这个价格」（<code class="sm">post-655334</code>）。
+适合人群：<b>预算优先、能接受晚高峰波动、愿意自己折腾（BBR / CF / WARP）</b>。不适合：要求低延迟稳定、要 SLA、移动宽带。
+</div>
+
+<h2 id="isp">按机房 × 运营商选（这是 RackNerd 唯一真正的选型变量）</h2>
+
+<p>RackNerd 全线无中国优化，所以「配置」几乎不用纠结——<b>选哪个机房、你是什么宽带</b>，决定了 90% 的体验差异。下表是 148 篇帖子里的实测结论压缩，评分 1–5。</p>
+
+<div class="tblwrap">
+<table class="wide">
+<thead><tr><th>机房</th><th class="num">电信</th><th class="num">联通</th><th class="num">移动</th><th class="num">提及帖</th><th>社区原话 / 结论</th><th>证据帖</th></tr></thead>
+<tbody><tr><td><b>Los Angeles DC02</b></td><td class="num">★★★★☆</td><td class="num">★★★★★</td><td class="num">★★☆☆☆</td><td class="num">55</td><td class="small">历史最佳机房，联通直连晚高峰 318Mbps 单线程；电信回程 170–190ms；移动部分地区延迟偏高。2026-11 官网在售档位已无此选项，只在老促销/闪购机型上</td><td class="small"><a href="https://www.nodeseek.com/post-582179-1" target="_blank" rel="nofollow noopener">post-582179</a>、<a href="https://www.nodeseek.com/post-902453-1" target="_blank" rel="nofollow noopener">post-902453</a>、<a href="https://www.nodeseek.com/post-499338-1" target="_blank" rel="nofollow noopener">post-499338</a></td></tr><tr><td><b>Los Angeles DC03</b></td><td class="num">★★★★☆</td><td class="num">★★★★☆</td><td class="num">★★☆☆☆</td><td class="num">36</td><td class="small">在售唯一洛杉矶机房。电信直连 100–190ms 可用；联通北京日均 180ms，但有个别实测记录抖动/丢包比同批机器差；移动一般</td><td class="small"><a href="https://www.nodeseek.com/post-499338-1" target="_blank" rel="nofollow noopener">post-499338</a>、<a href="https://www.nodeseek.com/post-797297-1" target="_blank" rel="nofollow noopener">post-797297</a>、<a href="https://www.nodeseek.com/post-409143-1" target="_blank" rel="nofollow noopener">post-409143</a></td></tr><tr><td><b>San Jose</b></td><td class="num">★★★★☆</td><td class="num">★★★★☆</td><td class="num">★★☆☆☆</td><td class="num">49</td><td class="small">加州第二近，2026 年货源最稳；电信/联通都可用，移动不建议（社区明确「移动别选圣何塞」）</td><td class="small"><a href="https://www.nodeseek.com/post-235900-1" target="_blank" rel="nofollow noopener">post-235900</a>、<a href="https://www.nodeseek.com/post-698312-1" target="_blank" rel="nofollow noopener">post-698312</a>、<a href="https://www.nodeseek.com/post-739277-1" target="_blank" rel="nofollow noopener">post-739277</a></td></tr><tr><td><b>Seattle</b></td><td class="num">★★★☆☆</td><td class="num">★★★☆☆</td><td class="num">★★☆☆☆</td><td class="num">18</td><td class="small">美西北，比洛杉矶多 10–20ms；适合做备份/中转，不做主力直连</td><td class="small"><a href="https://www.nodeseek.com/post-499338-1" target="_blank" rel="nofollow noopener">post-499338</a></td></tr><tr><td><b>Dallas</b></td><td class="num">★★★☆☆</td><td class="num">★★★☆☆</td><td class="num">★★☆☆☆</td><td class="num">17</td><td class="small">中部机房，延迟 180–220ms；价格与美西同档，没有直连优势</td><td class="small"><a href="https://www.nodeseek.com/post-499338-1" target="_blank" rel="nofollow noopener">post-499338</a></td></tr><tr><td><b>New Jersey</b></td><td class="num">★★★☆☆</td><td class="num">★★★☆☆</td><td class="num">★★☆☆☆</td><td class="num">6</td><td class="small">东岸，但社区提到移动用户可多考虑新泽西（相对不挤）</td><td class="small"><a href="https://www.nodeseek.com/post-14213-1" target="_blank" rel="nofollow noopener">post-14213</a></td></tr><tr><td><b>Chicago</b></td><td class="num">★★☆☆☆</td><td class="num">★★★☆☆</td><td class="num">★☆☆☆☆</td><td class="num">16</td><td class="small">中东部，200ms+；联通略好于电信，移动差</td><td class="small"><a href="https://www.nodeseek.com/post-499338-1" target="_blank" rel="nofollow noopener">post-499338</a></td></tr><tr><td><b>Atlanta</b></td><td class="num">★★☆☆☆</td><td class="num">★★★☆☆</td><td class="num">★☆☆☆☆</td><td class="num">8</td><td class="small">东南部，延迟高于美西；联通表现相对好一点</td><td class="small"><a href="https://www.nodeseek.com/post-655249-1" target="_blank" rel="nofollow noopener">post-655249</a></td></tr><tr><td><b>New York</b></td><td class="num">★★☆☆☆</td><td class="num">★★☆☆☆</td><td class="num">★☆☆☆☆</td><td class="num">19</td><td class="small">东岸 220ms+，社区共识「最次是纽约」；只适合面向北美东部用户的业务</td><td class="small"><a href="https://www.nodeseek.com/post-655249-1" target="_blank" rel="nofollow noopener">post-655249</a></td></tr><tr><td><b>Ashburn</b></td><td class="num">★★☆☆☆</td><td class="num">★★☆☆☆</td><td class="num">★☆☆☆☆</td><td class="num">8</td><td class="small">东岸骨干节点，200ms+；社区提到「只剩阿什本、多伦多这种辣鸡机房」时的备选</td><td class="small"><a href="https://www.nodeseek.com/post-409143-1" target="_blank" rel="nofollow noopener">post-409143</a></td></tr><tr><td><b>Utah</b></td><td class="num">★★☆☆☆</td><td class="num">★★☆☆☆</td><td class="num">★☆☆☆☆</td><td class="num">1</td><td class="small">AMD 独服所在地，内陆；延迟一般，胜在硬件新</td><td class="small">—</td></tr><tr><td><b>Toronto</b></td><td class="num">★★☆☆☆</td><td class="num">★★☆☆☆</td><td class="num">★☆☆☆☆</td><td class="num">15</td><td class="small">加拿大，200ms+；社区常与阿什本一起被列为「没得选时才选」</td><td class="small"><a href="https://www.nodeseek.com/post-409143-1" target="_blank" rel="nofollow noopener">post-409143</a></td></tr><tr><td><b>Europe</b></td><td class="num">★☆☆☆☆</td><td class="num">★☆☆☆☆</td><td class="num">★☆☆☆☆</td><td class="num">14</td><td class="small">欧洲机房，直连中国大陆 250ms+；只适合欧洲业务或中转落地</td><td class="small"><a href="https://www.nodeseek.com/post-17165-1" target="_blank" rel="nofollow noopener">post-17165</a></td></tr></tbody>
+</table>
+</div>
+
+<div class="warn">
+<strong>三条硬结论：</strong><br>
+① <b>联通 > 电信 > 移动</b>。原话「联通>电信>移动，联通电信直连够用了，移动存在部分地区阻断」（<code class="sm">post-655334</code>）。<br>
+② <b>DC02 是分水岭，但已经买不到</b>。联通晚高峰单线程 318 Mbps（<code class="sm">post-582179</code>）、电信回程 170–190 ms 稳定（<code class="sm">post-902453</code>）、74 段 IP 解锁好（<code class="sm">post-234019</code>）——这些说的都是 DC02，而 2026-11 官网在售档位已无 DC02。<br>
+③ <b>现在的最优解是 DC03 或圣何塞</b>。DC03 延迟一百多 ms、电信/联通都能用；圣何塞 2026 年货源最稳，但社区明确「移动别选圣何塞」（<code class="sm">post-235900</code>）。
+</div>
+
+<p class="small muted">评分口径与完整证据见 Obsidian 库 <code class="sm">racknerd/厂商/RackNerd-机房与运营商适配.md</code>；每个套餐笔记都带 <code class="sm">isp_ct / isp_cu / isp_cm</code> 三个数值字段和 <code class="sm">vps/isp/*</code> 标签。</p>
+
+<h2 id="test">先测再买：12 个机房的测试 IP 与 Looking Glass</h2>
+
+<p>RackNerd 每个机房都给了测试 IP 和 Looking Glass（支持 ping / traceroute / MTR），下单前先自己测一遍，比看任何测评都准。<b>注意特价年付档只有 4 个机房（洛杉矶 DC-03 / 达拉斯 / 纽约 / 西雅图），圣何塞等机房要用 Ryzen 或 Windows 产品线才有。</b></p>
+
+<div class="tblwrap">
+<table class="wide">
+<thead><tr><th>机房</th><th>Test IPv4</th><th>Looking Glass</th><th>回国</th><th>说明</th></tr></thead>
+<tbody><tr><td>Los Angeles DC-03</td><td class="mono">107.174.51.158</td><td class="mono"><a href="https://lg-lax03.racknerd.com/" target="_blank" rel="noopener">lg-lax03.racknerd.com</a></td><td><span class="stars s2">★★☆</span></td><td class="small">官网主打；101 个国内节点实测电信 184 / 联通 196 / 移动 238 ms</td></tr><tr><td>San Jose, CA</td><td class="mono">192.210.207.88</td><td class="mono"><a href="https://lg-sj.racknerd.com/" target="_blank" rel="noopener">lg-sj.racknerd.com</a></td><td><span class="stars s2">★★☆</span></td><td class="small">美西第二选择，本次国际测速点上延迟最低</td></tr><tr><td>Seattle, WA</td><td class="mono">192.3.253.2</td><td class="mono"><a href="https://lg-sea.racknerd.com/" target="_blank" rel="noopener">lg-sea.racknerd.com</a></td><td><span class="stars s2">★★☆</span></td><td class="small">西北岸，国内北方节点略优</td></tr><tr><td>Dallas, TX</td><td class="mono">198.23.249.100</td><td class="mono"><a href="https://lg-dal.racknerd.com/" target="_blank" rel="noopener">lg-dal.racknerd.com</a></td><td><span class="stars s1">★☆☆</span></td><td class="small">美中，国内延迟比美西高 20–40 ms</td></tr><tr><td>Chicago, IL</td><td class="mono">198.23.228.15</td><td class="mono"><a href="https://lg-chi.racknerd.com/" target="_blank" rel="noopener">lg-chi.racknerd.com</a></td><td><span class="stars s1">★☆☆</span></td><td class="small">美中偏东，回程常经东岸出口</td></tr><tr><td>New York</td><td class="mono">192.3.81.8</td><td class="mono"><a href="https://lg-ny.racknerd.com/" target="_blank" rel="noopener">lg-ny.racknerd.com</a></td><td><span class="stars s1">★☆☆</span></td><td class="small">美东，国内延迟最高的一档</td></tr><tr><td>Ashburn, VA</td><td class="mono">192.3.254.158</td><td class="mono"><a href="https://lg-ash.racknerd.com/" target="_blank" rel="noopener">lg-ash.racknerd.com</a></td><td><span class="stars s1">★☆☆</span></td><td class="small">美东枢纽，适合欧美用户</td></tr><tr><td>Atlanta, GA</td><td class="mono">107.173.164.160</td><td class="mono"><a href="https://lg-atl.racknerd.com/" target="_blank" rel="noopener">lg-atl.racknerd.com</a></td><td><span class="stars s1">★☆☆</span></td><td class="small">美东南，适合美洲业务</td></tr><tr><td>Toronto, ON</td><td class="mono">167.160.186.8</td><td class="mono"><a href="https://lg-tor.racknerd.com/" target="_blank" rel="noopener">lg-tor.racknerd.com</a></td><td><span class="stars s0">☆☆☆</span></td><td class="small">加拿大，可申请原生 IPv6</td></tr><tr><td>Amsterdam, NL</td><td class="mono">23.94.101.88</td><td class="mono"><a href="https://lg-ams.racknerd.com/" target="_blank" rel="noopener">lg-ams.racknerd.com</a></td><td><span class="stars s0">☆☆☆</span></td><td class="small">欧洲，适合欧洲用户</td></tr><tr><td>Strasbourg, FR</td><td class="mono">45.95.173.2</td><td class="mono"><a href="https://lg-fr.racknerd.com/" target="_blank" rel="noopener">lg-fr.racknerd.com</a></td><td><span class="stars s0">☆☆☆</span></td><td class="small">欧洲，可申请原生 IPv6</td></tr><tr><td>Dublin, IE</td><td class="mono">23.95.225.2</td><td class="mono"><a href="https://lg-dub.racknerd.com/" target="_blank" rel="noopener">lg-dub.racknerd.com</a></td><td><span class="stars s0">☆☆☆</span></td><td class="small">欧洲，可申请原生 IPv6</td></tr></tbody>
+</table>
+</div>
+
+<p class="small muted">评级「回国」只针对中国大陆方向；欧洲 / 加拿大机房对中国用户基本不用考虑，但做本地业务或海外业务时是加分项。</p>
+
+<h3>本机横向实测（12 个节点，同一时刻）</h3>
+
+<div class="warn">
+<strong>口径说明：</strong>这张表是我在一个<b>海外测速点</b>（韩国 Oracle Cloud，AS31898）上对 12 个测试 IP 各发 10 个 ICMP 包得到的，<b>不是中国大陆的实测</b>。
+它的用途只有一个：<b>横向比较各机房之间的相对差异</b>（同样出口条件下谁快谁慢）。中国大陆的真实延迟请以上面引用的 101 节点实测为准，两者绝对值会差 40–100 ms。
+</div>
+
+<div class="tblwrap">
+<table>
+<thead><tr><th>机房</th><th>Test IP</th><th class="num">min / avg / max (ms)</th><th class="num">抖动</th><th class="num">丢包</th></tr></thead>
+<tbody><tr><td>San Jose, CA</td><td class="mono">192.210.207.88</td><td class="num">180 / 180 / 181</td><td class="num">0.4</td><td class="num">0%</td></tr><tr><td>Strasbourg, FR</td><td class="mono">45.95.173.2</td><td class="num">183 / 184 / 184</td><td class="num">0.1</td><td class="num">0%</td></tr><tr><td>Seattle, WA</td><td class="mono">192.3.253.2</td><td class="num">203 / 203 / 205</td><td class="num">0.5</td><td class="num">0%</td></tr><tr><td>Dallas, TX</td><td class="mono">198.23.249.100</td><td class="num">205 / 206 / 208</td><td class="num">0.9</td><td class="num">0%</td></tr><tr><td>Amsterdam, NL</td><td class="mono">23.94.101.88</td><td class="num">217 / 217 / 218</td><td class="num">0.3</td><td class="num">0%</td></tr><tr><td>Los Angeles DC-03</td><td class="mono">107.174.51.158</td><td class="num">212 / 227 / 248</td><td class="num">10.6</td><td class="num">0%</td></tr><tr><td>Atlanta, GA</td><td class="mono">107.173.164.160</td><td class="num">227 / 227 / 228</td><td class="num">0.3</td><td class="num">0%</td></tr><tr><td>Ashburn, VA</td><td class="mono">192.3.254.158</td><td class="num">234 / 235 / 235</td><td class="num">0.3</td><td class="num">0%</td></tr><tr><td>Toronto, ON</td><td class="mono">167.160.186.8</td><td class="num">235 / 236 / 242</td><td class="num">2.0</td><td class="num">0%</td></tr><tr><td>Chicago, IL</td><td class="mono">198.23.228.15</td><td class="num">241 / 261 / 275</td><td class="num">10.0</td><td class="num">0%</td></tr><tr><td>New York</td><td class="mono">192.3.81.8</td><td class="num">266 / 294 / 325</td><td class="num">16.0</td><td class="num">0%</td></tr><tr><td>Dublin, IE</td><td class="mono">23.95.225.2</td><td class="num">351 / 383 / 409</td><td class="num">19.1</td><td class="num">0%</td></tr></tbody>
+</table>
+</div>
+
+<p class="small muted">测速时间 2026-11-02 上午（非晚高峰）。可以看到美西三机房（圣何塞 / 西雅图 / 洛杉矶）明显快于美东，欧洲节点里斯特拉斯堡反而比都柏林快——这类差异每个运营商都不一样，所以一定要用<b>自己的网络</b>测。</p>
+
+<h3>测试命令</h3>
+<pre style="background:#f0efec;padding:12px 14px;border-radius:8px;overflow-x:auto;font-size:12.5px"><code>ping -c 20 107.174.51.158      # 洛杉矶 DC-03
+mtr -rwzc 50 107.174.51.158    # 看每一跳，判断是否绕路
+
+# Looking Glass（网页版，能直接发起 ping / traceroute / MTR）
+https://lg-lax03.racknerd.com/</code></pre>
+
+<div class="note">
+测速建议在<b>晚高峰（北京时间 20:00–23:00）</b>再做一次。RackNerd 的晚高峰表现和闲时差得比较多，尤其是下载方向。
+</div>
+
+<h3>IPv6：默认不给，可以免费申请</h3>
+
+<p>官方知识库写明：<b>洛杉矶、犹他、加拿大多伦多、法国斯特拉斯堡、爱尔兰都柏林</b>可分配原生 IPv6，下单后开工单申请，最多 100 个，免费；独服在上述机房可申请 <code>/64</code>。其他机房暂不支持。
+<a href="https://my.racknerd.com/submitticket.php?step=2&amp;deptid=1" target="_blank" rel="noopener">开工单入口</a>。</p>
+
+<h2 id="price">价格史：社区记录的真实成交价（2019–2026）</h2>
+
+<p>RackNerd 的真实价格不在官网价目表上，而在「黑五闪购」和「双 11」这两场活动里。<b>把社区一手成交价拉成时间线，你就知道现在这个价贵在哪</b>。</p>
+
+
+<div class="tblwrap">
+<table>
+<thead><tr><th>时期</th><th>档位</th><th class="num">成交价</th><th>性质 / 出处</th></tr></thead>
+<tbody>
+<tr><td>2023 黑五闪购</td><td>2C / 2G / 22G / 12T</td><td class="num"><b>$13.55/年</b></td><td>绝版机型，二手仍有人 150 元收（post-1014355）</td></tr>
+<tr><td>2024 黑五第 8 波</td><td>2C / 2G / 31G / 8T</td><td class="num"><b>$13.88/年</b></td><td>GB5 单核 784 / 多核 1566（post-234019）</td></tr>
+<tr><td>2024 黑五第 2 波</td><td>1C / 1G / 18G / 4T · DC03</td><td class="num"><b>$7.99/年</b></td><td>近年最低价记录（post-650629）</td></tr>
+<tr><td>2025 双 11</td><td>1C / 1G / 20G / 3T</td><td class="num">$10.76/年</td><td>多机房，续费同价（post-500861）</td></tr>
+<tr><td>2025 双 11</td><td>2C / 2G / 35G / 5T</td><td class="num">$17.66/年</td><td>含 DC02（post-494960）</td></tr>
+<tr><td>2025 黑五</td><td>1C / 1G / 25G / 2T</td><td class="num">$10.60/年</td><td>2025 黑五主力款（post-739277）</td></tr>
+<tr><td>2025 黑五</td><td>2C / 2.5G / 45G / 3T · DC02</td><td class="num">$18.66/年</td><td>「联通快乐机」，晚高峰 318 Mbps（post-582179）</td></tr>
+<tr><td>2025 黑五</td><td>3C / 4G / 65G / 6.5T</td><td class="num">$29.98/年</td><td>4G 档历史低价（post-739277）</td></tr>
+<tr><td><b>2026-11 现行</b></td><td>1C / 1G / 20G / 3T</td><td class="num"><b>$21.99/年</b></td><td>老促销全下架后的新价，约为 2025 黑五的 2 倍（post-698123）</td></tr>
+<tr><td><b>2026-11 现行</b></td><td>2C / 2G / 35G / 5T</td><td class="num"><b>$35.99/年</b></td><td>同上（官网抓取 pid 953）</td></tr>
+</tbody>
+</table>
+</div>
+
+
+<div class="note">
+<b>怎么用这张表：</b>如果目标只是「便宜能挂」，<b>正确姿势是等黑五闪购</b>（11 月下旬，限量、要抢），而不是买现价档。
+2025 黑五 1C1G 是 $10.60，2026 年现价 $21.99——同一档位、同一个机房，一年涨了 <b>107%</b>，而配置只是硬盘从 25G 变成 20G、流量从 2T 变成 3T。
+</div>
+
+<h2 id="specials">一、特价年付 KVM（主推）</h2>
+
+<div class="line">
+<h3><span class="idx">1</span> 5 档年付特价 · 4 机房可选 <span class="tags"><span class="tag t-teal">最推荐</span><span class="tag t-gray">年付 / 两年付</span></span></h3>
+<p class="lead">官网 <a href="https://www.racknerd.com/specials/" target="_blank" rel="noopener">specials 页</a>的 5 个档位。1 vCPU / 1 GB / 20 GB SSD / 3 TB 起，$21.99/年，折合 $1.83/月。
+<b>注意：这已是 2026 年涨价后的新价目表</b>——2025 黑五同规格是 $10.60/年，老档位（$7.99–$18.66 那批）在 2026 年被整体下架（<code class="sm">post-698123</code>）。</p>
+
+<div class="buyrow"><a class="buy big" href="https://my.racknerd.com/aff.php?aff=16792&pid=952" target="_blank" rel="nofollow noopener">1 GB · $21.99/年（pid 952）</a><a class="buy" href="https://my.racknerd.com/aff.php?aff=16792&pid=953" target="_blank" rel="nofollow noopener">2 GB · $35.99/年（pid 953）</a></div>
+
+<div class="tblwrap"><table class="tiers"><thead><tr><th>档位</th><th class="num">vCPU</th><th class="num">内存</th><th class="num">硬盘</th><th class="num">月流量</th><th class="num">价格</th><th class="num">折合月付</th><th>三网 电/联/移</th><th>可选机房</th></tr></thead><tbody><tr><td><b>1 GB KVM VPS Special</b><div class="mono" style="font-size:11px"><a class="plain mono" href="https://my.racknerd.com/aff.php?aff=16792&pid=952" target="_blank" rel="nofollow noopener" title="带 aff 直达该档位">pid 952 ↗</a></div></td><td class="num">1</td><td class="num">1 GB</td><td class="num">20GB</td><td class="num">3000GB</td><td class="num">$21.99<div class="cyc">年付</div></td><td class="num">$1.83</td><td><span class="mono" style="font-size:11px" title="电信 4 / 联通 4 / 移动 2（满分 5）">4 / 4 / 2</span></td><td>4 个</td></tr><tr><td><b>2 GB KVM VPS Special</b><div class="mono" style="font-size:11px"><a class="plain mono" href="https://my.racknerd.com/aff.php?aff=16792&pid=953" target="_blank" rel="nofollow noopener" title="带 aff 直达该档位">pid 953 ↗</a></div></td><td class="num">2</td><td class="num">2 GB</td><td class="num">35GB</td><td class="num">5000GB</td><td class="num">$35.99<div class="cyc">年付</div></td><td class="num">$3.00</td><td><span class="mono" style="font-size:11px" title="电信 4 / 联通 4 / 移动 2（满分 5）">4 / 4 / 2</span></td><td>4 个</td></tr><tr><td><b>4 GB KVM VPS Special</b><div class="mono" style="font-size:11px"><a class="plain mono" href="https://my.racknerd.com/aff.php?aff=16792&pid=954" target="_blank" rel="nofollow noopener" title="带 aff 直达该档位">pid 954 ↗</a></div></td><td class="num">3</td><td class="num">4 GB</td><td class="num">60GB</td><td class="num">7000GB</td><td class="num">$59.99<div class="cyc">年付</div></td><td class="num">$5.00</td><td><span class="mono" style="font-size:11px" title="电信 4 / 联通 4 / 移动 2（满分 5）">4 / 4 / 2</span></td><td>4 个</td></tr><tr><td><b>6 GB KVM VPS Special</b><div class="mono" style="font-size:11px"><a class="plain mono" href="https://my.racknerd.com/aff.php?aff=16792&pid=955" target="_blank" rel="nofollow noopener" title="带 aff 直达该档位">pid 955 ↗</a></div></td><td class="num">6</td><td class="num">6 GB</td><td class="num">100GB</td><td class="num">12000GB</td><td class="num">$89.99<div class="cyc">年付</div></td><td class="num">$7.50</td><td><span class="mono" style="font-size:11px" title="电信 4 / 联通 4 / 移动 2（满分 5）">4 / 4 / 2</span></td><td>4 个</td></tr><tr><td><b>8 GB KVM VPS Special</b><div class="mono" style="font-size:11px"><a class="plain mono" href="https://my.racknerd.com/aff.php?aff=16792&pid=956" target="_blank" rel="nofollow noopener" title="带 aff 直达该档位">pid 956 ↗</a></div></td><td class="num">7</td><td class="num">8 GB</td><td class="num">150GB</td><td class="num">20000GB</td><td class="num">$119.99<div class="cyc">年付</div></td><td class="num">$10.00</td><td><span class="mono" style="font-size:11px" title="电信 4 / 联通 4 / 移动 2（满分 5）">4 / 4 / 2</span></td><td>4 个</td></tr></tbody></table></div>
+
+<p><b>怎么选：</b>绝大多数人买 1 GB 或 2 GB 就够——一台跑代理 / 探针 / 小站的机器，2 GB 内存已经能塞下 Docker + 数据库 + 反代。
+4 GB 以上开始有意义，是当你真的要跑编译、跑多个服务、或者当主力后端的时候。</p>
+
+<p><b>机房：</b>这 5 档都支持 4 个机房（洛杉矶 DC-03 / 达拉斯 / 纽约 / 西雅图），下单时在 Location 里选。
+国内用户选<b>洛杉矶 DC-03</b>；如果你在北方、觉得洛杉矶绕，可以试西雅图；达拉斯和纽约只在这两个方向有业务时才考虑。</p>
+
+<div class="warn">
+<strong>想买 DC02 的话：</strong>官网已经不提供了。社区里「最佳机房」的讨论（<code class="sm">post-513584</code>「18 刀及以上套餐支持 DC02」、<code class="sm">post-662482</code>「大部分套餐补货 DC02」）
+说的都是 2025–2026 上半年的历史活动。2026-11 抓取的 5 个档位配置页里，Location 只剩 DC03 / 达拉斯 / 纽约 / 西雅图，
+<b>没有再出现 DC02</b>。想要 DC02 只能去二手市场收老机型（溢价 100–300 元），或者等补货。
+</div>
+
+<div class="srcs"><span class="lbl">依据</span>官网 specials 页（2026-11-02）、各档位配置页的 Billing Cycle 与 Location 选项；价格变化对照 NodeSeek post-698123 / post-744024 / post-739277</div>
+</div>
+
+<h3>为什么特价档比标准 KVM 便宜这么多？</h3>
+
+<p>因为这是<b>两套完全独立的价目表</b>，不是「打折」。特价档是 RackNerd 常年挂在首页 / LET 的引流款，配置刻意做低（SSD 更小、流量算法不同），价格压到极致；标准 KVM 是官网目录价，走的是「随时可买、可选周期」的常规售卖逻辑。</p>
+<p><b>2026 年的新情况：</b>两套价目表的相对关系没变，但<b>特价档本身涨价了</b>。原来 $10–18 的老促销在 2026 年被全部下架，换成 $21.99 起的新五档（<code class="sm">post-698123</code>）。
+社区的说法是「升级配置涨价了，鸡荒连厂家都涨价」（<code class="sm">post-744024</code>）。所以「特价档 = 便宜」这个结论仍然成立，但便宜的幅度已经小了一半。</p>
+<p>另一个容易踩的误区：<b>RackNerd 的长周期基本不给折扣</b>。KVM-1/2/4GB、Windows 全系、独服的年付价正好等于月付 × 12，季付 = 月付 × 3，一分不省；只有 Ryzen 全系年付约 9 折（10.8 个月的钱买 12 个月）。所以「年付更划算」在这里不成立——<b>省下来的钱全部来自特价档本身的定价</b>。</p>
+
+<div class="tblwrap">
+<table>
+<thead><tr><th>内存</th><th class="num">特价档（年付）</th><th class="num">标准 KVM（年付）</th><th class="num">倍数</th></tr></thead>
+<tbody><tr><td>1 GB</td><td class="num">$21.99<div class="cyc">年付 · 3000GB</div></td><td class="num">$215.88<div class="cyc">年付 · 1000GB</div></td><td class="num"><b>9.8×</b></td></tr><tr><td>2 GB</td><td class="num">$35.99<div class="cyc">年付 · 5000GB</div></td><td class="num">$247.08<div class="cyc">年付 · 2000GB</div></td><td class="num"><b>6.9×</b></td></tr><tr><td>4 GB</td><td class="num">$59.99<div class="cyc">年付 · 7000GB</div></td><td class="num">$295.08<div class="cyc">年付 · 3000GB</div></td><td class="num"><b>4.9×</b></td></tr><tr><td>6 GB</td><td class="num">$89.99<div class="cyc">年付 · 12000GB</div></td><td class="num">$268.59<div class="cyc">年付 · 4000GB</div></td><td class="num"><b>3.0×</b></td></tr><tr><td>8 GB</td><td class="num">$119.99<div class="cyc">年付 · 20000GB</div></td><td class="num">$385.59<div class="cyc">年付 · 5000GB</div></td><td class="num"><b>3.2×</b></td></tr></tbody>
+</table>
+</div>
+
+<p class="small muted">同样内存，标准 KVM 的年付价是特价档的 3–10 倍，而流量反而更少（1 GB 档：特价 3 TB vs 标准 1 TB）。
+所以除非你确实需要月付 / 季付，否则<b>没有理由买标准 KVM</b>。</p>
+
+<h2 id="kvm">二、标准 KVM VPS（4 机房 · 7 档）</h2>
+
+<div class="line">
+<h3><span class="idx">2</span> KVM-512MB 至 KVM-12GB <span class="tags"><span class="tag t-blue">月付起售</span><span class="tag t-gray">4 机房</span></span></h3>
+<p class="lead">官网「标准」线，月付 $17.99 起（1 GB），支持月付 / 季付 / 半年付 / 年付四种周期。512 MB 那档只卖年付。</p>
+
+<div class="buyrow"><a class="buy big" href="https://my.racknerd.com/aff.php?aff=16792&pid=20" target="_blank" rel="nofollow noopener">KVM-1GB · $17.99/月（pid 20）</a><a class="buy" href="https://my.racknerd.com/aff.php?aff=16792&pid=22" target="_blank" rel="nofollow noopener">KVM-4GB · $24.59/月（pid 22）</a></div>
+
+<div class="tblwrap"><table class="tiers"><thead><tr><th>档位</th><th class="num">vCPU</th><th class="num">内存</th><th class="num">硬盘</th><th class="num">月流量</th><th class="num">价格</th><th class="num">折合月付</th><th>三网 电/联/移</th><th>可选机房</th></tr></thead><tbody><tr><td><b>KVM-512MB</b><div class="mono" style="font-size:11px"><a class="plain mono" href="https://my.racknerd.com/aff.php?aff=16792&pid=1" target="_blank" rel="nofollow noopener" title="带 aff 直达该档位">pid 1 ↗</a></div></td><td class="num">1</td><td class="num">512 MB</td><td class="num">30GB</td><td class="num">500GB</td><td class="num">$26.99<div class="cyc">年付</div></td><td class="num">$2.25</td><td><span class="mono" style="font-size:11px" title="电信 4 / 联通 4 / 移动 2（满分 5）">4 / 4 / 2</span></td><td>4 个</td></tr><tr><td><b>KVM-1GB</b><div class="mono" style="font-size:11px"><a class="plain mono" href="https://my.racknerd.com/aff.php?aff=16792&pid=20" target="_blank" rel="nofollow noopener" title="带 aff 直达该档位">pid 20 ↗</a></div></td><td class="num">2</td><td class="num">1 GB</td><td class="num">50GB</td><td class="num">1000GB</td><td class="num">$17.99<div class="cyc">月付</div></td><td class="num">$17.99</td><td><span class="mono" style="font-size:11px" title="电信 4 / 联通 4 / 移动 2（满分 5）">4 / 4 / 2</span></td><td>4 个</td></tr><tr><td><b>KVM-2GB</b><div class="mono" style="font-size:11px"><a class="plain mono" href="https://my.racknerd.com/aff.php?aff=16792&pid=21" target="_blank" rel="nofollow noopener" title="带 aff 直达该档位">pid 21 ↗</a></div></td><td class="num">3</td><td class="num">2 GB</td><td class="num">75GB</td><td class="num">2000GB</td><td class="num">$20.59<div class="cyc">月付</div></td><td class="num">$20.59</td><td><span class="mono" style="font-size:11px" title="电信 4 / 联通 4 / 移动 2（满分 5）">4 / 4 / 2</span></td><td>4 个</td></tr><tr><td><b>KVM-4GB</b><div class="mono" style="font-size:11px"><a class="plain mono" href="https://my.racknerd.com/aff.php?aff=16792&pid=22" target="_blank" rel="nofollow noopener" title="带 aff 直达该档位">pid 22 ↗</a></div></td><td class="num">4</td><td class="num">4 GB</td><td class="num">130GB</td><td class="num">3000GB</td><td class="num">$24.59<div class="cyc">月付</div></td><td class="num">$24.59</td><td><span class="mono" style="font-size:11px" title="电信 4 / 联通 4 / 移动 2（满分 5）">4 / 4 / 2</span></td><td>4 个</td></tr><tr><td><b>KVM-6GB</b><div class="mono" style="font-size:11px"><a class="plain mono" href="https://my.racknerd.com/aff.php?aff=16792&pid=23" target="_blank" rel="nofollow noopener" title="带 aff 直达该档位">pid 23 ↗</a></div></td><td class="num">5</td><td class="num">6 GB</td><td class="num">170GB</td><td class="num">4000GB</td><td class="num">$27.59<div class="cyc">月付</div></td><td class="num">$27.59</td><td><span class="mono" style="font-size:11px" title="电信 4 / 联通 4 / 移动 2（满分 5）">4 / 4 / 2</span></td><td>4 个</td></tr><tr><td><b>KVM-8GB</b><div class="mono" style="font-size:11px"><a class="plain mono" href="https://my.racknerd.com/aff.php?aff=16792&pid=24" target="_blank" rel="nofollow noopener" title="带 aff 直达该档位">pid 24 ↗</a></div></td><td class="num">6</td><td class="num">8 GB</td><td class="num">220GB</td><td class="num">5000GB</td><td class="num">$36.59<div class="cyc">月付</div></td><td class="num">$36.59</td><td><span class="mono" style="font-size:11px" title="电信 4 / 联通 4 / 移动 2（满分 5）">4 / 4 / 2</span></td><td>4 个</td></tr><tr><td><b>KVM-12GB</b><div class="mono" style="font-size:11px"><a class="plain mono" href="https://my.racknerd.com/aff.php?aff=16792&pid=25" target="_blank" rel="nofollow noopener" title="带 aff 直达该档位">pid 25 ↗</a></div></td><td class="num">7</td><td class="num">12 GB</td><td class="num">300GB</td><td class="num">6000GB</td><td class="num">$55.99<div class="cyc">月付</div></td><td class="num">$55.99</td><td><span class="mono" style="font-size:11px" title="电信 4 / 联通 4 / 移动 2（满分 5）">4 / 4 / 2</span></td><td>4 个</td></tr></tbody></table></div>
+
+<p><b>它的真实用途：</b>① 你要<b>月付试水</b>，不想一次压一年；② 你要<b>更大的 SSD</b>（1 GB 档 50 GB，是特价档 20 GB 的 2.5 倍）；③ 你要<b>按季付款</b>做账。
+如果这三条都不占，直接回<a href="#specials">特价年付</a>。</p>
+<p class="small muted">周期价差对照：KVM-1GB 月付 $17.99 / 季付 $53.97（=3×）/ 半年 $107.94 / 年付 $215.88（=12×），四个周期单价完全一样；6/8/12 GB 档的年付有小幅折扣（约 8–9 折），是这条线里少见的例外。</p>
+
+<div class="srcs"><span class="lbl">依据</span>官网 store/kvm-vps 分类页、7 个档位的配置页计费周期</div>
+</div>
+
+<h2 id="ryzen">三、AMD Ryzen NVMe VPS（6 机房 · 7 档）</h2>
+
+<div class="line">
+<h3><span class="idx">3</span> Ryzen-512MB 至 Ryzen-12GB <span class="tags"><span class="tag t-purple">NVMe</span><span class="tag t-gray">6 机房</span></span></h3>
+<p class="lead">Ryzen 3900X + NVMe，机房比标准 KVM 多两个（多了圣何塞、芝加哥、亚特兰大这些），是「要 IO、要指定机房」时唯一的选择。</p>
+
+<div class="buyrow"><a class="buy big" href="https://my.racknerd.com/aff.php?aff=16792&pid=502" target="_blank" rel="nofollow noopener">Ryzen-2GB · $20.59/月（pid 502）</a><a class="buy" href="https://my.racknerd.com/aff.php?aff=16792&pid=501" target="_blank" rel="nofollow noopener">Ryzen-1GB · $17.99/月（pid 501）</a></div>
+
+<div class="tblwrap"><table class="tiers"><thead><tr><th>档位</th><th class="num">vCPU</th><th class="num">内存</th><th class="num">硬盘</th><th class="num">月流量</th><th class="num">价格</th><th class="num">折合月付</th><th>三网 电/联/移</th><th>可选机房</th></tr></thead><tbody><tr><td><b>Ryzen-512MB (Linux)</b><div class="mono" style="font-size:11px"><a class="plain mono" href="https://my.racknerd.com/aff.php?aff=16792&pid=500" target="_blank" rel="nofollow noopener" title="带 aff 直达该档位">pid 500 ↗</a></div></td><td class="num">1</td><td class="num">512 MB</td><td class="num">10GB</td><td class="num">500GB</td><td class="num">$26.99<div class="cyc">年付</div></td><td class="num">$2.25</td><td><span class="mono" style="font-size:11px" title="电信 4 / 联通 4 / 移动 2（满分 5）">4 / 4 / 2</span></td><td>6 个</td></tr><tr><td><b>Ryzen-1GB (Linux)</b><div class="mono" style="font-size:11px"><a class="plain mono" href="https://my.racknerd.com/aff.php?aff=16792&pid=501" target="_blank" rel="nofollow noopener" title="带 aff 直达该档位">pid 501 ↗</a></div></td><td class="num">1</td><td class="num">1 GB</td><td class="num">15GB</td><td class="num">1000GB</td><td class="num">$17.99<div class="cyc">月付</div></td><td class="num">$17.99</td><td><span class="mono" style="font-size:11px" title="电信 4 / 联通 4 / 移动 2（满分 5）">4 / 4 / 2</span></td><td>6 个</td></tr><tr><td><b>Ryzen-2GB (Linux)</b><div class="mono" style="font-size:11px"><a class="plain mono" href="https://my.racknerd.com/aff.php?aff=16792&pid=502" target="_blank" rel="nofollow noopener" title="带 aff 直达该档位">pid 502 ↗</a></div></td><td class="num">2</td><td class="num">2 GB</td><td class="num">20GB</td><td class="num">2000GB</td><td class="num">$20.59<div class="cyc">月付</div></td><td class="num">$20.59</td><td><span class="mono" style="font-size:11px" title="电信 4 / 联通 4 / 移动 2（满分 5）">4 / 4 / 2</span></td><td>6 个</td></tr><tr><td><b>Ryzen-4GB (Linux)</b><div class="mono" style="font-size:11px"><a class="plain mono" href="https://my.racknerd.com/aff.php?aff=16792&pid=503" target="_blank" rel="nofollow noopener" title="带 aff 直达该档位">pid 503 ↗</a></div></td><td class="num">2</td><td class="num">4 GB</td><td class="num">30GB</td><td class="num">3000GB</td><td class="num">$24.59<div class="cyc">月付</div></td><td class="num">$24.59</td><td><span class="mono" style="font-size:11px" title="电信 4 / 联通 4 / 移动 2（满分 5）">4 / 4 / 2</span></td><td>6 个</td></tr><tr><td><b>Ryzen-6GB (Linux)</b><div class="mono" style="font-size:11px"><a class="plain mono" href="https://my.racknerd.com/aff.php?aff=16792&pid=504" target="_blank" rel="nofollow noopener" title="带 aff 直达该档位">pid 504 ↗</a></div></td><td class="num">3</td><td class="num">6 GB</td><td class="num">45GB</td><td class="num">4000GB</td><td class="num">$27.59<div class="cyc">月付</div></td><td class="num">$27.59</td><td><span class="mono" style="font-size:11px" title="电信 4 / 联通 4 / 移动 2（满分 5）">4 / 4 / 2</span></td><td>6 个</td></tr><tr><td><b>Ryzen-8GB (Linux)</b><div class="mono" style="font-size:11px"><a class="plain mono" href="https://my.racknerd.com/aff.php?aff=16792&pid=505" target="_blank" rel="nofollow noopener" title="带 aff 直达该档位">pid 505 ↗</a></div></td><td class="num">3</td><td class="num">8 GB</td><td class="num">75GB</td><td class="num">5000GB</td><td class="num">$36.59<div class="cyc">月付</div></td><td class="num">$36.59</td><td><span class="mono" style="font-size:11px" title="电信 4 / 联通 4 / 移动 2（满分 5）">4 / 4 / 2</span></td><td>6 个</td></tr><tr><td><b>Ryzen-12GB (Linux)</b><div class="mono" style="font-size:11px"><a class="plain mono" href="https://my.racknerd.com/aff.php?aff=16792&pid=506" target="_blank" rel="nofollow noopener" title="带 aff 直达该档位">pid 506 ↗</a></div></td><td class="num">4</td><td class="num">12 GB</td><td class="num">90GB</td><td class="num">6000GB</td><td class="num">$55.99<div class="cyc">月付</div></td><td class="num">$55.99</td><td><span class="mono" style="font-size:11px" title="电信 4 / 联通 4 / 移动 2（满分 5）">4 / 4 / 2</span></td><td>6 个</td></tr></tbody></table></div>
+
+<p><b>它和特价档怎么选：</b></p>
+<p class="small">① 只在 4 个机房里有得选 → 特价档；必须在<b>圣何塞 / 芝加哥 / 亚特兰大</b> → 只能 Ryzen。<br>
+② 吃随机 IO（数据库、Git、编译） → NVMe 的 4K 表现明显更好；纯跑代理、静态站 → 特价档的 SATA SSD 完全够。<br>
+③ 但要接受一个事实：<b>Ryzen 线没有年付特价</b>，1 GB 月付 $17.99，一年下来比特价档的 $21.99 贵 8 倍以上。所以它适合「短期用、用完就撤」或者「必须指定机房」。</p>
+
+<div class="srcs"><span class="lbl">依据</span>官网 store/amd-ryzen-vps-linux 分类页、7 个档位配置页</div>
+</div>
+
+<h2 id="windows">四、Windows VPS（NVMe · 7 机房 · 6 档）</h2>
+
+<div class="line">
+<h3><span class="idx">4</span> Windows VPS 2GB 至 16GB <span class="tags"><span class="tag t-blue">含 RDP</span><span class="tag t-gray">7 机房</span></span></h3>
+<p class="lead">Ryzen + NVMe + Windows，$27.59/月起。7 个机房（纽约 / 芝加哥 / 西雅图 / 达拉斯 / 圣何塞 / 亚特兰大 / 阿什本），是 RackNerd 里机房最多的一条 VPS 线。</p>
+
+<div class="buyrow"><a class="buy big" href="https://my.racknerd.com/aff.php?aff=16792&pid=293" target="_blank" rel="nofollow noopener">Windows 2GB · $27.59/月（pid 293）</a><a class="buy" href="https://my.racknerd.com/aff.php?aff=16792&pid=294" target="_blank" rel="nofollow noopener">Windows 4GB · $30.59/月（pid 294）</a></div>
+
+<div class="tblwrap"><table class="tiers"><thead><tr><th>档位</th><th class="num">vCPU</th><th class="num">内存</th><th class="num">硬盘</th><th class="num">月流量</th><th class="num">价格</th><th class="num">折合月付</th><th>三网 电/联/移</th><th>可选机房</th></tr></thead><tbody><tr><td><b>Windows VPS 2GB</b><div class="mono" style="font-size:11px"><a class="plain mono" href="https://my.racknerd.com/aff.php?aff=16792&pid=293" target="_blank" rel="nofollow noopener" title="带 aff 直达该档位">pid 293 ↗</a></div></td><td class="num">1</td><td class="num">2 GB</td><td class="num">35GB</td><td class="num">2000GB</td><td class="num">$27.59<div class="cyc">月付</div></td><td class="num">$27.59</td><td><span class="mono" style="font-size:11px" title="电信 4 / 联通 4 / 移动 2（满分 5）">4 / 4 / 2</span></td><td>7 个</td></tr><tr><td><b>Windows VPS 4GB</b><div class="mono" style="font-size:11px"><a class="plain mono" href="https://my.racknerd.com/aff.php?aff=16792&pid=294" target="_blank" rel="nofollow noopener" title="带 aff 直达该档位">pid 294 ↗</a></div></td><td class="num">2</td><td class="num">4 GB</td><td class="num">60GB</td><td class="num">2000GB</td><td class="num">$30.59<div class="cyc">月付</div></td><td class="num">$30.59</td><td><span class="mono" style="font-size:11px" title="电信 4 / 联通 4 / 移动 2（满分 5）">4 / 4 / 2</span></td><td>7 个</td></tr><tr><td><b>Windows VPS 6GB</b><div class="mono" style="font-size:11px"><a class="plain mono" href="https://my.racknerd.com/aff.php?aff=16792&pid=295" target="_blank" rel="nofollow noopener" title="带 aff 直达该档位">pid 295 ↗</a></div></td><td class="num">2</td><td class="num">6 GB</td><td class="num">85GB</td><td class="num">3000GB</td><td class="num">$35.59<div class="cyc">月付</div></td><td class="num">$35.59</td><td><span class="mono" style="font-size:11px" title="电信 4 / 联通 4 / 移动 2（满分 5）">4 / 4 / 2</span></td><td>7 个</td></tr><tr><td><b>Windows VPS 8GB</b><div class="mono" style="font-size:11px"><a class="plain mono" href="https://my.racknerd.com/aff.php?aff=16792&pid=296" target="_blank" rel="nofollow noopener" title="带 aff 直达该档位">pid 296 ↗</a></div></td><td class="num">3</td><td class="num">8 GB</td><td class="num">110GB</td><td class="num">5000GB</td><td class="num">$44.59<div class="cyc">月付</div></td><td class="num">$44.59</td><td><span class="mono" style="font-size:11px" title="电信 4 / 联通 4 / 移动 2（满分 5）">4 / 4 / 2</span></td><td>7 个</td></tr><tr><td><b>Windows VPS 12GB</b><div class="mono" style="font-size:11px"><a class="plain mono" href="https://my.racknerd.com/aff.php?aff=16792&pid=297" target="_blank" rel="nofollow noopener" title="带 aff 直达该档位">pid 297 ↗</a></div></td><td class="num">4</td><td class="num">12 GB</td><td class="num">160GB</td><td class="num">6000GB</td><td class="num">$64.59<div class="cyc">月付</div></td><td class="num">$64.59</td><td><span class="mono" style="font-size:11px" title="电信 4 / 联通 4 / 移动 2（满分 5）">4 / 4 / 2</span></td><td>7 个</td></tr><tr><td><b>Windows VPS 16GB</b><div class="mono" style="font-size:11px"><a class="plain mono" href="https://my.racknerd.com/aff.php?aff=16792&pid=298" target="_blank" rel="nofollow noopener" title="带 aff 直达该档位">pid 298 ↗</a></div></td><td class="num">6</td><td class="num">16 GB</td><td class="num">200GB</td><td class="num">10000GB</td><td class="num">$89.59<div class="cyc">月付</div></td><td class="num">$89.59</td><td><span class="mono" style="font-size:11px" title="电信 4 / 联通 4 / 移动 2（满分 5）">4 / 4 / 2</span></td><td>7 个</td></tr></tbody></table></div>
+
+<p><b>注意：</b>Windows 档支持<b>两年付</b>（Biennially），但 RackNerd 的长周期价就是月付价 × 周期数，<b>没有折扣</b>——两年付只是省一次付款，不省钱。
+2 GB 是最低配，跑 Windows Server + 一两个软件刚好；要装 Visual Studio、SQL Server 这类就得 8 GB 起。</p>
+
+<div class="srcs"><span class="lbl">依据</span>官网 store/windows-vps-with-nvme-ssd 分类页、6 个档位配置页（含 5 种计费周期）</div>
+</div>
+
+<h2 id="hosting">五、主机、独服与机柜</h2>
+
+<p>RackNerd 不只卖 VPS。下面这些产品线对个人用户用不上，但在「轻量建站」和「重负载」两个极端上确实有价格优势，一并列出：</p>
+
+<div class="line">
+<h3 id="shared"><span class="idx">5</span> 虚拟主机 <span class="tags"><span class="tag t-gray">cPanel</span><span class="tag t-gray">$5.59/月起</span></span></h3>
+<p class="lead">CloudLinux + LiteSpeed + cPanel，免费 SSL、每日备份、Softaculous 一键装 WordPress。</p>
+<div class="tblwrap"><table class="tiers"><thead><tr><th>档位</th><th>价格（可选周期）</th><th>可选机房</th></tr></thead><tbody><tr><td><b>RackNerd Shared Hosting - 30GB</b><div class="mono" style="font-size:11px"><a class="plain mono" href="https://my.racknerd.com/aff.php?aff=16792&pid=81" target="_blank" rel="nofollow noopener" title="带 aff 直达该档位">pid 81 ↗</a></div></td><td class="small">月付 $5.59</td><td>—</td></tr><tr><td><b>RackNerd Shared Hosting - 100GB</b><div class="mono" style="font-size:11px"><a class="plain mono" href="https://my.racknerd.com/aff.php?aff=16792&pid=82" target="_blank" rel="nofollow noopener" title="带 aff 直达该档位">pid 82 ↗</a></div></td><td class="small">月付 $9.59</td><td>—</td></tr><tr><td><b>RackNerd Shared Hosting - 200GB</b><div class="mono" style="font-size:11px"><a class="plain mono" href="https://my.racknerd.com/aff.php?aff=16792&pid=83" target="_blank" rel="nofollow noopener" title="带 aff 直达该档位">pid 83 ↗</a></div></td><td class="small">月付 $15.59</td><td>—</td></tr></tbody></table></div>
+<p class="small muted">30 GB / 100 GB / 200 GB 三档，流量 2 / 3 / 5 TB。适合「只要一个博客」的人——比买 VPS 再自己装宝塔省事得多。</p>
+</div>
+
+<div class="line">
+<h3 id="reseller"><span class="idx">6</span> 分销主机 <span class="tags"><span class="tag t-gray">白标 cPanel</span><span class="tag t-gray">$14.59/月起</span></span></h3>
+<p class="lead">40 / 100 / 200 GB 三档，给客户开空间、做小型转售用。</p>
+<div class="tblwrap"><table class="tiers"><thead><tr><th>档位</th><th>价格（可选周期）</th><th>可选机房</th></tr></thead><tbody><tr><td><b>cPanel Reseller Hosting - 40GB</b><div class="mono" style="font-size:11px"><a class="plain mono" href="https://my.racknerd.com/aff.php?aff=16792&pid=659" target="_blank" rel="nofollow noopener" title="带 aff 直达该档位">pid 659 ↗</a></div></td><td class="small">月付 $14.59</td><td>—</td></tr><tr><td><b>cPanel Reseller Hosting - 100GB</b><div class="mono" style="font-size:11px"><a class="plain mono" href="https://my.racknerd.com/aff.php?aff=16792&pid=660" target="_blank" rel="nofollow noopener" title="带 aff 直达该档位">pid 660 ↗</a></div></td><td class="small">月付 $22.59</td><td>—</td></tr><tr><td><b>cPanel Reseller Hosting - 200GB</b><div class="mono" style="font-size:11px"><a class="plain mono" href="https://my.racknerd.com/aff.php?aff=16792&pid=661" target="_blank" rel="nofollow noopener" title="带 aff 直达该档位">pid 661 ↗</a></div></td><td class="small">月付 $36.59</td><td>—</td></tr></tbody></table></div>
+</div>
+
+<div class="line">
+<h3 id="hybrid"><span class="idx">7</span> 混合独服 Hybrid <span class="tags"><span class="tag t-amber">$39/月起</span><span class="tag t-gray">4 机房</span></span></h3>
+<p class="lead">Dual E5-2690 + HDD，独服资源但用 VPS 面板管理。$39 拿到 4 GB 内存的「半独服」，是这条线里最便宜的入口。</p>
+<div class="tblwrap"><table class="tiers"><thead><tr><th>档位</th><th>价格（可选周期）</th><th>可选机房</th></tr></thead><tbody><tr><td><b>Dual E5-2690 | 4 GB RAM</b><div class="mono" style="font-size:11px"><a class="plain mono" href="https://my.racknerd.com/aff.php?aff=16792&pid=4" target="_blank" rel="nofollow noopener" title="带 aff 直达该档位">pid 4 ↗</a></div></td><td class="small">月付 $39.00 · 年付 $468.00</td><td>4 个</td></tr><tr><td><b>Dual E5-2690 | 8 GB RAM</b><div class="mono" style="font-size:11px"><a class="plain mono" href="https://my.racknerd.com/aff.php?aff=16792&pid=5" target="_blank" rel="nofollow noopener" title="带 aff 直达该档位">pid 5 ↗</a></div></td><td class="small">月付 $59.00 · 年付 $708.00</td><td>4 个</td></tr><tr><td><b>Dual E5-2690 | 16 GB RAM</b><div class="mono" style="font-size:11px"><a class="plain mono" href="https://my.racknerd.com/aff.php?aff=16792&pid=6" target="_blank" rel="nofollow noopener" title="带 aff 直达该档位">pid 6 ↗</a></div></td><td class="small">月付 $79.00 · 年付 $948.00</td><td>4 个</td></tr><tr><td><b>Dual E5-2690 | 32 GB RAM</b><div class="mono" style="font-size:11px"><a class="plain mono" href="https://my.racknerd.com/aff.php?aff=16792&pid=7" target="_blank" rel="nofollow noopener" title="带 aff 直达该档位">pid 7 ↗</a></div></td><td class="small">月付 $99.00 · 年付 $1,188.00</td><td>4 个</td></tr></tbody></table></div>
+<p class="small muted">注意硬盘是 HDD（120–750 GB），不是 SSD。跑 IO 密集任务要先想清楚。</p>
+</div>
+
+<div class="line">
+<h3 id="dedicated"><span class="idx">8</span> 独立服务器 <span class="tags"><span class="tag t-amber">$139/月起</span><span class="tag t-gray">多机房</span></span></h3>
+<p class="lead">E3-1230 v2 起，5 个 IPv4，35–100 TB 流量。$139/月买一台 16 GB / 480 GB SSD 的裸金属，比堆 7 台 2 GB VPS 还便宜。</p>
+<div class="tblwrap"><table class="tiers"><thead><tr><th>档位</th><th>价格（可选周期）</th><th>可选机房</th></tr></thead><tbody><tr><td><b>Intel Xeon E3-1230 v2 | 16GB RAM | 480 GB SSD</b><div class="mono" style="font-size:11px"><a class="plain mono" href="https://my.racknerd.com/aff.php?aff=16792&pid=12" target="_blank" rel="nofollow noopener" title="带 aff 直达该档位">pid 12 ↗</a></div></td><td class="small">月付 $139.00 · 年付 $1,668.00</td><td>5 个</td></tr><tr><td><b>Intel Xeon E3-1270 v3 | 32GB RAM | 2x 1TB SSD</b><div class="mono" style="font-size:11px"><a class="plain mono" href="https://my.racknerd.com/aff.php?aff=16792&pid=869" target="_blank" rel="nofollow noopener" title="带 aff 直达该档位">pid 869 ↗</a></div></td><td class="small">月付 $169.00</td><td>—</td></tr><tr><td><b>Dual Intel Xeon E5-2650 v2 | 64GB RAM | 1TB SSD</b><div class="mono" style="font-size:11px"><a class="plain mono" href="https://my.racknerd.com/aff.php?aff=16792&pid=867" target="_blank" rel="nofollow noopener" title="带 aff 直达该档位">pid 867 ↗</a></div></td><td class="small">月付 $199.00</td><td>—</td></tr><tr><td><b>Dual Intel Xeon E5-2650 v2 | 128GB RAM | 1TB SSD + 3TB HDD</b><div class="mono" style="font-size:11px"><a class="plain mono" href="https://my.racknerd.com/aff.php?aff=16792&pid=871" target="_blank" rel="nofollow noopener" title="带 aff 直达该档位">pid 871 ↗</a></div></td><td class="small">月付 $245.00 · 年付 $2,940.00</td><td>—</td></tr><tr><td><b>Dual Intel Xeon E5-2650 v2 | 256GB RAM | 4x 2TB SSD</b><div class="mono" style="font-size:11px"><a class="plain mono" href="https://my.racknerd.com/aff.php?aff=16792&pid=868" target="_blank" rel="nofollow noopener" title="带 aff 直达该档位">pid 868 ↗</a></div></td><td class="small">月付 $349.00 · 年付 $4,188.00</td><td>—</td></tr><tr><td><b>Dual Intel Xeon E5-2680 v4 | 256GB RAM | 4x 2TB SSD</b><div class="mono" style="font-size:11px"><a class="plain mono" href="https://my.racknerd.com/aff.php?aff=16792&pid=870" target="_blank" rel="nofollow noopener" title="带 aff 直达该档位">pid 870 ↗</a></div></td><td class="small">月付 $399.00 · 年付 $4,788.00</td><td>—</td></tr></tbody></table></div>
+<p class="small muted">部分机型标注「Deployed in First Available US Datacenter Location」，下单前要发工单指定机房。</p>
+</div>
+
+<div class="line">
+<h3 id="amd-dedi"><span class="idx">9</span> AMD Ryzen / EPYC 独服 <span class="tags"><span class="tag t-amber">新平台</span><span class="tag t-gray">$219/月起</span></span></h3>
+<p class="lead">Ryzen 7600 / 7700 / 7900 / 7950X3D 与 EPYC，NVMe。单核性能是全线最强的一档。</p>
+<div class="tblwrap"><table class="tiers"><thead><tr><th>档位</th><th>价格（可选周期）</th><th>可选机房</th></tr></thead><tbody><tr><td><b>AMD Ryzen 5950X | 128GB RAM | 2TB NVMe</b><div class="mono" style="font-size:11px"><a class="plain mono" href="https://my.racknerd.com/aff.php?aff=16792&pid=863" target="_blank" rel="nofollow noopener" title="带 aff 直达该档位">pid 863 ↗</a></div></td><td class="small">月付 $309.00 · 年付 $3,708.00</td><td>1 个</td></tr><tr><td><b>AMD Ryzen 7600 | 64GB RAM | 1TB NVMe</b><div class="mono" style="font-size:11px"><a class="plain mono" href="https://my.racknerd.com/aff.php?aff=16792&pid=861" target="_blank" rel="nofollow noopener" title="带 aff 直达该档位">pid 861 ↗</a></div></td><td class="small">月付 $219.00 · 年付 $2,628.00</td><td>1 个</td></tr><tr><td><b>AMD Ryzen 7700 | 64GB RAM | 1TB NVMe</b><div class="mono" style="font-size:11px"><a class="plain mono" href="https://my.racknerd.com/aff.php?aff=16792&pid=862" target="_blank" rel="nofollow noopener" title="带 aff 直达该档位">pid 862 ↗</a></div></td><td class="small">月付 $249.00 · 年付 $2,988.00</td><td>1 个</td></tr><tr><td><b>AMD Ryzen 7900 | 64GB RAM | 1TB NVMe</b><div class="mono" style="font-size:11px"><a class="plain mono" href="https://my.racknerd.com/aff.php?aff=16792&pid=864" target="_blank" rel="nofollow noopener" title="带 aff 直达该档位">pid 864 ↗</a></div></td><td class="small">月付 $269.00 · 年付 $3,228.00</td><td>1 个</td></tr><tr><td><b>AMD Ryzen 7950X3D | 128GB RAM | 1TB NVMe</b><div class="mono" style="font-size:11px"><a class="plain mono" href="https://my.racknerd.com/aff.php?aff=16792&pid=865" target="_blank" rel="nofollow noopener" title="带 aff 直达该档位">pid 865 ↗</a></div></td><td class="small">月付 $379.00 · 年付 $4,548.00</td><td>1 个</td></tr><tr><td><b>AMD Ryzen 7950X3D | 192GB RAM | 2x 3.84TB NVMe</b><div class="mono" style="font-size:11px"><a class="plain mono" href="https://my.racknerd.com/aff.php?aff=16792&pid=866" target="_blank" rel="nofollow noopener" title="带 aff 直达该档位">pid 866 ↗</a></div></td><td class="small">月付 $499.00 · 年付 $5,988.00</td><td>1 个</td></tr></tbody></table></div>
+</div>
+
+<div class="line">
+<h3 id="unmetered"><span class="idx">10</span> 大带宽免流独服 <span class="tags"><span class="tag t-amber">10/20/40 Gbps</span><span class="tag t-gray">$599/月起</span></span></h3>
+<p class="lead">同一个硬件平台给三档端口：10 Gbps $599 起、20 Gbps $1499 起、40 Gbps $2799 起。做 CDN 节点、下载站、直播回源用。</p>
+<div class="tblwrap"><table class="tiers"><thead><tr><th>档位</th><th>价格（可选周期）</th><th>可选机房</th></tr></thead><tbody><tr><td><b>Intel Xeon E3-1230 V3 (10Gbps Unmetered)</b><div class="mono" style="font-size:11px"><a class="plain mono" href="https://my.racknerd.com/aff.php?aff=16792&pid=746" target="_blank" rel="nofollow noopener" title="带 aff 直达该档位">pid 746 ↗</a></div></td><td class="small">月付 $599.00 · 年付 $7,188.00</td><td>5 个</td></tr><tr><td><b>Intel Xeon E-2136 (10Gbps Unmetered)</b><div class="mono" style="font-size:11px"><a class="plain mono" href="https://my.racknerd.com/aff.php?aff=16792&pid=747" target="_blank" rel="nofollow noopener" title="带 aff 直达该档位">pid 747 ↗</a></div></td><td class="small">月付 $799.00 · 年付 $9,588.00</td><td>5 个</td></tr><tr><td><b>Dual Intel Xeon E5-2630 V4 (10Gbps Unmetered)</b><div class="mono" style="font-size:11px"><a class="plain mono" href="https://my.racknerd.com/aff.php?aff=16792&pid=748" target="_blank" rel="nofollow noopener" title="带 aff 直达该档位">pid 748 ↗</a></div></td><td class="small">月付 $950.00 · 年付 $11,400.00</td><td>5 个</td></tr><tr><td><b>Dual Intel Xeon E5-2695 V4 (10Gbps Unmetered)</b><div class="mono" style="font-size:11px"><a class="plain mono" href="https://my.racknerd.com/aff.php?aff=16792&pid=749" target="_blank" rel="nofollow noopener" title="带 aff 直达该档位">pid 749 ↗</a></div></td><td class="small">月付 $1,399.00 · 年付 $16,788.00</td><td>5 个</td></tr><tr><td><b>AMD EPYC 7642 (10Gbps Unmetered)</b><div class="mono" style="font-size:11px"><a class="plain mono" href="https://my.racknerd.com/aff.php?aff=16792&pid=750" target="_blank" rel="nofollow noopener" title="带 aff 直达该档位">pid 750 ↗</a></div></td><td class="small">月付 $1,699.00 · 年付 $20,388.00</td><td>5 个</td></tr><tr><td><b>AMD EPYC 7702P (10Gbps Unmetered)</b><div class="mono" style="font-size:11px"><a class="plain mono" href="https://my.racknerd.com/aff.php?aff=16792&pid=751" target="_blank" rel="nofollow noopener" title="带 aff 直达该档位">pid 751 ↗</a></div></td><td class="small">月付 $1,999.00 · 年付 $23,988.00</td><td>5 个</td></tr><tr><td><b>Intel Xeon E3-1230 V3 (20Gbps Unmetered)</b><div class="mono" style="font-size:11px"><a class="plain mono" href="https://my.racknerd.com/aff.php?aff=16792&pid=752" target="_blank" rel="nofollow noopener" title="带 aff 直达该档位">pid 752 ↗</a></div></td><td class="small">月付 $1,499.00</td><td>5 个</td></tr><tr><td><b>Intel Xeon E-2136 (20Gbps Unmetered)</b><div class="mono" style="font-size:11px"><a class="plain mono" href="https://my.racknerd.com/aff.php?aff=16792&pid=753" target="_blank" rel="nofollow noopener" title="带 aff 直达该档位">pid 753 ↗</a></div></td><td class="small">月付 $1,699.00</td><td>5 个</td></tr><tr><td><b>Dual Intel Xeon E5-2630 V4 (20Gbps Unmetered)</b><div class="mono" style="font-size:11px"><a class="plain mono" href="https://my.racknerd.com/aff.php?aff=16792&pid=754" target="_blank" rel="nofollow noopener" title="带 aff 直达该档位">pid 754 ↗</a></div></td><td class="small">月付 $1,850.00</td><td>5 个</td></tr><tr><td><b>Dual Intel Xeon E5-2695 V4 (20Gbps Unmetered)</b><div class="mono" style="font-size:11px"><a class="plain mono" href="https://my.racknerd.com/aff.php?aff=16792&pid=755" target="_blank" rel="nofollow noopener" title="带 aff 直达该档位">pid 755 ↗</a></div></td><td class="small">月付 $2,299.00</td><td>5 个</td></tr><tr><td><b>AMD EPYC 7642 (20Gbps Unmetered)</b><div class="mono" style="font-size:11px"><a class="plain mono" href="https://my.racknerd.com/aff.php?aff=16792&pid=756" target="_blank" rel="nofollow noopener" title="带 aff 直达该档位">pid 756 ↗</a></div></td><td class="small">月付 $2,599.00</td><td>5 个</td></tr><tr><td><b>AMD EPYC 7702P (20Gbps Unmetered)</b><div class="mono" style="font-size:11px"><a class="plain mono" href="https://my.racknerd.com/aff.php?aff=16792&pid=757" target="_blank" rel="nofollow noopener" title="带 aff 直达该档位">pid 757 ↗</a></div></td><td class="small">月付 $2,899.00</td><td>5 个</td></tr><tr><td><b>Intel Xeon E3-1230 V3 (40Gbps Unmetered)</b><div class="mono" style="font-size:11px"><a class="plain mono" href="https://my.racknerd.com/aff.php?aff=16792&pid=758" target="_blank" rel="nofollow noopener" title="带 aff 直达该档位">pid 758 ↗</a></div></td><td class="small">月付 $2,799.00</td><td>5 个</td></tr><tr><td><b>Intel Xeon E-2136 (40Gbps Unmetered)</b><div class="mono" style="font-size:11px"><a class="plain mono" href="https://my.racknerd.com/aff.php?aff=16792&pid=759" target="_blank" rel="nofollow noopener" title="带 aff 直达该档位">pid 759 ↗</a></div></td><td class="small">月付 $2,999.00</td><td>5 个</td></tr><tr><td><b>Dual Intel Xeon E5-2630 V4 (40Gbps Unmetered)</b><div class="mono" style="font-size:11px"><a class="plain mono" href="https://my.racknerd.com/aff.php?aff=16792&pid=760" target="_blank" rel="nofollow noopener" title="带 aff 直达该档位">pid 760 ↗</a></div></td><td class="small">月付 $3,150.00</td><td>5 个</td></tr><tr><td><b>Dual Intel Xeon E5-2695 V4 (40Gbps Unmetered)</b><div class="mono" style="font-size:11px"><a class="plain mono" href="https://my.racknerd.com/aff.php?aff=16792&pid=761" target="_blank" rel="nofollow noopener" title="带 aff 直达该档位">pid 761 ↗</a></div></td><td class="small">月付 $4,499.00</td><td>5 个</td></tr><tr><td><b>AMD EPYC 7642 (40Gbps Unmetered)</b><div class="mono" style="font-size:11px"><a class="plain mono" href="https://my.racknerd.com/aff.php?aff=16792&pid=762" target="_blank" rel="nofollow noopener" title="带 aff 直达该档位">pid 762 ↗</a></div></td><td class="small">月付 $4,799.00</td><td>5 个</td></tr><tr><td><b>AMD EPYC 7702P (40Gbps Unmetered)</b><div class="mono" style="font-size:11px"><a class="plain mono" href="https://my.racknerd.com/aff.php?aff=16792&pid=763" target="_blank" rel="nofollow noopener" title="带 aff 直达该档位">pid 763 ↗</a></div></td><td class="small">月付 $5,099.00</td><td>5 个</td></tr></tbody></table></div>
+</div>
+
+<div class="line">
+<h3 id="seo"><span class="idx">11</span> SEO 多 IP 独服 <span class="tags"><span class="tag t-amber">237+ IP</span><span class="tag t-gray">$229/月起</span></span></h3>
+<p class="lead">/29 + 8×/27（237 个可用 IP），或者 32 个不同 C 段 /29。站群、多站点、需要大量独立 IP 的场景。</p>
+<div class="tblwrap"><table class="tiers"><thead><tr><th>档位</th><th>价格（可选周期）</th><th>可选机房</th></tr></thead><tbody><tr><td><b>Intel Xeon E3-1240 v3 - LA / DAL / CHI / NY</b><div class="mono" style="font-size:11px"><a class="plain mono" href="https://my.racknerd.com/aff.php?aff=16792&pid=275" target="_blank" rel="nofollow noopener" title="带 aff 直达该档位">pid 275 ↗</a></div></td><td class="small">月付 $229.00</td><td>—</td></tr><tr><td><b>Dual Intel Xeon E5-2620 v2 - LA / DAL / CHI / NY</b><div class="mono" style="font-size:11px"><a class="plain mono" href="https://my.racknerd.com/aff.php?aff=16792&pid=854" target="_blank" rel="nofollow noopener" title="带 aff 直达该档位">pid 854 ↗</a></div></td><td class="small">月付 $299.00</td><td>—</td></tr><tr><td><b>Intel Xeon E3-1240 v3 - 32x /29's - NY</b><div class="mono" style="font-size:11px"><a class="plain mono" href="https://my.racknerd.com/aff.php?aff=16792&pid=276" target="_blank" rel="nofollow noopener" title="带 aff 直达该档位">pid 276 ↗</a></div></td><td class="small">月付 $269.00</td><td>—</td></tr><tr><td><b>Intel Xeon E3-1230 v2 - Los Angeles DC-01</b><div class="mono" style="font-size:11px"><a class="plain mono" href="https://my.racknerd.com/aff.php?aff=16792&pid=277" target="_blank" rel="nofollow noopener" title="带 aff 直达该档位">pid 277 ↗</a></div></td><td class="small">月付 $235.00</td><td>—</td></tr><tr><td><b>Dual Xeon L5520 - Los Angeles DC-01</b><div class="mono" style="font-size:11px"><a class="plain mono" href="https://my.racknerd.com/aff.php?aff=16792&pid=278" target="_blank" rel="nofollow noopener" title="带 aff 直达该档位">pid 278 ↗</a></div></td><td class="small">月付 $245.00</td><td>—</td></tr></tbody></table></div>
+</div>
+
+<div class="line">
+<h3 id="colocation"><span class="idx">12</span> 机柜托管 <span class="tags"><span class="tag t-gray">布法罗</span><span class="tag t-gray">$179/月起</span></span></h3>
+<p class="lead">1U–4U 单机 $179/月、10U 四分之一柜 $599、20U 半柜 $999，含电和流量，24/7 远程 hands。</p>
+<div class="tblwrap"><table class="tiers"><thead><tr><th>档位</th><th>价格（可选周期）</th><th>可选机房</th></tr></thead><tbody><tr><td><b>Single Server Colocation</b><div class="mono" style="font-size:11px"><a class="plain mono" href="https://my.racknerd.com/aff.php?aff=16792&pid=8" target="_blank" rel="nofollow noopener" title="带 aff 直达该档位">pid 8 ↗</a></div></td><td class="small">月付 $179.00</td><td>—</td></tr><tr><td><b>Quarter Rack Colocation</b><div class="mono" style="font-size:11px"><a class="plain mono" href="https://my.racknerd.com/aff.php?aff=16792&pid=9" target="_blank" rel="nofollow noopener" title="带 aff 直达该档位">pid 9 ↗</a></div></td><td class="small">月付 $599.00</td><td>—</td></tr><tr><td><b>Half Rack Colocation</b><div class="mono" style="font-size:11px"><a class="plain mono" href="https://my.racknerd.com/aff.php?aff=16792&pid=10" target="_blank" rel="nofollow noopener" title="带 aff 直达该档位">pid 10 ↗</a></div></td><td class="small">月付 $999.00</td><td>—</td></tr></tbody></table></div>
+</div>
+
+<h2 id="perks">容易被忽略的隐藏福利（社区总结）</h2>
+
+<p>这些都不写在商品页上，但社区里反复出现，价值可能比省几美元更高：</p>
+
+
+<div class="tblwrap">
+<table>
+<thead><tr><th>福利 / 政策</th><th>怎么拿</th><th class="num">提及帖</th><th>注意</th></tr></thead>
+<tbody>
+<tr><td><b>月流量永久翻倍</b></td><td>在 LET（LowEndTalk）的促销帖下回帖留订单号，或找代申请</td><td class="num">64</td><td>1G→2G、2G→4G 档都能翻；两三天到账，续费后仍有效</td></tr>
+<tr><td><b>免费 IPv6</b></td><td>开工单申请，写明主 IP 与用途</td><td class="num">62</td><td>DC02 / DC03 / 圣何塞 / 犹他 / 多伦多 / 斯特拉斯堡 / 都柏林支持；可用 IPv6 出站规避「送中」</td></tr>
+<tr><td><b>3 天内免费换 IP</b></td><td>工单说明「解锁不理想 / IP 被墙」</td><td class="num">14</td><td>官方给的是「购买前 3 天一次」，不是无限换；换完不满意继续换要看客服</td></tr>
+<tr><td><b>按天退款到余额</b></td><td>工单申请退款</td><td class="num">5</td><td>有实例：$21.99 年付用掉一段时间后按剩余天数退回账户余额，余额无限期（post-799341）。<b>退回余额 ≠ 退回原支付渠道</b></td></tr>
+<tr><td><b>25 端口可用</b></td><td>默认开放</td><td class="num">2</td><td>对 $20/年 的机器算少见，可自建邮件中继（post-595913）</td></tr>
+<tr><td><b>中文工单 / 快速响应</b></td><td>直接用中文提交</td><td class="num">39</td><td>社区反馈「半小时内回复」，能代调 IPv6、换机房（post-655334）</td></tr>
+<tr><td><b>机房迁移</b></td><td>工单申请，看目标机房库存</td><td class="num">6</td><td>有人从圣何塞迁到 DC03 成功，但 <b>IP 不保留</b>（post-290126）</td></tr>
+<tr><td><b>BBR / TCP 加速</b></td><td>默认<b>没开</b>，需自己上脚本</td><td class="num">21</td><td>开 BBR 后对晚高峰单线程提升明显，是这类无优化机的标配动作</td></tr>
+</tbody>
+</table>
+</div>
+
+
+<div class="note">
+<b>下单后 30 分钟内建议做完：</b>① 测 IP 是否被墙 / 送中 → ② 不满意 3 天内提工单换 IP → ③ 开 IPv6 工单 → ④ 去 LET 回帖申请流量翻倍 → ⑤ 开 BBR。
+这五步做完，同一台 $21.99 的机器实际价值会明显高于标价。
+</div>
+
+<h2 id="faq">常见问题</h2>
+
+<details class="faq"><summary>RackNerd 和 ColoCrossing（CC）是什么关系？</summary>
+<div class="ans">RackNerd 是独立商家（RackNerd LLC，2019 年成立，总部加州），机房与网络大量使用 ColoCrossing 的资源，IP 归属 AS36352（HostPapa / ColoCrossing）。
+这解释了两件事：为什么价格能压这么低（用的是 CC 的存量机房和老平台硬件），以及为什么线路是普通国际线路（CC 本身不做中国优化）。</div></details>
+
+<details class="faq"><summary>特价年付和标准 KVM 到底差在哪？</summary>
+<div class="ans">差在三件事：<b>计费周期</b>（特价只有年付 / 两年付，标准支持月付到年付）、<b>配置</b>（1 GB 档：特价 20 GB SSD + 3 TB 流量，标准 50 GB SSD + 1 TB 流量）、<b>价格</b>（同内存年付价差 3–10 倍）。
+它们不是同一个商品的折扣关系，而是两套独立上架的产品，所以不存在「等特价打折买标准档」这种玩法。</div></details>
+
+<details class="faq"><summary>续费会涨价吗？</summary>
+<div class="ans">促销档的卖点就是「<b>续费同价</b>」——社区里几乎每篇促销帖都会标这句（<code class="sm">post-739277</code>、<code class="sm">post-494895</code>）。
+极少数人反馈续费时价格变了，通常是活动档被下架后按新价续。
+稳妥做法：<b>加进购物车后看清 Billing Cycle 里年付那一行的金额和续费说明</b>，以购物车实际显示为准，别只看首页大字。本文所有价格都是官网抓取时点的目录价。</div></details>
+
+<details class="faq"><summary>有中国大陆优化线路吗？会不会偶尔走 CN2？</summary>
+<div class="ans">没有。全线走 Cogent / Arelion / Level3 这类普通国际线路，去程电信 163、联通 4837、移动 CMI，回程同样不保证。
+历史上有过个别促销批次出现类似 CN2 的路径，但那是<b>偶发</b>，不能当买点。要 CN2 GIA / 9929 / CMIN2 请找专门做优化的商家。</div></details>
+
+<details class="faq"><summary>买了之后能换机房吗？</summary>
+<div class="ans">特价年付档通常<b>不能免费换</b>机房，标准档也要看库存和工单沟通结果。所以「先 ping 测试 IP 再下单」是最省钱的一步——换机房比换机器麻烦。
+部分独服机型直接写明「Deployed in First Available US Datacenter Location」，下单前必须发工单指定，否则随机分配。<br>
+不过有两条确定的宽松政策：① <b>购买 3 天内可以免费换一次 IP</b>（解锁/被墙都能提，<code class="sm">post-513584</code>）；② <b>机房迁移可以提工单</b>，有人从圣何塞迁到 DC03 成功，但 <b>IP 不保留</b>（<code class="sm">post-290126</code>）。</div></details>
+
+<details class="faq"><summary>IPv6 怎么开？</summary>
+<div class="ans">默认只给 IPv4。洛杉矶、犹他、多伦多、斯特拉斯堡、都柏林这几个机房可以开工单免费申请原生 IPv6（VPS 最多 100 个，独服 /64）。
+开工单时写明 VPS 主 IP 和用途即可，一般几十分钟内回复。</div></details>
+
+<details class="faq"><summary>支持支付宝吗？退款呢？</summary>
+<div class="ans">支持支付宝、银联、PayPal、信用卡和加密货币，国内买没有障碍。
+退款比想象中宽松：社区有实例——$21.99 年付用掉一段时间后开工单，<b>按剩余天数比例退回到账户余额</b>，余额无限期有效（<code class="sm">post-799341</code>）。
+但注意两点：① 退的是<b>账户余额，不是原支付渠道</b>；② 能不能退、退多少取决于工单沟通，官方 TOS 并没有承诺无理由退款。想留退路的还是买月付。</div></details>
+
+<details class="faq"><summary>IP 被墙了怎么办？</summary>
+<div class="ans">低价 VPS 的通病，RackNerd 的 IP 段里确实混有被滥用的地址。社区验证过的做法：<br>
+① <b>开机先查 IP 段</b>：<code>74.x</code> 段（尤其 DC02 的 74.48.*）解锁漂亮，ChatGPT / Netflix / TikTok / Amazon PV 都能过，部分数据还判家宽（<code class="sm">post-595913</code>、<code class="sm">post-234019</code>）。<br>
+② <b>3 天内免费换一次 IP</b>：工单说清「解锁不理想 / 被墙」即可（<code class="sm">post-513584</code>）。<br>
+③ <b>被「送中」</b>（谷歌系跳验证码 / 无法访问 Gemini）：申请 IPv6 走 IPv6 出站，或上 WARP / 一键修送中脚本（<code class="sm">post-655334</code>）。<br>
+要求 IP 长期干净的，这个价位给不了保证。</div></details>
+
+<details class="faq"><summary>性能到底怎么样？能跑什么？</summary>
+<div class="ans">社区融合怪（NodeQuality）实测的典型值：<br>
+· <b>CPU</b>：E5-2697 v2 / Xeon Gold 5118 这类老平台，GB5 单核 <b>750–784</b>、多核 <b>1400–1566</b>；超售严重的宿主机单核会掉到 <b>400</b> 左右（<code class="sm">post-219013</code>、<code class="sm">post-234019</code>）。<br>
+· <b>内存</b>：读写约 16 GB/s 读 / 12.6 GB/s 写，明显低于现代 DDR4（50 GB/s），是老平台的典型表现。<br>
+· <b>磁盘</b>：SSD RAID-10，顺序读写数百 MB/s 到 1 GB/s 级，4K 随机一般；Ryzen 线的 NVMe 明显更好。<br>
+结论：<b>老平台 CPU + 共享 vCPU</b>，适合建站、Docker 轻应用、代理、跑脚本；不适合长期满载（会被限速）、不适合跑分党、不适合对单核敏感的编译。</div></details>
+
+<details class="faq"><summary>适合建站吗？</summary>
+<div class="ans">轻量站可以（个人博客、企业展示站、日几千 PV），WordPress + 缓存插件在 2 GB 档上跑得动。
+但要接受两点：<b>晚高峰下载带宽波动大</b>（实测 3–52 Mbps 区间），以及<b>没有 SLA 保障</b>。真要商用，建议前面套 Cloudflare，或者干脆双机冗余。</div></details>
+
+<h2 id="risk">选购注意事项与已知风险</h2>
+
+<div class="card">
+<h4>下单前必看</h4>
+<p class="small">① <b>先 ping 再买</b>：测试 IP 见<a href="#test">上一节</a>，晚高峰再测一次。<br>
+② <b>确认机房</b>：特价档只有 4 个机房，圣何塞 / 芝加哥 / 亚特兰大要走 Ryzen 或 Windows 线。<br>
+③ <b>确认周期与续费价</b>：购物车里核对年付金额，别只看首页。<br>
+④ <b>支付方式</b>：支付宝可用，付款后一般几分钟内自动开通。<br>
+⑤ <b>开机后立刻做</b>：改 root 密码 → 开防火墙 → 装 BBR → 测 IP 是否被墙。</p>
+</div>
+
+<div class="warn">
+<strong>已知风险（按重要性排）：</strong><br>
+1. <b>超售</b>：$20/年的价格必然对应高密度宿主机，晚高峰 CPU steal 和 IO 会抖。<br>
+2. <b>晚高峰下载掉速</b>：延迟通常稳，但下载方向会掉；DC03 联通有抖动/丢包记录（<code class="sm">post-499338</code>），DC02 反而稳到 318 Mbps（<code class="sm">post-582179</code>）。<br>
+3. <b>涨价已成事实</b>：2026 年老促销全下架，1C1G 从 $10.60 涨到 $21.99（<code class="sm">post-698123</code>），且新档配置没提升多少。<br>
+4. <b>「最佳机房」可能买不到</b>：DC02 不在售，圣何塞/DC03 经常缺货；官网显示有货≠你下单时还有货。<br>
+5. <b>二手市场有溢价</b>：老闪购机型（$7.99–$13.88）在社区被「溢价 100–300 元」收（<code class="sm">post-46166</code>、<code class="sm">post-681327</code>），带邮箱转让有账号风险。<br>
+6. <b>aff 内容极多</b>：NodeSeek 上大部分「补货/促销」帖都带 AFF，有的只讲优点。本页把结论和证据帖分开列，便于自己核对。<br>
+7. <b>IP 声誉参差</b>：低价吸引滥用用户，买前测、买后 3 天内换。<br>
+8. <b>价格与库存会变</b>：本文所有数字是 2026-11-02 的快照。<br>
+9. <b>移动用户避雷</b>：社区原话「移动存在部分地区阻断」（<code class="sm">post-655334</code>），圣何塞「移动别选」（<code class="sm">post-235900</code>）。
+</div>
+
+<h2 id="src">数据来源与引用</h2>
+
+<h4>官方来源（2026-11-02 抓取）</h4>
+<ul class="srclist">
+<li><a href="https://www.racknerd.com/" target="_blank" rel="noopener">racknerd.com 首页</a>：20 个机房、Inc. 5000 记录、VPS 起价 $2.24/月</li>
+<li><a href="https://www.racknerd.com/datacenters" target="_blank" rel="noopener">/datacenters</a>：20 个机房清单（美 / 加 / 欧 / 亚）</li>
+<li><a href="https://www.racknerd.com/specials/" target="_blank" rel="noopener">/specials/</a>：5 档特价年付（pid 952–956）</li>
+<li>my.racknerd.com 商店 12 个分类页：kvm-vps、amd-ryzen-vps-linux、windows-vps-with-nvme-ssd、shared-hosting、reseller-hosting、dedicated-servers、hybrid-dedicated-servers、amd-ryzenepyc-dedicated-servers、high-bandwidth-unmetered-dedicated-servers、seo-dedicated-servers、colocation、special-promos —— 共 73 个在售档位</li>
+<li>各档位配置页（cart.php?a=add&amp;pid=NNN）：计费周期、Location 选项与测试 IP、库存状态</li>
+<li><a href="https://lg-lax03.racknerd.com/" target="_blank" rel="noopener">Looking Glass</a>：12 个节点的 ping / traceroute / MTR</li>
+<li><a href="https://my.racknerd.com/index.php?rp=/knowledgebase/25/Do-you-provide-IPv6-.html" target="_blank" rel="noopener">知识库：Do you provide IPv6?</a>：原生 IPv6 机房清单与申请方式</li>
+</ul>
+
+<h4>NodeSeek 语料（本次新增，1,406 条命中 / 148 篇正文 / 2,120 条评论）</h4>
+<ul class="srclist">
+<li><b>检索方式</b>：用本机已登录的 Chrome（chrome-bridge 扩展 + 本地桥接服务）在 NodeSeek 站内搜索，11 组关键词（racknerd、RN、racknerd 黑五 / 圣何塞 / 洛杉矶 / 测评 / 补货 / 年付 / 闪购 / 涨价），分页抓列表后逐篇抓正文与评论</li>
+<li><b>留档位置</b>：Obsidian 库 <code class="sm">racknerd/来源帖/</code>（148 篇笔记，含正文摘要与评论精选）、<code class="sm">racknerd/数据库/NodeSeek搜索索引.csv</code>（1406 条全量命中）</li>
+<li><a href="https://www.nodeseek.com/post-655334-1" target="_blank" rel="nofollow noopener">post-655334</a>：套餐大全 + 「联通>电信>移动」+ 送中脚本（本页运营商结论的主要出处）</li>
+<li><a href="https://www.nodeseek.com/post-582179-1" target="_blank" rel="nofollow noopener">post-582179</a>：DC02 深度测评，联通晚高峰 318 Mbps、电信回程 170–190 ms</li>
+<li><a href="https://www.nodeseek.com/post-499338-1" target="_blank" rel="nofollow noopener">post-499338</a>：DC02 / DC03 / SJC 三机房同条件对比</li>
+<li><a href="https://www.nodeseek.com/post-698123-1" target="_blank" rel="nofollow noopener">post-698123</a>：2026 年涨价与老套餐下架的第一手快讯</li>
+<li><a href="https://www.nodeseek.com/post-234019-1" target="_blank" rel="nofollow noopener">post-234019</a>：黑五第 8 波融合怪跑分 + 74 段 IP 解锁情况</li>
+<li><a href="https://www.nodeseek.com/post-799341-1" target="_blank" rel="nofollow noopener">post-799341</a>：退款按天退回余额的真实案例</li>
+</ul>
+
+<h4>第三方实测与讨论</h4>
+<ul class="srclist">
+<li><a href="https://www.gwvpsceping.com/18100.html" target="_blank" rel="noopener">gwvpsceping：洛杉矶 DC03 $21.99/年测评（2026-05）</a>：101 个国内节点延迟（电信 184 / 联通 196 / 移动 238 ms）、三网去回程路由、磁盘与 CPU 跑分、IP 质量与解锁</li>
+<li><a href="https://www.nodeseek.com/post-917644-1" target="_blank" rel="noopener">NodeSeek post-917644</a>：洛杉矶 1C1G $21.99/年，深圳联通闲时 / 晚高峰双时段实测、晚高峰下载掉速记录</li>
+<li><a href="https://zhuji51.com/racknerd-vps-review" target="_blank" rel="noopener">主机无忧：RackNerd 深度评测</a>：支付方式、退款政策、线路说明</li>
+<li><a href="https://vpsbros.com/?p=2263" target="_blank" rel="noopener">VPS兄弟会：RackNerd 的优缺点和适合人群</a>：超售、CPU 限速策略、流量不共享</li>
+<li><a href="https://vpscn2gia.com/racknerd-cheap-vps-review/" target="_blank" rel="noopener">VPS乐园：年付低价 VPS 的架构实力与选购策略</a>：稳定性、升级与退款 FAQ</li>
+<li><a href="https://vpscost.com/recommend/racknerd-blackfriday-vps-deals-2025" target="_blank" rel="noopener">VPS主机对比：黑五优惠与口碑汇总</a>：工单响应、超售情况</li>
+</ul>
+
+<p class="foot">
+数据抓取与页面生成：2026-11-02。价格、库存、机房选项随时可能变动，<b>下单前请以官网实时信息为准</b>。<br>
+页内所有购买链接带推广参数 <code class="sm">aff=16792</code>，通过链接下单不影响你的价格；部分链接带 <code class="sm">pid</code>，点击直达对应档位。<br>
+本站与 RackNerd 无雇佣关系，结论基于官网数据与公开第三方测评，不构成购买建议。
+</p>
+
+</div>
+</body>
+</html>

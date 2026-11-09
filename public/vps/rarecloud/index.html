@@ -1,0 +1,1363 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>RareCloud VPS 全产品线推荐与选购指南：19 个套餐、12 个数据中心、配置价格与运营商适配（2026）</title>
+<meta name="description" content="RareCloud（rarecloud.io）VPS 选购指南：逐款拆解 19 个可下单套餐——Linux KVM VPS 8 档、Windows RDP VPS 3 档、n8n 与 OpenClaw 预装 VPS 4 档、Web 虚拟主机 4 档，以及布加勒斯特 Cloud VM 的 13 个规格；给出 12 个数据中心的机房 / ASN / 上游 / test IP、大陆电信联通移动的选点建议、NodeSeek 社区真实评价与续费涨价、迁移换 IP、退款难等风险提示。">
+<meta name="keywords" content="RareCloud,rarecloud.io,RareCloud VPS,M247,德国VPS,香港VPS,罗马尼亚VPS,KVM VPS,Windows VPS,n8n VPS,OpenClaw VPS,Cloud VM,Web虚拟主机,VPS推荐,AS9009">
+<meta name="author" content="RareCloud 产品整理">
+<meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large">
+<link rel="canonical" href="https://blog.aibici.org/vps/rarecloud">
+<meta name="theme-color" content="#ffffff">
+
+<meta property="og:type" content="article">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:title" content="RareCloud VPS 全产品线推荐与选购指南：19 个套餐、12 个数据中心、配置价格与运营商适配（2026）">
+<meta property="og:description" content="RareCloud（rarecloud.io）VPS 选购指南：逐款拆解 19 个可下单套餐——Linux KVM VPS 8 档、Windows RDP VPS 3 档、n8n 与 OpenClaw 预装 VPS 4 档、Web 虚拟主机 4 档，以及布加勒斯特 Cloud VM 的 13 个规格；给出 12 个数据中心的机房 / ASN / 上游 / test IP、大陆电信联通移动的选点建议、NodeSeek 社区真实评价与续费涨价、迁移换 IP、退款难等风险提示。">
+<meta property="og:url" content="https://blog.aibici.org/vps/rarecloud">
+<meta property="og:site_name" content="RareCloud VPS 选购指南">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="RareCloud VPS 全产品线推荐与选购指南：19 个套餐、12 个数据中心、配置价格与运营商适配（2026）">
+<meta name="twitter:description" content="RareCloud（rarecloud.io）VPS 选购指南：逐款拆解 19 个可下单套餐——Linux KVM VPS 8 档、Windows RDP VPS 3 档、n8n 与 OpenClaw 预装 VPS 4 档、Web 虚拟主机 4 档，以及布加勒斯特 Cloud VM 的 13 个规格；给出 12 个数据中心的机房 / ASN / 上游 / test IP、大陆电信联通移动的选点建议、NodeSeek 社区真实评价与续费涨价、迁移换 IP、退款难等风险提示。">
+
+<style>
+  :root{--line:#dcdcdc;--muted:#666;--bg:#fff;--ink:#1a1a1a;--accent:#5b21b6;--warn:#8a4b00;--bad:#9b1c1c}
+  *{box-sizing:border-box}
+  html{-webkit-text-size-adjust:100%}
+  body{margin:0;background:var(--bg);color:var(--ink);
+       font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;
+       font-size:16px;line-height:1.75}
+  .wrap{max-width:880px;margin:0 auto;padding:28px 20px 72px}
+  h1{font-size:27px;line-height:1.35;font-weight:700;margin:0 0 10px}
+  h2{font-size:21px;font-weight:700;margin:44px 0 14px;padding-bottom:8px;border-bottom:2px solid var(--ink)}
+  h3{font-size:18px;font-weight:700;margin:30px 0 10px}
+  h4{font-size:16px;font-weight:700;margin:18px 0 6px}
+  p{margin:10px 0}
+  a{color:#0a4d8c;text-decoration:underline;text-underline-offset:2px}
+  a:hover{color:#06325c}
+  code{background:#f4f4f4;padding:1px 5px;font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;font-size:14px}
+  .lead{font-size:17px;color:#333}
+  .meta{color:var(--muted);font-size:14px;margin:6px 0 0}
+  .note{background:#fafafa;border:1px solid var(--line);padding:14px 16px;margin:16px 0;font-size:15px}
+  .warn{background:#fffaf2;border:1px solid #e8cfa8;padding:14px 16px;margin:16px 0;font-size:15px}
+  .warn strong{color:var(--warn)}
+  .danger{background:#fff5f5;border:1px solid #e8b4b4;padding:14px 16px;margin:16px 0;font-size:15px}
+  .danger strong{color:var(--bad)}
+  table{width:100%;border-collapse:collapse;margin:14px 0;font-size:14.5px}
+  th,td{border:1px solid var(--line);padding:8px 10px;text-align:left;vertical-align:top}
+  th{background:#f6f6f6;font-weight:700;white-space:nowrap}
+  tbody tr:nth-child(even){background:#fcfcfc}
+  td.na{color:#aaa}
+  .tbl-scroll{overflow-x:auto;-webkit-overflow-scrolling:touch}
+  ul,ol{padding-left:22px;margin:10px 0}
+  li{margin:4px 0}
+  blockquote{margin:12px 0;padding:8px 16px;border-left:3px solid var(--line);color:#333;background:#fafafa;font-size:15px}
+  blockquote.good{border-left-color:#2f7d5c;background:#f4fbf7}
+  blockquote.bad{border-left-color:#c05656;background:#fdf6f6}
+  blockquote cite{display:block;font-style:normal;color:var(--muted);font-size:13.5px;margin-top:6px}
+  .buy{display:inline-block;margin:12px 0 4px;padding:9px 18px;border:1px solid var(--accent);background:var(--accent);color:#fff;
+       text-decoration:none;font-weight:700;font-size:15px}
+  .buy:hover{background:#4c1d95;color:#fff}
+  .price-buy{white-space:nowrap;font-weight:600;text-decoration:none}
+  .price-buy-cta{display:inline-block;margin-left:6px;padding:0 6px;border:1px solid var(--accent);color:var(--accent);
+       text-decoration:none;font-size:12.5px;line-height:1.6;white-space:nowrap}
+  .price-buy-cta:hover{background:var(--accent);color:#fff}
+  .cyc{display:block;color:var(--muted);font-size:12px;font-weight:400;white-space:nowrap}
+  .tag{display:inline-block;border:1px solid var(--line);background:#f6f6f6;padding:1px 7px;font-size:13px;margin-right:5px;white-space:nowrap}
+  .tag.hot{border-color:#c9a227;background:#fdf8e6}
+  .tag.new{border-color:#2f7d5c;background:#eef7f2}
+  nav.toc{border:1px solid var(--line);padding:14px 18px;margin:22px 0}
+  nav.toc p{margin:0 0 6px;font-weight:700}
+  nav.toc ol{margin:0;padding-left:20px}
+  nav.toc li{margin:2px 0;font-size:15px}
+  .kv{font-size:15px;margin:8px 0}
+  .kv div{display:flex;gap:8px;border-bottom:1px dotted #e5e5e5;padding:3px 0}
+  .kv b{flex:0 0 76px;font-weight:700;color:#444}
+  .card{border:1px solid var(--line);padding:18px 20px;margin:20px 0}
+  .src{font-size:14.5px}
+  .src li{margin:6px 0}
+  .star{white-space:nowrap}
+  footer{margin-top:56px;padding-top:18px;border-top:1px solid var(--line);color:var(--muted);font-size:14px}
+  @media (max-width:600px){
+    h1{font-size:22px} h2{font-size:19px} h3{font-size:17px}
+    .wrap{padding:20px 14px 56px}
+    table{font-size:13.5px}
+    .kv div{display:block}
+    .kv b{display:block}
+  }
+</style>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": "https://peterxulove.github.io/rarecloud-vps/rarecloud-vps-guide.html#website",
+      "url": "https://peterxulove.github.io/rarecloud-vps/rarecloud-vps-guide.html",
+      "name": "RareCloud VPS 选购指南",
+      "inLanguage": "zh-CN"
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://peterxulove.github.io/rarecloud-vps/rarecloud-vps-guide.html#crumbs",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "一分钟选型结论"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "全部套餐速览表"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "按运营商 / 机房选"
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "name": "12 个数据中心与 test IP"
+        },
+        {
+          "@type": "ListItem",
+          "position": 5,
+          "name": "Linux KVM VPS（8 档）"
+        },
+        {
+          "@type": "ListItem",
+          "position": 6,
+          "name": "Windows RDP VPS（3 档）"
+        },
+        {
+          "@type": "ListItem",
+          "position": 7,
+          "name": "n8n 自动化 VPS（2 档）"
+        },
+        {
+          "@type": "ListItem",
+          "position": 8,
+          "name": "OpenClaw AI 助手 VPS（2 档）"
+        },
+        {
+          "@type": "ListItem",
+          "position": 9,
+          "name": "Web 虚拟主机（4 档）"
+        },
+        {
+          "@type": "ListItem",
+          "position": 10,
+          "name": "Cloud VM 与云附加件（13 规格）"
+        },
+        {
+          "@type": "ListItem",
+          "position": 11,
+          "name": "全部 19 个套餐与推广入口"
+        },
+        {
+          "@type": "ListItem",
+          "position": 12,
+          "name": "社区口碑：被认可与被吐槽"
+        },
+        {
+          "@type": "ListItem",
+          "position": 13,
+          "name": "常见问题"
+        },
+        {
+          "@type": "ListItem",
+          "position": 14,
+          "name": "选购注意事项与风险提示"
+        },
+        {
+          "@type": "ListItem",
+          "position": 15,
+          "name": "数据来源与引用"
+        }
+      ]
+    },
+    {
+      "@type": "Article",
+      "@id": "https://peterxulove.github.io/rarecloud-vps/rarecloud-vps-guide.html#article",
+      "isPartOf": {
+        "@id": "https://peterxulove.github.io/rarecloud-vps/rarecloud-vps-guide.html#website"
+      },
+      "headline": "RareCloud VPS 全产品线推荐与选购指南：19 个套餐、12 个数据中心、配置价格与运营商适配",
+      "description": "RareCloud（rarecloud.io）VPS 选购指南：逐款拆解 19 个可下单套餐——Linux KVM VPS 8 档、Windows RDP VPS 3 档、n8n 与 OpenClaw 预装 VPS 4 档、Web 虚拟主机 4 档，以及布加勒斯特 Cloud VM 的 13 个规格；给出 12 个数据中心的机房 / ASN / 上游 / test IP、大陆电信联通移动的选点建议、NodeSeek 社区真实评价与续费涨价、迁移换 IP、退款难等风险提示。",
+      "inLanguage": "zh-CN",
+      "datePublished": "2026-10-14",
+      "dateModified": "2026-10-14",
+      "about": [
+        {
+          "@type": "Thing",
+          "name": "VPS 虚拟专用服务器"
+        },
+        {
+          "@type": "Thing",
+          "name": "KVM 虚拟化"
+        },
+        {
+          "@type": "Thing",
+          "name": "Windows VPS"
+        },
+        {
+          "@type": "Thing",
+          "name": "Cloud VM"
+        },
+        {
+          "@type": "Thing",
+          "name": "Managed Kubernetes"
+        },
+        {
+          "@type": "Thing",
+          "name": "罗马尼亚 M247 数据中心"
+        }
+      ],
+      "publisher": {
+        "@type": "Organization",
+        "name": "RARE MOOD AGENCY SRL"
+      }
+    },
+    {
+      "@type": "ItemList",
+      "@id": "https://peterxulove.github.io/rarecloud-vps/rarecloud-vps-guide.html#products",
+      "name": "RareCloud 产品线",
+      "numberOfItems": 5,
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Linux KVM VPS",
+          "url": "https://peterxulove.github.io/rarecloud-vps/rarecloud-vps-guide.html#p-linux-kvm"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Windows VPS",
+          "url": "https://peterxulove.github.io/rarecloud-vps/rarecloud-vps-guide.html#p-windows-rdp"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "n8n VPS",
+          "url": "https://peterxulove.github.io/rarecloud-vps/rarecloud-vps-guide.html#p-n8n"
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "name": "OpenClaw VPS",
+          "url": "https://peterxulove.github.io/rarecloud-vps/rarecloud-vps-guide.html#p-openclaw"
+        },
+        {
+          "@type": "ListItem",
+          "position": 5,
+          "name": "Web 虚拟主机",
+          "url": "https://peterxulove.github.io/rarecloud-vps/rarecloud-vps-guide.html#p-hosting"
+        }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://peterxulove.github.io/rarecloud-vps/rarecloud-vps-guide.html#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "RareCloud 是什么来头？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "运营方是**罗马尼亚**的 RARE MOOD AGENCY SRL（Tax ID 45192771，VAT RO45192771，Reg. No. J13/3713/2021），背后是罗马尼亚持牌电信运营商 **M247**（AS9009），12 个数据中心里有 7 个直接挂在 M247 的 AS9009 下。它不是空壳新号，但确实是**近两年在社区里争议很大的低价商家**——「价格真香」和「随时可能跑路」两种评价同时存在。建议按年付玩具 / 副业机器的定位买。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "最便宜多少钱？真能买到吗？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "**€1.56/月**——Micro KVM（1 vCPU / 768MB / 15GB NVMe / 1TB 流量），**一次付三年 €56**。注意 Micro 和 Starter **没有月付**，最低一次性付 1.5 年；768MB 内存装完系统基本就满了。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "可以按月付吗？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Linux KVM 里的 Advanced / Core / DIY / Plus / Pro / Elite 与全部 Windows、n8n、OpenClaw 档位都可以月付；**只有 Micro KVM、Starter KVM、Website Hosting 三档没有月付**。Cloud VM 全部按小时计费、封顶月价。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "哪些套餐锁长周期不划算？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "**Plus VPS、Pro VPS、Win 4G / 8G / 12G 的两年付与三年付总价完全相同**，锁三年没有任何额外折扣，这几档最多锁两年。Enterprise 虚拟主机也有类似异常（两年付 / 三年付与 Business 同价），买前建议开工单确认。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "中国大陆用户选哪个机房？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "**移动选香港**（回程 CMI 直连，社区称「移动快乐鸡」）；**电信 / 联通选德国**（法兰克福 / 蒂米什瓦拉，回程联通 4837 直连，延迟约 180–260ms）；**电信不要选香港和东京**，回程绕路、丢包明显。美国四城只适合纯海外业务。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "怎么验证线路好不好？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "每个数据中心页面都直接给了 test IP，例如法兰克福 `85.121.52.2`、伦敦 `85.121.48.2`、海牙 `85.121.54.2`、东京 `85.121.50.2`、香港 `85.121.244.250`。下单前先 `ping` 和 `mtr` 测一遍再付钱。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "支持支付宝吗？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "支持。官方条款列出的支付方式是信用卡 / 借记卡、PayPal、**支付宝**、加密货币和银行转账。但社区一致提醒：**想退款就用 PayPal 付**，支付宝单几乎没成功退款的。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "有备份吗？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "没有。条款明确写了除非另有说明，RareCloud 不为客户数据做备份，硬件故障、误操作导致的数据丢失概不负责。Cloud VM 有快照服务（€0.05/GB/月，每台最多 5 个），KVM VPS 档位得自己解决备份。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "退款政策是怎样的？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "条款写的是 **14 天退款**（需满足「使用量极少」等条件），超出后按 as-is 处理，除非 30 天内换机或转余额。但社区反馈是：工单经常只回复「已上报高层」，有人退款拖了两个月，最后靠 **PayPal 争议**秒退。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "IP 会被换掉吗？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "会。历史上荷兰节点从原机房迁到海牙时**整段 IP 全换**（退役 45.129.13.0/24、45.148.11.0/24、45.142.192.0/24），硅谷节点也退役过多个 /24。条款明确 IP 不可迁移、不可转让。建议用第三方托管 DNS，别把解析挂在会变动的 IP 上。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "能解锁流媒体 / 用 ChatGPT 吗？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "IP 基本是广播段。有用户直接反馈「Gemini 定位飞到罗马尼亚，ChatGPT 直接判定为 VPN」。如果你的用途依赖干净的住宅 / 机房 IP，请另找专门商家。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Micro KVM 的 768MB 内存能干什么？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "够跑 WireGuard、反向代理、静态站、轻量脚本和监控 agent。**不够**跑 Docker（哪怕一个容器）、数据库、Java 项目或任何带编译的工具链。装完 Debian 后可用内存通常只剩 300MB 上下。如果只是想要「一台便宜的常在线机器」，它很合适；想跑服务请至少上 Core VPS（2GB）。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Cloud VM 和 KVM VPS 有什么区别？该选哪个？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "KVM VPS 是**预付固定周期**（月付到三年付），11 个机房任选，适合长期持有；Cloud VM 是**按小时后付费、月价封顶**，只在布加勒斯特，但支持随时改配置而不换 IP、自带云防火墙与私网，适合弹性负载和短期测试。"
+          }
+        }
+      ]
+    }
+  ]
+}
+</script>
+</head>
+<body>
+<div class="wrap">
+
+<header>
+  <h1>RareCloud VPS 全产品线推荐与选购指南</h1>
+  <p class="lead">把 RareCloud（rarecloud.io）官网在售的 <strong>19 个可下单套餐</strong>逐款拆开：
+  配置是什么、支持哪几个付款周期、折合每月到底多少钱、12 个数据中心分别在哪、
+  大陆电信 / 联通 / 移动该怎么选机房，以及 NodeSeek 社区的真实评价怎么说
+  ——<strong>包括它的续费涨价、强制迁移换 IP 和退款难这些槽点</strong>。</p>
+  <p class="meta">产品与价格数据整理自 RareCloud 官网（rarecloud.io，WHMCS 定价导出 2026-10-14 04:00:01）· 测评引用来自 NodeSeek 社区 · 更新于 2026-10-14</p>
+</header>
+
+<div class="warn">
+  <strong>请先阅读：</strong>本文是产品整理与选购参考，<b>不是 RareCloud 官方文档</b>。
+  价格、库存、线路随时可能调整，下单前请以官网页面为准。文中的购买链接包含推广参数（aff），
+  通过该链接下单不会增加你的费用。<strong>本文同样列出了该商家被社区质疑的问题</strong>，
+  请务必看完「选购注意事项与风险提示」再决定。文末列出全部引用来源，可自行复核。
+</div>
+
+<nav class="toc" aria-label="目录">
+  <p>目录</p>
+  <ol>
+    <li><a href="#quick">一分钟选型结论</a></li>
+    <li><a href="#matrix">全部套餐速览表</a></li>
+    <li><a href="#isp">按运营商 / 机房选</a></li>
+    <li><a href="#dc">12 个数据中心与 test IP</a></li>
+    <li><a href="#linux">Linux KVM VPS（8 档）</a></li>
+    <li><a href="#windows">Windows RDP VPS（3 档）</a></li>
+    <li><a href="#n8n">n8n 自动化 VPS（2 档）</a></li>
+    <li><a href="#openclaw">OpenClaw AI 助手 VPS（2 档）</a></li>
+    <li><a href="#hosting">Web 虚拟主机（4 档）</a></li>
+    <li><a href="#cloud">Cloud VM 与云附加件（13 规格）</a></li>
+    <li><a href="#allplans">全部 19 个套餐与推广入口</a></li>
+    <li><a href="#voice">社区口碑：被认可与被吐槽</a></li>
+    <li><a href="#faq">常见问题</a></li>
+    <li><a href="#caveats">选购注意事项与风险提示</a></li>
+    <li><a href="#sources">数据来源与引用</a></li>
+  </ol>
+</nav>
+
+<h2 id="quick">一分钟选型结论</h2>
+
+<p>RareCloud 的产品骨架可以用一句话概括：<strong>11 个机房 × 5 条产品线 × 19 个固定套餐</strong>，
+再加一套<strong>按小时计费的 Cloud VM</strong>。这里最关键的选择不是产品线而是<strong>机房</strong>——
+它决定了你的回程走哪条线路。先看结论：</p>
+<div class="tbl-scroll">
+<table><thead><tr><th>你的情况</th><th>推荐套餐</th><th>产品线</th><th>参考价格</th><th>核心理由</th></tr></thead><tbody>
+<tr>
+<td>预算压到最低，能一次付 3 年</td>
+<td><a href="#linux">Micro KVM</a></td>
+<td>Linux KVM VPS</td>
+<td><a class="price-buy" href="https://rarecloud.io/clients/aff.php?aff=1012&pid=6" rel="nofollow sponsored noopener" target="_blank">€1.56/月 起</a> <a class="price-buy-cta" href="https://rarecloud.io/clients/aff.php?aff=1012&pid=6" rel="nofollow sponsored noopener" target="_blank">购买</a></td>
+<td>1 vCPU / 768MB / 15GB NVMe / 1TB 流量，全站最低价；缺点是只有年付及以上，且内存很小</td>
+</tr>
+<tr>
+<td>想要一台正常能用的 Linux 小机</td>
+<td><a href="#linux">Core VPS</a></td>
+<td>Linux KVM VPS</td>
+<td><a class="price-buy" href="https://rarecloud.io/clients/aff.php?aff=1012&pid=12" rel="nofollow sponsored noopener" target="_blank">€3.19/月 起</a> <a class="price-buy-cta" href="https://rarecloud.io/clients/aff.php?aff=1012&pid=12" rel="nofollow sponsored noopener" target="_blank">购买</a></td>
+<td>1 vCPU / 2GB / 40GB NVMe / 3TB 流量，各周期都有，月付 €5.50</td>
+</tr>
+<tr>
+<td>要 2 核 4GB 跑网站 / 服务</td>
+<td><a href="#linux">Plus VPS</a></td>
+<td>Linux KVM VPS</td>
+<td><a class="price-buy" href="https://rarecloud.io/clients/aff.php?aff=1012&pid=13" rel="nofollow sponsored noopener" target="_blank">€7.92/月 起</a> <a class="price-buy-cta" href="https://rarecloud.io/clients/aff.php?aff=1012&pid=13" rel="nofollow sponsored noopener" target="_blank">购买</a></td>
+<td>2 vCPU / 4GB / 65GB NVMe / 5TB 流量；注意它两年付与三年付同价，锁两年就够</td>
+</tr>
+<tr>
+<td>要 4 核 8GB 的主力配置</td>
+<td><a href="#linux">Pro VPS</a></td>
+<td>Linux KVM VPS</td>
+<td><a class="price-buy" href="https://rarecloud.io/clients/aff.php?aff=1012&pid=14" rel="nofollow sponsored noopener" target="_blank">€16.25/月 起</a> <a class="price-buy-cta" href="https://rarecloud.io/clients/aff.php?aff=1012&pid=14" rel="nofollow sponsored noopener" target="_blank">购买</a></td>
+<td>4 vCPU / 8GB / 100GB NVMe / 7TB 流量，同样两年付与三年付同价</td>
+</tr>
+<tr>
+<td>内存要拉满（16GB）</td>
+<td><a href="#linux">Elite VPS</a></td>
+<td>Linux KVM VPS</td>
+<td><a class="price-buy" href="https://rarecloud.io/clients/aff.php?aff=1012&pid=15" rel="nofollow sponsored noopener" target="_blank">€25.00/月 起</a> <a class="price-buy-cta" href="https://rarecloud.io/clients/aff.php?aff=1012&pid=15" rel="nofollow sponsored noopener" target="_blank">购买</a></td>
+<td>4 vCPU / 16GB / 150GB NVMe / 10TB 流量，Linux 线唯一三年付还能再便宜一档的</td>
+</tr>
+<tr>
+<td>CPU / 内存 / 硬盘都不够，想自己配</td>
+<td><a href="#linux">Do It Yourself VPS</a></td>
+<td>Linux KVM VPS</td>
+<td><a class="price-buy" href="https://rarecloud.io/clients/aff.php?aff=1012&pid=16" rel="nofollow sponsored noopener" target="_blank">€6.25/月 起</a> <a class="price-buy-cta" href="https://rarecloud.io/clients/aff.php?aff=1012&pid=16" rel="nofollow sponsored noopener" target="_blank">购买</a></td>
+<td>vCPU 1→8、内存 1→32GB、硬盘 20→500GB、流量 1→20TB 全自选，只有月付到年付</td>
+</tr>
+<tr>
+<td>要跑 Windows 软件，团队远程桌面共用</td>
+<td><a href="#windows">Win 4G</a></td>
+<td>Windows RDP VPS</td>
+<td><a class="price-buy" href="https://rarecloud.io/clients/aff.php?aff=1012&pid=7" rel="nofollow sponsored noopener" target="_blank">€12.92/月 起</a> <a class="price-buy-cta" href="https://rarecloud.io/clients/aff.php?aff=1012&pid=7" rel="nofollow sponsored noopener" target="_blank">购买</a></td>
+<td>2 vCPU / 4GB / 60GB NVMe / 4TB；Windows 授权需自行购买，模板自带 180 天评估期</td>
+</tr>
+<tr>
+<td>要自建 n8n 工作流，预算要低</td>
+<td><a href="#n8n">N8N Starter</a></td>
+<td>None</td>
+<td><a class="price-buy" href="https://rarecloud.io/clients/aff.php?aff=1012&pid=36" rel="nofollow sponsored noopener" target="_blank">€4.00/月 起</a> <a class="price-buy-cta" href="https://rarecloud.io/clients/aff.php?aff=1012&pid=36" rel="nofollow sponsored noopener" target="_blank">购买</a></td>
+<td>预装 n8n + Nginx + Let's Encrypt + UFW，年付 €48 折合 €4.00/月，全站年付折扣最猛</td>
+</tr>
+<tr>
+<td>要自建 n8n，重工作流 / 高并发</td>
+<td><a href="#n8n">N8N PRO</a></td>
+<td>None</td>
+<td><a class="price-buy" href="https://rarecloud.io/clients/aff.php?aff=1012&pid=37" rel="nofollow sponsored noopener" target="_blank">€5.69/月 起</a> <a class="price-buy-cta" href="https://rarecloud.io/clients/aff.php?aff=1012&pid=37" rel="nofollow sponsored noopener" target="_blank">购买</a></td>
+<td>Docker + PostgreSQL 16 + Redis 7 + 2 个 worker 节点，数据库与缓存不对公网暴露</td>
+</tr>
+<tr>
+<td>要在自己服务器上跑 AI 助手（接 Telegram / 微信）</td>
+<td><a href="#openclaw">OpenClaw Server</a></td>
+<td>None</td>
+<td><a class="price-buy" href="https://rarecloud.io/clients/aff.php?aff=1012&pid=49" rel="nofollow sponsored noopener" target="_blank">€4.00/月 起</a> <a class="price-buy-cta" href="https://rarecloud.io/clients/aff.php?aff=1012&pid=49" rel="nofollow sponsored noopener" target="_blank">购买</a></td>
+<td>预装 OpenClaw + headless Chrome，8 层安全加固，仪表盘只监听 localhost</td>
+</tr>
+<tr>
+<td>想看着 AI 实时点网页、填表单</td>
+<td><a href="#openclaw">OpenClaw Desktop</a></td>
+<td>None</td>
+<td><a class="price-buy" href="https://rarecloud.io/clients/aff.php?aff=1012&pid=50" rel="nofollow sponsored noopener" target="_blank">€5.69/月 起</a> <a class="price-buy-cta" href="https://rarecloud.io/clients/aff.php?aff=1012&pid=50" rel="nofollow sponsored noopener" target="_blank">购买</a></td>
+<td>4 vCPU / 8GB / 100GB，多一套 XFCE 图形桌面 + 非 headless 浏览器，可 VNC 观看</td>
+</tr>
+<tr>
+<td>只想放个 WordPress / 静态站，不碰服务器</td>
+<td><a href="#hosting">StartUp</a></td>
+<td>Web 虚拟主机</td>
+<td><a class="price-buy" href="https://rarecloud.io/clients/aff.php?aff=1012&pid=21" rel="nofollow sponsored noopener" target="_blank">€7.92/月 起</a> <a class="price-buy-cta" href="https://rarecloud.io/clients/aff.php?aff=1012&pid=21" rel="nofollow sponsored noopener" target="_blank">购买</a></td>
+<td>1 个网站 / 50GB NVMe / 不限流量 / 独立 IP / 免费 SSL / 每日备份</td>
+</tr>
+<tr>
+<td>预算最低的建站方案</td>
+<td><a href="#hosting">Website Hosting</a></td>
+<td>Web 虚拟主机</td>
+<td><a class="price-buy" href="https://rarecloud.io/clients/aff.php?aff=1012&pid=51" rel="nofollow sponsored noopener" target="_blank">€2.22/月 起</a> <a class="price-buy-cta" href="https://rarecloud.io/clients/aff.php?aff=1012&pid=51" rel="nofollow sponsored noopener" target="_blank">购买</a></td>
+<td>10GB NVMe / 不限流量 / 10 个邮箱 / 送 .com 域名，年付 €30 起，没有月付</td>
+</tr>
+<tr>
+<td>要按小时计费、随时删的云主机</td>
+<td><a href="#cloud">Cloud VM S-1</a></td>
+<td>Cloud VM</td>
+<td><a class="price-buy" href="https://rarecloud.io/clients/aff.php?aff=1012" rel="nofollow sponsored noopener" target="_blank">€3.99/月 封顶</a> <a class="price-buy-cta" href="https://rarecloud.io/clients/aff.php?aff=1012" rel="nofollow sponsored noopener" target="_blank">购买</a></td>
+<td>1 vCPU / 2GB / 25GB NVMe / 1TB 流量，按小时出账、月价封顶，只在布加勒斯特机房</td>
+</tr>
+</tbody></table></div>
+
+<div class="note">
+  <strong>三句话记住 RareCloud 的规则：</strong>
+  <ul>
+    <li><strong>年付折算最便宜</strong>，但最便宜的两档（Micro / Starter）<strong>没有月付</strong>，最低一次性付 1.5 年。</li>
+    <li><strong>移动选香港，电信 / 联通选德国，电信千万别选香港和东京</strong>（回程绕路、丢包）。</li>
+    <li><strong>Plus / Pro / Win 系列的两年付与三年付同价</strong>，锁三年零收益，最多锁两年。</li>
+  </ul>
+</div>
+
+<h2 id="matrix">全部套餐速览表</h2>
+
+<p>下表按产品线列出<strong>各线最低档</strong>的规格与价格，便于横向比较。完整档位见后文各产品小节。</p>
+<div class="tbl-scroll">
+<table><thead><tr><th>产品线</th><th>最低档</th><th>配置</th><th>流量</th><th>计费周期</th><th>最低月均价 / 购买</th></tr></thead><tbody>
+<tr>
+<td><a href="#p-linux-kvm">Linux KVM VPS</a></td>
+<td><a href="#p-linux-kvm">Micro KVM</a></td>
+<td>1 vCPU / 768MB RAM / 15GB NVMe</td><td>1TB /month</td>
+<td>3 个可用周期</td>
+<td><a class="price-buy" href="https://rarecloud.io/clients/aff.php?aff=1012&pid=6" rel="nofollow sponsored noopener" target="_blank">€1.56</a> <a class="price-buy-cta" href="https://rarecloud.io/clients/aff.php?aff=1012&pid=6" rel="nofollow sponsored noopener" target="_blank">购买</a><span class="cyc">三年付 · 一次性付 €56.00</span></td>
+</tr>
+<tr>
+<td><a href="#p-windows-rdp">Windows VPS</a></td>
+<td><a href="#p-windows-rdp">Win 4G</a></td>
+<td>2 vCPUs / 4GB RAM / 60GB NVMe</td><td>4TB /month</td>
+<td>4 个可用周期</td>
+<td><a class="price-buy" href="https://rarecloud.io/clients/aff.php?aff=1012&pid=7" rel="nofollow sponsored noopener" target="_blank">€12.92</a> <a class="price-buy-cta" href="https://rarecloud.io/clients/aff.php?aff=1012&pid=7" rel="nofollow sponsored noopener" target="_blank">购买</a><span class="cyc">年付 · 一次性付 €155.00</span></td>
+</tr>
+<tr>
+<td><a href="#p-n8n">n8n VPS</a></td>
+<td><a href="#p-n8n">N8N Starter</a></td>
+<td>2 vCPU / 4GB RAM / 65GB NVMe</td><td>5TB /month</td>
+<td>2 个可用周期</td>
+<td><a class="price-buy" href="https://rarecloud.io/clients/aff.php?aff=1012&pid=36" rel="nofollow sponsored noopener" target="_blank">€4.00</a> <a class="price-buy-cta" href="https://rarecloud.io/clients/aff.php?aff=1012&pid=36" rel="nofollow sponsored noopener" target="_blank">购买</a><span class="cyc">年付 · 一次性付 €48.00</span></td>
+</tr>
+<tr>
+<td><a href="#p-openclaw">OpenClaw VPS</a></td>
+<td><a href="#p-openclaw">OpenClaw Server</a></td>
+<td>2 vCPU / 4GB RAM / 65GB NVMe</td><td>5TB /month</td>
+<td>2 个可用周期</td>
+<td><a class="price-buy" href="https://rarecloud.io/clients/aff.php?aff=1012&pid=49" rel="nofollow sponsored noopener" target="_blank">€4.00</a> <a class="price-buy-cta" href="https://rarecloud.io/clients/aff.php?aff=1012&pid=49" rel="nofollow sponsored noopener" target="_blank">购买</a><span class="cyc">年付 · 一次性付 €48.00</span></td>
+</tr>
+<tr>
+<td><a href="#p-hosting">Web 虚拟主机</a></td>
+<td><a href="#p-hosting">Website Hosting</a></td>
+<td>共享 / 共享 / 10GB NVMe</td><td>不限流量</td>
+<td>3 个可用周期</td>
+<td><a class="price-buy" href="https://rarecloud.io/clients/aff.php?aff=1012&pid=51" rel="nofollow sponsored noopener" target="_blank">€2.22</a> <a class="price-buy-cta" href="https://rarecloud.io/clients/aff.php?aff=1012&pid=51" rel="nofollow sponsored noopener" target="_blank">购买</a><span class="cyc">三年付 · 一次性付 €80.00</span></td>
+</tr>
+</tbody></table></div>
+
+<p class="meta">价格均为官网标价的欧元数字（<strong>不含 VAT</strong>），未含任何优惠码与支付手续费。
+年付款的档位会同时标注「一次性付总额」与「折合每月」，方便和月付直接比较。</p>
+
+<h2 id="isp">按运营商 / 机房选</h2>
+
+<p>这是本文最实用的一张表。结论综合了官网机房页公布的上游与互联、NodeSeek 帖子的回程路由记录与评论。星级含义：<strong>★★★</strong> 推荐 · <strong>★★☆</strong> 可用但有短板 · <strong>★☆☆</strong> 有明确负面反馈 · <strong>—</strong> 数据不足。</p>
+<div class="tbl-scroll">
+<table><thead><tr><th>用户类型</th><th>中国香港</th><th>日本东京</th><th>德国</th><th>荷兰 / 英国</th><th>罗马尼亚</th><th>美国</th><th></th></tr></thead><tbody>
+<tr><th scope="row">中国联通</th><td class="star">★★☆</td><td class="star">★★☆</td><td class="star">★★★</td><td class="star">★★★</td><td class="star">★★☆</td></tr>
+<tr><th scope="row">中国电信</th><td class="star">★☆☆</td><td class="star">★☆☆</td><td class="star">★★★</td><td class="star">★★☆</td><td class="star">★★☆</td></tr>
+<tr><th scope="row">中国移动</th><td class="star">★★★</td><td class="star">★★☆</td><td class="star">★★☆</td><td class="star">★★☆</td><td class="star">★★☆</td></tr>
+<tr><th scope="row">教育网 CERNET</th><td class="star">—</td><td class="star">—</td><td class="star">—</td><td class="star">—</td><td class="star">—</td></tr>
+<tr><th scope="row">欧洲业务 / 调用欧洲 API</th><td class="star">★★☆</td><td class="star">★☆☆</td><td class="star">★★★</td><td class="star">★★★</td><td class="star">★★★</td></tr>
+<tr><th scope="row">美国业务 / 调用美国 API</th><td class="star">★★☆</td><td class="star">★★★</td><td class="star">★☆☆</td><td class="star">★☆☆</td><td class="star">★☆☆</td></tr>
+<tr><th scope="row">流媒体解锁</th><td class="star">★☆☆</td><td class="star">★☆☆</td><td class="star">★☆☆</td><td class="star">★☆☆</td><td class="star">★☆☆</td></tr>
+<tr><th scope="row">建站 / 博客 / 落地页</th><td class="star">★★★</td><td class="star">★★☆</td><td class="star">★★★</td><td class="star">★★★</td><td class="star">★★☆</td></tr>
+</tbody></table></div>
+
+<div class="note">
+  <strong>几个具体结论，直接抄作业：</strong>
+  <ul>
+    <li>**移动用户优先选香港。** 香港机房回程 CMI 直连、部分地区命中 CMIN2 精品线路，社区反复称「移动快乐鸡」；但有一篇晚高峰测评显示北方移动仍会混入 4837，河北 388ms / 山西 372ms / 辽宁 503ms，晚高峰丢包并不低。</li>
+    <li>**电信用户选德国，不要选香港和东京。** 香港回程被实测判定为「英国 → 欧洲 → 香港 → 美国 → 北京」（AS9009 → AS3356 → AS4837 → AS4808），丢包且延迟高；日本机房电信方向也被多次提到绕路。</li>
+    <li>**联通用户选德国或荷兰。** 德国回程走联通 4837，延迟低于 200ms；荷兰（海牙）迁站后也被用户称为「联通快乐」。</li>
+    <li>**流媒体解锁全线别指望。** 有用户直接反馈「不要指望解锁，广播 IP，Gemini 给你飞罗马尼亚，chatgpt 直接显示你是 VPN」。需要干净 IP 请另找专门商家。</li>
+  </ul>
+  <p style="margin:8px 0 0">最后一列留空是因为<strong>机房是在下单时选的</strong>，每个套餐都能落在 11 个 VPS 机房中的任意一个 —— 换句话说，同一个套餐选德国和选香港是同一个 pid，只是线路不同。</p>
+</div>
+
+<h2 id="dc">12 个数据中心与 test IP</h2>
+
+<p>RareCloud 用的是<strong>批发型网络</strong>：自营 Tier III 机房 + Tier-1 出口，自营 ASN 挂在 <code>AS9009 (M247 Europe SRL)</code> 下，12 个机房里 7 个直接用 AS9009，其余走合作机房自己的 AS（AS396073 / AS14315 / AS35478 / AS39347）。每个机房页都公开了 <strong>test IP</strong>，<strong>下单前请务必自己 ping / mtr 测一遍</strong>，不要只看本文的结论。</p>
+<div class="tbl-scroll">
+<table><thead><tr><th>机房</th><th>国家</th><th>类型</th><th>机房 / 运营商</th><th>ASN</th><th>上游 Transit</th><th>互联 IX</th><th>Test IP</th></tr></thead><tbody>
+<tr>
+<th scope="row"><a href="https://rarecloud.io/datacenters/silicon-valley-us/" rel="nofollow noopener" target="_blank">Silicon Valley</a></th>
+<td>USA</td><td>VPS</td>
+<td>OpenColo SC1<span class="cyc">OpenColo (Energy Group Networks)</span></td>
+<td>AS396073 (Majestic Hosting Solutions)</td>
+<td>NTT、GTT、Hurricane Electric、Cogent</td>
+<td>—</td>
+<td><code>85.121.241.8</code></td>
+</tr>
+<tr>
+<th scope="row"><a href="https://rarecloud.io/datacenters/phoenix-us/" rel="nofollow noopener" target="_blank">Phoenix</a></th>
+<td>USA</td><td>VPS</td>
+<td>Phoenix Datacenter<span class="cyc">1GServers</span></td>
+<td>AS14315 (1GSERVERS LLC)</td>
+<td>TATA Communications、NTT、Cogent</td>
+<td>Ninja-IX Phoenix</td>
+<td><code>157.254.221.121</code></td>
+</tr>
+<tr>
+<th scope="row"><a href="https://rarecloud.io/datacenters/dallas-us/" rel="nofollow noopener" target="_blank">Dallas</a></th>
+<td>USA</td><td>VPS</td>
+<td>Provision Data Services (SOURCE MCF)<span class="cyc">Provision Data Services</span></td>
+<td>AS396073 (Majestic Hosting Solutions)</td>
+<td>Cogent、Zayo、EGIHosting</td>
+<td>Equinix IX Dallas</td>
+<td><code>45.13.214.1</code></td>
+</tr>
+<tr>
+<th scope="row"><a href="https://rarecloud.io/datacenters/new-york-us/" rel="nofollow noopener" target="_blank">New York</a></th>
+<td>USA</td><td>VPS</td>
+<td>Equinix NY2<span class="cyc">Equinix</span></td>
+<td>AS9009 (M247 Europe SRL)</td>
+<td>Arelion (Telia)、Cogent、NTT</td>
+<td>DE-CIX New York、NYIIX</td>
+<td><code>72.14.147.2</code></td>
+</tr>
+<tr>
+<th scope="row"><a href="https://rarecloud.io/datacenters/london-uk/" rel="nofollow noopener" target="_blank">London</a></th>
+<td>United Kingdom</td><td>VPS</td>
+<td>Digital Realty Cloud House (LHR19)<span class="cyc">Digital Realty</span></td>
+<td>AS9009 (M247 Europe SRL)</td>
+<td>Arelion (Telia)、Cogent、GTT、TIS</td>
+<td>LONAP、LINX</td>
+<td><code>85.121.48.2</code></td>
+</tr>
+<tr>
+<th scope="row"><a href="https://rarecloud.io/datacenters/the-hague-nl/" rel="nofollow noopener" target="_blank">The Hague</a></th>
+<td>Netherlands</td><td>VPS</td>
+<td>Netrouting Data Facilities THG1<span class="cyc">Data Facilities DC (DFDC)</span></td>
+<td>AS9009 (M247 Europe SRL)</td>
+<td>Cogent</td>
+<td>LSIX</td>
+<td><code>85.121.54.2</code></td>
+</tr>
+<tr>
+<th scope="row"><a href="https://rarecloud.io/datacenters/frankfurt-de/" rel="nofollow noopener" target="_blank">Frankfurt</a></th>
+<td>Germany</td><td>VPS</td>
+<td>Telehouse 23Media<span class="cyc">Telehouse (KDDI)</span></td>
+<td>AS9009 (M247 Europe SRL)</td>
+<td>Arelion (Telia)、Lumen (Level 3)、Cogent、GTT</td>
+<td>DE-CIX、NL-IX、Equinix-IX</td>
+<td><code>85.121.52.2</code></td>
+</tr>
+<tr>
+<th scope="row"><a href="https://rarecloud.io/datacenters/timisoara-ro/" rel="nofollow noopener" target="_blank">Timisoara</a></th>
+<td>Romania</td><td>VPS</td>
+<td>Bunea TELECOM DC<span class="cyc">Bunea TELECOM SRL</span></td>
+<td>AS35478 (Bunea TELECOM SRL)</td>
+<td>Cogent、Arelion (Telia)、Orange Romania、Vodafone Romania、RETN</td>
+<td>—</td>
+<td><code>45.13.38.2</code></td>
+</tr>
+<tr>
+<th scope="row"><a href="https://rarecloud.io/datacenters/constanta-ro/" rel="nofollow noopener" target="_blank">Constanta</a></th>
+<td>Romania</td><td>VPS</td>
+<td>RareCloud DC Navodari<span class="cyc">RareCloud / 07Internet</span></td>
+<td>AS39347 (07Internet)</td>
+<td>DIGI Romania</td>
+<td>—</td>
+<td><code>85.122.120.20</code></td>
+</tr>
+<tr>
+<th scope="row"><a href="https://rarecloud.io/datacenters/hong-kong-hk/" rel="nofollow noopener" target="_blank">Hong Kong</a></th>
+<td>Hong Kong</td><td>VPS</td>
+<td>Equinix HK2<span class="cyc">Equinix</span></td>
+<td>AS9009 (M247 Europe SRL)</td>
+<td>Lumen (Level 3)、Cogent、NTT、PCCW</td>
+<td>Equinix、BBIX</td>
+<td><code>85.121.244.250</code></td>
+</tr>
+<tr>
+<th scope="row"><a href="https://rarecloud.io/datacenters/tokyo-jp/" rel="nofollow noopener" target="_blank">Tokyo</a></th>
+<td>Japan</td><td>VPS</td>
+<td>Equinix TY8<span class="cyc">Equinix</span></td>
+<td>AS9009 (M247 Europe SRL)</td>
+<td>Cogent、NTT、PCCW</td>
+<td>JPIX、BBIX</td>
+<td><code>85.121.50.2</code></td>
+</tr>
+<tr>
+<th scope="row"><a href="https://rarecloud.io/datacenters/bucharest-ro/" rel="nofollow noopener" target="_blank">Bucharest</a></th>
+<td>Romania</td><td>Cloud VM</td>
+<td>M247 Bucharest, DC1 and DC2<span class="cyc">M247</span></td>
+<td>AS9009 (M247 Europe SRL)</td>
+<td>Cogent、GTT、Arelion、Colt、TIS</td>
+<td>Interlan、Balcan-IX、RoNIX、Netix</td>
+<td><code>85.120.226.190</code></td>
+</tr>
+</tbody></table></div>
+
+<div class="tbl-scroll">
+<table><thead><tr><th>机房</th><th>选它做什么</th><th>购买入口</th></tr></thead><tbody>
+<tr><th scope="row"><a href="https://rarecloud.io/datacenters/silicon-valley-us/" rel="nofollow noopener" target="_blank">Silicon Valley</a></th><td>美国业务落地；<b>稳定性评价最差</b>，仅在必需时选</td>
+<td><a class="price-buy-cta" href="https://rarecloud.io/clients/aff.php?aff=1012&pid=14" rel="nofollow sponsored noopener" target="_blank">选此机房下单 →</a></td></tr>
+<tr><th scope="row"><a href="https://rarecloud.io/datacenters/phoenix-us/" rel="nofollow noopener" target="_blank">Phoenix</a></th><td>美西备选，1GSERVERS 机房</td>
+<td><a class="price-buy-cta" href="https://rarecloud.io/clients/aff.php?aff=1012&pid=14" rel="nofollow sponsored noopener" target="_blank">选此机房下单 →</a></td></tr>
+<tr><th scope="row"><a href="https://rarecloud.io/datacenters/dallas-us/" rel="nofollow noopener" target="_blank">Dallas</a></th><td>美国中部业务</td>
+<td><a class="price-buy-cta" href="https://rarecloud.io/clients/aff.php?aff=1012&pid=14" rel="nofollow sponsored noopener" target="_blank">选此机房下单 →</a></td></tr>
+<tr><th scope="row"><a href="https://rarecloud.io/datacenters/new-york-us/" rel="nofollow noopener" target="_blank">New York</a></th><td>美东业务、面向北美东岸用户</td>
+<td><a class="price-buy-cta" href="https://rarecloud.io/clients/aff.php?aff=1012&pid=14" rel="nofollow sponsored noopener" target="_blank">选此机房下单 →</a></td></tr>
+<tr><th scope="row"><a href="https://rarecloud.io/datacenters/london-uk/" rel="nofollow noopener" target="_blank">London</a></th><td>欧洲用户评价最好的机房之一；被形容为「只有手动重启时才掉一下」</td>
+<td><a class="price-buy-cta" href="https://rarecloud.io/clients/aff.php?aff=1012&pid=13" rel="nofollow sponsored noopener" target="_blank">选此机房下单 →</a></td></tr>
+<tr><th scope="row"><a href="https://rarecloud.io/datacenters/the-hague-nl/" rel="nofollow noopener" target="_blank">The Hague</a></th><td>荷兰海牙，2025-12 迁入新机房、全部换 IP，部分用户称「联通快乐」</td>
+<td><a class="price-buy-cta" href="https://rarecloud.io/clients/aff.php?aff=1012&pid=13" rel="nofollow sponsored noopener" target="_blank">选此机房下单 →</a></td></tr>
+<tr><th scope="row"><a href="https://rarecloud.io/datacenters/frankfurt-de/" rel="nofollow noopener" target="_blank">Frankfurt</a></th><td><b>电信 / 联通</b>用户的首选：回程 4837 直连，CPU 也最好（Ryzen 7）</td>
+<td><a class="price-buy-cta" href="https://rarecloud.io/clients/aff.php?aff=1012&pid=13" rel="nofollow sponsored noopener" target="_blank">选此机房下单 →</a></td></tr>
+<tr><th scope="row"><a href="https://rarecloud.io/datacenters/timisoara-ro/" rel="nofollow noopener" target="_blank">Timisoara</a></th><td>罗马尼亚本地机，5 家 Tier-1/2 多 homes，回程同样走 4837</td>
+<td><a class="price-buy-cta" href="https://rarecloud.io/clients/aff.php?aff=1012&pid=12" rel="nofollow sponsored noopener" target="_blank">选此机房下单 →</a></td></tr>
+<tr><th scope="row"><a href="https://rarecloud.io/datacenters/constanta-ro/" rel="nofollow noopener" target="_blank">Constanta</a></th><td>干净未用过的本地 IPv4 段，<b>唯一不提供 IPv6</b> 的机房</td>
+<td><a class="price-buy-cta" href="https://rarecloud.io/clients/aff.php?aff=1012&pid=12" rel="nofollow sponsored noopener" target="_blank">选此机房下单 →</a></td></tr>
+<tr><th scope="row"><a href="https://rarecloud.io/datacenters/hong-kong-hk/" rel="nofollow noopener" target="_blank">Hong Kong</a></th><td>中国大陆<b>移动</b>用户；社区称「移动快乐鸡」，回程 CMI 直连</td>
+<td><a class="price-buy-cta" href="https://rarecloud.io/clients/aff.php?aff=1012&pid=13" rel="nofollow sponsored noopener" target="_blank">选此机房下单 →</a></td></tr>
+<tr><th scope="row"><a href="https://rarecloud.io/datacenters/tokyo-jp/" rel="nofollow noopener" target="_blank">Tokyo</a></th><td>调用美国 API 的业务；<b>电信用户不建议</b>，活动款之外丢包明显</td>
+<td><a class="price-buy-cta" href="https://rarecloud.io/clients/aff.php?aff=1012&pid=14" rel="nofollow sponsored noopener" target="_blank">选此机房下单 →</a></td></tr>
+<tr><th scope="row"><a href="https://rarecloud.io/datacenters/bucharest-ro/" rel="nofollow noopener" target="_blank">Bucharest</a></th><td><b>只在 Cloud VM 提供</b>，13 个规格都落在这里</td>
+<td><a class="price-buy-cta" href="https://rarecloud.io/clients/aff.php?aff=1012" rel="nofollow sponsored noopener" target="_blank">选此机房下单 →</a></td></tr>
+</tbody></table></div>
+
+<p class="meta">机房页与 test IP 来自官网 <a href="https://rarecloud.io/datacenters/" rel="nofollow noopener" target="_blank">https://rarecloud.io/datacenters/</a>；「选此机房下单」进入对应套餐的推广下单页，机房在结账时选择。</p>
+
+<h2 id="linux">一、Linux KVM VPS —— 全站主力，8 个档位</h2>
+
+<div class="card" id="p-linux-kvm">
+<h3>Linux KVM VPS —— 真 KVM、NVMe、11 个机房任选，全站最低 €1.56/月 <span class="tag hot">最低价</span> <span class="tag">可月付</span> <span class="tag">8 档</span></h3>
+<div class="kv">
+<div><b>机房</b><span>11 个机房任选（硅谷 / 凤凰城 / 达拉斯 / 纽约 / 伦敦 / 海牙 / 法兰克福 / 蒂米什瓦拉 / 康斯坦察 / 香港 / 东京），下单时选</span></div>
+<div><b>虚拟化</b><span>KVM 全虚拟化 —— 可加载内核模块、跑 Docker / WireGuard、自行更换内核或挂自己的 ISO</span></div>
+<div><b>硬盘 / 流量</b><span>全部 NVMe；每档均含 1 个 IPv4 + IPv6 子网（Advanced 为 /64，其余 /112）</span></div>
+<div><b>系统</b><span>Ubuntu、Debian、AlmaLinux、Rocky Linux、CentOS Stream 模板，可在面板一键重装</span></div>
+<div><b>起价</b><span>€1.56 / 月（Micro KVM：1 vCPU / 768MB RAM / 15GB NVMe / 1TB /month） <a class="price-buy-cta" href="https://rarecloud.io/clients/aff.php?aff=1012&pid=6" rel="nofollow sponsored noopener" target="_blank">购买</a></span></div>
+</div>
+<h4>档位与价格</h4>
+<div class="tbl-scroll"><table><thead><tr><th>档位</th><th>CPU</th><th>内存</th><th>硬盘</th><th>流量</th><th>IPv4 / IPv6</th><th>月付</th><th>季付</th><th>半年</th><th>年付</th><th>两年</th><th>三年</th><th>最低月均价 / 购买</th></tr></thead><tbody><tr><td>Micro KVM</td><td>1 vCPU</td><td>768MB RAM</td><td>15GB NVMe</td><td>1TB /month</td><td>1x IPv4 &amp; /112 IPv6 Subnet</td><td class="na">—</td><td class="na">—</td><td class="na">—</td><td><a class="price-buy" href="https://rarecloud.io/clients/aff.php?aff=1012&pid=6" rel="nofollow sponsored noopener" target="_blank">€1.62</a></td><td><a class="price-buy" href="https://rarecloud.io/clients/aff.php?aff=1012&pid=6" rel="nofollow sponsored noopener" target="_blank">€1.58</a></td><td><a class="price-buy" href="https://rarecloud.io/clients/aff.php?aff=1012&pid=6" rel="nofollow sponsored noopener" target="_blank">€1.56</a></td><td><a class="price-buy" href="https://rarecloud.io/clients/aff.php?aff=1012&pid=6" rel="nofollow sponsored noopener" target="_blank">€1.56</a> <a class="price-buy-cta" href="https://rarecloud.io/clients/aff.php?aff=1012&pid=6" rel="nofollow sponsored noopener" target="_blank">购买</a><span class="cyc">三年付 · 一次性付 €56.00</span></td></tr><tr><td>Starter KVM</td><td>1 vCPU</td><td>1GB RAM</td><td>25GB NVMe</td><td>3TB /month</td><td>1x IPv4 &amp; /112 IPv6 Subnet</td><td class="na">—</td><td class="na">—</td><td class="na">—</td><td><a class="price-buy" href="https://rarecloud.io/clients/aff.php?aff=1012&pid=3" rel="nofollow sponsored noopener" target="_blank">€2.46</a></td><td><a class="price-buy" href="https://rarecloud.io/clients/aff.php?aff=1012&pid=3" rel="nofollow sponsored noopener" target="_blank">€2.25</a></td><td><a class="price-buy" href="https://rarecloud.io/clients/aff.php?aff=1012&pid=3" rel="nofollow sponsored noopener" target="_blank">€2.08</a></td><td><a class="price-buy" href="https://rarecloud.io/clients/aff.php?aff=1012&pid=3" rel="nofollow sponsored noopener" target="_blank">€2.08</a> <a class="price-buy-cta" href="https://rarecloud.io/clients/aff.php?aff=1012&pid=3" rel="nofollow sponsored noopener" target="_blank">购买</a><span class="cyc">三年付 · 一次性付 €75.00</span></td></tr><tr><td>Advanced KVM</td><td>1 vCPU</td><td>2.5GB RAM</td><td>45GB NVMe</td><td>5TB /month</td><td>1x IPv4 &amp; /64 IPv6 Subnet</td><td><a class="price-buy" href="https://rarecloud.io/clients/aff.php?aff=1012&pid=11" rel="nofollow sponsored noopener" target="_blank">€4.95</a></td><td><a class="price-buy" href="https://rarecloud.io/clients/aff.php?aff=1012&pid=11" rel="nofollow sponsored noopener" target="_blank">€4.67</a></td><td><a class="price-buy" href="https://rarecloud.io/clients/aff.php?aff=1012&pid=11" rel="nofollow sponsored noopener" target="_blank">€4.12</a></td><td><a class="price-buy" href="https://rarecloud.io/clients/aff.php?aff=1012&pid=11" rel="nofollow sponsored noopener" target="_blank">€4.12</a></td><td><a class="price-buy" href="https://rarecloud.io/clients/aff.php?aff=1012&pid=11" rel="nofollow sponsored noopener" target="_blank">€4.00</a></td><td><a class="price-buy" href="https://rarecloud.io/clients/aff.php?aff=1012&pid=11" rel="nofollow sponsored noopener" target="_blank">€3.89</a></td><td><a class="price-buy" href="https://rarecloud.io/clients/aff.php?aff=1012&pid=11" rel="nofollow sponsored noopener" target="_blank">€3.89</a> <a class="price-buy-cta" href="https://rarecloud.io/clients/aff.php?aff=1012&pid=11" rel="nofollow sponsored noopener" target="_blank">购买</a><span class="cyc">三年付 · 一次性付 €140.00</span></td></tr><tr><td>Core VPS</td><td>1 vCPU</td><td>2GB RAM</td><td>40GB NVMe</td><td>3TB /month</td><td>1x IPv4 &amp; /112 IPv6 Subnet</td><td><a class="price-buy" href="https://rarecloud.io/clients/aff.php?aff=1012&pid=12" rel="nofollow sponsored noopener" target="_blank">€5.50</a></td><td><a class="price-buy" href="https://rarecloud.io/clients/aff.php?aff=1012&pid=12" rel="nofollow sponsored noopener" target="_blank">€5.00</a></td><td><a class="price-buy" href="https://rarecloud.io/clients/aff.php?aff=1012&pid=12" rel="nofollow sponsored noopener" target="_blank">€3.75</a></td><td><a class="price-buy" href="https://rarecloud.io/clients/aff.php?aff=1012&pid=12" rel="nofollow sponsored noopener" target="_blank">€3.75</a></td><td><a class="price-buy" href="https://rarecloud.io/clients/aff.php?aff=1012&pid=12" rel="nofollow sponsored noopener" target="_blank">€3.33</a></td><td><a class="price-buy" href="https://rarecloud.io/clients/aff.php?aff=1012&pid=12" rel="nofollow sponsored noopener" target="_blank">€3.19</a></td><td><a class="price-buy" href="https://rarecloud.io/clients/aff.php?aff=1012&pid=12" rel="nofollow sponsored noopener" target="_blank">€3.19</a> <a class="price-buy-cta" href="https://rarecloud.io/clients/aff.php?aff=1012&pid=12" rel="nofollow sponsored noopener" target="_blank">购买</a><span class="cyc">三年付 · 一次性付 €115.00</span></td></tr><tr><td>Do It Yourself VPS</td><td>1–8 vCPU 自选</td><td>1–32 GB 自选</td><td>20–500 GB 自选</td><td>1–20 TB 自选</td><td>资源完全自定义，仅月付/年付</td><td><a class="price-buy" href="https://rarecloud.io/clients/aff.php?aff=1012&pid=16" rel="nofollow sponsored noopener" target="_blank">€7.50</a></td><td><a class="price-buy" href="https://rarecloud.io/clients/aff.php?aff=1012&pid=16" rel="nofollow sponsored noopener" target="_blank">€7.17</a></td><td><a class="price-buy" href="https://rarecloud.io/clients/aff.php?aff=1012&pid=16" rel="nofollow sponsored noopener" target="_blank">€6.25</a></td><td><a class="price-buy" href="https://rarecloud.io/clients/aff.php?aff=1012&pid=16" rel="nofollow sponsored noopener" target="_blank">€6.25</a></td><td class="na">—</td><td class="na">—</td><td><a class="price-buy" href="https://rarecloud.io/clients/aff.php?aff=1012&pid=16" rel="nofollow sponsored noopener" target="_blank">€6.25</a> <a class="price-buy-cta" href="https://rarecloud.io/clients/aff.php?aff=1012&pid=16" rel="nofollow sponsored noopener" target="_blank">购买</a><span class="cyc">半年付 · 一次性付 €37.50</span></td></tr><tr><td>Plus VPS</td><td>2 vCPU</td><td>4GB RAM</td><td>65GB NVMe</td><td>5TB /month</td><td>1x IPv4 &amp; /112 IPv6 Subnet</td><td><a class="price-buy" href="https://rarecloud.io/clients/aff.php?aff=1012&pid=13" rel="nofollow sponsored noopener" target="_blank">€9.50</a></td><td><a class="price-buy" href="https://rarecloud.io/clients/aff.php?aff=1012&pid=13" rel="nofollow sponsored noopener" target="_blank">€9.00</a></td><td><a class="price-buy" href="https://rarecloud.io/clients/aff.php?aff=1012&pid=13" rel="nofollow sponsored noopener" target="_blank">€7.92</a></td><td><a class="price-buy" href="https://rarecloud.io/clients/aff.php?aff=1012&pid=13" rel="nofollow sponsored noopener" target="_blank">€7.92</a></td><td><a class="price-buy" href="https://rarecloud.io/clients/aff.php?aff=1012&pid=13" rel="nofollow sponsored noopener" target="_blank">€7.92</a></td><td><a class="price-buy" href="https://rarecloud.io/clients/aff.php?aff=1012&pid=13" rel="nofollow sponsored noopener" target="_blank">€7.92</a></td><td><a class="price-buy" href="https://rarecloud.io/clients/aff.php?aff=1012&pid=13" rel="nofollow sponsored noopener" target="_blank">€7.92</a> <a class="price-buy-cta" href="https://rarecloud.io/clients/aff.php?aff=1012&pid=13" rel="nofollow sponsored noopener" target="_blank">购买</a><span class="cyc">半年付 · 一次性付 €47.50</span></td></tr><tr><td>Pro VPS</td><td>4 vCPU</td><td>8GB RAM</td><td>100GB NVMe</td><td>7TB /month</td><td>1x IPv4 &amp; /112 IPv6 Subnet</td><td><a class="price-buy" href="https://rarecloud.io/clients/aff.php?aff=1012&pid=14" rel="nofollow sponsored noopener" target="_blank">€19.50</a></td><td><a class="price-buy" href="https://rarecloud.io/clients/aff.php?aff=1012&pid=14" rel="nofollow sponsored noopener" target="_blank">€18.50</a></td><td><a class="price-buy" href="https://rarecloud.io/clients/aff.php?aff=1012&pid=14" rel="nofollow sponsored noopener" target="_blank">€16.25</a></td><td><a class="price-buy" href="https://rarecloud.io/clients/aff.php?aff=1012&pid=14" rel="nofollow sponsored noopener" target="_blank">€16.25</a></td><td><a class="price-buy" href="https://rarecloud.io/clients/aff.php?aff=1012&pid=14" rel="nofollow sponsored noopener" target="_blank">€16.25</a></td><td><a class="price-buy" href="https://rarecloud.io/clients/aff.php?aff=1012&pid=14" rel="nofollow sponsored noopener" target="_blank">€16.25</a></td><td><a class="price-buy" href="https://rarecloud.io/clients/aff.php?aff=1012&pid=14" rel="nofollow sponsored noopener" target="_blank">€16.25</a> <a class="price-buy-cta" href="https://rarecloud.io/clients/aff.php?aff=1012&pid=14" rel="nofollow sponsored noopener" target="_blank">购买</a><span class="cyc">半年付 · 一次性付 €97.50</span></td></tr><tr><td>Elite VPS</td><td>4 vCPU</td><td>16GB RAM</td><td>150GB NVMe</td><td>10TB /month</td><td>1x IPv4 &amp; /112 IPv6 Subnet</td><td><a class="price-buy" href="https://rarecloud.io/clients/aff.php?aff=1012&pid=15" rel="nofollow sponsored noopener" target="_blank">€34.50</a></td><td><a class="price-buy" href="https://rarecloud.io/clients/aff.php?aff=1012&pid=15" rel="nofollow sponsored noopener" target="_blank">€32.67</a></td><td><a class="price-buy" href="https://rarecloud.io/clients/aff.php?aff=1012&pid=15" rel="nofollow sponsored noopener" target="_blank">€28.75</a></td><td><a class="price-buy" href="https://rarecloud.io/clients/aff.php?aff=1012&pid=15" rel="nofollow sponsored noopener" target="_blank">€28.75</a></td><td><a class="price-buy" href="https://rarecloud.io/clients/aff.php?aff=1012&pid=15" rel="nofollow sponsored noopener" target="_blank">€27.08</a></td><td><a class="price-buy" href="https://rarecloud.io/clients/aff.php?aff=1012&pid=15" rel="nofollow sponsored noopener" target="_blank">€25.00</a></td><td><a class="price-buy" href="https://rarecloud.io/clients/aff.php?aff=1012&pid=15" rel="nofollow sponsored noopener" target="_blank">€25.00</a> <a class="price-buy-cta" href="https://rarecloud.io/clients/aff.php?aff=1012&pid=15" rel="nofollow sponsored noopener" target="_blank">购买</a><span class="cyc">三年付 · 一次性付 €900.00</span></td></tr></tbody></table></div>
+<h4>产品特点与注意事项</h4>
+<p>这是 RareCloud 的基本盘，也是全部 19 个套餐里选择最多的一条线。8 个档位从 <strong>768MB 内存的引流款</strong>一路排到 16GB 内存，所有档位都是真 KVM + NVMe。</p>
+<p>价格结构要单独说清楚：<strong>月付最贵、三年付最便宜</strong>；但最便宜的两档（Micro / Starter）<strong>根本不提供月付</strong>，必须一次付 1.5 年起步。另外 Plus / Pro 两档<strong>两年付与三年付总价完全相同</strong>——也就是说<strong>锁三年并不会比锁两年更划算</strong>，这两档最多锁两年。</p>
+<ul>
+<li>Micro KVM 的 <strong>768MB 内存</strong>是刻意做出来的引流款：能跑 WireGuard、静态页、轻量脚本，装完 Debian 后可用内存通常只剩 300MB 上下。<strong>别拿它跑 Docker 或数据库。</strong></li>
+<li>Advanced KVM（1C/2.5G/45G）是这条线<strong>唯一提供 /64 IPv6</strong>的档位，其余都是 /112 子网；想要完整 IPv6 子网就选它。</li>
+<li>Do It Yourself 支持 vCPU 1→8、内存 1→32GB、硬盘 20→500GB、流量 1→20TB 全自选，但<strong>只有月付到年付四个周期，没有两年付与三年付</strong>。</li>
+<li>硬件<strong>按机房分化明显</strong>：德国机房给 Ryzen 7 3700X / 5800X（Geekbench 5 单核 982–1100），其他机房多为 Xeon E5-2683 v4 / E5-2690 v2（GB5 约 400–548）。买德国机等于顺带拿到更好的 CPU。</li>
+</ul>
+<h4>适用运营商</h4>
+<div class="kv">
+<div><b>中国联通</b><span>★★★</span></div>
+<div><b>中国电信</b><span>★★☆</span></div>
+<div><b>中国移动</b><span>★★★</span></div>
+<div><b>教育网</b><span>—</span></div>
+</div>
+<p class="meta">依据强度：实测　|　11 个机房全部可选。<strong>移动优先选香港</strong>（回程 CMI 直连，社区称「移动快乐鸡」）；<strong>电信 / 联通优先选德国</strong>（法兰克福 / 蒂米什瓦拉，回程联通 4837 直连，延迟约 180–260ms）；<strong>电信不要选香港和东京</strong>，回程被判定绕路（英国→欧洲→香港→美国）且丢包。荷兰海牙迁站后被部分用户称为「联通快乐」。美国四城延迟高且稳定性评价最差，只适合放纯海外业务。</p>
+<blockquote>「Rarecloud €8.3/年 德国三网直连 上海这联通电信好香。。25三年还能买」<cite>—— 《Rarecloud €8.3/年 德国三网直连》, 2025-02-02　<a href="https://www.nodeseek.com/post-242618-1" rel="nofollow noopener" target="_blank">查看原帖</a></cite></blockquote>
+<blockquote>「综合来看，硬盘读写都差不多，德国机房硬件较好，CPU 的 GB5 分数上 1000，线路也是直连的，延迟也不错」<cite>—— 《【测评】Rarecloud 各区域机房测评》, 2024-12-30　<a href="https://www.nodeseek.com/post-213762-1" rel="nofollow noopener" target="_blank">查看原帖</a></cite></blockquote>
+<blockquote>「优点：处理器分数较高；网络直连中国；电信、联通延迟低于 200ms……缺点：CPU 和内存性能差一些；需要免税账号」<cite>—— 《【三德机对比】Rarecloud vs Delux vs Netcup》, 2024-10-29　<a href="https://www.nodeseek.com/post-176102-1" rel="nofollow noopener" target="_blank">查看原帖</a></cite></blockquote>
+<blockquote>「rarecloud 这家的机器现在只剩罗马尼亚一个位置？……rarecloud 的机器相对来说欧洲节点要稳定一些，美国节点稳定性很差，经常关机或者丢包率高到没边了」<cite>—— 《rarecloud 失联》, 2026-10-03　<a href="https://www.nodeseek.com/post-958377-1" rel="nofollow noopener" target="_blank">查看原帖</a></cite></blockquote>
+<p><strong>适合谁：</strong>预算极低、能接受「年付当赌博」的人；大陆移动用户想要一台便宜的香港机；需要真 KVM 但对 CPU 性能要求不高的轻量服务。</p>
+<p><strong>不适合：</strong>需要放生产业务的人（社区「宕机 / 失联 / 工单不回」的帖子密度很高）；中国电信用户买香港 / 东京机；指望靠 14 天退款兜底的人。</p>
+
+<p><strong>本线全部档位的推广购买入口：</strong>
+<a class="price-buy-cta" href="https://rarecloud.io/clients/aff.php?aff=1012&pid=6" rel="nofollow sponsored noopener" target="_blank">Micro KVM €1.56/月</a>　<a class="price-buy-cta" href="https://rarecloud.io/clients/aff.php?aff=1012&pid=3" rel="nofollow sponsored noopener" target="_blank">Starter KVM €2.08/月</a>　<a class="price-buy-cta" href="https://rarecloud.io/clients/aff.php?aff=1012&pid=11" rel="nofollow sponsored noopener" target="_blank">Advanced KVM €3.89/月</a>　<a class="price-buy-cta" href="https://rarecloud.io/clients/aff.php?aff=1012&pid=12" rel="nofollow sponsored noopener" target="_blank">Core VPS €3.19/月</a>　<a class="price-buy-cta" href="https://rarecloud.io/clients/aff.php?aff=1012&pid=16" rel="nofollow sponsored noopener" target="_blank">Do It Yourself VPS €6.25/月</a>　<a class="price-buy-cta" href="https://rarecloud.io/clients/aff.php?aff=1012&pid=13" rel="nofollow sponsored noopener" target="_blank">Plus VPS €7.92/月</a>　<a class="price-buy-cta" href="https://rarecloud.io/clients/aff.php?aff=1012&pid=14" rel="nofollow sponsored noopener" target="_blank">Pro VPS €16.25/月</a>　<a class="price-buy-cta" href="https://rarecloud.io/clients/aff.php?aff=1012&pid=15" rel="nofollow sponsored noopener" target="_blank">Elite VPS €25.00/月</a>
+</p>
+<a class="buy" href="https://rarecloud.io/clients/aff.php?aff=1012&pid=6" rel="nofollow sponsored noopener" target="_blank">查看 Linux KVM VPS 全部配置与价格 →</a>
+</div>
+
+<h2 id="windows">二、Windows RDP VPS —— 3 个档位</h2>
+
+<div class="card" id="p-windows-rdp">
+<h3>Windows VPS —— 团队远程桌面共用的常开 Windows 机器 <span class="tag hot">需自购授权</span> <span class="tag">3 档</span></h3>
+<div class="kv">
+<div><b>机房</b><span>同样 11 个机房任选，与 Linux 档位共用机房与网络</span></div>
+<div><b>系统</b><span>Windows Server 模板，RDP 远程桌面，完全管理员权限</span></div>
+<div><b>硬盘 / 流量</b><span>全部 NVMe；每档均含 1 个 IPv4 + IPv6 子网</span></div>
+<div><b>授权</b><span>模板自带 180 天评估期；正式商用须自行向微软或授权经销商购买许可证（可自带激活）</span></div>
+<div><b>起价</b><span>€12.92 / 月（Win 4G：2 vCPUs / 4GB RAM / 60GB NVMe / 4TB /month） <a class="price-buy-cta" href="https://rarecloud.io/clients/aff.php?aff=1012&pid=7" rel="nofollow sponsored noopener" target="_blank">购买</a></span></div>
+</div>
+<h4>档位与价格</h4>
+<div class="tbl-scroll"><table><thead><tr><th>档位</th><th>CPU</th><th>内存</th><th>硬盘</th><th>流量</th><th>IPv4 / IPv6</th><th>月付</th><th>季付</th><th>半年</th><th>年付</th><th>两年</th><th>三年</th><th>最低月均价 / 购买</th></tr></thead><tbody><tr><td>Win 4G</td><td>2 vCPUs</td><td>4GB RAM</td><td>60GB NVMe</td><td>4TB /month</td><td>1x IPv4 &amp; /112 IPv6 Subnet</td><td><a class="price-buy" href="https://rarecloud.io/clients/aff.php?aff=1012&pid=7" rel="nofollow sponsored noopener" target="_blank">€15.50</a></td><td class="na">—</td><td class="na">—</td><td><a class="price-buy" href="https://rarecloud.io/clients/aff.php?aff=1012&pid=7" rel="nofollow sponsored noopener" target="_blank">€12.92</a></td><td><a class="price-buy" href="https://rarecloud.io/clients/aff.php?aff=1012&pid=7" rel="nofollow sponsored noopener" target="_blank">€12.92</a></td><td><a class="price-buy" href="https://rarecloud.io/clients/aff.php?aff=1012&pid=7" rel="nofollow sponsored noopener" target="_blank">€12.92</a></td><td><a class="price-buy" href="https://rarecloud.io/clients/aff.php?aff=1012&pid=7" rel="nofollow sponsored noopener" target="_blank">€12.92</a> <a class="price-buy-cta" href="https://rarecloud.io/clients/aff.php?aff=1012&pid=7" rel="nofollow sponsored noopener" target="_blank">购买</a><span class="cyc">年付 · 一次性付 €155.00</span></td></tr><tr><td>Win 8G</td><td>4 vCPUs</td><td>8GB RAM</td><td>120GB NVMe</td><td>6TB /month</td><td>1x IPv4 &amp; /112 IPv6 Subnet</td><td><a class="price-buy" href="https://rarecloud.io/clients/aff.php?aff=1012&pid=17" rel="nofollow sponsored noopener" target="_blank">€29.50</a></td><td class="na">—</td><td class="na">—</td><td><a class="price-buy" href="https://rarecloud.io/clients/aff.php?aff=1012&pid=17" rel="nofollow sponsored noopener" target="_blank">€24.58</a></td><td><a class="price-buy" href="https://rarecloud.io/clients/aff.php?aff=1012&pid=17" rel="nofollow sponsored noopener" target="_blank">€24.58</a></td><td><a class="price-buy" href="https://rarecloud.io/clients/aff.php?aff=1012&pid=17" rel="nofollow sponsored noopener" target="_blank">€24.58</a></td><td><a class="price-buy" href="https://rarecloud.io/clients/aff.php?aff=1012&pid=17" rel="nofollow sponsored noopener" target="_blank">€24.58</a> <a class="price-buy-cta" href="https://rarecloud.io/clients/aff.php?aff=1012&pid=17" rel="nofollow sponsored noopener" target="_blank">购买</a><span class="cyc">年付 · 一次性付 €295.00</span></td></tr><tr><td>Win 12G</td><td>4 vCPUs</td><td>12GB RAM</td><td>160GB NVMe</td><td>10TB /month</td><td>1x IPv4 &amp; /112 IPv6 Subnet</td><td><a class="price-buy" href="https://rarecloud.io/clients/aff.php?aff=1012&pid=18" rel="nofollow sponsored noopener" target="_blank">€34.50</a></td><td class="na">—</td><td class="na">—</td><td><a class="price-buy" href="https://rarecloud.io/clients/aff.php?aff=1012&pid=18" rel="nofollow sponsored noopener" target="_blank">€28.75</a></td><td><a class="price-buy" href="https://rarecloud.io/clients/aff.php?aff=1012&pid=18" rel="nofollow sponsored noopener" target="_blank">€28.75</a></td><td><a class="price-buy" href="https://rarecloud.io/clients/aff.php?aff=1012&pid=18" rel="nofollow sponsored noopener" target="_blank">€28.75</a></td><td><a class="price-buy" href="https://rarecloud.io/clients/aff.php?aff=1012&pid=18" rel="nofollow sponsored noopener" target="_blank">€28.75</a> <a class="price-buy-cta" href="https://rarecloud.io/clients/aff.php?aff=1012&pid=18" rel="nofollow sponsored noopener" target="_blank">购买</a><span class="cyc">年付 · 一次性付 €345.00</span></td></tr></tbody></table></div>
+<h4>产品特点与注意事项</h4>
+<p>三个档位分别是 Win 4G（2C/4G/60G/4TB）、Win 8G（4C/8G/120G/6TB）、Win 12G（4C/12G/160G/10TB）。定位很明确：一台 7×24 小时开着、团队用远程桌面共享的 Windows 机器——跑没有 Linux 版的桌面软件、.NET / IIS / SQL Server，或者给工作室当常驻节点。</p>
+<p>★ <strong>授权必须自己解决</strong>：RareCloud 只提供 Windows Server 模板，官方模板自带 <strong>180 天评估期</strong>；正式商用要自行向微软或授权经销商购买许可证，已有 Windows Server 授权的可以自带激活。这一点在下单前一定要算进成本。</p>
+<ul>
+<li>Win 系列<strong>只提供月付 / 年付 / 两年付 / 三年付四档</strong>（没有季付与半年付），而且<strong>年付、两年付、三年付同价</strong>，锁长周期没有任何折扣——锁两年最划算。</li>
+<li>社区对 Windows 档位的测评样本很少，选之前建议先用 Linux 档或 Cloud VM 试手。</li>
+</ul>
+<h4>适用运营商</h4>
+<div class="kv">
+<div><b>中国联通</b><span>★★☆</span></div>
+<div><b>中国电信</b><span>★★☆</span></div>
+<div><b>中国移动</b><span>★★☆</span></div>
+<div><b>教育网</b><span>—</span></div>
+</div>
+<p class="meta">依据强度：实测　|　与 Linux 档位共用同一套机房，选点建议相同：移动优先香港，电信 / 联通优先德国。远程桌面对延迟比网页更敏感，建议离办公地点或常用出口近一些。</p>
+<blockquote>「One server can be the always-on machine a whole team shares, for example accountants working in shifts on the same desktop software」（官方产品页）<cite>—— RareCloud Windows VPS 产品页 FAQ　<a href="https://rarecloud.io/windows-vps/" rel="nofollow noopener" target="_blank">查看原帖</a></cite></blockquote>
+<p><strong>适合谁：</strong>需要一台常开 Windows 机器的团队（会计轮班、跑特定桌面软件、内部工具）。</p>
+<p><strong>不适合：</strong>个人开发者（Linux 档位便宜一半以上）；已经在用 Windows 实体机或云桌面的人。</p>
+
+<p><strong>本线全部档位的推广购买入口：</strong>
+<a class="price-buy-cta" href="https://rarecloud.io/clients/aff.php?aff=1012&pid=7" rel="nofollow sponsored noopener" target="_blank">Win 4G €12.92/月</a>　<a class="price-buy-cta" href="https://rarecloud.io/clients/aff.php?aff=1012&pid=17" rel="nofollow sponsored noopener" target="_blank">Win 8G €24.58/月</a>　<a class="price-buy-cta" href="https://rarecloud.io/clients/aff.php?aff=1012&pid=18" rel="nofollow sponsored noopener" target="_blank">Win 12G €28.75/月</a>
+</p>
+<a class="buy" href="https://rarecloud.io/clients/aff.php?aff=1012&pid=7" rel="nofollow sponsored noopener" target="_blank">查看 Windows RDP VPS 全部配置与价格 →</a>
+</div>
+
+<h2 id="n8n">三、n8n 自动化 VPS —— 2 个档位</h2>
+
+<div class="card" id="p-n8n">
+<h3>n8n VPS —— 预装 n8n 与 HTTPS，开箱即用，年付折合 €4.00/月 <span class="tag hot">年付最划算</span> <span class="tag">无执行次数限制</span></h3>
+<div class="kv">
+<div><b>机房</b><span>11 个机房任选</span></div>
+<div><b>预装内容</b><span>n8n + Nginx 反向代理 + Let's Encrypt 证书 + UFW 防火墙（只开 22 / 80 / 443）</span></div>
+<div><b>上线方式</b><span>SSH 后执行 <code>bash /root/setup-domain.sh yourdomain.com</code> 绑定域名并自动签发证书</span></div>
+<div><b>执行限制</b><span>无次数限制；Starter 用 SQLite，Pro 用 PostgreSQL 16 + Redis 7 + 2 个 worker</span></div>
+<div><b>起价</b><span>€4.00 / 月（N8N Starter：2 vCPU / 4GB RAM / 65GB NVMe / 5TB /month） <a class="price-buy-cta" href="https://rarecloud.io/clients/aff.php?aff=1012&pid=36" rel="nofollow sponsored noopener" target="_blank">购买</a></span></div>
+</div>
+<h4>档位与价格</h4>
+<div class="tbl-scroll"><table><thead><tr><th>档位</th><th>CPU</th><th>内存</th><th>硬盘</th><th>流量</th><th>IPv4 / IPv6</th><th>月付</th><th>季付</th><th>半年</th><th>年付</th><th>两年</th><th>三年</th><th>最低月均价 / 购买</th></tr></thead><tbody><tr><td>N8N Starter</td><td>2 vCPU</td><td>4GB RAM</td><td>65GB NVMe</td><td>5TB /month</td><td>预装 n8n（SQLite）+ Nginx + SSL</td><td><a class="price-buy" href="https://rarecloud.io/clients/aff.php?aff=1012&pid=36" rel="nofollow sponsored noopener" target="_blank">€9.50</a></td><td class="na">—</td><td class="na">—</td><td><a class="price-buy" href="https://rarecloud.io/clients/aff.php?aff=1012&pid=36" rel="nofollow sponsored noopener" target="_blank">€4.00</a></td><td class="na">—</td><td class="na">—</td><td><a class="price-buy" href="https://rarecloud.io/clients/aff.php?aff=1012&pid=36" rel="nofollow sponsored noopener" target="_blank">€4.00</a> <a class="price-buy-cta" href="https://rarecloud.io/clients/aff.php?aff=1012&pid=36" rel="nofollow sponsored noopener" target="_blank">购买</a><span class="cyc">年付 · 一次性付 €48.00</span></td></tr><tr><td>N8N PRO</td><td>4 vCPU</td><td>8GB RAM</td><td>100GB NVMe</td><td>7TB /month</td><td>预装 n8n（Docker + PG16 + Redis）</td><td><a class="price-buy" href="https://rarecloud.io/clients/aff.php?aff=1012&pid=37" rel="nofollow sponsored noopener" target="_blank">€19.50</a></td><td class="na">—</td><td class="na">—</td><td><a class="price-buy" href="https://rarecloud.io/clients/aff.php?aff=1012&pid=37" rel="nofollow sponsored noopener" target="_blank">€5.69</a></td><td class="na">—</td><td class="na">—</td><td><a class="price-buy" href="https://rarecloud.io/clients/aff.php?aff=1012&pid=37" rel="nofollow sponsored noopener" target="_blank">€5.69</a> <a class="price-buy-cta" href="https://rarecloud.io/clients/aff.php?aff=1012&pid=37" rel="nofollow sponsored noopener" target="_blank">购买</a><span class="cyc">年付 · 一次性付 €68.25</span></td></tr></tbody></table></div>
+<h4>产品特点与注意事项</h4>
+<p>n8n 是自建工作流自动化的热门开源工具，官方云版按执行次数收费。RareCloud 的做法是<strong>把 n8n、Nginx 反代、证书和防火墙全部预装好</strong>，你只需要 SSH 进去跑一条 <code>setup-domain.sh</code> 就能上线，不用碰 Docker、反向代理或证书。</p>
+<p>★ 这条线的<strong>年付折扣是全站最猛的</strong>：Starter 月付 €9.50、年付总价 €48（折合 <strong>€4.00/月</strong>），Pro 月付 €19.50、年付 €68.25（折合 €5.69/月）。官方明确写「无执行次数限制」——只要 CPU 和内存扛得住就跑多少。</p>
+<ul>
+<li>Starter 是 npm 原生安装 + SQLite 嵌入式数据库，适合小项目；Pro 是 Docker 容器化，PostgreSQL 16 与 Redis <strong>不对公网暴露</strong>，只允许 n8n 内部访问。</li>
+<li>注意 n8n Starter（pid 36）与 OpenClaw Server（pid 49）<strong>价格完全一样</strong>，Pro 与 Desktop 同理——这两条线在后台共用同一套计费配置。</li>
+<li>n8n 官方强调不要把编辑器直接暴露到公网。RareCloud 的方案是 Nginx + HTTPS + 只开三端口，但<strong>仍建议自己再套一层访问控制</strong>（IP 白名单或 Basic Auth）。</li>
+</ul>
+<h4>适用运营商</h4>
+<div class="kv">
+<div><b>中国联通</b><span>★★★</span></div>
+<div><b>中国电信</b><span>★★★</span></div>
+<div><b>中国移动</b><span>★★★</span></div>
+<div><b>教育网</b><span>—</span></div>
+</div>
+<p class="meta">依据强度：实测　|　这条线是「应用服务器」场景，客户端是你的工作流，不是访客，线路本身要求不高。如果工作流要调用欧洲的 API（OpenAI / Anthropic 等），选<strong>德国或荷兰</strong>机房更顺。</p>
+<blockquote>「n8n, PostgreSQL 和 Redis run as separate containers, so an update or a rollback is one image away」（官方产品页）<cite>—— RareCloud n8n VPS 产品页　<a href="https://rarecloud.io/n8n-vps/" rel="nofollow noopener" target="_blank">查看原帖</a></cite></blockquote>
+<p><strong>适合谁：</strong>想低成本自建工作流自动化，替代按执行次数计费的 n8n 云版；不想折腾 Docker、反代与证书的人。</p>
+<p><strong>不适合：</strong>需要多节点集群或高可用部署的人；工作流计算量很大、Starter 的 CPU 扛不住的场景。</p>
+
+<p><strong>本线全部档位的推广购买入口：</strong>
+<a class="price-buy-cta" href="https://rarecloud.io/clients/aff.php?aff=1012&pid=36" rel="nofollow sponsored noopener" target="_blank">N8N Starter €4.00/月</a>　<a class="price-buy-cta" href="https://rarecloud.io/clients/aff.php?aff=1012&pid=37" rel="nofollow sponsored noopener" target="_blank">N8N PRO €5.69/月</a>
+</p>
+<a class="buy" href="https://rarecloud.io/clients/aff.php?aff=1012&pid=36" rel="nofollow sponsored noopener" target="_blank">查看 n8n 自动化 VPS 全部配置与价格 →</a>
+</div>
+
+<h2 id="openclaw">四、OpenClaw AI 助手 VPS —— 2 个档位</h2>
+
+<div class="card" id="p-openclaw">
+<h3>OpenClaw VPS —— 把 AI 助手放在自己机器上，年付折合 €4.00/月 <span class="tag hot">数据留在自己机器</span> <span class="tag">8 层加固</span></h3>
+<div class="kv">
+<div><b>机房</b><span>11 个机房任选</span></div>
+<div><b>预装内容</b><span>OpenClaw（最新版）+ headless Chrome；nftables、fail2ban、AppArmor profile</span></div>
+<div><b>安全策略</b><span>仪表盘默认只监听 localhost，需经 SSH 隧道访问；自动安全更新已开启</span></div>
+<div><b>接入渠道</b><span>Telegram / WhatsApp / Discord / Slack / Signal；模型用你自己的 Anthropic 或 OpenAI key</span></div>
+<div><b>起价</b><span>€4.00 / 月（OpenClaw Server：2 vCPU / 4GB RAM / 65GB NVMe / 5TB /month） <a class="price-buy-cta" href="https://rarecloud.io/clients/aff.php?aff=1012&pid=49" rel="nofollow sponsored noopener" target="_blank">购买</a></span></div>
+</div>
+<h4>档位与价格</h4>
+<div class="tbl-scroll"><table><thead><tr><th>档位</th><th>CPU</th><th>内存</th><th>硬盘</th><th>流量</th><th>IPv4 / IPv6</th><th>月付</th><th>季付</th><th>半年</th><th>年付</th><th>两年</th><th>三年</th><th>最低月均价 / 购买</th></tr></thead><tbody><tr><td>OpenClaw Server</td><td>2 vCPU</td><td>4GB RAM</td><td>65GB NVMe</td><td>5TB /month</td><td>预装 OpenClaw（headless Chrome）</td><td><a class="price-buy" href="https://rarecloud.io/clients/aff.php?aff=1012&pid=49" rel="nofollow sponsored noopener" target="_blank">€9.50</a></td><td class="na">—</td><td class="na">—</td><td><a class="price-buy" href="https://rarecloud.io/clients/aff.php?aff=1012&pid=49" rel="nofollow sponsored noopener" target="_blank">€4.00</a></td><td class="na">—</td><td class="na">—</td><td><a class="price-buy" href="https://rarecloud.io/clients/aff.php?aff=1012&pid=49" rel="nofollow sponsored noopener" target="_blank">€4.00</a> <a class="price-buy-cta" href="https://rarecloud.io/clients/aff.php?aff=1012&pid=49" rel="nofollow sponsored noopener" target="_blank">购买</a><span class="cyc">年付 · 一次性付 €48.00</span></td></tr><tr><td>OpenClaw Desktop</td><td>4 vCPU</td><td>8GB RAM</td><td>100GB NVMe</td><td>7TB /month</td><td>预装 OpenClaw + XFCE 图形桌面</td><td><a class="price-buy" href="https://rarecloud.io/clients/aff.php?aff=1012&pid=50" rel="nofollow sponsored noopener" target="_blank">€19.50</a></td><td class="na">—</td><td class="na">—</td><td><a class="price-buy" href="https://rarecloud.io/clients/aff.php?aff=1012&pid=50" rel="nofollow sponsored noopener" target="_blank">€5.69</a></td><td class="na">—</td><td class="na">—</td><td><a class="price-buy" href="https://rarecloud.io/clients/aff.php?aff=1012&pid=50" rel="nofollow sponsored noopener" target="_blank">€5.69</a> <a class="price-buy-cta" href="https://rarecloud.io/clients/aff.php?aff=1012&pid=50" rel="nofollow sponsored noopener" target="_blank">购买</a><span class="cyc">年付 · 一次性付 €68.25</span></td></tr></tbody></table></div>
+<h4>产品特点与注意事项</h4>
+<p>OpenClaw 是一个开源自托管 AI 助手。RareCloud 把它连同浏览器一起预装好，并按官方说法做了 <strong>8 层安全加固</strong>：nftables 防火墙、fail2ban、AppArmor profile、仪表盘<strong>只监听 localhost</strong>、自动安全更新。</p>
+<p>Server 档从 <strong>2 vCPU / 4GB / 65GB NVMe / 5TB</strong> 起步，Desktop 档从 <strong>4 vCPU / 8GB / 100GB NVMe / 7TB</strong> 起步，后者多一套 <strong>XFCE 图形桌面 + 非 headless 的 Chrome / Firefox</strong>，可以从控制面板用 VNC 看 AI 实时点网页、填表单。两条线都是<strong>可自定义配置</strong>的。</p>
+<ul>
+<li>对隐私敏感的用法来说这是最大卖点：<strong>对话记录和 API key 都留在你自己的服务器上</strong>，RareCloud 不经手。</li>
+<li>「让 AI 操作浏览器」本身风险不小，建议用 Desktop 档时保留 AppArmor 隔离，并给不同的机器人分配不同的服务器。</li>
+<li>⚠️ <strong>官网自身数据打架</strong>：WHMCS 产品描述里 Desktop 写 2C/8G/60G，而官网产品卡写 4C/8G/100GB。本文采用<strong>官网产品卡</strong>的数据，下单前建议以控制台实际配置为准。</li>
+</ul>
+<h4>适用运营商</h4>
+<div class="kv">
+<div><b>中国联通</b><span>★★★</span></div>
+<div><b>中国电信</b><span>★★★</span></div>
+<div><b>中国移动</b><span>★★★</span></div>
+<div><b>教育网</b><span>—</span></div>
+</div>
+<p class="meta">依据强度：实测　|　与 API 供应商的连通性优先于大陆延迟。若调用 OpenAI / Anthropic 等美国接口，选美西机房响应更快；若调用欧洲接口，选德国 / 荷兰。</p>
+<blockquote>「Your data stays on your server. We never see your API keys or conversations」（官方产品页）<cite>—— RareCloud OpenClaw VPS 产品页　<a href="https://rarecloud.io/openclaw-vps/" rel="nofollow noopener" target="_blank">查看原帖</a></cite></blockquote>
+<p><strong>适合谁：</strong>想把 AI 助手的对话记录和密钥留在自己机器上的人；想低成本多开一个 AI 助手实例的人。</p>
+<p><strong>不适合：</strong>对「AI 自动操作浏览器」没有安全意识的人（建议先在低权限容器里试）；需要官方托管与 SLA 兜底的企业场景。</p>
+
+<p><strong>本线全部档位的推广购买入口：</strong>
+<a class="price-buy-cta" href="https://rarecloud.io/clients/aff.php?aff=1012&pid=49" rel="nofollow sponsored noopener" target="_blank">OpenClaw Server €4.00/月</a>　<a class="price-buy-cta" href="https://rarecloud.io/clients/aff.php?aff=1012&pid=50" rel="nofollow sponsored noopener" target="_blank">OpenClaw Desktop €5.69/月</a>
+</p>
+<a class="buy" href="https://rarecloud.io/clients/aff.php?aff=1012&pid=49" rel="nofollow sponsored noopener" target="_blank">查看 OpenClaw AI 助手 VPS 全部配置与价格 →</a>
+</div>
+
+<h2 id="hosting">五、Web 虚拟主机 —— 4 个档位</h2>
+
+<div class="card" id="p-hosting">
+<h3>Web 虚拟主机 —— cPanel 一键装 WordPress，最低 €2.22/月 <span class="tag hot">含免费域名</span> <span class="tag">每日备份</span></h3>
+<div class="kv">
+<div><b>面板</b><span>cPanel，一键安装 WordPress（Softaculous）、免费 SSL、每日备份、独立 IP</span></div>
+<div><b>免费迁移</b><span>从旧主机迁移网站、数据库与邮箱，官方免费代做</span></div>
+<div><b>年限</b><span>不适用——虚拟主机没有年付款概念，按月 / 周期付</span></div>
+<div><b>注意</b><span>★ Enterprise 档的两年付与三年付与 Business 档同价，疑似定价未同步，买前先开工单确认</span></div>
+<div><b>起价</b><span>€2.22 / 月（Website Hosting：共享 / 共享 / 10GB NVMe / 不限流量） <a class="price-buy-cta" href="https://rarecloud.io/clients/aff.php?aff=1012&pid=51" rel="nofollow sponsored noopener" target="_blank">购买</a></span></div>
+</div>
+<h4>档位与价格</h4>
+<div class="tbl-scroll"><table><thead><tr><th>档位</th><th>CPU</th><th>内存</th><th>硬盘</th><th>流量</th><th>IPv4 / IPv6</th><th>月付</th><th>季付</th><th>半年</th><th>年付</th><th>两年</th><th>三年</th><th>最低月均价 / 购买</th></tr></thead><tbody><tr><td>Website Hosting</td><td>共享</td><td>共享</td><td>10GB NVMe</td><td>不限流量</td><td>10 个邮箱 · 送 .com 域名 · 99.9% uptime</td><td class="na">—</td><td class="na">—</td><td class="na">—</td><td><a class="price-buy" href="https://rarecloud.io/clients/aff.php?aff=1012&pid=51" rel="nofollow sponsored noopener" target="_blank">€2.50</a></td><td><a class="price-buy" href="https://rarecloud.io/clients/aff.php?aff=1012&pid=51" rel="nofollow sponsored noopener" target="_blank">€2.29</a></td><td><a class="price-buy" href="https://rarecloud.io/clients/aff.php?aff=1012&pid=51" rel="nofollow sponsored noopener" target="_blank">€2.22</a></td><td><a class="price-buy" href="https://rarecloud.io/clients/aff.php?aff=1012&pid=51" rel="nofollow sponsored noopener" target="_blank">€2.22</a> <a class="price-buy-cta" href="https://rarecloud.io/clients/aff.php?aff=1012&pid=51" rel="nofollow sponsored noopener" target="_blank">购买</a><span class="cyc">三年付 · 一次性付 €80.00</span></td></tr><tr><td>StartUp</td><td>1.5 核</td><td>2GB RAM</td><td>50GB NVMe</td><td>不限流量</td><td>1 个网站 · 独立 IP · 送 SSL</td><td><a class="price-buy" href="https://rarecloud.io/clients/aff.php?aff=1012&pid=21" rel="nofollow sponsored noopener" target="_blank">€9.50</a></td><td class="na">—</td><td class="na">—</td><td><a class="price-buy" href="https://rarecloud.io/clients/aff.php?aff=1012&pid=21" rel="nofollow sponsored noopener" target="_blank">€7.92</a></td><td><a class="price-buy" href="https://rarecloud.io/clients/aff.php?aff=1012&pid=21" rel="nofollow sponsored noopener" target="_blank">€7.92</a></td><td><a class="price-buy" href="https://rarecloud.io/clients/aff.php?aff=1012&pid=21" rel="nofollow sponsored noopener" target="_blank">€7.92</a></td><td><a class="price-buy" href="https://rarecloud.io/clients/aff.php?aff=1012&pid=21" rel="nofollow sponsored noopener" target="_blank">€7.92</a> <a class="price-buy-cta" href="https://rarecloud.io/clients/aff.php?aff=1012&pid=21" rel="nofollow sponsored noopener" target="_blank">购买</a><span class="cyc">年付 · 一次性付 €95.00</span></td></tr><tr><td>Business</td><td>3 核</td><td>4GB RAM</td><td>100GB NVMe</td><td>不限流量</td><td>不限站点 · 独立 IP · 送 SSL + 域名</td><td><a class="price-buy" href="https://rarecloud.io/clients/aff.php?aff=1012&pid=22" rel="nofollow sponsored noopener" target="_blank">€19.50</a></td><td class="na">—</td><td class="na">—</td><td><a class="price-buy" href="https://rarecloud.io/clients/aff.php?aff=1012&pid=22" rel="nofollow sponsored noopener" target="_blank">€16.25</a></td><td><a class="price-buy" href="https://rarecloud.io/clients/aff.php?aff=1012&pid=22" rel="nofollow sponsored noopener" target="_blank">€16.25</a></td><td><a class="price-buy" href="https://rarecloud.io/clients/aff.php?aff=1012&pid=22" rel="nofollow sponsored noopener" target="_blank">€16.25</a></td><td><a class="price-buy" href="https://rarecloud.io/clients/aff.php?aff=1012&pid=22" rel="nofollow sponsored noopener" target="_blank">€16.25</a> <a class="price-buy-cta" href="https://rarecloud.io/clients/aff.php?aff=1012&pid=22" rel="nofollow sponsored noopener" target="_blank">购买</a><span class="cyc">年付 · 一次性付 €195.00</span></td></tr><tr><td>Enterprise</td><td>6 核</td><td>8GB RAM</td><td>不限 NVMe</td><td>不限流量</td><td>不限站点 · 独立 IP · 送 SSL + 域名</td><td><a class="price-buy" href="https://rarecloud.io/clients/aff.php?aff=1012&pid=23" rel="nofollow sponsored noopener" target="_blank">€39.50</a></td><td class="na">—</td><td class="na">—</td><td><a class="price-buy" href="https://rarecloud.io/clients/aff.php?aff=1012&pid=23" rel="nofollow sponsored noopener" target="_blank">€24.58</a></td><td><a class="price-buy" href="https://rarecloud.io/clients/aff.php?aff=1012&pid=23" rel="nofollow sponsored noopener" target="_blank">€16.25</a></td><td><a class="price-buy" href="https://rarecloud.io/clients/aff.php?aff=1012&pid=23" rel="nofollow sponsored noopener" target="_blank">€16.25</a></td><td><a class="price-buy" href="https://rarecloud.io/clients/aff.php?aff=1012&pid=23" rel="nofollow sponsored noopener" target="_blank">€16.25</a> <a class="price-buy-cta" href="https://rarecloud.io/clients/aff.php?aff=1012&pid=23" rel="nofollow sponsored noopener" target="_blank">购买</a><span class="cyc">两年付 · 一次性付 €390.00</span></td></tr></tbody></table></div>
+<h4>产品特点与注意事项</h4>
+<p>给不想碰服务器的人准备的。四个档位从 <strong>Website Hosting（年付 €30，折合 €2.22/月）</strong>起，再到 StartUp / Business / Enterprise 三档不限量站点方案：不限流量、免费 SSL、每日备份、独立 IP，Business 及以上送域名注册。</p>
+<p>★ 这条线有个<strong>明显的定价异常值得避坑</strong>：Enterprise 档月付 €39.50、年付 €295，但<strong>两年付 €390、三年付 €585，和低一档的 Business 完全相同</strong>。也就是说 Enterprise 锁长周期不但没有溢价，还比它自己月付便宜一大截——这多半是后台配置没同步，买之前建议先开工单问清楚。</p>
+<ul>
+<li>Website Hosting（pid 51）<strong>只有年付 / 两年付 / 三年付，没有月付</strong>，配置是 10GB NVMe、不限流量、10 个邮箱、送 .com 域名、99.9% uptime 保证。</li>
+<li>StartUp / Business / Enterprise 三档都能建不限量站点，差别在核数、内存与硬盘（50GB → 100GB → 不限）。</li>
+</ul>
+<h4>适用运营商</h4>
+<div class="kv">
+<div><b>中国联通</b><span>★★★</span></div>
+<div><b>中国电信</b><span>★★★</span></div>
+<div><b>中国移动</b><span>★★★</span></div>
+<div><b>教育网</b><span>—</span></div>
+</div>
+<p class="meta">依据强度：实测　|　虚拟主机的客户端是网站访客，浏览器访问，线路敏感度低，三网都可用。社区里建站反馈普遍是「够用」，德国机房被多次提到「真香」。</p>
+<blockquote>「Already hosted somewhere else? We move your site, databases and mailboxes for free」（官方产品页）<cite>—— RareCloud Web Hosting 产品页　<a href="https://rarecloud.io/web-hosting/" rel="nofollow noopener" target="_blank">查看原帖</a></cite></blockquote>
+<p><strong>适合谁：</strong>只需要一个 WordPress 或静态站、不想碰服务器运维的人；需要免费迁移与每日备份的人。</p>
+<p><strong>不适合：</strong>需要 SSH / 自定义 PHP 扩展 / 邮件服务器的人（虚拟主机不给 root）；需要自己装 n8n、Docker 之类应用的人（那是 VPS 线）。</p>
+
+<p><strong>本线全部档位的推广购买入口：</strong>
+<a class="price-buy-cta" href="https://rarecloud.io/clients/aff.php?aff=1012&pid=51" rel="nofollow sponsored noopener" target="_blank">Website Hosting €2.22/月</a>　<a class="price-buy-cta" href="https://rarecloud.io/clients/aff.php?aff=1012&pid=21" rel="nofollow sponsored noopener" target="_blank">StartUp €7.92/月</a>　<a class="price-buy-cta" href="https://rarecloud.io/clients/aff.php?aff=1012&pid=22" rel="nofollow sponsored noopener" target="_blank">Business €16.25/月</a>　<a class="price-buy-cta" href="https://rarecloud.io/clients/aff.php?aff=1012&pid=23" rel="nofollow sponsored noopener" target="_blank">Enterprise €16.25/月</a>
+</p>
+<a class="buy" href="https://rarecloud.io/clients/aff.php?aff=1012&pid=51" rel="nofollow sponsored noopener" target="_blank">查看 Web 虚拟主机 全部配置与价格 →</a>
+</div>
+
+<h2 id="cloud">六、Cloud VM 与云附加件（13 规格）</h2>
+
+<div class="card" id="p-cloud">
+<h3>Cloud VM —— 布加勒斯特，13 个规格按小时计费、月价封顶 <span class="tag new">按小时</span></h3>
+<div class="kv">
+<div><b>机房</b><span>仅布加勒斯特（M247 Bucharest, DC1 / DC2），不提供 VPS 档位</span></div>
+<div><b>计费</b><span>按小时出账，当月费用封顶在月价；先用量后付费，月末开票</span></div>
+<div><b>含流量</b><span>1 TB – 12 TB 随规格递增</span></div>
+<div><b>含公网 IPv4</b><span>每台都自带，不额外收费</span></div>
+<div><b>起价</b><span><a class="price-buy" href="https://rarecloud.io/clients/aff.php?aff=1012" rel="nofollow sponsored noopener" target="_blank">€3.99 / 月封顶</a> <a class="price-buy-cta" href="https://rarecloud.io/clients/aff.php?aff=1012" rel="nofollow sponsored noopener" target="_blank">部署</a><span class="cyc">S-1 · €0.0055/小时</span></span></div>
+</div>
+<h4>13 个规格</h4>
+<div class="tbl-scroll"><table><thead><tr><th>规格</th><th>家族</th><th>vCPU</th><th>内存</th><th>NVMe</th><th>含流量</th><th>小时价 / 购买</th><th>月价封顶</th></tr></thead><tbody>
+<tr>
+<td><strong>S-1</strong></td><td>Cost-Optimized</td><td>1 共享</td><td>2 GB</td>
+<td>25 GB</td><td>1 TB</td>
+<td><a class="price-buy" href="https://rarecloud.io/clients/aff.php?aff=1012" rel="nofollow sponsored noopener" target="_blank">€0.0055/h</a> <a class="price-buy-cta" href="https://rarecloud.io/clients/aff.php?aff=1012" rel="nofollow sponsored noopener" target="_blank">部署</a></td>
+<td><a class="price-buy" href="https://rarecloud.io/clients/aff.php?aff=1012" rel="nofollow sponsored noopener" target="_blank">€3.99</a></td>
+</tr>
+<tr>
+<td><strong>S-2</strong></td><td>Cost-Optimized</td><td>2 共享</td><td>4 GB</td>
+<td>50 GB</td><td>2 TB</td>
+<td><a class="price-buy" href="https://rarecloud.io/clients/aff.php?aff=1012" rel="nofollow sponsored noopener" target="_blank">€0.0096/h</a> <a class="price-buy-cta" href="https://rarecloud.io/clients/aff.php?aff=1012" rel="nofollow sponsored noopener" target="_blank">部署</a></td>
+<td><a class="price-buy" href="https://rarecloud.io/clients/aff.php?aff=1012" rel="nofollow sponsored noopener" target="_blank">€6.99</a></td>
+</tr>
+<tr>
+<td><strong>S-4</strong></td><td>Cost-Optimized</td><td>4 共享</td><td>8 GB</td>
+<td>80 GB</td><td>4 TB</td>
+<td><a class="price-buy" href="https://rarecloud.io/clients/aff.php?aff=1012" rel="nofollow sponsored noopener" target="_blank">€0.0178/h</a> <a class="price-buy-cta" href="https://rarecloud.io/clients/aff.php?aff=1012" rel="nofollow sponsored noopener" target="_blank">部署</a></td>
+<td><a class="price-buy" href="https://rarecloud.io/clients/aff.php?aff=1012" rel="nofollow sponsored noopener" target="_blank">€12.99</a></td>
+</tr>
+<tr>
+<td><strong>G-1</strong></td><td>General Purpose</td><td>1 共享</td><td>4 GB</td>
+<td>60 GB</td><td>4 TB</td>
+<td><a class="price-buy" href="https://rarecloud.io/clients/aff.php?aff=1012" rel="nofollow sponsored noopener" target="_blank">€0.0109/h</a> <a class="price-buy-cta" href="https://rarecloud.io/clients/aff.php?aff=1012" rel="nofollow sponsored noopener" target="_blank">部署</a></td>
+<td><a class="price-buy" href="https://rarecloud.io/clients/aff.php?aff=1012" rel="nofollow sponsored noopener" target="_blank">€7.99</a></td>
+</tr>
+<tr>
+<td><strong>G-2</strong></td><td>General Purpose（推荐）</td><td>2 共享</td><td>8 GB</td>
+<td>100 GB</td><td>6 TB</td>
+<td><a class="price-buy" href="https://rarecloud.io/clients/aff.php?aff=1012" rel="nofollow sponsored noopener" target="_blank">€0.0205/h</a> <a class="price-buy-cta" href="https://rarecloud.io/clients/aff.php?aff=1012" rel="nofollow sponsored noopener" target="_blank">部署</a></td>
+<td><a class="price-buy" href="https://rarecloud.io/clients/aff.php?aff=1012" rel="nofollow sponsored noopener" target="_blank">€14.99</a></td>
+</tr>
+<tr>
+<td><strong>G-4</strong></td><td>General Purpose</td><td>4 共享</td><td>16 GB</td>
+<td>160 GB</td><td>8 TB</td>
+<td><a class="price-buy" href="https://rarecloud.io/clients/aff.php?aff=1012" rel="nofollow sponsored noopener" target="_blank">€0.0383/h</a> <a class="price-buy-cta" href="https://rarecloud.io/clients/aff.php?aff=1012" rel="nofollow sponsored noopener" target="_blank">部署</a></td>
+<td><a class="price-buy" href="https://rarecloud.io/clients/aff.php?aff=1012" rel="nofollow sponsored noopener" target="_blank">€27.99</a></td>
+</tr>
+<tr>
+<td><strong>G-8</strong></td><td>General Purpose</td><td>8 共享</td><td>32 GB</td>
+<td>240 GB</td><td>12 TB</td>
+<td><a class="price-buy" href="https://rarecloud.io/clients/aff.php?aff=1012" rel="nofollow sponsored noopener" target="_blank">€0.0726/h</a> <a class="price-buy-cta" href="https://rarecloud.io/clients/aff.php?aff=1012" rel="nofollow sponsored noopener" target="_blank">部署</a></td>
+<td><a class="price-buy" href="https://rarecloud.io/clients/aff.php?aff=1012" rel="nofollow sponsored noopener" target="_blank">€52.99</a></td>
+</tr>
+<tr>
+<td><strong>C-2</strong></td><td>CPU-Optimized</td><td>2 专用</td><td>4 GB</td>
+<td>80 GB</td><td>6 TB</td>
+<td><a class="price-buy" href="https://rarecloud.io/clients/aff.php?aff=1012" rel="nofollow sponsored noopener" target="_blank">€0.0274/h</a> <a class="price-buy-cta" href="https://rarecloud.io/clients/aff.php?aff=1012" rel="nofollow sponsored noopener" target="_blank">部署</a></td>
+<td><a class="price-buy" href="https://rarecloud.io/clients/aff.php?aff=1012" rel="nofollow sponsored noopener" target="_blank">€19.99</a></td>
+</tr>
+<tr>
+<td><strong>C-4</strong></td><td>CPU-Optimized</td><td>4 专用</td><td>8 GB</td>
+<td>120 GB</td><td>8 TB</td>
+<td><a class="price-buy" href="https://rarecloud.io/clients/aff.php?aff=1012" rel="nofollow sponsored noopener" target="_blank">€0.0520/h</a> <a class="price-buy-cta" href="https://rarecloud.io/clients/aff.php?aff=1012" rel="nofollow sponsored noopener" target="_blank">部署</a></td>
+<td><a class="price-buy" href="https://rarecloud.io/clients/aff.php?aff=1012" rel="nofollow sponsored noopener" target="_blank">€37.99</a></td>
+</tr>
+<tr>
+<td><strong>C-8</strong></td><td>CPU-Optimized</td><td>8 专用</td><td>16 GB</td>
+<td>200 GB</td><td>12 TB</td>
+<td><a class="price-buy" href="https://rarecloud.io/clients/aff.php?aff=1012" rel="nofollow sponsored noopener" target="_blank">€0.1000/h</a> <a class="price-buy-cta" href="https://rarecloud.io/clients/aff.php?aff=1012" rel="nofollow sponsored noopener" target="_blank">部署</a></td>
+<td><a class="price-buy" href="https://rarecloud.io/clients/aff.php?aff=1012" rel="nofollow sponsored noopener" target="_blank">€72.99</a></td>
+</tr>
+<tr>
+<td><strong>M-2</strong></td><td>Memory-Optimized</td><td>2 共享</td><td>16 GB</td>
+<td>80 GB</td><td>6 TB</td>
+<td><a class="price-buy" href="https://rarecloud.io/clients/aff.php?aff=1012" rel="nofollow sponsored noopener" target="_blank">€0.0616/h</a> <a class="price-buy-cta" href="https://rarecloud.io/clients/aff.php?aff=1012" rel="nofollow sponsored noopener" target="_blank">部署</a></td>
+<td><a class="price-buy" href="https://rarecloud.io/clients/aff.php?aff=1012" rel="nofollow sponsored noopener" target="_blank">€44.99</a></td>
+</tr>
+<tr>
+<td><strong>M-4</strong></td><td>Memory-Optimized</td><td>4 共享</td><td>32 GB</td>
+<td>160 GB</td><td>8 TB</td>
+<td><a class="price-buy" href="https://rarecloud.io/clients/aff.php?aff=1012" rel="nofollow sponsored noopener" target="_blank">€0.1164/h</a> <a class="price-buy-cta" href="https://rarecloud.io/clients/aff.php?aff=1012" rel="nofollow sponsored noopener" target="_blank">部署</a></td>
+<td><a class="price-buy" href="https://rarecloud.io/clients/aff.php?aff=1012" rel="nofollow sponsored noopener" target="_blank">€84.99</a></td>
+</tr>
+<tr>
+<td><strong>M-8</strong></td><td>Memory-Optimized</td><td>8 共享</td><td>64 GB</td>
+<td>320 GB</td><td>12 TB</td>
+<td><a class="price-buy" href="https://rarecloud.io/clients/aff.php?aff=1012" rel="nofollow sponsored noopener" target="_blank">€0.2192/h</a> <a class="price-buy-cta" href="https://rarecloud.io/clients/aff.php?aff=1012" rel="nofollow sponsored noopener" target="_blank">部署</a></td>
+<td><a class="price-buy" href="https://rarecloud.io/clients/aff.php?aff=1012" rel="nofollow sponsored noopener" target="_blank">€159.99</a></td>
+</tr>
+</tbody></table></div>
+<h4>计费规则</h4>
+<ul>
+
+
+<p>Cloud VM 和前面的 VPS 是<strong>两套完全不同的计费体系</strong>：只在<strong>布加勒斯特</strong>一个机房，<strong>按小时计费、当月费用封顶在月价</strong>。13 个规格分四个家族：Cost-Optimized（S）、General Purpose（G）、CPU-Optimized（C）、Memory-Optimized（M）。</p>
+<p>官网自己给了横向对比：<strong>G-2</strong>（2 共享 vCPU / 8GB / 100GB NVMe / 6TB 流量）€14.99/月，而 Hetzner CPX32 要 €35.99、DigitalOcean Basic Premium AMD 要 $42、Vultr 4/8 要 $40（标价对比，均不含 IPv4 附加费的差异已在官网表中标注）。</p>
+<p>每个 Cloud VM 都自带<strong>公网 IPv4、NVMe 存储、云防火墙、私网</strong>，并且支持随时改配置而<strong>不换 IP</strong>。Cloud 资源是<strong>先用量后付费</strong>：月末出账，账上有余额 / 赠金会在出账时自动抵扣；账单低于 €5 顺延到下期。</p>
+<ul>
+<li><strong>资源只要存在就计费，跟开关机无关</strong>，删掉才停止计费。</li>
+<li>欠费超过 7 天，会在<strong>账单国家当地时间 09:00</strong> 关机（关机不等于删除）；再过 14 天连同数据<strong>永久删除</strong>，删除前至少提前 24 小时邮件通知。</li>
+<li>欠费期间不能创建新的 Cloud 资源。托管 K8s 集群休眠时 worker 节点会被移除并停止计费，但<strong>卷仍继续计费</strong>。</li>
+</ul>
+<p class="meta">可用系统：Ubuntu 24.04 LTS、Ubuntu 22.04 LTS、Debian 12、Rocky Linux 9（也可从自己的快照创建）</p>
+<h4>按需付费的附加服务</h4>
+<div class="tbl-scroll"><table><thead><tr><th>服务</th><th>价格</th><th>购买入口</th></tr></thead><tbody>
+<tr><th scope="row">快照 Snapshot</th><td><a class="price-buy" href="https://rarecloud.io/clients/aff.php?aff=1012" rel="nofollow sponsored noopener" target="_blank">€0.05 / GB / 月，每台最多 5 个，单个最低 €0.25</a></td><td><a class="price-buy-cta" href="https://rarecloud.io/clients/aff.php?aff=1012" rel="nofollow sponsored noopener" target="_blank">部署时添加 →</a></td></tr>
+<tr><th scope="row">块存储 Block Storage</th><td><a class="price-buy" href="https://rarecloud.io/clients/aff.php?aff=1012" rel="nofollow sponsored noopener" target="_blank">€0.05 / GB / 月，单卷最大 2 TB，可分离后带数据迁移到别的机器</a></td><td><a class="price-buy-cta" href="https://rarecloud.io/clients/aff.php?aff=1012" rel="nofollow sponsored noopener" target="_blank">部署时添加 →</a></td></tr>
+<tr><th scope="row">保留 IP Reserved IP</th><td><a class="price-buy" href="https://rarecloud.io/clients/aff.php?aff=1012" rel="nofollow sponsored noopener" target="_blank">€2 / 月</a></td><td><a class="price-buy-cta" href="https://rarecloud.io/clients/aff.php?aff=1012" rel="nofollow sponsored noopener" target="_blank">部署时添加 →</a></td></tr>
+<tr><th scope="row">负载均衡 Load Balancer</th><td><a class="price-buy" href="https://rarecloud.io/clients/aff.php?aff=1012" rel="nofollow sponsored noopener" target="_blank">€9 / 月（含公网 IP），L4 + 健康检查</a></td><td><a class="price-buy-cta" href="https://rarecloud.io/clients/aff.php?aff=1012" rel="nofollow sponsored noopener" target="_blank">部署时添加 →</a></td></tr>
+<tr><th scope="row">对象存储 Object Storage</th><td><a class="price-buy" href="https://rarecloud.io/clients/aff.php?aff=1012" rel="nofollow sponsored noopener" target="_blank">€10 / 月含 1 TB（S3 兼容，aws-cli / rclone / 各家 S3 SDK 都能用）</a></td><td><a class="price-buy-cta" href="https://rarecloud.io/clients/aff.php?aff=1012" rel="nofollow sponsored noopener" target="_blank">部署时添加 →</a></td></tr>
+<tr><th scope="row">Managed Kubernetes</th><td><a class="price-buy" href="https://rarecloud.io/clients/aff.php?aff=1012" rel="nofollow sponsored noopener" target="_blank">控制面免费，worker 从 €7.99 / 月起</a></td><td><a class="price-buy-cta" href="https://rarecloud.io/clients/aff.php?aff=1012" rel="nofollow sponsored noopener" target="_blank">部署时添加 →</a></td></tr>
+</tbody></table></div>
+
+<a class="buy" href="https://rarecloud.io/clients/aff.php?aff=1012" rel="nofollow sponsored noopener" target="_blank">前往控制台部署 Cloud VM →</a>
+</div>
+
+<h2 id="allplans">全部 19 个套餐与推广入口</h2>
+
+<p>一张表列全所有套餐，点击任意价格或「购买」都会带推广参数进入该套餐的下单页。机房在结账时选择。</p>
+<div class="tbl-scroll">
+<table><thead><tr><th>产品线</th><th>套餐</th><th>CPU</th><th>内存</th><th>硬盘</th><th>流量</th><th>可用周期</th><th>最低月均价 / 购买</th></tr></thead><tbody>
+<tr>
+<th scope="row">Linux KVM VPS</th>
+<td>Starter KVM</td>
+<td>1 vCPU</td><td>1GB RAM</td><td>25GB NVMe</td><td>3TB /month</td>
+<td>年付/两年/三年</td>
+<td><a class="price-buy" href="https://rarecloud.io/clients/aff.php?aff=1012&pid=3" rel="nofollow sponsored noopener" target="_blank">€2.08</a> <a class="price-buy-cta" href="https://rarecloud.io/clients/aff.php?aff=1012&pid=3" rel="nofollow sponsored noopener" target="_blank">购买</a><span class="cyc">三年付 · 一次性付 €75.00</span></td>
+</tr>
+<tr>
+<th scope="row">Linux KVM VPS</th>
+<td>Micro KVM</td>
+<td>1 vCPU</td><td>768MB RAM</td><td>15GB NVMe</td><td>1TB /month</td>
+<td>年付/两年/三年</td>
+<td><a class="price-buy" href="https://rarecloud.io/clients/aff.php?aff=1012&pid=6" rel="nofollow sponsored noopener" target="_blank">€1.56</a> <a class="price-buy-cta" href="https://rarecloud.io/clients/aff.php?aff=1012&pid=6" rel="nofollow sponsored noopener" target="_blank">购买</a><span class="cyc">三年付 · 一次性付 €56.00</span></td>
+</tr>
+<tr>
+<th scope="row">Linux KVM VPS</th>
+<td>Advanced KVM</td>
+<td>1 vCPU</td><td>2.5GB RAM</td><td>45GB NVMe</td><td>5TB /month</td>
+<td>月付/季付/半年/年付/两年/三年</td>
+<td><a class="price-buy" href="https://rarecloud.io/clients/aff.php?aff=1012&pid=11" rel="nofollow sponsored noopener" target="_blank">€3.89</a> <a class="price-buy-cta" href="https://rarecloud.io/clients/aff.php?aff=1012&pid=11" rel="nofollow sponsored noopener" target="_blank">购买</a><span class="cyc">三年付 · 一次性付 €140.00</span></td>
+</tr>
+<tr>
+<th scope="row">Linux KVM VPS</th>
+<td>Core VPS</td>
+<td>1 vCPU</td><td>2GB RAM</td><td>40GB NVMe</td><td>3TB /month</td>
+<td>月付/季付/半年/年付/两年/三年</td>
+<td><a class="price-buy" href="https://rarecloud.io/clients/aff.php?aff=1012&pid=12" rel="nofollow sponsored noopener" target="_blank">€3.19</a> <a class="price-buy-cta" href="https://rarecloud.io/clients/aff.php?aff=1012&pid=12" rel="nofollow sponsored noopener" target="_blank">购买</a><span class="cyc">三年付 · 一次性付 €115.00</span></td>
+</tr>
+<tr>
+<th scope="row">Linux KVM VPS</th>
+<td>Plus VPS</td>
+<td>2 vCPU</td><td>4GB RAM</td><td>65GB NVMe</td><td>5TB /month</td>
+<td>月付/季付/半年/年付/两年/三年</td>
+<td><a class="price-buy" href="https://rarecloud.io/clients/aff.php?aff=1012&pid=13" rel="nofollow sponsored noopener" target="_blank">€7.92</a> <a class="price-buy-cta" href="https://rarecloud.io/clients/aff.php?aff=1012&pid=13" rel="nofollow sponsored noopener" target="_blank">购买</a><span class="cyc">半年付 · 一次性付 €47.50</span></td>
+</tr>
+<tr>
+<th scope="row">Linux KVM VPS</th>
+<td>Pro VPS</td>
+<td>4 vCPU</td><td>8GB RAM</td><td>100GB NVMe</td><td>7TB /month</td>
+<td>月付/季付/半年/年付/两年/三年</td>
+<td><a class="price-buy" href="https://rarecloud.io/clients/aff.php?aff=1012&pid=14" rel="nofollow sponsored noopener" target="_blank">€16.25</a> <a class="price-buy-cta" href="https://rarecloud.io/clients/aff.php?aff=1012&pid=14" rel="nofollow sponsored noopener" target="_blank">购买</a><span class="cyc">半年付 · 一次性付 €97.50</span></td>
+</tr>
+<tr>
+<th scope="row">Linux KVM VPS</th>
+<td>Elite VPS</td>
+<td>4 vCPU</td><td>16GB RAM</td><td>150GB NVMe</td><td>10TB /month</td>
+<td>月付/季付/半年/年付/两年/三年</td>
+<td><a class="price-buy" href="https://rarecloud.io/clients/aff.php?aff=1012&pid=15" rel="nofollow sponsored noopener" target="_blank">€25.00</a> <a class="price-buy-cta" href="https://rarecloud.io/clients/aff.php?aff=1012&pid=15" rel="nofollow sponsored noopener" target="_blank">购买</a><span class="cyc">三年付 · 一次性付 €900.00</span></td>
+</tr>
+<tr>
+<th scope="row">Linux KVM VPS</th>
+<td>Do It Yourself VPS</td>
+<td>1–8 vCPU 自选</td><td>1–32 GB 自选</td><td>20–500 GB 自选</td><td>1–20 TB 自选</td>
+<td>月付/季付/半年/年付</td>
+<td><a class="price-buy" href="https://rarecloud.io/clients/aff.php?aff=1012&pid=16" rel="nofollow sponsored noopener" target="_blank">€6.25</a> <a class="price-buy-cta" href="https://rarecloud.io/clients/aff.php?aff=1012&pid=16" rel="nofollow sponsored noopener" target="_blank">购买</a><span class="cyc">半年付 · 一次性付 €37.50</span></td>
+</tr>
+<tr>
+<th scope="row">Windows RDP VPS</th>
+<td>Win 4G</td>
+<td>2 vCPUs</td><td>4GB RAM</td><td>60GB NVMe</td><td>4TB /month</td>
+<td>月付/年付/两年/三年</td>
+<td><a class="price-buy" href="https://rarecloud.io/clients/aff.php?aff=1012&pid=7" rel="nofollow sponsored noopener" target="_blank">€12.92</a> <a class="price-buy-cta" href="https://rarecloud.io/clients/aff.php?aff=1012&pid=7" rel="nofollow sponsored noopener" target="_blank">购买</a><span class="cyc">年付 · 一次性付 €155.00</span></td>
+</tr>
+<tr>
+<th scope="row">Windows RDP VPS</th>
+<td>Win 8G</td>
+<td>4 vCPUs</td><td>8GB RAM</td><td>120GB NVMe</td><td>6TB /month</td>
+<td>月付/年付/两年/三年</td>
+<td><a class="price-buy" href="https://rarecloud.io/clients/aff.php?aff=1012&pid=17" rel="nofollow sponsored noopener" target="_blank">€24.58</a> <a class="price-buy-cta" href="https://rarecloud.io/clients/aff.php?aff=1012&pid=17" rel="nofollow sponsored noopener" target="_blank">购买</a><span class="cyc">年付 · 一次性付 €295.00</span></td>
+</tr>
+<tr>
+<th scope="row">Windows RDP VPS</th>
+<td>Win 12G</td>
+<td>4 vCPUs</td><td>12GB RAM</td><td>160GB NVMe</td><td>10TB /month</td>
+<td>月付/年付/两年/三年</td>
+<td><a class="price-buy" href="https://rarecloud.io/clients/aff.php?aff=1012&pid=18" rel="nofollow sponsored noopener" target="_blank">€28.75</a> <a class="price-buy-cta" href="https://rarecloud.io/clients/aff.php?aff=1012&pid=18" rel="nofollow sponsored noopener" target="_blank">购买</a><span class="cyc">年付 · 一次性付 €345.00</span></td>
+</tr>
+<tr>
+<th scope="row">应用预装 VPS</th>
+<td>N8N Starter</td>
+<td>2 vCPU</td><td>4GB RAM</td><td>65GB NVMe</td><td>5TB /month</td>
+<td>月付/年付</td>
+<td><a class="price-buy" href="https://rarecloud.io/clients/aff.php?aff=1012&pid=36" rel="nofollow sponsored noopener" target="_blank">€4.00</a> <a class="price-buy-cta" href="https://rarecloud.io/clients/aff.php?aff=1012&pid=36" rel="nofollow sponsored noopener" target="_blank">购买</a><span class="cyc">年付 · 一次性付 €48.00</span></td>
+</tr>
+<tr>
+<th scope="row">应用预装 VPS</th>
+<td>N8N PRO</td>
+<td>4 vCPU</td><td>8GB RAM</td><td>100GB NVMe</td><td>7TB /month</td>
+<td>月付/年付</td>
+<td><a class="price-buy" href="https://rarecloud.io/clients/aff.php?aff=1012&pid=37" rel="nofollow sponsored noopener" target="_blank">€5.69</a> <a class="price-buy-cta" href="https://rarecloud.io/clients/aff.php?aff=1012&pid=37" rel="nofollow sponsored noopener" target="_blank">购买</a><span class="cyc">年付 · 一次性付 €68.25</span></td>
+</tr>
+<tr>
+<th scope="row">应用预装 VPS</th>
+<td>OpenClaw Server</td>
+<td>2 vCPU</td><td>4GB RAM</td><td>65GB NVMe</td><td>5TB /month</td>
+<td>月付/年付</td>
+<td><a class="price-buy" href="https://rarecloud.io/clients/aff.php?aff=1012&pid=49" rel="nofollow sponsored noopener" target="_blank">€4.00</a> <a class="price-buy-cta" href="https://rarecloud.io/clients/aff.php?aff=1012&pid=49" rel="nofollow sponsored noopener" target="_blank">购买</a><span class="cyc">年付 · 一次性付 €48.00</span></td>
+</tr>
+<tr>
+<th scope="row">应用预装 VPS</th>
+<td>OpenClaw Desktop</td>
+<td>4 vCPU</td><td>8GB RAM</td><td>100GB NVMe</td><td>7TB /month</td>
+<td>月付/年付</td>
+<td><a class="price-buy" href="https://rarecloud.io/clients/aff.php?aff=1012&pid=50" rel="nofollow sponsored noopener" target="_blank">€5.69</a> <a class="price-buy-cta" href="https://rarecloud.io/clients/aff.php?aff=1012&pid=50" rel="nofollow sponsored noopener" target="_blank">购买</a><span class="cyc">年付 · 一次性付 €68.25</span></td>
+</tr>
+<tr>
+<th scope="row">Web 虚拟主机</th>
+<td>StartUp</td>
+<td>1.5 核</td><td>2GB RAM</td><td>50GB NVMe</td><td>不限流量</td>
+<td>月付/年付/两年/三年</td>
+<td><a class="price-buy" href="https://rarecloud.io/clients/aff.php?aff=1012&pid=21" rel="nofollow sponsored noopener" target="_blank">€7.92</a> <a class="price-buy-cta" href="https://rarecloud.io/clients/aff.php?aff=1012&pid=21" rel="nofollow sponsored noopener" target="_blank">购买</a><span class="cyc">年付 · 一次性付 €95.00</span></td>
+</tr>
+<tr>
+<th scope="row">Web 虚拟主机</th>
+<td>Business</td>
+<td>3 核</td><td>4GB RAM</td><td>100GB NVMe</td><td>不限流量</td>
+<td>月付/年付/两年/三年</td>
+<td><a class="price-buy" href="https://rarecloud.io/clients/aff.php?aff=1012&pid=22" rel="nofollow sponsored noopener" target="_blank">€16.25</a> <a class="price-buy-cta" href="https://rarecloud.io/clients/aff.php?aff=1012&pid=22" rel="nofollow sponsored noopener" target="_blank">购买</a><span class="cyc">年付 · 一次性付 €195.00</span></td>
+</tr>
+<tr>
+<th scope="row">Web 虚拟主机</th>
+<td>Enterprise</td>
+<td>6 核</td><td>8GB RAM</td><td>不限 NVMe</td><td>不限流量</td>
+<td>月付/年付/两年/三年</td>
+<td><a class="price-buy" href="https://rarecloud.io/clients/aff.php?aff=1012&pid=23" rel="nofollow sponsored noopener" target="_blank">€16.25</a> <a class="price-buy-cta" href="https://rarecloud.io/clients/aff.php?aff=1012&pid=23" rel="nofollow sponsored noopener" target="_blank">购买</a><span class="cyc">两年付 · 一次性付 €390.00</span></td>
+</tr>
+<tr>
+<th scope="row">Web 虚拟主机</th>
+<td>Website Hosting</td>
+<td>共享</td><td>共享</td><td>10GB NVMe</td><td>不限流量</td>
+<td>年付/两年/三年</td>
+<td><a class="price-buy" href="https://rarecloud.io/clients/aff.php?aff=1012&pid=51" rel="nofollow sponsored noopener" target="_blank">€2.22</a> <a class="price-buy-cta" href="https://rarecloud.io/clients/aff.php?aff=1012&pid=51" rel="nofollow sponsored noopener" target="_blank">购买</a><span class="cyc">三年付 · 一次性付 €80.00</span></td>
+</tr>
+</tbody></table></div>
+
+<h2 id="voice">社区口碑：被认可与被吐槽</h2>
+
+<p>下面每一条都来自 NodeSeek 帖子的正文或评论，附原帖链接，可逐条复核。<strong>价格优势与风险评价同时存在</strong>，建议两边都看完。</p>
+<h3>被认可的地方</h3>
+<div class="tbl-scroll"><table><thead><tr><th>结论</th><th>依据</th><th>出处</th></tr></thead><tbody>
+<tr>
+<td><strong>价格是真的低</strong></td><td>三年付 €25 的 1C/1G/25G/3T，在当年是全网最低梯队；黑五活动款甚至到过 €9.75/年。</td>
+<td>2025-02-02<br><a href="https://www.nodeseek.com/post-242618-1" rel="nofollow noopener" target="_blank">《Rarecloud €8.3/年 德国三网直连》</a></td>
+</tr>
+<tr>
+<td><strong>德国机房硬件确实更好</strong></td><td>德国机给 Ryzen 7 3700X / 5800X，Geekbench 5 单核 982、SysBench 单线程 1906；社区测评明确写「德国机房硬件较好，CPU 的 GB5 分数上 1000，线路也是直连的」。</td>
+<td>2025-05-18<br><a href="https://www.nodeseek.com/post-342100-1" rel="nofollow noopener" target="_blank">《【评测】RareCloud 德国 1H2.5G 45G SSD 闪购服务器测评》</a></td>
+</tr>
+<tr>
+<td><strong>移动用户能拿到真香香港机</strong></td><td>香港回程 CMI 直连，有用户从日本迁到香港后表示「用得很爽」，社区通称「移动快乐鸡」。</td>
+<td>2025-12-20<br><a href="https://www.nodeseek.com/post-541236-1" rel="nofollow noopener" target="_blank">《【测评】Rarecloud 新机房测评（香港）移动快乐机》</a></td>
+</tr>
+<tr>
+<td><strong>平时其实挺稳</strong></td><td>「探针一直很稳定，基本上只有机房升级才有问题。用了两年倒没发现什么问题，工单响应挺及时」——另一位老用户自述开了两台机器、用了一年多才发现被多开了一台并被删掉。</td>
+<td>2026-05-15<br><a href="https://www.nodeseek.com/post-732070-1" rel="nofollow noopener" target="_blank">《咨询一下各位老外商家 rarecloud 的灵车程度》</a></td>
+</tr>
+<tr>
+<td><strong>欧盟主体、可开 VAT 发票</strong></td><td>运营方是罗马尼亚 RARE MOOD AGENCY SRL（Tax ID 45192771），支持信用卡 / 借记卡、PayPal、支付宝、加密货币与银行转账。</td>
+<td>2026-10-14<br><a href="https://rarecloud.io/tos/" rel="nofollow noopener" target="_blank">RareCloud 服务条款</a></td>
+</tr>
+</tbody></table></div>
+<h3>被吐槽的地方</h3>
+<div class="tbl-scroll"><table><thead><tr><th>问题</th><th>社区原话 / 依据</th><th>出处</th></tr></thead><tbody>
+<tr>
+<td><strong>退款极难，14 天政策形同虚设</strong></td><td>「12 月 1 日买的 vps，后面申请工单退款，到现在快一个月了都没有退款成功」；有人被反复以「上报高层」为由拖延两个月。社区共识是「<strong>一定要用 PayPal 付</strong>，支付宝没办法」。</td>
+<td>2025-12-26<br><a href="https://www.nodeseek.com/post-559090-1" rel="nofollow noopener" target="_blank">《避坑垃圾商家 rarecloud》</a></td>
+</tr>
+<tr>
+<td><strong>稳定性波动明显</strong></td><td>2025-06「IP 所有地方都不通」持续一整天；2026-08、2026-10 连续出现「又挂了」「失联」帖；社区结论是「欧洲节点要稳定一些，美国节点稳定性很差，经常关机或者丢包率高到没边了」。</td>
+<td>2026-10-03<br><a href="https://www.nodeseek.com/post-958377-1" rel="nofollow noopener" target="_blank">《rarecloud 失联》</a></td>
+</tr>
+<tr>
+<td><strong>续费已经涨过一轮</strong></td><td>2026-09 官方通知续费涨价：25 欧三年付涨到 37.5 欧三年付；有用户反馈「我的从大概 25o 一年变成 100o 一年」。邮件明确 Pro VPS (VM9) 自 <strong>2028-01-24</strong> 起为 $113.25/年（当前标价 $226.49，保留 50% 折扣）。</td>
+<td>2026-09-07<br><a href="https://www.nodeseek.com/post-916089-1" rel="nofollow noopener" target="_blank">《【慢讯】rarecloud 续费涨价了》</a></td>
+</tr>
+<tr>
+<td><strong>充值赠金是明显的坑</strong></td><td>「25 欧元以下，充多少，送多少……续费时，最多且只能续一个周期，如果之前就续费过，现在连第一个周期都没结束，那根本没法用赠金去续费」，而且赠金<strong>只有 60 天有效期</strong>。社区把「50o 翻 3 倍」直接当作跑路前的高风险信号。</td>
+<td>2026-09-05<br><a href="https://www.nodeseek.com/post-888388-1" rel="nofollow noopener" target="_blank">《讲讲 RareCloud 充值 3 倍 / 4 倍的套路》</a></td>
+</tr>
+<tr>
+<td><strong>强制迁移会整段换 IP</strong></td><td>2025-12 荷兰节点整体迁到海牙新机房，退役 45.129.13.0/24、45.148.11.0/24、45.142.192.0/24，迁移后<strong>全部换新 IP</strong>；硅谷节点同样退役多个 /24。条款也写明 IP 不可携带、不可转让。</td>
+<td>2025-12-14<br><a href="https://www.nodeseek.com/post-530431-1" rel="nofollow noopener" target="_blank">《RareCloud 将要迁移 荷兰VPS位置，换IP》</a></td>
+</tr>
+<tr>
+<td><strong>老款可能被降配</strong></td><td>有用户翻出一台三年前的老机重测：「单核 5800x 被干成了 9254」「内存也降了，只有 1.5G 了」——商家在基础设施迁移后把老机器换到了新硬件上。</td>
+<td>2026-06-14<br><a href="https://www.nodeseek.com/post-763050-1" rel="nofollow noopener" target="_blank">《[老机新测] Rarecloud 翻出来一个老鸡》</a></td>
+</tr>
+<tr>
+<td><strong>IP 质量与流媒体全线拉胯</strong></td><td>「不要指望解锁，广播 IP，Gemini 给你飞罗马尼亚，或者送美送中，chatgpt 直接显示你是 VPN」。</td>
+<td>2026-05-15<br><a href="https://www.nodeseek.com/post-732070-1" rel="nofollow noopener" target="_blank">《咨询一下各位老外商家 rarecloud 的灵车程度》</a></td>
+</tr>
+<tr>
+<td><strong>商家自己不做备份</strong></td><td>条款写明：除非服务协议另有说明，RareCloud <strong>不做任何客户数据备份</strong>，硬件故障、误操作导致的数据丢失概不负责。</td>
+<td>2026-10-14<br><a href="https://rarecloud.io/tos/" rel="nofollow noopener" target="_blank">RareCloud 服务条款</a></td>
+</tr>
+</tbody></table></div>
+
+<h2 id="faq">常见问题</h2>
+<h3>RareCloud 是什么来头？</h3>
+<p>运营方是<strong>罗马尼亚</strong>的 RARE MOOD AGENCY SRL（Tax ID 45192771，VAT RO45192771，Reg. No. J13/3713/2021），背后是罗马尼亚持牌电信运营商 <strong>M247</strong>（AS9009），12 个数据中心里有 7 个直接挂在 M247 的 AS9009 下。它不是空壳新号，但确实是<strong>近两年在社区里争议很大的低价商家</strong>——「价格真香」和「随时可能跑路」两种评价同时存在。建议按年付玩具 / 副业机器的定位买。</p>
+<h3>最便宜多少钱？真能买到吗？</h3>
+<p><strong>€1.56/月</strong>——Micro KVM（1 vCPU / 768MB / 15GB NVMe / 1TB 流量），<strong>一次付三年 €56</strong>。注意 Micro 和 Starter <strong>没有月付</strong>，最低一次性付 1.5 年；768MB 内存装完系统基本就满了。</p>
+<h3>可以按月付吗？</h3>
+<p>Linux KVM 里的 Advanced / Core / DIY / Plus / Pro / Elite 与全部 Windows、n8n、OpenClaw 档位都可以月付；<strong>只有 Micro KVM、Starter KVM、Website Hosting 三档没有月付</strong>。Cloud VM 全部按小时计费、封顶月价。</p>
+<h3>哪些套餐锁长周期不划算？</h3>
+<p><strong>Plus VPS、Pro VPS、Win 4G / 8G / 12G 的两年付与三年付总价完全相同</strong>，锁三年没有任何额外折扣，这几档最多锁两年。Enterprise 虚拟主机也有类似异常（两年付 / 三年付与 Business 同价），买前建议开工单确认。</p>
+<h3>中国大陆用户选哪个机房？</h3>
+<p><strong>移动选香港</strong>（回程 CMI 直连，社区称「移动快乐鸡」）；<strong>电信 / 联通选德国</strong>（法兰克福 / 蒂米什瓦拉，回程联通 4837 直连，延迟约 180–260ms）；<strong>电信不要选香港和东京</strong>，回程绕路、丢包明显。美国四城只适合纯海外业务。</p>
+<h3>怎么验证线路好不好？</h3>
+<p>每个数据中心页面都直接给了 test IP，例如法兰克福 <code>85.121.52.2</code>、伦敦 <code>85.121.48.2</code>、海牙 <code>85.121.54.2</code>、东京 <code>85.121.50.2</code>、香港 <code>85.121.244.250</code>。下单前先 <code>ping</code> 和 <code>mtr</code> 测一遍再付钱。</p>
+<h3>支持支付宝吗？</h3>
+<p>支持。官方条款列出的支付方式是信用卡 / 借记卡、PayPal、<strong>支付宝</strong>、加密货币和银行转账。但社区一致提醒：<strong>想退款就用 PayPal 付</strong>，支付宝单几乎没成功退款的。</p>
+<h3>有备份吗？</h3>
+<p>没有。条款明确写了除非另有说明，RareCloud 不为客户数据做备份，硬件故障、误操作导致的数据丢失概不负责。Cloud VM 有快照服务（€0.05/GB/月，每台最多 5 个），KVM VPS 档位得自己解决备份。</p>
+<h3>退款政策是怎样的？</h3>
+<p>条款写的是 <strong>14 天退款</strong>（需满足「使用量极少」等条件），超出后按 as-is 处理，除非 30 天内换机或转余额。但社区反馈是：工单经常只回复「已上报高层」，有人退款拖了两个月，最后靠 <strong>PayPal 争议</strong>秒退。</p>
+<h3>IP 会被换掉吗？</h3>
+<p>会。历史上荷兰节点从原机房迁到海牙时<strong>整段 IP 全换</strong>（退役 45.129.13.0/24、45.148.11.0/24、45.142.192.0/24），硅谷节点也退役过多个 /24。条款明确 IP 不可迁移、不可转让。建议用第三方托管 DNS，别把解析挂在会变动的 IP 上。</p>
+<h3>能解锁流媒体 / 用 ChatGPT 吗？</h3>
+<p>IP 基本是广播段。有用户直接反馈「Gemini 定位飞到罗马尼亚，ChatGPT 直接判定为 VPN」。如果你的用途依赖干净的住宅 / 机房 IP，请另找专门商家。</p>
+<h3>Micro KVM 的 768MB 内存能干什么？</h3>
+<p>够跑 WireGuard、反向代理、静态站、轻量脚本和监控 agent。<strong>不够</strong>跑 Docker（哪怕一个容器）、数据库、Java 项目或任何带编译的工具链。装完 Debian 后可用内存通常只剩 300MB 上下。如果只是想要「一台便宜的常在线机器」，它很合适；想跑服务请至少上 Core VPS（2GB）。</p>
+<h3>Cloud VM 和 KVM VPS 有什么区别？该选哪个？</h3>
+<p>KVM VPS 是<strong>预付固定周期</strong>（月付到三年付），11 个机房任选，适合长期持有；Cloud VM 是<strong>按小时后付费、月价封顶</strong>，只在布加勒斯特，但支持随时改配置而不换 IP、自带云防火墙与私网，适合弹性负载和短期测试。</p>
+
+<h2 id="caveats">选购注意事项与风险提示</h2>
+
+<div class="danger">
+  <strong>下单前务必确认这几点。</strong>这些不是「劝退」，而是让你<strong>用对预期</strong>——RareCloud 的低价是真的，它的不确定性也是真的，两件事同时成立。
+  <ul>
+    <li><strong>先开机，别囤赠金。</strong>充值赠金<strong>只有 60 天有效期</strong>，且「续费时最多且只能续一个周期」。手上的 VPS 越早开、周期排得越靠前，赠金越用得上；反过来先充值再慢慢开机，赠金大概率白瞎。</li>
+    <li><strong>锁多久合适：默认 1 年，最多 2 年。</strong>年付比月付便宜 15%–17%，三年付再便宜一档；但 2026-09 已经涨过一轮，条款也没有长期锁价承诺。<strong>Plus / Pro / Win 系列的两年付与三年付同价，锁三年纯属多担风险。</strong></li>
+    <li><strong>迁移风险要自己消化。</strong>历史上已发生多轮大规模迁移（荷兰 → 海牙、硅谷退役 IP 段、老机换硬件）。条款明确「IP 是服务的一部分，不可携带、不可转让，商家改号会尽力避免中断」。<strong>DNS 记录别写死 IP</strong>，有条件就用 Cloudflare 之类的托管解析。</li>
+    <li><strong>付款方式决定了你的退路。</strong>官方支持信用卡 / 借据卡、PayPal、支付宝、加密货币、银行转账。<strong>社区的一致建议是优先用 PayPal</strong>——支付宝订单几乎没有成功退款的先例。</li>
+    <li><strong>价格不含 VAT。</strong>官网价格全部是<strong>不含税</strong>价。欧盟客户若无有效 VAT ID，会被加收 <strong>19% 罗马尼亚增值税</strong>；中国大陆用户在结账前务必确认最终应付金额。</li>
+    <li><strong>别把它当生产主力。</strong>99.9% uptime 的 SLA 写在条款里（低于阈值可按 downtime 的 10%/1% 申请退月费，需开工单），但 SLA 赔付和退款一样要看客服脸色。生产业务建议<strong>年付一台 + 自己做快照 + 准备兜底方案</strong>。</li>
+    <li><strong>商家已发过「涨价预告 + 给半月原价窗口」的邮件。</strong>有用户按 2026-06 的邮件在涨价前续了费，随后续费价仍然上调；另有用户在赠金还没用完时就续了两次，结果赠金彻底花不出去。<strong>不要把促销邮件当成锁价承诺。</strong></li>
+    <li><strong>14 天退款不是兜底。</strong>条款写的是 14 天（需满足「使用量极少」等条件），超出后按 as-is 处理。但社区执行情况是：工单经常只回「已上报高层」，有人拖了两个月，最后靠 <strong>PayPal 争议</strong>秒退。</li>
+  </ul>
+</div>
+
+<p class="meta">如果这些风险你都不能接受，建议看同价位更稳的商家；如果能接受，那 RareCloud 的性价比确实是第一梯队的。</p>
+
+<h2 id="sources">数据来源与引用</h2>
+
+<p>产品、价格与机房数据来自 RareCloud 官网；线路与口碑结论来自 NodeSeek 社区，按主题整理了以下帖子作为依据，可逐条复核：</p>
+<ol class="src">
+<li>[测评] <a href="https://www.nodeseek.com/post-213762-1" rel="nofollow noopener" target="_blank">【测评】Rarecloud各区域机房测评（罗马尼亚、凤凰城、硅谷、阿姆斯特丹、德国）</a>　—　weyony，2024-12-30，10 条评论</li>
+<li>[测评] <a href="https://www.nodeseek.com/post-342100-1" rel="nofollow noopener" target="_blank">【评测】RareCloud 德国 1H2.5G 45G SSD 闪购服务器 测评</a>　—　WuZihan，2025-05-18，9 条评论</li>
+<li>[测评] <a href="https://www.nodeseek.com/post-176102-1" rel="nofollow noopener" target="_blank">【三德机对比】Rarecloud vs Delux vs Netcup（10欧/年）/Rarecloud 优惠码RARE45可以用了，限时优惠！</a>　—　weyony，2024-10-29，9 条评论</li>
+<li>[情报] <a href="https://www.nodeseek.com/post-242618-1" rel="nofollow noopener" target="_blank">Rarecloud €8.3/年  德国三网直连 上海这联通电信好香。。25三年还能买</a>　—　jack9225，2025-02-02，10 条评论</li>
+<li>[测评] <a href="https://www.nodeseek.com/post-541236-1" rel="nofollow noopener" target="_blank">【测评】Rarecloud新机房测评（香港）移动快乐机</a>　—　weyony，2025-12-20，11 条评论</li>
+<li>[测评] <a href="https://www.nodeseek.com/post-814658-1" rel="nofollow noopener" target="_blank">rarecloud hk 晚高峰北方移动测评</a>　—　nzg，2026-07-10，6 条评论</li>
+<li>[测评] <a href="https://www.nodeseek.com/post-491166-1" rel="nofollow noopener" target="_blank">Rarecloud 9.9欧 日本东京 测试留档</a>　—　luopojunzi，2025-10-30，10 条评论</li>
+<li>[日常] <a href="https://www.nodeseek.com/post-532002-1" rel="nofollow noopener" target="_blank">rarecloud 日本区，在黑五之后频繁掉线</a>　—　ageg，2025-12-05，7 条评论</li>
+<li>[情报] <a href="https://www.nodeseek.com/post-888388-1" rel="nofollow noopener" target="_blank">讲讲 RareCloud 充值 3 倍 / 4 倍的套路</a>　—　AhFei，2026-09-05，10 条评论</li>
+<li>[日常] <a href="https://www.nodeseek.com/post-805485-1" rel="nofollow noopener" target="_blank">rarecloud是想跑路了？ 推出的充值翻倍活动是否有点离谱了，50o翻3倍</a>　—　kki，2026-07-22，10 条评论</li>
+<li>[日常] <a href="https://www.nodeseek.com/post-912278-1" rel="nofollow noopener" target="_blank">rarecloud正式通知续费涨价了</a>　—　东道主，2026-09-05，10 条评论</li>
+<li>[日常] <a href="https://www.nodeseek.com/post-916089-1" rel="nofollow noopener" target="_blank">【慢讯】rarecloud续费涨价了</a>　—　hihaboy，2026-09-07，8 条评论</li>
+<li>[情报] <a href="https://www.nodeseek.com/post-958377-1" rel="nofollow noopener" target="_blank">rarecloud失联</a>　—　firebet，2026-10-03，10 条评论</li>
+<li>[日常] <a href="https://www.nodeseek.com/post-879170-1" rel="nofollow noopener" target="_blank">rarecloud又挂了</a>　—　nolog，2026-08-21，10 条评论</li>
+<li>[日常] <a href="https://www.nodeseek.com/post-364185-1" rel="nofollow noopener" target="_blank">rarecloud机房出问题了？IP所有地方都不通</a>　—　娃md-150，2025-06-18，10 条评论</li>
+<li>[日常] <a href="https://www.nodeseek.com/post-503828-1" rel="nofollow noopener" target="_blank">rarecloud退款真牛逼！</a>　—　noders，2025-11-19，10 条评论</li>
+<li>[日常] <a href="https://www.nodeseek.com/post-559090-1" rel="nofollow noopener" target="_blank">避坑垃圾商家rarecloud</a>　—　rainman，2025-12-26，8 条评论</li>
+<li>[日常] <a href="https://www.nodeseek.com/post-562682-1" rel="nofollow noopener" target="_blank">rarecloud，避雷，已申请退款</a>　—　Sharon210，2026-01-17，10 条评论</li>
+<li>[日常] <a href="https://www.nodeseek.com/post-500487-1" rel="nofollow noopener" target="_blank">rarecloud这家服务很差</a>　—　tergarsam，2025-11-19，10 条评论</li>
+<li>[测评] <a href="https://www.nodeseek.com/post-511128-1" rel="nofollow noopener" target="_blank">rarecloud退款battle了两个月，给重开了一台</a>　—　bahua，2025-11-21，10 条评论</li>
+<li>[日常] <a href="https://www.nodeseek.com/post-903678-1" rel="nofollow noopener" target="_blank">警惕rarecloud</a>　—　，2026-10-14，3 条评论</li>
+<li>[情报] <a href="https://www.nodeseek.com/post-530431-1" rel="nofollow noopener" target="_blank">RareCloud 将要迁移 荷兰VPS位置，换IP</a>　—　pretty，2025-12-14，10 条评论</li>
+<li>[情报] <a href="https://www.nodeseek.com/post-550633-1" rel="nofollow noopener" target="_blank">RareCloud 又又要开始迁移了</a>　—　pretty，2025-12-20，10 条评论</li>
+<li>[测评] <a href="https://www.nodeseek.com/post-763050-1" rel="nofollow noopener" target="_blank">[老机新测] Rarecloud 翻出来一个老鸡1c2g 3年25o，才发现半年前被商家迁移了机房</a>　—　Codec，2026-06-14，10 条评论</li>
+<li>[日常] <a href="https://www.nodeseek.com/post-732070-1" rel="nofollow noopener" target="_blank">咨询一下各位老外商家rarecloud的灵车程度</a>　—　hahaaa，2026-05-15，10 条评论</li>
+<li>[情报] <a href="https://www.nodeseek.com/post-390934-1" rel="nofollow noopener" target="_blank">【快讯】RareCloud.io活动</a>　—　清见琉璃，2025-07-12，6 条评论</li>
+<li>[日常] <a href="https://www.nodeseek.com/post-793846-1" rel="nofollow noopener" target="_blank">RareCloud到底怎么样？</a>　—　peterbosnia，2026-07-07，10 条评论</li>
+</ol>
+<h3>官网页面</h3>
+<ul class="src">
+<li>官网：<a href="https://rarecloud.io/kvm-vps/" rel="nofollow noopener" target="_blank">RareCloud Linux VPS 产品与价格页</a> — <a href="https://rarecloud.io/kvm-vps/" rel="nofollow noopener" target="_blank">https://rarecloud.io/kvm-vps/</a></li>
+<li>官网：<a href="https://rarecloud.io/cloud-vm/" rel="nofollow noopener" target="_blank">RareCloud Cloud VM 页（13 个规格与横向对比）</a> — <a href="https://rarecloud.io/cloud-vm/" rel="nofollow noopener" target="_blank">https://rarecloud.io/cloud-vm/</a></li>
+<li>官网：<a href="https://rarecloud.io/datacenters/" rel="nofollow noopener" target="_blank">RareCloud 数据中心总览（12 机房）</a> — <a href="https://rarecloud.io/datacenters/" rel="nofollow noopener" target="_blank">https://rarecloud.io/datacenters/</a></li>
+<li>官网：<a href="https://rarecloud.io/tos/" rel="nofollow noopener" target="_blank">RareCloud 服务条款（SLA / 退款 / 备份 / IP / VAT）</a> — <a href="https://rarecloud.io/tos/" rel="nofollow noopener" target="_blank">https://rarecloud.io/tos/</a></li>
+<li>官网：<a href="https://rarecloud.io/affiliates/" rel="nofollow noopener" target="_blank">RareCloud 联盟计划（15% 持续佣金）</a> — <a href="https://rarecloud.io/affiliates/" rel="nofollow noopener" target="_blank">https://rarecloud.io/affiliates/</a></li>
+<li>官网：<a href="https://rarecloud.io/data/whmcs-pricing.json" rel="nofollow noopener" target="_blank">定价数据源：WHMCS 导出 JSON（last_updated 2026-10-14 04:00:01）</a> — <a href="https://rarecloud.io/data/whmcs-pricing.json" rel="nofollow noopener" target="_blank">https://rarecloud.io/data/whmcs-pricing.json</a></li>
+</ul>
+<p class="meta">采集方式：本机 Chrome 登录态 + CDP。NodeSeek 搜索「rarecloud」共抓取 417 条结果，其中 202 篇抓取了正文与评论（共 1761 条评论）。产品与价格为抓取时点快照，以官网实时信息为准。</p>
+
+<footer>
+  <p>本文为第三方产品整理，与 RareCloud 官方无隶属关系。文中购买链接含推广参数（aff=1012），不影响你的购买价格。价格与库存随时可能变动，请以 <a href="https://rarecloud.io/kvm-vps/" rel="nofollow noopener" target="_blank">RareCloud 官网</a> 为准。</p>
+  <p>更新于 2026-10-14</p>
+</footer>
+
+</div>
+</body>
+</html>

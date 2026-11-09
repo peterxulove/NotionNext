@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>VPS 推荐与选购指南合集 | IT-ABC</title>
+<meta name="description" content="各家 VPS 商家全产品线推荐与选购指南合集：RackNerd、RareCloud、BageVM、云悠 YUNYOO、ByteVirt、DMIT，逐款拆解机房、线路、配置与价格。">
+<link rel="canonical" href="https://blog.aibici.org/vps">
+<meta property="og:type" content="website">
+<meta property="og:title" content="VPS 推荐与选购指南合集">
+<meta property="og:description" content="各家 VPS 商家全产品线推荐与选购指南合集：机房、线路、配置与价格逐款拆解。">
+<meta property="og:url" content="https://blog.aibici.org/vps">
+<style>
+  :root{
+    --bg:#f7f8fa; --card:#fff; --text:#1f2328; --muted:#656d76;
+    --line:#e4e7ec; --accent:#0969da; --tag-bg:#eef4fb;
+  }
+  @media (prefers-color-scheme: dark){
+    :root{ --bg:#16181d; --card:#1e2126; --text:#e6e8eb; --muted:#9aa3ad;
+           --line:#2c313a; --accent:#58a6ff; --tag-bg:#22303f; }
+  }
+  *{box-sizing:border-box}
+  body{
+    margin:0; padding:48px 20px 72px; background:var(--bg); color:var(--text);
+    font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;
+    line-height:1.65; -webkit-font-smoothing:antialiased;
+  }
+  .wrap{max-width:920px;margin:0 auto}
+  .back{display:inline-block;margin-bottom:24px;color:var(--muted);text-decoration:none;font-size:14px}
+  .back:hover{color:var(--accent)}
+  h1{font-size:30px;line-height:1.3;margin:0 0 12px;letter-spacing:-.01em}
+  .lead{color:var(--muted);margin:0 0 36px;font-size:15px}
+  .grid{display:grid;gap:16px;grid-template-columns:repeat(auto-fill,minmax(280px,1fr))}
+  .card{
+    display:flex;flex-direction:column;background:var(--card);border:1px solid var(--line);
+    border-radius:12px;padding:20px 20px 18px;text-decoration:none;color:inherit;
+    transition:border-color .18s ease,transform .18s ease,box-shadow .18s ease;
+  }
+  .card:hover{border-color:var(--accent);transform:translateY(-2px);box-shadow:0 6px 20px rgba(0,0,0,.07)}
+  .brand{font-size:17px;font-weight:650;margin:0 0 6px;display:flex;align-items:center;gap:8px}
+  .flag{font-size:12px;font-weight:500;color:var(--accent);background:var(--tag-bg);border-radius:5px;padding:2px 7px}
+  .desc{color:var(--muted);font-size:13.5px;margin:0 0 14px;flex:1}
+  .meta{display:flex;flex-wrap:wrap;gap:6px;font-size:12px;color:var(--muted)}
+  .meta span{background:var(--tag-bg);border-radius:5px;padding:2px 8px}
+  footer{margin-top:40px;color:var(--muted);font-size:13px;border-top:1px solid var(--line);padding-top:20px}
+  footer a{color:var(--accent);text-decoration:none}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <a class="back" href="https://blog.aibici.org/">← 返回 IT-ABC 首页</a>
+  <h1>VPS 推荐与选购指南</h1>
+  <p class="lead">按商家逐条梳理全产品线：机房分布、线路类型、配置与价格、适合谁用。全部基于实测数据和社区反馈整理。</p>
+
+  <div class="grid">
+    <a class="card" href="/vps/racknerd">
+      <p class="brand">RackNerd <span class="flag">大硬盘</span></p>
+      <p class="desc">20 个机房、12 条产品线、73 个在售档位，基于 1406 条社区帖子的口碑与故障梳理。</p>
+      <div class="meta"><span>20 机房</span><span>12 产品线</span><span>73 档位</span></div>
+    </a>
+
+    <a class="card" href="/vps/dmit">
+      <p class="brand">DMIT <span class="flag">高端线路</span></p>
+      <p class="desc">洛杉矶 / 中国香港 / 东京三大机房 15 条产品线，Premium（CN2 GIA）、Eyeball（CMIN2）、Tier 1 逐款拆解。</p>
+      <div class="meta"><span>3 机房</span><span>15 产品线</span><span>CN2 GIA</span></div>
+    </a>
+
+    <a class="card" href="/vps/bytevirt">
+      <p class="brand">ByteVirt <span class="flag">大陆优化</span></p>
+      <p class="desc">7 个机房、19 条产品线，洛杉矶四档大陆优化线路（4837 / 9929+CMIN2 / CN2 GIA）对比。</p>
+      <div class="meta"><span>7 机房</span><span>19 产品线</span><span>4837 / 9929</span></div>
+    </a>
+
+    <a class="card" href="/vps/rarecloud">
+      <p class="brand">RareCloud <span class="flag">套餐丰富</span></p>
+      <p class="desc">19 个可下单套餐、12 个数据中心，含 Linux KVM、Windows RDP、n8n 等专项机型。</p>
+      <div class="meta"><span>12 数据中心</span><span>19 套餐</span><span>Windows RDP</span></div>
+    </a>
+
+    <a class="card" href="/vps/yunyoo">
+      <p class="brand">云悠 YUNYOO <span class="flag">多线路</span></p>
+      <p class="desc">洛杉矶 C.Lite / C.Std / C.Pre、法兰克福 9929、香港四区与荃湾、东京 IIJ 与 Lite 全线梳理。</p>
+      <div class="meta"><span>美 / 德 / 港 / 日</span><span>9929</span><span>IIJ</span></div>
+    </a>
+
+    <a class="card" href="/vps/bagevm">
+      <p class="brand">BageVM <span class="flag">大带宽落地</span></p>
+      <p class="desc">12 条产品线、8 个国家 / 地区节点。全线无中国大陆优化，定位大带宽落地机。</p>
+      <div class="meta"><span>12 产品线</span><span>8 个地区</span><span>大带宽</span></div>
+    </a>
+  </div>
+
+  <footer>
+    内容持续更新中，数据以各页面内标注的版本时间为准。回到 <a href="https://blog.aibici.org/">IT-ABC</a> 看更多科技内容。
+  </footer>
+</div>
+</body>
+</html>

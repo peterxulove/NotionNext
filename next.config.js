@@ -185,6 +185,25 @@ function scanSubdirectories(directory) {
 }
 
 /**
+ * 生成 public/vps/<slug>/index.html 静态页的重写规则
+ * 目录下新增子目录会自动生效，无需改这里
+ */
+function scanVpsRewrites() {
+  const vpsDir = path.resolve(__dirname, 'public/vps')
+  try {
+    return fs
+      .readdirSync(vpsDir)
+      .filter(name => fs.statSync(path.join(vpsDir, name)).isDirectory())
+      .map(slug => ({
+        source: `/vps/${slug}`,
+        destination: `/vps/${slug}/index.html`
+      }))
+  } catch (err) {
+    return []
+  }
+}
+
+/**
  * @type {import('next').NextConfig}
  */
 
@@ -302,6 +321,10 @@ const nextConfig = {
       }
 
       return [
+        // VPS 推荐静态页：/vps 索引页 + /vps/<slug> 子页面
+        { source: '/vps', destination: '/vps/index.html' },
+        { source: '/vps/', destination: '/vps/index.html' },
+        ...scanVpsRewrites(),
         ...langsRewrites,
         // RSS fallback: when static file doesn't exist, route to API
         {
