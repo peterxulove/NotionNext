@@ -13,6 +13,8 @@ import { getServerSideSitemap } from 'next-sitemap'
 
 export const getServerSideProps = async ctx => {
   let fields = []
+  // 站点正式域名，从 Notion 数据里解析（BLOG.LINK 是上游默认值，不能直接用）
+  let siteLink = ''
   const siteIds = BLOG.NOTION_PAGE_ID.split(',')
 
   for (let index = 0; index < siteIds.length; index++) {
@@ -29,6 +31,9 @@ export const getServerSideProps = async ctx => {
       siteData?.siteInfo?.link,
       siteData.NOTION_CONFIG
     )
+    if (!siteLink && link) {
+      siteLink = link
+    }
     const localeFields = generateLocalesSitemap(link, siteData.allPages, locale)
     fields = fields.concat(localeFields)
   }
@@ -36,7 +41,7 @@ export const getServerSideProps = async ctx => {
   fields = getUniqueFields(fields)
 
   // VPS 推荐静态页：固定路径，不区分语言
-  fields = fields.concat(generateVpsSitemap())
+  fields = fields.concat(generateVpsSitemap(siteLink))
 
   // 缓存
   ctx.res.setHeader(
@@ -146,8 +151,9 @@ const VPS_STATIC_PATHS = [
   '/vps/bagevm'
 ]
 
-function generateVpsSitemap() {
-  const baseUrl = normalizeSitemapBaseUrl(siteConfig('LINK', BLOG.LINK))
+function generateVpsSitemap(siteLink) {
+  const baseUrl = normalizeSitemapBaseUrl(siteLink)
+  if (!baseUrl) return []
   const dateNow = toSitemapDateString(new Date())
   return VPS_STATIC_PATHS.map(slug => ({
     loc: buildSitemapLoc({ baseUrl, slug }),
