@@ -1,10 +1,11 @@
 import { siteConfig } from '@/lib/config'
 import { useGlobal } from '@/lib/global'
 import throttle from 'lodash.throttle'
-import Link from 'next/link'
+import SmartLink from '@/components/SmartLink'
 import { useRouter } from 'next/router'
 import { useCallback, useEffect, useRef, useState } from 'react'
 import CONFIG from '../config'
+import ButtonRandomPost from './ButtonRandomPost'
 import CategoryGroup from './CategoryGroup'
 import Logo from './Logo'
 import { MenuListTop } from './MenuListTop'
@@ -28,6 +29,7 @@ const Header = props => {
   const router = useRouter()
   const [isOpen, changeShow] = useState(false)
   const showSearchButton = siteConfig('HEXO_MENU_SEARCH', false, CONFIG)
+  const showRandomButton = siteConfig('HEXO_MENU_RANDOM', false, CONFIG)
 
   const toggleMenuOpen = () => {
     changeShow(!isOpen)
@@ -39,7 +41,7 @@ const Header = props => {
 
   // 监听滚动
   useEffect(() => {
-    window.addEventListener('scroll', topNavStyleHandler)
+    window.addEventListener('scroll', topNavStyleHandler, { passive: true })
     router.events.on('routeChangeComplete', topNavStyleHandler)
     topNavStyleHandler()
     return () => {
@@ -104,12 +106,12 @@ const Header = props => {
               <i className='mr-2 fas fa-th-list' />
               {locale.COMMON.CATEGORY}
             </div>
-            <Link
+            <SmartLink
               href={'/category'}
               passHref
               className='mb-3 text-gray-400 hover:text-black dark:text-gray-400 dark:hover:text-white hover:underline cursor-pointer'>
               {locale.COMMON.MORE} <i className='fas fa-angle-double-right' />
-            </Link>
+            </SmartLink>
           </div>
           <CategoryGroup
             currentCategory={currentCategory}
@@ -125,12 +127,12 @@ const Header = props => {
               <i className='mr-2 fas fa-tag' />
               {locale.COMMON.TAGS}
             </div>
-            <Link
+            <SmartLink
               href={'/tag'}
               passHref
               className='text-gray-400 hover:text-black  dark:hover:text-white hover:underline cursor-pointer'>
               {locale.COMMON.MORE} <i className='fas fa-angle-double-right' />
-            </Link>
+            </SmartLink>
           </div>
           <div className='p-2'>
             <TagGroups tags={tags} currentTag={currentTag} />
@@ -172,6 +174,7 @@ const Header = props => {
               )}
             </div>
             {showSearchButton && <SearchButton />}
+            {showRandomButton && <ButtonRandomPost {...props} />}
           </div>
         </div>
       </div>

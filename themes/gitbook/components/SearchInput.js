@@ -2,6 +2,7 @@ import { siteConfig } from '@/lib/config'
 import { deepClone } from '@/lib/utils'
 import { useGitBookGlobal } from '@/themes/gitbook'
 import { useImperativeHandle, useRef, useState } from 'react'
+import { useHotkeys } from 'react-hotkeys-hook'
 let lock = false
 
 /**
@@ -10,6 +11,11 @@ let lock = false
 const SearchInput = ({ currentSearch, cRef, className }) => {
   const searchInputRef = useRef()
   const { searchModal, setFilteredNavPages, allNavPages } = useGitBookGlobal()
+  const hasAlgolia = Boolean(
+    siteConfig('ALGOLIA_APP_ID') &&
+    siteConfig('ALGOLIA_SEARCH_ONLY_APP_KEY') &&
+    siteConfig('ALGOLIA_INDEX')
+  )
 
   useImperativeHandle(cRef, () => {
     return {
@@ -19,9 +25,18 @@ const SearchInput = ({ currentSearch, cRef, className }) => {
     }
   })
 
+  /**
+   * 快捷键设置
+   */
+  useHotkeys('ctrl+k', e => {
+    searchInputRef?.current?.focus()
+    e.preventDefault()
+    handleSearch()
+  })
+
   const handleSearch = () => {
     // 使用Algolia
-    if (siteConfig('ALGOLIA_APP_ID')) {
+    if (hasAlgolia) {
       searchModal?.current?.openSearch()
     }
     let keyword = searchInputRef.current.value
@@ -29,6 +44,7 @@ const SearchInput = ({ currentSearch, cRef, className }) => {
       keyword = keyword.trim()
     } else {
       setFilteredNavPages(allNavPages)
+      return
     }
     const filterAllNavPages = deepClone(allNavPages)
 
@@ -52,8 +68,11 @@ const SearchInput = ({ currentSearch, cRef, className }) => {
    */
   const handleKeyUp = e => {
     // 使用Algolia
-    if (siteConfig('ALGOLIA_APP_ID')) {
-      searchModal?.current?.openSearch()
+    if (hasAlgolia) {
+      // Esc closes the dialog on keydown and returns focus here before keyup.
+      if (e.key !== 'Escape' && e.keyCode !== 27) {
+        searchModal?.current?.openSearch()
+      }
       return
     }
 
@@ -68,7 +87,7 @@ const SearchInput = ({ currentSearch, cRef, className }) => {
 
   const handleFocus = () => {
     // 使用Algolia
-    if (siteConfig('ALGOLIA_APP_ID')) {
+    if (hasAlgolia) {
       searchModal?.current?.openSearch()
     }
   }
@@ -79,6 +98,7 @@ const SearchInput = ({ currentSearch, cRef, className }) => {
   const cleanSearch = () => {
     searchInputRef.current.value = ''
     handleSearch()
+    setShowClean(false)
   }
 
   const [showClean, setShowClean] = useState(false)
@@ -103,28 +123,33 @@ const SearchInput = ({ currentSearch, cRef, className }) => {
   }
 
   return (
-    <div className={'flex w-full'}>
-      <input
-        ref={searchInputRef}
-        type='text'
-        className={`${className} outline-none w-full text-sm pl-2 transition focus:shadow-lg font-light leading-10 text-black bg-gray-100 dark:bg-gray-800 dark:text-white`}
-        onFocus={handleFocus}
-        onKeyUp={handleKeyUp}
-        onCompositionStart={lockSearchInput}
-        onCompositionUpdate={lockSearchInput}
-        onCompositionEnd={unLockSearchInput}
-        onChange={e => updateSearchKey(e.target.value)}
-        defaultValue={currentSearch}
-      />
-
+    <div className={`${className} relative`}>
       <div
-        className='flex -ml-8 cursor-pointer float-right items-center justify-center py-2'
+        className='absolute left-0 ml-4 items-center justify-center py-2'
         onClick={handleSearch}>
         <i
           className={
             'hover:text-black transform duration-200 text-gray-500  dark:hover:text-gray-300 cursor-pointer fas fa-search'
           }
         />
+      </div>
+      <input
+        ref={searchInputRef}
+        type='text'
+        className={`rounded-lg border dark:border-black pl-12 leading-10 placeholder-gray-500 outline-none w-full transition focus:shadow-lg text-black bg-gray-100 dark:bg-black dark:text-white`}
+        onFocus={handleFocus}
+        onKeyUp={handleKeyUp}
+        placeholder='Search'
+        onCompositionStart={lockSearchInput}
+        onCompositionUpdate={lockSearchInput}
+        onCompositionEnd={unLockSearchInput}
+        onChange={e => updateSearchKey(e.target.value)}
+        defaultValue={currentSearch}
+      />
+      <div
+        className='absolute right-0 mr-4 items-center justify-center py-2 text-gray-400 dark:text-gray-600'
+        onClick={handleSearch}>
+        Ctrl+K
       </div>
 
       {showClean && (

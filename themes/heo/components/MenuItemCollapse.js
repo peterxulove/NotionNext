@@ -1,5 +1,5 @@
 import Collapse from '@/components/Collapse'
-import Link from 'next/link'
+import SmartLink from '@/components/SmartLink'
 import { useState } from 'react'
 
 /**
@@ -28,10 +28,10 @@ export const MenuItemCollapse = ({ link }) => {
   return (
     <>
       <div
-        className='select-none w-full px-2 py-2 border rounded-xl text-left dark:bg-hexo-black-gray'
+        className='select-none w-full p-2 border dark:border-gray-600 rounded-lg text-left dark:bg-[var(--heo-color-card-dark)]'
         onClick={toggleShow}>
         {!hasSubMenu && (
-          <Link
+          <SmartLink
             href={link?.href}
             target={link?.target}
             className='font-extralight  flex justify-between pl-2 pr-4 dark:text-gray-200 no-underline tracking-widest'>
@@ -39,7 +39,7 @@ export const MenuItemCollapse = ({ link }) => {
               {link?.icon && <i className={link.icon + ' mr-4'} />}
               {link?.name}
             </span>
-          </Link>
+          </SmartLink>
         )}
         {hasSubMenu && (
           <div
@@ -62,13 +62,13 @@ export const MenuItemCollapse = ({ link }) => {
             return (
               <div
                 key={index}
-                className='dark:bg-black dark:text-gray-200 text-left px-3 justify-start bg-gray-50 hover:bg-gray-50 dark:hover:bg-gray-900 tracking-widest transition-all duration-200  py-3 pr-6'>
-                <Link href={sLink.href} target={link?.target}>
+                className='dark:bg-hexo-black-gray dark:text-gray-200 text-left px-3 justify-start bg-gray-50 hover:bg-gray-50 dark:hover:bg-gray-900 tracking-widest transition-all duration-200  py-3 pr-6'>
+                <SmartLink href={sLink.href} target={link?.target}>
                   <span className='text-sm ml-4 whitespace-nowrap'>
                     {link?.icon && <i className={sLink.icon + ' mr-2'} />}{' '}
                     {sLink.title}
                   </span>
-                </Link>
+                </SmartLink>
               </div>
             )
           })}

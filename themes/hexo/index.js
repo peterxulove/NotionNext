@@ -7,7 +7,7 @@ import { useGlobal } from '@/lib/global'
 import { isBrowser } from '@/lib/utils'
 import { Transition } from '@headlessui/react'
 import dynamic from 'next/dynamic'
-import Link from 'next/link'
+import SmartLink from '@/components/SmartLink'
 import { useRouter } from 'next/router'
 import { createContext, useContext, useEffect, useRef } from 'react'
 import ArticleAdjacent from './components/ArticleAdjacent'
@@ -17,11 +17,12 @@ import ArticleRecommend from './components/ArticleRecommend'
 import BlogPostArchive from './components/BlogPostArchive'
 import BlogPostListPage from './components/BlogPostListPage'
 import BlogPostListScroll from './components/BlogPostListScroll'
+import ButtonJumpToComment from './components/ButtonJumpToComment'
+import ButtonRandomPostMini from './components/ButtonRandomPostMini'
 import Card from './components/Card'
 import Footer from './components/Footer'
 import Header from './components/Header'
 import Hero from './components/Hero'
-import JumpToCommentButton from './components/JumpToCommentButton'
 import PostHero from './components/PostHero'
 import RightFloatArea from './components/RightFloatArea'
 import SearchNav from './components/SearchNav'
@@ -30,6 +31,7 @@ import SlotBar from './components/SlotBar'
 import TagItemMini from './components/TagItemMini'
 import TocDrawer from './components/TocDrawer'
 import TocDrawerButton from './components/TocDrawerButton'
+import ArticleSwitchPlaceholder from './components/ArticleSwitchPlaceholder'
 import CONFIG from './config'
 import { Style } from './style'
 
@@ -51,8 +53,17 @@ export const useHexoGlobal = () => useContext(ThemeGlobalHexo)
 const LayoutBase = props => {
   const { post, children, slotTop, className } = props
   const { onLoading, fullWidth } = useGlobal()
-
   const router = useRouter()
+  const showRandomButton = siteConfig('HEXO_MENU_RANDOM', false, CONFIG)
+  const isArticleSlugPage = router.pathname === '/[prefix]/[slug]'
+  const hexoArticleRouteLoading = siteConfig(
+    'HEXO_ARTICLE_ROUTE_LOADING',
+    true,
+    CONFIG
+  )
+  const showArticleSwitchPlaceholder =
+    hexoArticleRouteLoading && isArticleSlugPage && onLoading
+
   const headerSlot = post ? (
     <PostHero {...props} />
   ) : router.route === '/' &&
@@ -63,6 +74,7 @@ const LayoutBase = props => {
   const drawerRight = useRef(null)
   const tocRef = isBrowser ? document.getElementById('article-wrapper') : null
 
+  // 悬浮按钮内容
   const floatSlot = (
     <>
       {post?.toc?.length > 1 && (
@@ -74,7 +86,8 @@ const LayoutBase = props => {
           />
         </div>
       )}
-      {post && <JumpToCommentButton />}
+      {post && <ButtonJumpToComment post={post} />}
+      {showRandomButton && <ButtonRandomPostMini {...props} />}
     </>
   )
 
@@ -108,7 +121,7 @@ const LayoutBase = props => {
         {/* 主区块 */}
         <main
           id='wrapper'
-          className={`${siteConfig('HEXO_HOME_BANNER_ENABLE', null, CONFIG) ? '' : 'pt-16'} bg-hexo-background-gray dark:bg-black w-full py-8 md:px-8 lg:px-24 min-h-screen relative`}>
+          className={`${siteConfig('HEXO_HOME_BANNER_ENABLE', null, CONFIG) ? 'pt-0' : 'pt-16'} bg-hexo-background-gray dark:bg-black w-full md:px-8 lg:px-24 min-h-screen relative`}>
           <div
             id='container-inner'
             className={
@@ -119,28 +132,29 @@ const LayoutBase = props => {
             }>
             <div
               className={`${className || ''} w-full ${fullWidth ? '' : 'max-w-4xl'} h-full overflow-hidden`}>
-              <Transition
-                show={!onLoading}
-                appear={true}
-                enter='transition ease-in-out duration-700 transform order-first'
-                enterFrom='opacity-0 translate-y-16'
-                enterTo='opacity-100'
-                leave='transition ease-in-out duration-300 transform'
-                leaveFrom='opacity-100 translate-y-0'
-                leaveTo='opacity-0 -translate-y-16'
-                unmount={false}>
-                {/* 主区上部嵌入 */}
-                {slotTop}
+              {showArticleSwitchPlaceholder ? (
+                <ArticleSwitchPlaceholder />
+              ) : (
+                <Transition
+                  show={isArticleSlugPage ? true : !onLoading}
+                  appear={true}
+                  enter='transition ease-in-out duration-700 transform order-first'
+                  enterFrom='opacity-0 translate-y-16'
+                  enterTo='opacity-100'
+                  leave='transition ease-in-out duration-300 transform'
+                  leaveFrom='opacity-100 translate-y-0'
+                  leaveTo='opacity-0 -translate-y-16'
+                  unmount={false}>
+                  {/* 主区上部嵌入 */}
+                  {slotTop}
 
-                {children}
-              </Transition>
+                  {children}
+                </Transition>
+              )}
             </div>
 
             {/* 右侧栏 */}
-            <SideRight
-              {...props}
-              className={`space-y-4 lg:w-80 pt-4 ${post ? 'lg:pt-0' : 'lg:pt-4'}`}
-            />
+            <SideRight {...props} />
           </div>
         </main>
 
@@ -262,13 +276,14 @@ const LayoutArchive = props => {
 const LayoutSlug = props => {
   const { post, lock, validPassword } = props
   const router = useRouter()
+  const waiting404 = siteConfig('POST_WAITING_TIME_FOR_404') * 1000
   useEffect(() => {
     // 404
     if (!post) {
       setTimeout(
         () => {
           if (isBrowser) {
-            const article = document.getElementById('notion-article')
+            const article = document.querySelector('#article-wrapper #notion-article')
             if (!article) {
               router.push('/404').then(() => {
                 console.warn('找不到页面', router.asPath)
@@ -276,7 +291,7 @@ const LayoutSlug = props => {
             }
           }
         },
-        siteConfig('POST_WAITING_TIME_FOR_404') * 1000
+        waiting404
       )
     }
   }, [post])
@@ -285,13 +300,10 @@ const LayoutSlug = props => {
       <div className='w-full lg:hover:shadow lg:border rounded-t-xl lg:rounded-xl lg:px-2 lg:py-4 bg-white dark:bg-hexo-black-gray dark:border-black article'>
         {lock && <ArticleLock validPassword={validPassword} />}
 
-        {!lock && (
-          <div
-            id='article-wrapper'
-            className='overflow-x-auto flex-grow mx-auto md:w-full md:px-5 '>
+        {!lock && post && (
+          <div className='overflow-x-auto flex-grow mx-auto md:w-full md:px-5 '>
             <article
-              itemScope
-              itemType='https://schema.org/Movie'
+              id='article-wrapper'
               className='subpixel-antialiased overflow-y-hidden'>
               {/* Notion文章主体 */}
               <section className='px-5 justify-center mx-auto max-w-2xl lg:max-w-full'>
@@ -329,11 +341,12 @@ const LayoutSlug = props => {
  */
 const Layout404 = props => {
   const router = useRouter()
+  const { locale } = useGlobal()
   useEffect(() => {
     // 延时3秒如果加载失败就返回首页
     setTimeout(() => {
       if (isBrowser) {
-        const article = document.getElementById('notion-article')
+        const article = document.querySelector('#article-wrapper #notion-article')
         if (!article) {
           router.push('/').then(() => {
             // console.log('找不到页面', router.asPath)
@@ -350,7 +363,7 @@ const Layout404 = props => {
             404
           </h2>
           <div className='inline-block text-left h-32 leading-10 items-center'>
-            <h2 className='m-0 p-0'>页面未找到</h2>
+            <h2 className='m-0 p-0'>{locale.COMMON.NOT_FOUND}</h2>
           </div>
         </div>
       </div>
@@ -375,7 +388,7 @@ const LayoutCategoryIndex = props => {
         <div id='category-list' className='duration-200 flex flex-wrap mx-8'>
           {categoryOptions?.map(category => {
             return (
-              <Link
+              <SmartLink
                 key={category.name}
                 href={`/category/${category.name}`}
                 passHref
@@ -387,7 +400,7 @@ const LayoutCategoryIndex = props => {
                   <i className='mr-4 fas fa-folder' /> {category.name}(
                   {category.count})
                 </div>
-              </Link>
+              </SmartLink>
             )
           })}
         </div>

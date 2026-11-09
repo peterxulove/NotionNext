@@ -1,7 +1,14 @@
+import { siteConfig } from '@/lib/config'
+
 /**
  * 另一个落地页主题
  */
 const CONFIG = {
+  STARTER_COLOR_PRIMARY: '#3758f9',
+  STARTER_COLOR_PRIMARY_HOVER: '#1b44c8',
+  STARTER_COLOR_DARK: '#111928',
+  STARTER_COLOR_TEXT_MUTED: '#637381',
+
   // 默认只展示Logo文字，如果设置了logo图片，会在文字左侧显示图标
   STARTER_LOGO: '', // 普通logo图片 示例：/images/starter/logo/logo.svg
   STARTER_LOGO_WHITE: '', // 透明底浅色logo 示例： /images/starter/logo/logo-white.svg
@@ -14,20 +21,21 @@ const CONFIG = {
   STARTER_HERO_TITLE_2: '通过笔记无感知地建站、成倍放大您的价值', // 英雄区文字
   // 英雄区两个按钮，如果TEXT留空则隐藏按钮
   STARTER_HERO_BUTTON_1_TEXT: '开始体验', // 英雄区按钮
-  STARTER_HERO_BUTTON_1_URL:
-    'https://docs.tangly1024.com/article/vercel-deploy-notion-next', // 英雄区按钮
+  STARTER_HERO_BUTTON_1_URL: 'https://notionnext.tangly1024.com/', // 英雄区按钮
   STARTER_HERO_BUTTON_2_TEXT: '在Github上关注', // 英雄区按钮
-  STARTER_HERO_BUTTON_2_URL: 'https://github.com/tangly1024/NotionNext', // 英雄区按钮
+  STARTER_HERO_BUTTON_2_URL: 'https://github.com/notionnext-org/NotionNext', // 英雄区按钮
   STARTER_HERO_BUTTON_2_ICON: '/images/starter/github.svg', // 英雄区按钮2的图标，不需要则留空
 
+  // 英雄区配图，如需隐藏，改为空值即可 ''
   STARTER_HERO_PREVIEW_IMAGE: '/images/starter/hero/hero-image.webp', // 产品预览图 ，默认读取public目录下图片
+  STARTER_HERO_BANNER_IMAGE: '', // hero区下方的全宽图
 
   // 顶部右侧导航暗流
   STARTER_NAV_BUTTON_1_TEXT: 'Sign In',
-  STARTER_NAV_BUTTON_1_URL: '/signin',
+  STARTER_NAV_BUTTON_1_URL: '/sign-in',
 
   STARTER_NAV_BUTTON_2_TEXT: 'Sign Up',
-  STARTER_NAV_BUTTON_2_URL: '/signup',
+  STARTER_NAV_BUTTON_2_URL: '/sign-up',
 
   // 特性区块
   STARTER_FEATURE_ENABLE: true, // 特性区块开关
@@ -39,7 +47,7 @@ const CONFIG = {
   STARTER_FEATURE_1_TITLE_1: '免费且开源', // 特性1
   STARTER_FEATURE_1_TEXT_1: '项目源码在Github上完全开放共享，遵循MIT协议', // 特性1
   STARTER_FEATURE_1_BUTTON_TEXT: '了解更多', // 特性1
-  STARTER_FEATURE_1_BUTTON_URL: 'https://github.com/tangly1024/NotionNext', // 特性1
+  STARTER_FEATURE_1_BUTTON_URL: 'https://github.com/notionnext-org/NotionNext', // 特性1
 
   STARTER_FEATURE_2_TITLE_1: '多种主题定制', // 特性2
   STARTER_FEATURE_2_TEXT_1: '数十种主题,适用于不同场景，总有一款适合你', // 特性2
@@ -200,7 +208,7 @@ const CONFIG = {
   STARTER_TEAM_TITLE: '团队成员',
   STARTER_TEAM_TEXT_1: '我们的开发者团队',
   STARTER_TEAM_TEXT_2:
-    'NotionNext 由众多开源技术爱好者们共同合作完成，感谢每一位<a className="underline" href="https://github.com/tangly1024/NotionNext/graphs/contributors">贡献者</a>',
+    'NotionNext 由众多开源技术爱好者们共同合作完成，感谢每一位<a className="underline" href="https://github.com/notionnext-org/NotionNext/graphs/contributors">贡献者</a>',
 
   // 这里不支持CONFIG和环境变量，需要一一修改此处代码。
   STARTER_TEAM_ITEMS: [
@@ -358,8 +366,22 @@ const CONFIG = {
   STARTER_404_TEXT: '抱歉！您要查找的页面不存在。可能已经移动或删除。',
   STARTER_404_BACK: '回到主页',
 
+  // 页面底部的行动呼吁模块
+  STARTER_CTA_ENABLE: true,
+  STARTER_CTA_TITLE: '你还在等待什么呢？',
+  STARTER_CTA_TITLE_2: '现在开始吧',
+  STARTER_CTA_DESCRIPTION:
+    '访问NotionNext的操作文档，我们提供了详细的教程，帮助你即刻搭建站点',
+  STARTER_CTA_BUTTON: true, // 是否显示按钮
+  STARTER_CTA_BUTTON_URL: 'https://notionnext.tangly1024.com/',
+  STARTER_CTA_BUTTON_TEXT: '开始体验',
+
   STARTER_POST_REDIRECT_ENABLE: true, // 默認開啟重定向
   STARTER_POST_REDIRECT_URL: 'https://blog.tangly1024.com', // 重定向域名
   STARTER_NEWSLETTER: process.env.NEXT_PUBLIC_THEME_STARTER_NEWSLETTER || false // 是否开启邮件订阅 请先配置mailchimp功能 https://docs.tangly1024.com/article/notion-next-mailchimp
 }
+
+export const starterConfig = (key, defaultVal = null) =>
+  siteConfig(key, defaultVal, CONFIG)
+
 export default CONFIG
